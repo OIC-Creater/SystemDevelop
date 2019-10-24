@@ -54,23 +54,8 @@
 |---|---|---|
 |product_code|Text|prime,11桁|
 |products_name|Text|required|
-|price|Number|required|
 |manufacturing_id|Text|6桁|
 |now_sale|Yes/No|required|
-
-## product_arrivalsettings(定量発注点表)
-
-|colmun|type|option|
-|---|---|---|
-|product_code|Text|prime,11桁|
-|autoorder_line|Number|required|
-
-## product_arrivalamount(定量発注量表)
-
-|colmun|type|option|
-|---|---|---|
-|product_code|Text|prime,11桁|
-|order_per_carton|Number|required|
 
 ## stocks(在庫表)
 
@@ -78,6 +63,16 @@
 |---|---|---|
 |product_code|Text|prime,11桁|
 |stock|Number|required|
+
+# 設定ファイル
+
+## autorders_settings(設定ファイル)
+
+|colmun|type|option|
+|---|---|---|
+|product_code|Text|prime,11桁|
+|autoorder_line|Number|required|
+|order_per_carton|Number|required|
 
 # 受注ファイル
 
@@ -90,25 +85,9 @@
 |product_code|Text|required,11桁|
 |order_amount|Number|required|
 |datetime|ShortDate|required|
-
-## orders_from(受注営業所、ショップ表)
-
-|colmun|type|option|
-|---|---|---|
-|id|AutoNumber|prime|
-|order_id|Number|required|
 |salesoffice_id|Number|required|
 |shop_id|Text|required,7桁|
-|is_completed|Yes/No|required|
-
-## receipts(受領書表)
-
-|colmun|type|option|
-|---|---|---|
-|id|AutoNumber|prime|
-|order_id|Number|required|
 |is_acceptance|Yes/No|required|
-|acceptance_date|ShortDate||
 
 # 発注ファイル
 
@@ -120,13 +99,16 @@
 |manufacturer_order_id|Number|required|
 |product_code|Text|prime,11桁|
 |manufacturer_order_amount|Number|required|
+|datetime|ShortDate|required|
 
-## products_receiving(倉庫入荷表)
+# 出庫ファイル
+
+## issues(出庫表)
 
 |colmun|type|option|
 |---|---|---|
-|manufacturer_order_id|Number|prime|
-|is_arrival|Yes/No|required|
+|id|Number|prime|
+|datetime|ShortDate|required|
 
 # ログファイル
 
