@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SystemDevelop.Model
 {
     /// <summary>
     /// passwordをハッシュ化するためのクラス
     /// </summary>
-    class PaasswordHash
+    public class PasswordHash
     {
         //hash用のprovider
         static readonly SHA256CryptoServiceProvider hashProvider = new SHA256CryptoServiceProvider();
