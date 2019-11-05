@@ -22,12 +22,19 @@ namespace SystemDevelop
 
         }
 
-        private void ホーム画面_Load(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void HomeScreen_Load(object sender, EventArgs e)
+        {
+
+
+            21  
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

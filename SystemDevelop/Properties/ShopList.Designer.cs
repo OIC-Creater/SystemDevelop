@@ -48,9 +48,9 @@
             // 
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.vScrollBar1);
-            this.panel1.Location = new System.Drawing.Point(35, 149);
+            this.panel1.Location = new System.Drawing.Point(35, 131);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(547, 279);
+            this.panel1.Size = new System.Drawing.Size(547, 297);
             this.panel1.TabIndex = 13;
             // 
             // dataGridView1
@@ -65,7 +65,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(524, 279);
+            this.dataGridView1.Size = new System.Drawing.Size(524, 297);
             this.dataGridView1.TabIndex = 1;
             // 
             // a
@@ -94,12 +94,12 @@
             this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
             this.vScrollBar1.Location = new System.Drawing.Point(524, 0);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(23, 279);
+            this.vScrollBar1.Size = new System.Drawing.Size(23, 297);
             this.vScrollBar1.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 100);
+            this.textBox1.Location = new System.Drawing.Point(35, 83);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 19);
             this.textBox1.TabIndex = 12;
@@ -107,7 +107,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 38);
+            this.label2.Location = new System.Drawing.Point(112, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 11;
@@ -116,7 +116,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 38);
+            this.label1.Location = new System.Drawing.Point(33, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 12);
             this.label1.TabIndex = 10;
@@ -125,7 +125,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(411, 23);
+            this.button2.Location = new System.Drawing.Point(514, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 41);
             this.button2.TabIndex = 9;
@@ -136,7 +136,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button1.Image = global::SystemDevelop.Properties.Resources.touka_home1;
-            this.button1.Location = new System.Drawing.Point(317, 24);
+            this.button1.Location = new System.Drawing.Point(420, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 41);
             this.button1.TabIndex = 8;
