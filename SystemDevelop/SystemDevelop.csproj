@@ -52,6 +52,8 @@
     <Compile Include="LoginScreen.Designer.cs">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\DB\DbClient.cs" />
+    <Compile Include="Model\DB\DbCreate.cs" />
     <Compile Include="Model\PasswordHash.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
