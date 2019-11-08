@@ -38,12 +38,14 @@ namespace SystemDevelop
         {
 
         }
-
+        
         private void button9_Click(object sender, EventArgs e)
         {
-              LoginScreen LoginScreen = new LoginScreen();
-              LoginScreen.Show();
+             LoginScreen loginScreen = new LoginScreen();
+             loginScreen.Show();
 
+             this.Close();
+ 
                 
 
         }
