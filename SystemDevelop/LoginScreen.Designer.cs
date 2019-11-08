@@ -28,70 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.login_button = new System.Windows.Forms.Button();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.passWordTextBox = new System.Windows.Forms.TextBox();
+            this.password_lbl = new System.Windows.Forms.Label();
+            this.emp_id_lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // login_button
             // 
-            this.button1.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(132, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 43);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "ログイン";
-            this.button1.UseVisualStyleBackColor = true;
+            this.login_button.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.login_button.Location = new System.Drawing.Point(132, 186);
+            this.login_button.Name = "login_button";
+            this.login_button.Size = new System.Drawing.Size(205, 43);
+            this.login_button.TabIndex = 9;
+            this.login_button.Text = "ログイン";
+            this.login_button.UseVisualStyleBackColor = true;
+            this.login_button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // idTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 38);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 31);
-            this.textBox2.TabIndex = 8;
+            this.idTextBox.Location = new System.Drawing.Point(132, 38);
+            this.idTextBox.Multiline = true;
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(205, 31);
+            this.idTextBox.TabIndex = 7;
             // 
-            // textBox1
+            // passWordTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 103);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 31);
-            this.textBox1.TabIndex = 7;
+            this.passWordTextBox.Location = new System.Drawing.Point(132, 103);
+            this.passWordTextBox.Multiline = true;
+            this.passWordTextBox.Name = "passWordTextBox";
+            this.passWordTextBox.PasswordChar = '*';
+            this.passWordTextBox.Size = new System.Drawing.Size(205, 31);
+            this.passWordTextBox.TabIndex = 8;
             // 
-            // label2
+            // password_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(12, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 19);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "パスワード";
+            this.password_lbl.AutoSize = true;
+            this.password_lbl.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.password_lbl.Location = new System.Drawing.Point(12, 110);
+            this.password_lbl.Name = "password_lbl";
+            this.password_lbl.Size = new System.Drawing.Size(114, 19);
+            this.password_lbl.TabIndex = 6;
+            this.password_lbl.Text = "パスワード";
             // 
-            // label1
+            // emp_id_lbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(50, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 19);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "社員ID";
+            this.emp_id_lbl.AutoSize = true;
+            this.emp_id_lbl.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.emp_id_lbl.Location = new System.Drawing.Point(50, 47);
+            this.emp_id_lbl.Name = "emp_id_lbl";
+            this.emp_id_lbl.Size = new System.Drawing.Size(69, 19);
+            this.emp_id_lbl.TabIndex = 5;
+            this.emp_id_lbl.Text = "社員ID";
             // 
-            // Form1
+            // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 265);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Controls.Add(this.login_button);
+            this.Controls.Add(this.idTextBox);
+            this.Controls.Add(this.passWordTextBox);
+            this.Controls.Add(this.password_lbl);
+            this.Controls.Add(this.emp_id_lbl);
+            this.Name = "LoginScreen";
             this.Text = "ログイン画面";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -100,11 +102,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button login_button;
+        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.TextBox passWordTextBox;
+        private System.Windows.Forms.Label password_lbl;
+        private System.Windows.Forms.Label emp_id_lbl;
     }
 }
 

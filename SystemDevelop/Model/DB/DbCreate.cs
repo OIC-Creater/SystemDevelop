@@ -10,7 +10,7 @@ namespace SystemDevelop.Model.DB
 {
     class DbCreate
     {
-        private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source=./test.accdb";
+        private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source=../../DB/UserLogin.accdb";
 
 
         public bool ConnectDb(out OleDbConnection oleDbConnection)
