@@ -13,17 +13,22 @@ namespace SystemDevelop.Model.DB
         private string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source=./test.accdb";
 
 
-        public void ConnectDb()
+        public bool ConnectDb(out OleDbConnection oleDbConnection)
         {
             try
             {
                 OleDbConnection oleDb = CreateDb();
 
                 oleDb.Open();
+
+                oleDbConnection = oleDb;
+                return true;
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                oleDbConnection = null;
+                return false;
             }
             
         }
