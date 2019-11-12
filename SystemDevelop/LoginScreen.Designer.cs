@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.login_button = new System.Windows.Forms.Button();
-            this.idTextBox = new System.Windows.Forms.TextBox();
             this.passWordTextBox = new System.Windows.Forms.TextBox();
             this.password_lbl = new System.Windows.Forms.Label();
             this.emp_id_lbl = new System.Windows.Forms.Label();
+            this.idTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // login_button
@@ -46,22 +46,16 @@
             this.login_button.UseVisualStyleBackColor = true;
             this.login_button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // idTextBox
-            // 
-            this.idTextBox.Location = new System.Drawing.Point(132, 38);
-            this.idTextBox.Multiline = true;
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(205, 31);
-            this.idTextBox.TabIndex = 7;
-            // 
             // passWordTextBox
             // 
-            this.passWordTextBox.Location = new System.Drawing.Point(132, 103);
-            this.passWordTextBox.Multiline = true;
+            this.passWordTextBox.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.passWordTextBox.Location = new System.Drawing.Point(132, 110);
             this.passWordTextBox.Name = "passWordTextBox";
             this.passWordTextBox.PasswordChar = '*';
-            this.passWordTextBox.Size = new System.Drawing.Size(205, 31);
+            this.passWordTextBox.Size = new System.Drawing.Size(205, 23);
             this.passWordTextBox.TabIndex = 8;
+            this.passWordTextBox.TextChanged += new System.EventHandler(this.passWordTextBox_TextChanged);
+            this.passWordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passWordTextBox_KeyDown);
             // 
             // password_lbl
             // 
@@ -83,18 +77,29 @@
             this.emp_id_lbl.TabIndex = 5;
             this.emp_id_lbl.Text = "社員ID";
             // 
+            // idTextBox
+            // 
+            this.idTextBox.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.idTextBox.Location = new System.Drawing.Point(132, 47);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(205, 23);
+            this.idTextBox.TabIndex = 7;
+            this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
+            this.idTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.idTextBox_KeyDown);
+            // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 265);
-            this.Controls.Add(this.login_button);
             this.Controls.Add(this.idTextBox);
+            this.Controls.Add(this.login_button);
             this.Controls.Add(this.passWordTextBox);
             this.Controls.Add(this.password_lbl);
             this.Controls.Add(this.emp_id_lbl);
             this.Name = "LoginScreen";
             this.Text = "ログイン画面";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginScreen_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,10 +108,10 @@
         #endregion
 
         private System.Windows.Forms.Button login_button;
-        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox passWordTextBox;
         private System.Windows.Forms.Label password_lbl;
         private System.Windows.Forms.Label emp_id_lbl;
+        private System.Windows.Forms.TextBox idTextBox;
     }
 }
 

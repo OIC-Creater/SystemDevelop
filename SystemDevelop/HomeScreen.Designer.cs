@@ -229,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 465);
+            this.ClientSize = new System.Drawing.Size(675, 465);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -248,6 +248,7 @@
             this.Controls.Add(this.button4);
             this.Name = "HomeScreen";
             this.Text = "トップ";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomeScreen_FormClosed);
             this.Load += new System.EventHandler(this.HomeScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
