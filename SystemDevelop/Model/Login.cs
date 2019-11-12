@@ -22,8 +22,8 @@ namespace SystemDevelop.Model
         {
             PasswordHash ph = new PasswordHash();
             string hashedPass = ph.Hash(pass);
-
-            string sql = $"SELECT * FROM ログイン認証 WHERE pass = '{hashedPass}'";
+            
+            string sql = $"SELECT * FROM ログイン認証 WHERE pass = '{hashedPass}' AND id = '{user}'";
 
             OleDbCommand cmd = new OleDbCommand(sql,oleDb);
             OleDbDataReader oledr = null;
@@ -32,17 +32,19 @@ namespace SystemDevelop.Model
                 oledr = cmd.ExecuteReader();
                 if (oledr.HasRows)
                 {
-                    MessageBox.Show("hoge");
+                  
                 }
                 else
                 {
-                    MessageBox.Show("huga");
+                    MessageBox.Show("IDまたはパスワードが間違っています");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            
+            
         }
 
     }
