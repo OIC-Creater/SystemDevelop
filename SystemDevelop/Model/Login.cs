@@ -11,8 +11,12 @@ namespace SystemDevelop.Model
     {
         private DbCreate dbCreate = new DbCreate();
         private OleDbConnection oleDb;
-        public Login()
+        private HomeScreen homeScreen;
+        private LoginScreen loginScreen;
+        public Login(HomeScreen homeScreen,LoginScreen loginScreen)
         {
+            this.loginScreen = loginScreen;
+            this.homeScreen = homeScreen;
             if (dbCreate.ConnectDb(out OleDbConnection oleDb))
             {
                 this.oleDb = oleDb;
@@ -32,7 +36,8 @@ namespace SystemDevelop.Model
                 oledr = cmd.ExecuteReader();
                 if (oledr.HasRows)
                 {
-                  
+                    homeScreen.Show();
+                    loginScreen.Hide();
                 }
                 else
                 {
@@ -43,9 +48,6 @@ namespace SystemDevelop.Model
             {
                 MessageBox.Show(ex.Message);
             }
-            
-            
         }
-
     }
 }

@@ -12,9 +12,11 @@ namespace SystemDevelop
 {
     public partial class HomeScreen : Form
     {
-        public HomeScreen()
+        private LoginScreen loginScreen;
+        public HomeScreen(LoginScreen loginScreen)
         {
             InitializeComponent();
+            this.loginScreen = loginScreen;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -41,13 +43,13 @@ namespace SystemDevelop
         
         private void button9_Click(object sender, EventArgs e)
         {
-             LoginScreen loginScreen = new LoginScreen();
-             loginScreen.Show();
-
-             this.Close();
- 
-                
-
+            loginScreen.Show();
+            this.Hide();
+        }
+        
+        private void HomeScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            loginScreen.Close();
         }
     }
 }
