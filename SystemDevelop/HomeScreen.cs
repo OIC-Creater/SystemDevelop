@@ -40,13 +40,13 @@ namespace SystemDevelop
         {
 
         }
-
+        
         private void button9_Click(object sender, EventArgs e)
         {
             loginScreen.Show();
             this.Hide();
         }
-
+        
         private void HomeScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
             loginScreen.Close();
