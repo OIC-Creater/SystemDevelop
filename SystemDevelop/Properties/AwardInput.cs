@@ -16,5 +16,20 @@ namespace SystemDevelop.Properties
         {
             InitializeComponent();
         }
+
+        private void Homebutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserNamelabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
