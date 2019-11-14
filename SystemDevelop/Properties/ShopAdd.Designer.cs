@@ -28,157 +28,157 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Addbutton = new System.Windows.Forms.Button();
+            this.Address_textBox = new System.Windows.Forms.TextBox();
+            this.Telnumber_textBox = new System.Windows.Forms.TextBox();
+            this.ShopName_textBox = new System.Windows.Forms.TextBox();
+            this.Shop_Id_textBox = new System.Windows.Forms.TextBox();
+            this.Address_label = new System.Windows.Forms.Label();
+            this.Telnumber_label = new System.Windows.Forms.Label();
+            this.ShopName_label = new System.Windows.Forms.Label();
+            this.Shop_Id_label = new System.Windows.Forms.Label();
+            this.back_button = new System.Windows.Forms.Button();
+            this.Home_button = new System.Windows.Forms.Button();
+            this.Date_label = new System.Windows.Forms.Label();
+            this.UserName_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button3
+            // Addbutton
             // 
-            this.button3.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(425, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 45);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "追加";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Addbutton.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Addbutton.Location = new System.Drawing.Point(425, 264);
+            this.Addbutton.Name = "Addbutton";
+            this.Addbutton.Size = new System.Drawing.Size(97, 45);
+            this.Addbutton.TabIndex = 29;
+            this.Addbutton.Text = "追加";
+            this.Addbutton.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // Address_textBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(154, 241);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(172, 19);
-            this.textBox4.TabIndex = 28;
+            this.Address_textBox.Location = new System.Drawing.Point(154, 241);
+            this.Address_textBox.Name = "Address_textBox";
+            this.Address_textBox.Size = new System.Drawing.Size(172, 19);
+            this.Address_textBox.TabIndex = 28;
             // 
-            // textBox3
+            // Telnumber_textBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(154, 196);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 19);
-            this.textBox3.TabIndex = 27;
+            this.Telnumber_textBox.Location = new System.Drawing.Point(154, 196);
+            this.Telnumber_textBox.Name = "Telnumber_textBox";
+            this.Telnumber_textBox.Size = new System.Drawing.Size(172, 19);
+            this.Telnumber_textBox.TabIndex = 27;
             // 
-            // textBox2
+            // ShopName_textBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 19);
-            this.textBox2.TabIndex = 26;
+            this.ShopName_textBox.Location = new System.Drawing.Point(154, 151);
+            this.ShopName_textBox.Name = "ShopName_textBox";
+            this.ShopName_textBox.Size = new System.Drawing.Size(172, 19);
+            this.ShopName_textBox.TabIndex = 26;
             // 
-            // textBox1
+            // Shop_Id_textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 19);
-            this.textBox1.TabIndex = 25;
+            this.Shop_Id_textBox.Location = new System.Drawing.Point(154, 106);
+            this.Shop_Id_textBox.Name = "Shop_Id_textBox";
+            this.Shop_Id_textBox.Size = new System.Drawing.Size(172, 19);
+            this.Shop_Id_textBox.TabIndex = 25;
             // 
-            // label6
+            // Address_label
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(34, 241);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "住所";
+            this.Address_label.AutoSize = true;
+            this.Address_label.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Address_label.Location = new System.Drawing.Point(34, 241);
+            this.Address_label.Name = "Address_label";
+            this.Address_label.Size = new System.Drawing.Size(29, 12);
+            this.Address_label.TabIndex = 24;
+            this.Address_label.Text = "住所";
             // 
-            // label5
+            // Telnumber_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(34, 196);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "電話番号";
+            this.Telnumber_label.AutoSize = true;
+            this.Telnumber_label.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Telnumber_label.Location = new System.Drawing.Point(34, 196);
+            this.Telnumber_label.Name = "Telnumber_label";
+            this.Telnumber_label.Size = new System.Drawing.Size(53, 12);
+            this.Telnumber_label.TabIndex = 23;
+            this.Telnumber_label.Text = "電話番号";
             // 
-            // label4
+            // ShopName_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(34, 151);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "ショップ名";
+            this.ShopName_label.AutoSize = true;
+            this.ShopName_label.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ShopName_label.Location = new System.Drawing.Point(34, 151);
+            this.ShopName_label.Name = "ShopName_label";
+            this.ShopName_label.Size = new System.Drawing.Size(65, 12);
+            this.ShopName_label.TabIndex = 22;
+            this.ShopName_label.Text = "ショップ名";
             // 
-            // label3
+            // Shop_Id_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(34, 106);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 12);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "ショップID";
+            this.Shop_Id_label.AutoSize = true;
+            this.Shop_Id_label.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Shop_Id_label.Location = new System.Drawing.Point(34, 106);
+            this.Shop_Id_label.Name = "Shop_Id_label";
+            this.Shop_Id_label.Size = new System.Drawing.Size(63, 12);
+            this.Shop_Id_label.TabIndex = 21;
+            this.Shop_Id_label.Text = "ショップID";
             // 
-            // button2
+            // back_button
             // 
-            this.button2.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(434, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 41);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "もどる";
-            this.button2.UseVisualStyleBackColor = true;
+            this.back_button.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.back_button.Location = new System.Drawing.Point(434, 12);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(88, 41);
+            this.back_button.TabIndex = 49;
+            this.back_button.Text = "もどる";
+            this.back_button.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Home_button
             // 
-            this.button1.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Image = global::SystemDevelop.Properties.Resources.touka_home1;
-            this.button1.Location = new System.Drawing.Point(340, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 41);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "ホーム";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.Home_button.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Home_button.Image = global::SystemDevelop.Properties.Resources.touka_home1;
+            this.Home_button.Location = new System.Drawing.Point(340, 12);
+            this.Home_button.Name = "Home_button";
+            this.Home_button.Size = new System.Drawing.Size(88, 41);
+            this.Home_button.TabIndex = 48;
+            this.Home_button.Text = "ホーム";
+            this.Home_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Home_button.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // Date_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(109, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 47;
-            this.label2.Text = "日付";
+            this.Date_label.AutoSize = true;
+            this.Date_label.Location = new System.Drawing.Point(109, 26);
+            this.Date_label.Name = "Date_label";
+            this.Date_label.Size = new System.Drawing.Size(29, 12);
+            this.Date_label.TabIndex = 47;
+            this.Date_label.Text = "日付";
             // 
-            // label1
+            // UserName_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 12);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "ユーザー名";
+            this.UserName_label.AutoSize = true;
+            this.UserName_label.Location = new System.Drawing.Point(32, 26);
+            this.UserName_label.Name = "UserName_label";
+            this.UserName_label.Size = new System.Drawing.Size(57, 12);
+            this.UserName_label.TabIndex = 46;
+            this.UserName_label.Text = "ユーザー名";
             // 
             // ShopAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 321);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.back_button);
+            this.Controls.Add(this.Home_button);
+            this.Controls.Add(this.Date_label);
+            this.Controls.Add(this.UserName_label);
+            this.Controls.Add(this.Addbutton);
+            this.Controls.Add(this.Address_textBox);
+            this.Controls.Add(this.Telnumber_textBox);
+            this.Controls.Add(this.ShopName_textBox);
+            this.Controls.Add(this.Shop_Id_textBox);
+            this.Controls.Add(this.Address_label);
+            this.Controls.Add(this.Telnumber_label);
+            this.Controls.Add(this.ShopName_label);
+            this.Controls.Add(this.Shop_Id_label);
             this.Name = "ShopAdd";
             this.Text = "ショップ追加";
             this.Load += new System.EventHandler(this.ShopAdd_Load);
@@ -189,18 +189,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Addbutton;
+        private System.Windows.Forms.TextBox Address_textBox;
+        private System.Windows.Forms.TextBox Telnumber_textBox;
+        private System.Windows.Forms.TextBox ShopName_textBox;
+        private System.Windows.Forms.TextBox Shop_Id_textBox;
+        private System.Windows.Forms.Label Address_label;
+        private System.Windows.Forms.Label Telnumber_label;
+        private System.Windows.Forms.Label ShopName_label;
+        private System.Windows.Forms.Label Shop_Id_label;
+        private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.Button Home_button;
+        private System.Windows.Forms.Label Date_label;
+        private System.Windows.Forms.Label UserName_label;
     }
 }

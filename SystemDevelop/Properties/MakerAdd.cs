@@ -31,5 +31,15 @@ namespace SystemDevelop.Properties
         {
 
         }
+
+        private void Homebutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Backbutton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

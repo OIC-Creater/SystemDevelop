@@ -28,63 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.back_button = new System.Windows.Forms.Button();
+            this.Date_label = new System.Windows.Forms.Label();
+            this.UserName_label = new System.Windows.Forms.Label();
+            this.Home_button = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.SetttingChange_dataGridView = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SetttingChange_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // back_button
             // 
-            this.button2.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(514, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 44);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "もどる";
-            this.button2.UseVisualStyleBackColor = true;
+            this.back_button.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.back_button.Location = new System.Drawing.Point(514, 12);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(88, 44);
+            this.back_button.TabIndex = 37;
+            this.back_button.Text = "もどる";
+            this.back_button.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // Date_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(106, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "日付";
+            this.Date_label.AutoSize = true;
+            this.Date_label.Location = new System.Drawing.Point(106, 26);
+            this.Date_label.Name = "Date_label";
+            this.Date_label.Size = new System.Drawing.Size(29, 12);
+            this.Date_label.TabIndex = 35;
+            this.Date_label.Text = "日付";
             // 
-            // label1
+            // UserName_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 12);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "ユーザー名";
+            this.UserName_label.AutoSize = true;
+            this.UserName_label.Location = new System.Drawing.Point(33, 26);
+            this.UserName_label.Name = "UserName_label";
+            this.UserName_label.Size = new System.Drawing.Size(57, 12);
+            this.UserName_label.TabIndex = 34;
+            this.UserName_label.Text = "ユーザー名";
             // 
-            // button1
+            // Home_button
             // 
-            this.button1.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Image = global::SystemDevelop.Properties.Resources.touka_home1;
-            this.button1.Location = new System.Drawing.Point(420, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 44);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "ホーム";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.Home_button.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Home_button.Image = global::SystemDevelop.Properties.Resources.touka_home1;
+            this.Home_button.Location = new System.Drawing.Point(420, 12);
+            this.Home_button.Name = "Home_button";
+            this.Home_button.Size = new System.Drawing.Size(88, 44);
+            this.Home_button.TabIndex = 36;
+            this.Home_button.Text = "ホーム";
+            this.Home_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Home_button.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.vScrollBar1);
+            this.panel1.Controls.Add(this.SetttingChange_dataGridView);
+            this.panel1.Location = new System.Drawing.Point(35, 98);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(528, 264);
+            this.panel1.TabIndex = 38;
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(507, 0);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(21, 264);
+            this.vScrollBar1.TabIndex = 1;
+            // 
+            // SetttingChange_dataGridView
+            // 
+            this.SetttingChange_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SetttingChange_dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SetttingChange_dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.SetttingChange_dataGridView.Name = "SetttingChange_dataGridView";
+            this.SetttingChange_dataGridView.RowTemplate.Height = 21;
+            this.SetttingChange_dataGridView.Size = new System.Drawing.Size(528, 264);
+            this.SetttingChange_dataGridView.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 451);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.back_button);
+            this.Controls.Add(this.Home_button);
+            this.Controls.Add(this.Date_label);
+            this.Controls.Add(this.UserName_label);
             this.Name = "Form1";
             this.Text = "設定変更";
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SetttingChange_dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,9 +126,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.Button Home_button;
+        private System.Windows.Forms.Label Date_label;
+        private System.Windows.Forms.Label UserName_label;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.DataGridView SetttingChange_dataGridView;
     }
 }

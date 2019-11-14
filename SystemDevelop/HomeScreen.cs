@@ -49,5 +49,45 @@ namespace SystemDevelop
                 
 
         }
+
+        private void ProductList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StockList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AwardInput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ManufacturerOrderList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UndispatchedList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShopList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MakerList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
