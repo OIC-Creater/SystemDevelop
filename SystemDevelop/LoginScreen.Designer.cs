@@ -38,9 +38,9 @@
             // login_button
             // 
             this.login_button.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.login_button.Location = new System.Drawing.Point(132, 186);
+            this.login_button.Location = new System.Drawing.Point(499, 340);
             this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(205, 43);
+            this.login_button.Size = new System.Drawing.Size(500, 64);
             this.login_button.TabIndex = 9;
             this.login_button.Text = "ログイン";
             this.login_button.UseVisualStyleBackColor = true;
@@ -49,19 +49,18 @@
             // passWordTextBox
             // 
             this.passWordTextBox.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.passWordTextBox.Location = new System.Drawing.Point(132, 110);
+            this.passWordTextBox.Location = new System.Drawing.Point(499, 264);
             this.passWordTextBox.Name = "passWordTextBox";
             this.passWordTextBox.PasswordChar = '*';
-            this.passWordTextBox.Size = new System.Drawing.Size(205, 23);
+            this.passWordTextBox.Size = new System.Drawing.Size(500, 23);
             this.passWordTextBox.TabIndex = 8;
-            this.passWordTextBox.TextChanged += new System.EventHandler(this.passWordTextBox_TextChanged);
             this.passWordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passWordTextBox_KeyDown);
             // 
             // password_lbl
             // 
             this.password_lbl.AutoSize = true;
             this.password_lbl.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.password_lbl.Location = new System.Drawing.Point(12, 110);
+            this.password_lbl.Location = new System.Drawing.Point(379, 264);
             this.password_lbl.Name = "password_lbl";
             this.password_lbl.Size = new System.Drawing.Size(114, 19);
             this.password_lbl.TabIndex = 6;
@@ -71,7 +70,7 @@
             // 
             this.emp_id_lbl.AutoSize = true;
             this.emp_id_lbl.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.emp_id_lbl.Location = new System.Drawing.Point(50, 47);
+            this.emp_id_lbl.Location = new System.Drawing.Point(417, 201);
             this.emp_id_lbl.Name = "emp_id_lbl";
             this.emp_id_lbl.Size = new System.Drawing.Size(69, 19);
             this.emp_id_lbl.TabIndex = 5;
@@ -80,23 +79,24 @@
             // idTextBox
             // 
             this.idTextBox.Font = new System.Drawing.Font("HG創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.idTextBox.Location = new System.Drawing.Point(132, 47);
+            this.idTextBox.Location = new System.Drawing.Point(499, 201);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(205, 23);
+            this.idTextBox.Size = new System.Drawing.Size(500, 23);
             this.idTextBox.TabIndex = 7;
-            this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
             this.idTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.idTextBox_KeyDown);
             // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 265);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ControlBox = false;
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.passWordTextBox);
             this.Controls.Add(this.password_lbl);
             this.Controls.Add(this.emp_id_lbl);
+            this.HelpButton = true;
             this.Name = "LoginScreen";
             this.Text = "ログイン画面";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginScreen_KeyDown);
