@@ -17,6 +17,7 @@ namespace SystemDevelop
 
         private HomeScreen homeScreen;
         private Login login;
+        private bool menuBar = true;
         public LoginScreen()
         {
             InitializeComponent();
@@ -26,25 +27,17 @@ namespace SystemDevelop
         
         private void LoginScreen_Load(object sender, EventArgs e)
         {
-            //タブを左側に表示する
             menuControl.Alignment = TabAlignment.Left;
 
-            //TabControlをオーナードローする
             menuControl.DrawMode = TabDrawMode.OwnerDrawFixed;
-            //DrawItemイベントハンドラを追加
             menuControl.DrawItem += new DrawItemEventHandler(TabControl1_DrawItem);
-            for (int i = 1; menuControl.TabPages.Count >= i; i++)
-            {
-                menuControl.TabPages.Remove(menuControl.TabPages[i]);
-            }
+            menuControl.TabPages.Remove(stockPage);
+            menuControl.TabPages.Remove(orderPage);
+            menuControl.TabPages.Remove(productPage);
+            menuControl.TabPages.Remove(reciveOrderPage);
+
         }
-        
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-            login.AuthUser(idTextBox.Text, passTextBox.Text);
-        }
-       
+
         private void LoginScreen_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
@@ -71,35 +64,61 @@ namespace SystemDevelop
 
         private void TabControl1_DrawItem(object sender, DrawItemEventArgs e)
         {
-            //対象のTabControlを取得
             TabControl tab = (TabControl)sender;
             TabPage page = tab.TabPages[e.Index];
-            //タブページのテキストを取得
             string txt = page.Text;
 
-            //StringFormatを作成
             StringFormat sf = new StringFormat();
-            //水平垂直方向の中央に、行が完全に表示されるようにする
             sf.LineAlignment = StringAlignment.Center;
             sf.Alignment = StringAlignment.Center;
             sf.FormatFlags |= StringFormatFlags.LineLimit;
 
-            //タブのテキストと背景を描画するためのブラシを決定する
             Brush foreBrush, backBrush;
             if ((e.State & DrawItemState.Selected) == DrawItemState.Selected)
             {
-                //選択されているタブのテキストを赤、背景を青とする
                 foreBrush = Brushes.Black;
                 backBrush = Brushes.LightBlue;
             }
             else
             {
-                //選択されていないタブのテキストは灰色、背景を白とする
                 foreBrush = Brushes.Gray;
                 backBrush = Brushes.White;
             }
             e.Graphics.FillRectangle(backBrush, e.Bounds);
             e.Graphics.DrawString(txt, page.Font, foreBrush, e.Bounds, sf);
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            bool logined = login.AuthUser(idTextBox.Text, passTextBox.Text);
+            if (logined)
+            {
+                menuControl.TabPages.Insert(1,stockPage);
+                menuControl.TabPages.Insert(2,orderPage);
+                menuControl.TabPages.Insert(3,productPage);
+                menuControl.TabPages.Insert(4,reciveOrderPage);
+            }
+        }
+
+        private void MenuBarButton_Click(object sender, EventArgs e)
+        {
+            menuControl.Visible = false;
+            if (menuBar)
+            {
+                menuControl.ItemSize = new Size(0, 1);
+                menuControl.SizeMode = TabSizeMode.Fixed;
+                menuBar = false;
+                menuBarButton.Text = ">";
+            }
+            else
+            {
+                menuControl.ItemSize = new Size(350, 200);
+                menuControl.SizeMode = TabSizeMode.Normal;
+                menuBar = true;
+                menuBarButton.Text = "<";
+            }
+            menuControl.Visible = true;
+
         }
     }
 }

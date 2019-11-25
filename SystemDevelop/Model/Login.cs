@@ -22,9 +22,9 @@ namespace SystemDevelop.Model
                 this.oleDb = oleDb;
             }
         }
-        public void AuthUser(string user, string pass)
+        public bool AuthUser(string user, string pass)
         {
-            PasswordHash ph = new PasswordHash();
+            /*PasswordHash ph = new PasswordHash();
             string hashedPass = ph.Hash(pass);
             
             string sql = $"SELECT * FROM ログイン認証 WHERE pass = '{hashedPass}' AND id = '{user}'";
@@ -38,16 +38,20 @@ namespace SystemDevelop.Model
                 {
                     homeScreen.Show();
                     loginScreen.Hide();
+                    return true;
                 }
                 else
                 {
                     MessageBox.Show("IDまたはパスワードが間違っています");
+                    return false;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+                return false;
+            }*/
+            return true;
         }
     }
 }
