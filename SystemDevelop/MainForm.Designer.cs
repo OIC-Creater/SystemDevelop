@@ -45,7 +45,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.reciveOrderPage = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
-            this.header1 = new SystemDevelop.Header();
+            this.header = new SystemDevelop.Header();
             this.menuControl.SuspendLayout();
             this.loginPage.SuspendLayout();
             this.stockPage.SuspendLayout();
@@ -65,6 +65,7 @@
             this.menuControl.Controls.Add(this.orderPage);
             this.menuControl.Controls.Add(this.productPage);
             this.menuControl.Controls.Add(this.reciveOrderPage);
+            this.menuControl.Cursor = System.Windows.Forms.Cursors.Default;
             this.menuControl.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.menuControl.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.menuControl.ItemSize = new System.Drawing.Size(350, 200);
@@ -264,21 +265,21 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.MenuBarButton_Click);
             // 
-            // header1
+            // header
             // 
-            this.header1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.header1.Location = new System.Drawing.Point(0, 1);
-            this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(1264, 80);
-            this.header1.TabIndex = 11;
+            this.header.Location = new System.Drawing.Point(0, 1);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(1264, 80);
+            this.header.TabIndex = 11;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 871);
-            this.Controls.Add(this.header1);
+            this.Controls.Add(this.header);
             this.Controls.Add(this.menuControl);
             this.DoubleBuffered = true;
             this.HelpButton = true;
@@ -315,7 +316,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private Header header1;
+        private Header header;
         public System.Windows.Forms.TabControl menuControl;
     }
 }

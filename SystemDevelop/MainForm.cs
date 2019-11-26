@@ -15,14 +15,36 @@ namespace SystemDevelop
     public partial class MainForm : Form
     {
         private Login login;
+        private bool menuBar = true;
+
         public MainForm()
         {
             InitializeComponent();
             login = new Login(this);
             this.WindowState = FormWindowState.Maximized;
-
+            header.menuButton.Click += button_Click;
         }
 
+        private void  button_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            menuControl.Visible = false;
+            if (menuBar)
+            {
+                menuControl.ItemSize = new Size(0, 1);
+                menuControl.SizeMode = TabSizeMode.Fixed;
+                menuBar = false;
+                button.Text = ">";
+            }
+            else
+            {
+                menuControl.ItemSize = new Size(350, 200);
+                menuControl.SizeMode = TabSizeMode.Normal;
+                menuBar = true;
+                button.Text = "<";
+            }
+            menuControl.Visible = true;
+        }
         private void LoginScreen_Load(object sender, EventArgs e)
         {
             menuControl.Alignment = TabAlignment.Left;

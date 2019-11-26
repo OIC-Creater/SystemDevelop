@@ -58,8 +58,7 @@
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(169, 77);
             this.menuButton.TabIndex = 1;
-            this.menuButton.UseVisualStyleBackColor = false;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            this.menuButton.UseVisualStyleBackColor = true;
             // 
             // Header
             // 
@@ -76,6 +75,6 @@
         #endregion
 
         private System.Windows.Forms.Button logoutButton;
-        private System.Windows.Forms.Button menuButton;
+        public System.Windows.Forms.Button menuButton;
     }
 }
