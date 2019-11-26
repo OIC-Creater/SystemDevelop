@@ -1,9 +1,6 @@
 ﻿
 using SystemDevelop.Model.DB;
 using System.Data.OleDb;
-using System.Data;
-using System.Windows.Forms;
-using System;
 
 namespace SystemDevelop.Model
 {
@@ -20,7 +17,7 @@ namespace SystemDevelop.Model
                 this.oleDb = oleDb;
             }
         }
-        public bool AuthUser(string user, string pass)
+        public (bool result,int syozoku) AuthUser(string user, string pass)
         {
             /*PasswordHash ph = new PasswordHash();
             string hashedPass = ph.Hash(pass);
@@ -49,7 +46,7 @@ namespace SystemDevelop.Model
                 MessageBox.Show(ex.Message);
                 return false;
             }*/
-            return true;
+            return (true,2);
         }
     }
 }

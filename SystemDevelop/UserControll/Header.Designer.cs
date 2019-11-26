@@ -28,53 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Header));
+            this.userLabel = new System.Windows.Forms.Label();
             this.logoutButton = new System.Windows.Forms.Button();
-            this.menuButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // userLabel
+            // 
+            this.userLabel.AutoSize = true;
+            this.userLabel.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.userLabel.Location = new System.Drawing.Point(3, 26);
+            this.userLabel.Name = "userLabel";
+            this.userLabel.Size = new System.Drawing.Size(95, 19);
+            this.userLabel.TabIndex = 1;
+            this.userLabel.Text = "ログイン中：";
             // 
             // logoutButton
             // 
             this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutButton.BackColor = System.Drawing.SystemColors.Info;
+            this.logoutButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Image = global::SystemDevelop.Properties.Resources.touka_logout;
             this.logoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.logoutButton.Location = new System.Drawing.Point(715, 0);
+            this.logoutButton.Location = new System.Drawing.Point(715, -4);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(172, 77);
+            this.logoutButton.Size = new System.Drawing.Size(172, 85);
             this.logoutButton.TabIndex = 0;
             this.logoutButton.Text = "ログアウト";
             this.logoutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.logoutButton.UseVisualStyleBackColor = true;
-            // 
-            // menuButton
-            // 
-            this.menuButton.BackColor = System.Drawing.Color.White;
-            this.menuButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuButton.BackgroundImage")));
-            this.menuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.menuButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveBorder;
-            this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menuButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.menuButton.Location = new System.Drawing.Point(0, 0);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(169, 77);
-            this.menuButton.TabIndex = 1;
-            this.menuButton.UseVisualStyleBackColor = true;
+            this.logoutButton.UseVisualStyleBackColor = false;
             // 
             // Header
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.menuButton);
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Controls.Add(this.userLabel);
             this.Controls.Add(this.logoutButton);
             this.Name = "Header";
             this.Size = new System.Drawing.Size(887, 77);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button logoutButton;
-        public System.Windows.Forms.Button menuButton;
+        public System.Windows.Forms.Label userLabel;
+        public System.Windows.Forms.Button logoutButton;
     }
 }

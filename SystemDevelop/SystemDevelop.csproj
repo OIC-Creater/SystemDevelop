@@ -79,10 +79,10 @@
     <Compile Include="DataModels\Shop.cs" />
     <Compile Include="DataModels\Status.cs" />
     <Compile Include="DataModels\Stock.cs" />
-    <Compile Include="Header.cs">
+    <Compile Include="UserControll\Header.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Header.Designer.cs">
+    <Compile Include="UserControll\Header.Designer.cs">
       <DependentUpon>Header.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Login.cs" />
@@ -182,7 +182,25 @@
     <Compile Include="Properties\UndispatchedList.Designer.cs">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Header.resx">
+    <Compile Include="UserControll\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControll\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControll\SalesMenuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControll\SalesMenuBar.Designer.cs">
+      <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControll\WarehouseMenuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControll\WarehouseMenuBar.Designer.cs">
+      <DependentUpon>WarehouseMenuBar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControll\Header.resx">
       <DependentUpon>Header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -239,6 +257,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\UndispatchedList.resx">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControll\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControll\SalesMenuBar.resx">
+      <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControll\WarehouseMenuBar.resx">
+      <DependentUpon>WarehouseMenuBar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
