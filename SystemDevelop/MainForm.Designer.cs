@@ -32,6 +32,7 @@
             this.headerControl = new SystemDevelop.Header();
             this.loginControl = new SystemDevelop.UserControll.Login();
             this.warehouseMenuBar = new SystemDevelop.UserControll.WarehouseMenuBar();
+            this.reciveControl = new SystemDevelop.UserControll.Recive();
             this.SuspendLayout();
             // 
             // salesMenuBar
@@ -68,11 +69,21 @@
             this.warehouseMenuBar.Size = new System.Drawing.Size(231, 789);
             this.warehouseMenuBar.TabIndex = 14;
             // 
+            // reciveControl
+            // 
+            this.reciveControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reciveControl.Location = new System.Drawing.Point(231, 81);
+            this.reciveControl.Name = "reciveControl";
+            this.reciveControl.Size = new System.Drawing.Size(1033, 789);
+            this.reciveControl.TabIndex = 15;
+            this.reciveControl.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 871);
+            this.Controls.Add(this.reciveControl);
             this.Controls.Add(this.warehouseMenuBar);
             this.Controls.Add(this.salesMenuBar);
             this.Controls.Add(this.headerControl);
@@ -92,6 +103,7 @@
         private UserControll.Login loginControl;
         private UserControll.SalesMenuBar salesMenuBar;
         private UserControll.WarehouseMenuBar warehouseMenuBar;
+        private UserControll.Recive reciveControl;
     }
 }
 

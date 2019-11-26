@@ -18,6 +18,7 @@ namespace SystemDevelop
             this.WindowState = FormWindowState.Maximized;
             loginControl.loginButton.Click += LoginButtonClick;
             headerControl.logoutButton.Click += LogoutButtonClick;
+            salesMenuBar.recive.Click += ReciveButtonClick;
             warehouseMenuBar.Visible = false;
             salesMenuBar.Visible = false;
             headerControl.Visible = false;
@@ -49,6 +50,12 @@ namespace SystemDevelop
             {
                 login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text);
             }
+        }
+
+
+        private void ReciveButtonClick(object sender, EventArgs e)
+        {
+            reciveControl.Visible = true;
         }
 
         private void LoginButtonClick(object sender, EventArgs e)

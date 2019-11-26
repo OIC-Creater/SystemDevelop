@@ -81,14 +81,14 @@
             this.pigeon.UseVisualStyleBackColor = false;
             this.pigeon.Click += new System.EventHandler(this.pigeon_Click);
             // 
-            // MenuBar
+            // SalesMenuBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pigeon);
             this.Controls.Add(this.reciveDetail);
             this.Controls.Add(this.recive);
-            this.Name = "MenuBar";
+            this.Name = "SalesMenuBar";
             this.Size = new System.Drawing.Size(216, 689);
             this.Load += new System.EventHandler(this.MenuBar_Load);
             this.ResumeLayout(false);
@@ -96,9 +96,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button recive;
-        private System.Windows.Forms.Button reciveDetail;
         private System.Windows.Forms.Button pigeon;
+        public System.Windows.Forms.Button reciveDetail;
+        public System.Windows.Forms.Button recive;
     }
 }
