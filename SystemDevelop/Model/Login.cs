@@ -11,12 +11,10 @@ namespace SystemDevelop.Model
     {
         private DbCreate dbCreate = new DbCreate();
         private OleDbConnection oleDb;
-        private HomeScreen homeScreen;
-        private LoginScreen loginScreen;
-        public Login(HomeScreen homeScreen,LoginScreen loginScreen)
+        private MainForm loginScreen;
+        public Login(MainForm loginScreen)
         {
             this.loginScreen = loginScreen;
-            this.homeScreen = homeScreen;
             if (dbCreate.ConnectDb(out OleDbConnection oleDb))
             {
                 this.oleDb = oleDb;

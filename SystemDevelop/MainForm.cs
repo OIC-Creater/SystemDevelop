@@ -12,19 +12,17 @@ using SystemDevelop.Model;
 
 namespace SystemDevelop
 {
-    public partial class LoginScreen : Form
+    public partial class MainForm : Form
     {
-
-        private HomeScreen homeScreen;
         private Login login;
-        private bool menuBar = true;
-        public LoginScreen()
+        public MainForm()
         {
             InitializeComponent();
-            homeScreen = new HomeScreen(this);
-            login = new Login(homeScreen,this);
+            login = new Login(this);
+            this.WindowState = FormWindowState.Maximized;
+
         }
-        
+
         private void LoginScreen_Load(object sender, EventArgs e)
         {
             menuControl.Alignment = TabAlignment.Left;
@@ -102,22 +100,23 @@ namespace SystemDevelop
 
         private void MenuBarButton_Click(object sender, EventArgs e)
         {
+            /*Button button = (Button)sender;
             menuControl.Visible = false;
             if (menuBar)
             {
                 menuControl.ItemSize = new Size(0, 1);
                 menuControl.SizeMode = TabSizeMode.Fixed;
                 menuBar = false;
-                menuBarButton.Text = ">";
+                button.Text = ">";
             }
             else
             {
                 menuControl.ItemSize = new Size(350, 200);
                 menuControl.SizeMode = TabSizeMode.Normal;
                 menuBar = true;
-                menuBarButton.Text = "<";
+                button.Text = "<";
             }
-            menuControl.Visible = true;
+            menuControl.Visible = true;*/
 
         }
     }
