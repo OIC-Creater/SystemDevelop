@@ -41,6 +41,7 @@
             this.salesMenuBar.Name = "salesMenuBar";
             this.salesMenuBar.Size = new System.Drawing.Size(231, 789);
             this.salesMenuBar.TabIndex = 13;
+            this.salesMenuBar.Visible = false;
             // 
             // headerControl
             // 
@@ -51,6 +52,7 @@
             this.headerControl.Name = "headerControl";
             this.headerControl.Size = new System.Drawing.Size(1264, 80);
             this.headerControl.TabIndex = 11;
+            this.headerControl.Visible = false;
             // 
             // loginControl
             // 
@@ -68,10 +70,13 @@
             this.warehouseMenuBar.Name = "warehouseMenuBar";
             this.warehouseMenuBar.Size = new System.Drawing.Size(231, 789);
             this.warehouseMenuBar.TabIndex = 14;
+            this.warehouseMenuBar.Visible = false;
             // 
             // reciveControl
             // 
-            this.reciveControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reciveControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.reciveControl.Location = new System.Drawing.Point(231, 81);
             this.reciveControl.Name = "reciveControl";
             this.reciveControl.Size = new System.Drawing.Size(1033, 789);
@@ -89,10 +94,12 @@
             this.Controls.Add(this.headerControl);
             this.Controls.Add(this.loginControl);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
             this.MinimumSize = new System.Drawing.Size(910, 638);
             this.Name = "MainForm";
             this.Text = "ログイン画面";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

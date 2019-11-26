@@ -15,16 +15,9 @@ namespace SystemDevelop
         {
             InitializeComponent();
             login = new Login(this);
-            this.WindowState = FormWindowState.Maximized;
             loginControl.loginButton.Click += LoginButtonClick;
             headerControl.logoutButton.Click += LogoutButtonClick;
             salesMenuBar.recive.Click += ReciveButtonClick;
-            warehouseMenuBar.Visible = false;
-            salesMenuBar.Visible = false;
-            headerControl.Visible = false;
-            loginControl.Visible = true;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
 
         }
 

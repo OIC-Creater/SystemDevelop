@@ -43,10 +43,10 @@
             // 
             // shopLabel
             // 
-            this.shopLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shopLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.shopLabel.AutoSize = true;
             this.shopLabel.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.shopLabel.Location = new System.Drawing.Point(106, 93);
+            this.shopLabel.Location = new System.Drawing.Point(160, 94);
             this.shopLabel.Name = "shopLabel";
             this.shopLabel.Size = new System.Drawing.Size(104, 33);
             this.shopLabel.TabIndex = 0;
@@ -54,10 +54,10 @@
             // 
             // honorificLabel
             // 
-            this.honorificLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.honorificLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.honorificLabel.AutoSize = true;
             this.honorificLabel.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.honorificLabel.Location = new System.Drawing.Point(735, 96);
+            this.honorificLabel.Location = new System.Drawing.Point(789, 97);
             this.honorificLabel.Name = "honorificLabel";
             this.honorificLabel.Size = new System.Drawing.Size(48, 33);
             this.honorificLabel.TabIndex = 1;
@@ -65,10 +65,10 @@
             // 
             // productLabel
             // 
-            this.productLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.productLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.productLabel.AutoSize = true;
             this.productLabel.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.productLabel.Location = new System.Drawing.Point(106, 248);
+            this.productLabel.Location = new System.Drawing.Point(160, 249);
             this.productLabel.Name = "productLabel";
             this.productLabel.Size = new System.Drawing.Size(81, 33);
             this.productLabel.TabIndex = 3;
@@ -76,10 +76,10 @@
             // 
             // amountLabel
             // 
-            this.amountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.amountLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.amountLabel.AutoSize = true;
             this.amountLabel.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.amountLabel.Location = new System.Drawing.Point(106, 383);
+            this.amountLabel.Location = new System.Drawing.Point(160, 384);
             this.amountLabel.Name = "amountLabel";
             this.amountLabel.Size = new System.Drawing.Size(81, 33);
             this.amountLabel.TabIndex = 4;
@@ -87,10 +87,10 @@
             // 
             // pigeonLabel
             // 
-            this.pigeonLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pigeonLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pigeonLabel.AutoSize = true;
             this.pigeonLabel.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.pigeonLabel.Location = new System.Drawing.Point(106, 513);
+            this.pigeonLabel.Location = new System.Drawing.Point(160, 514);
             this.pigeonLabel.Name = "pigeonLabel";
             this.pigeonLabel.Size = new System.Drawing.Size(133, 33);
             this.pigeonLabel.TabIndex = 6;
@@ -98,10 +98,10 @@
             // 
             // addButton
             // 
-            this.addButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.addButton.AutoSize = true;
             this.addButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.addButton.Location = new System.Drawing.Point(679, 649);
+            this.addButton.Location = new System.Drawing.Point(733, 650);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(104, 43);
             this.addButton.TabIndex = 7;
@@ -110,49 +110,49 @@
             // 
             // shopComboBox
             // 
-            this.shopComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shopComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.shopComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.shopComboBox.FormattingEnabled = true;
-            this.shopComboBox.Location = new System.Drawing.Point(331, 90);
+            this.shopComboBox.Location = new System.Drawing.Point(385, 91);
             this.shopComboBox.Name = "shopComboBox";
             this.shopComboBox.Size = new System.Drawing.Size(398, 41);
             this.shopComboBox.TabIndex = 8;
             // 
             // productComboBox
             // 
-            this.productComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.productComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.productComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.productComboBox.FormattingEnabled = true;
-            this.productComboBox.Location = new System.Drawing.Point(331, 240);
+            this.productComboBox.Location = new System.Drawing.Point(385, 241);
             this.productComboBox.Name = "productComboBox";
             this.productComboBox.Size = new System.Drawing.Size(398, 41);
             this.productComboBox.TabIndex = 9;
             // 
             // pigeonComboBox
             // 
-            this.pigeonComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pigeonComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pigeonComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.pigeonComboBox.FormattingEnabled = true;
-            this.pigeonComboBox.Location = new System.Drawing.Point(331, 510);
+            this.pigeonComboBox.Location = new System.Drawing.Point(385, 511);
             this.pigeonComboBox.Name = "pigeonComboBox";
             this.pigeonComboBox.Size = new System.Drawing.Size(398, 41);
             this.pigeonComboBox.TabIndex = 10;
             // 
             // amountTextBox
             // 
-            this.amountTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.amountTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.amountTextBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.amountTextBox.Location = new System.Drawing.Point(591, 380);
+            this.amountTextBox.Location = new System.Drawing.Point(385, 381);
             this.amountTextBox.Name = "amountTextBox";
-            this.amountTextBox.Size = new System.Drawing.Size(138, 39);
+            this.amountTextBox.Size = new System.Drawing.Size(398, 39);
             this.amountTextBox.TabIndex = 11;
             // 
             // piecesLabel
             // 
-            this.piecesLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.piecesLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.piecesLabel.AutoSize = true;
             this.piecesLabel.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.piecesLabel.Location = new System.Drawing.Point(735, 383);
+            this.piecesLabel.Location = new System.Drawing.Point(789, 384);
             this.piecesLabel.Name = "piecesLabel";
             this.piecesLabel.Size = new System.Drawing.Size(48, 33);
             this.piecesLabel.TabIndex = 12;
