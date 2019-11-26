@@ -22,6 +22,8 @@ namespace SystemDevelop
             salesMenuBar.Visible = false;
             headerControl.Visible = false;
             loginControl.Visible = true;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
 
         }
 
@@ -75,11 +77,12 @@ namespace SystemDevelop
 
         private void LogoutButtonClick(object sender, EventArgs e)
         {
-            logined = false;
+            /*logined = false;
             warehouseMenuBar.Visible = false;
             salesMenuBar.Visible = false;
             headerControl.Visible = false;
-            loginControl.Visible = true;
+            loginControl.Visible = true;*/
+            this.Close();
         }
     }
 }
