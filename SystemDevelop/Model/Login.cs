@@ -1,9 +1,6 @@
 ﻿
 using SystemDevelop.Model.DB;
 using System.Data.OleDb;
-using System.Data;
-using System.Windows.Forms;
-using System;
 
 namespace SystemDevelop.Model
 {
@@ -11,18 +8,16 @@ namespace SystemDevelop.Model
     {
         private DbCreate dbCreate = new DbCreate();
         private OleDbConnection oleDb;
-        private HomeScreen homeScreen;
-        private LoginScreen loginScreen;
-        public Login(HomeScreen homeScreen,LoginScreen loginScreen)
+        private MainForm loginScreen;
+        public Login(MainForm loginScreen)
         {
             this.loginScreen = loginScreen;
-            this.homeScreen = homeScreen;
             if (dbCreate.ConnectDb(out OleDbConnection oleDb))
             {
                 this.oleDb = oleDb;
             }
         }
-        public bool AuthUser(string user, string pass)
+        public (bool result,int syozoku) AuthUser(string user, string pass)
         {
             /*PasswordHash ph = new PasswordHash();
             string hashedPass = ph.Hash(pass);
@@ -51,7 +46,7 @@ namespace SystemDevelop.Model
                 MessageBox.Show(ex.Message);
                 return false;
             }*/
-            return true;
+            return (true,1);
         }
     }
 }
