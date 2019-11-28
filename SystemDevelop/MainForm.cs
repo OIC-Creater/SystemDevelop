@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using SystemDevelop.DataModels;
 using SystemDevelop.Model;
 
 
@@ -10,6 +11,7 @@ namespace SystemDevelop
     {
         private Login login;
         private bool logined = false;
+        private Employee employee;
 
         public MainForm()
         {
@@ -25,7 +27,7 @@ namespace SystemDevelop
         {
             if(e.KeyCode == Keys.Enter)
             {
-                login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text);
+                Login();
             }
         }
 
@@ -33,7 +35,7 @@ namespace SystemDevelop
         {
             if (e.KeyCode == Keys.Enter)
             {
-                login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text);
+                Login();
             }
         }
 
@@ -41,7 +43,7 @@ namespace SystemDevelop
         {
             if (e.KeyCode == Keys.Enter)
             {
-                login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text);
+                Login();
             }
         }
 
@@ -53,12 +55,17 @@ namespace SystemDevelop
 
         private void LoginButtonClick(object sender, EventArgs e)
         {
-            var result = login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text);
-            if (result.result)
+            Login();
+        }
+        
+        private void Login()
+        {
+            if (login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text, out employee))
             {
+                headerControl.userLabel.Text += $" {employee.Name}";
                 logined = true;
                 headerControl.Visible = true;
-                switch (result.syozoku)
+                switch (employee.BelongsID)
                 {
                     case 1:
                         salesMenuBar.Visible = true;
@@ -71,18 +78,16 @@ namespace SystemDevelop
                         warehouseMenuBar.Visible = true;
                         break;
                 }
-                
             }
         }
 
         private void LogoutButtonClick(object sender, EventArgs e)
         {
-            /*logined = false;
+            logined = false;
             warehouseMenuBar.Visible = false;
             salesMenuBar.Visible = false;
             headerControl.Visible = false;
-            loginControl.Visible = true;*/
-            this.Close();
+            loginControl.Visible = true;
         }
     }
 }

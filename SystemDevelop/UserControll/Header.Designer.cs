@@ -36,6 +36,7 @@
             // 
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.userLabel.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.userLabel.Location = new System.Drawing.Point(3, 26);
             this.userLabel.Name = "userLabel";
             this.userLabel.Size = new System.Drawing.Size(95, 19);

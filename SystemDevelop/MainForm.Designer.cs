@@ -61,7 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.loginControl.Location = new System.Drawing.Point(0, 1);
             this.loginControl.Name = "loginControl";
-            this.loginControl.Size = new System.Drawing.Size(1264, 869);
+            this.loginControl.Size = new System.Drawing.Size(1264, 786);
             this.loginControl.TabIndex = 12;
             // 
             // warehouseMenuBar
@@ -79,7 +79,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reciveControl.Location = new System.Drawing.Point(231, 81);
             this.reciveControl.Name = "reciveControl";
-            this.reciveControl.Size = new System.Drawing.Size(1033, 789);
+            this.reciveControl.Size = new System.Drawing.Size(1033, 706);
             this.reciveControl.TabIndex = 15;
             this.reciveControl.Visible = false;
             // 
@@ -87,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 871);
+            this.ClientSize = new System.Drawing.Size(1264, 788);
             this.Controls.Add(this.reciveControl);
             this.Controls.Add(this.warehouseMenuBar);
             this.Controls.Add(this.salesMenuBar);

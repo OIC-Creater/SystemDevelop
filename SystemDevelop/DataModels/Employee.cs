@@ -1,22 +1,15 @@
-﻿using ObjectDatabase;
-
-namespace SystemDevelop.DataModels
+﻿namespace SystemDevelop.DataModels
 {
-    class Employee : DataModel
+    public class Employee
     {
-        [SerializeProperty("社員ID", IsKey = true, RelationKey = true)]
-        public string EmployeeID { get; set; }
+        public string ID { get; set; } = "";
+        public string Name { get; set; } = "";
+        public string Password { get; set; } = "";
+        public int BelongsID { get; set; } = 0;
+        public string PhoneNumber { get; set; } = "";
+        public string NowWork { get; set; } = "";
+        public string PigeonID { get; set; } = "";
 
-        [SerializeProperty("社員名")] public string EmployeeName { get; set; }
-        [SerializeProperty("電話番号")] public string PhoneNumber { get; set; }
-        [SerializeProperty("パスワード")] public string Password { get; set; }
-        [SerializeProperty("雇用中")] public string NowWork { get; set; }
-        [SerializeProperty("所属ID")] public string BelongsID { get; set; }
-        [SerializeProperty("ハトID")] public string PigeonID { get; set; }
-
-        [IgnoreProperty, UnionTarget("BelongsID")]
-        public Belongs TBelongs { get; set; }
-        [IgnoreProperty, UnionTarget("PigeonID")]
-        public Pigeon TPigeon { get; set; }
+        //public void update() { };
     }
 }
