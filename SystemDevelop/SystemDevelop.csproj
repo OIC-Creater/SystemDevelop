@@ -79,12 +79,6 @@
     <Compile Include="DataModels\Shop.cs" />
     <Compile Include="DataModels\Status.cs" />
     <Compile Include="DataModels\Stock.cs" />
-    <Compile Include="UserControll\Header.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControll\Header.Designer.cs">
-      <DependentUpon>Header.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\Login.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -182,33 +176,30 @@
     <Compile Include="Properties\UndispatchedList.Designer.cs">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControll\Login.cs">
+    <Compile Include="UserControls\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControll\Login.Designer.cs">
+    <Compile Include="UserControls\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControll\Recive.cs">
+    <Compile Include="UserControls\Recive.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControll\Recive.Designer.cs">
+    <Compile Include="UserControls\Recive.Designer.cs">
       <DependentUpon>Recive.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControll\SalesMenuBar.cs">
+    <Compile Include="UserControls\SalesMenuBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControll\SalesMenuBar.Designer.cs">
+    <Compile Include="UserControls\SalesMenuBar.Designer.cs">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControll\WarehouseMenuBar.cs">
+    <Compile Include="UserControls\WarehouseMenuBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControll\WarehouseMenuBar.Designer.cs">
+    <Compile Include="UserControls\WarehouseMenuBar.Designer.cs">
       <DependentUpon>WarehouseMenuBar.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControll\Header.resx">
-      <DependentUpon>Header.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,16 +255,16 @@
     <EmbeddedResource Include="Properties\UndispatchedList.resx">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControll\Login.resx">
+    <EmbeddedResource Include="UserControls\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControll\Recive.resx">
+    <EmbeddedResource Include="UserControls\Recive.resx">
       <DependentUpon>Recive.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControll\SalesMenuBar.resx">
+    <EmbeddedResource Include="UserControls\SalesMenuBar.resx">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControll\WarehouseMenuBar.resx">
+    <EmbeddedResource Include="UserControls\WarehouseMenuBar.resx">
       <DependentUpon>WarehouseMenuBar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
