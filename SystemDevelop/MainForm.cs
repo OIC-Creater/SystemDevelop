@@ -18,7 +18,7 @@ namespace SystemDevelop
             InitializeComponent();
             login = new Login(this);
             loginControl.loginButton.Click += LoginButtonClick;
-            //headerControl.logoutButton.Click += LogoutButtonClick;
+            headerControl.logoutButton.Click += LogoutButtonClick;
             salesMenuBar.recive.Click += ReciveButtonClick;
 
         }
@@ -62,9 +62,9 @@ namespace SystemDevelop
         {
             if (login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text, out employee))
             {
-                //headerControl.userLabel.Text += $" {employee.Name}";
+                headerControl.userLabel.Text += $" {employee.Name}";
                 logined = true;
-                //headerControl.Visible = true;
+                headerControl.Visible = true;
                 switch (employee.BelongsID)
                 {
                     case 1:
@@ -86,7 +86,7 @@ namespace SystemDevelop
             logined = false;
             warehouseMenuBar.Visible = false;
             salesMenuBar.Visible = false;
-            //headerControl.Visible = false;
+            headerControl.Visible = false;
             loginControl.Visible = true;
         }
     }

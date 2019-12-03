@@ -56,6 +56,10 @@ namespace SystemDevelop.Model
                 MessageBox.Show(ex.Message);
                 return false;
             }
+
+            /*employee.Name = "hoge";
+            employee.BelongsID = 2;
+            return true;*/
         }
     }
 }
