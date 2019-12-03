@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.reciveControl = new SystemDevelop.UserControll.Recive();
+            this.warehouseMenuBar = new SystemDevelop.UserControll.WarehouseMenuBar();
             this.salesMenuBar = new SystemDevelop.UserControll.SalesMenuBar();
             this.headerControl = new SystemDevelop.Header();
             this.loginControl = new SystemDevelop.UserControll.Login();
-            this.warehouseMenuBar = new SystemDevelop.UserControll.WarehouseMenuBar();
-            this.reciveControl = new SystemDevelop.UserControll.Recive();
             this.SuspendLayout();
+            // 
+            // reciveControl
+            // 
+            this.reciveControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reciveControl.Location = new System.Drawing.Point(231, 81);
+            this.reciveControl.Name = "reciveControl";
+            this.reciveControl.Size = new System.Drawing.Size(1033, 706);
+            this.reciveControl.TabIndex = 15;
+            this.reciveControl.Visible = false;
+            // 
+            // warehouseMenuBar
+            // 
+            this.warehouseMenuBar.Location = new System.Drawing.Point(0, 81);
+            this.warehouseMenuBar.Name = "warehouseMenuBar";
+            this.warehouseMenuBar.Size = new System.Drawing.Size(231, 789);
+            this.warehouseMenuBar.TabIndex = 14;
+            this.warehouseMenuBar.Visible = false;
             // 
             // salesMenuBar
             // 
@@ -63,25 +82,6 @@
             this.loginControl.Name = "loginControl";
             this.loginControl.Size = new System.Drawing.Size(1264, 786);
             this.loginControl.TabIndex = 12;
-            // 
-            // warehouseMenuBar
-            // 
-            this.warehouseMenuBar.Location = new System.Drawing.Point(0, 81);
-            this.warehouseMenuBar.Name = "warehouseMenuBar";
-            this.warehouseMenuBar.Size = new System.Drawing.Size(231, 789);
-            this.warehouseMenuBar.TabIndex = 14;
-            this.warehouseMenuBar.Visible = false;
-            // 
-            // reciveControl
-            // 
-            this.reciveControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reciveControl.Location = new System.Drawing.Point(231, 81);
-            this.reciveControl.Name = "reciveControl";
-            this.reciveControl.Size = new System.Drawing.Size(1033, 706);
-            this.reciveControl.TabIndex = 15;
-            this.reciveControl.Visible = false;
             // 
             // MainForm
             // 
