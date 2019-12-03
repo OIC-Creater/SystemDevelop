@@ -16,4 +16,5 @@ namespace SystemDevelop.Model.Tests
             Assert.AreEqual(a, b);
         }
     }
+
 }
