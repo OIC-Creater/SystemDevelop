@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reciveControl = new SystemDevelop.UserControll.Recive();
-            this.warehouseMenuBar = new SystemDevelop.UserControll.WarehouseMenuBar();
-            this.salesMenuBar = new SystemDevelop.UserControll.SalesMenuBar();
-            this.headerControl = new SystemDevelop.Header();
-            this.loginControl = new SystemDevelop.UserControll.Login();
+            this.reciveControl = new SystemDevelop.UserControls.Recive();
+            this.warehouseMenuBar = new SystemDevelop.UserControls.WarehouseMenuBar();
+            this.salesMenuBar = new SystemDevelop.UserControls.SalesMenuBar();
+            this.headerControl = new SystemDevelop.UserControls.Header();
+            this.loginControl = new SystemDevelop.UserControls.Login();
             this.SuspendLayout();
             // 
             // reciveControl
@@ -40,7 +40,7 @@
             this.reciveControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.reciveControl.Location = new System.Drawing.Point(231, 81);
+            this.reciveControl.Location = new System.Drawing.Point(237, 81);
             this.reciveControl.Name = "reciveControl";
             this.reciveControl.Size = new System.Drawing.Size(1033, 706);
             this.reciveControl.TabIndex = 15;
@@ -106,11 +106,11 @@
 
         #endregion
 
-        private Header headerControl;
-        private UserControll.Login loginControl;
-        private UserControll.SalesMenuBar salesMenuBar;
-        private UserControll.WarehouseMenuBar warehouseMenuBar;
-        private UserControll.Recive reciveControl;
+        private UserControls.Header headerControl;
+        private UserControls.Login loginControl;
+        private UserControls.SalesMenuBar salesMenuBar;
+        private UserControls.WarehouseMenuBar warehouseMenuBar;
+        private UserControls.Recive reciveControl;
     }
 }
 

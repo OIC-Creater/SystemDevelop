@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace SystemDevelop
+namespace SystemDevelop.UserControls
 {
     public partial class Header : UserControl
     {
