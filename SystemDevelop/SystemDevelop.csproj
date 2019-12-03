@@ -59,7 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Encrypt.cs" />
     <Compile Include="Model\GenetationKey.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="LoginScreen.cs">
@@ -97,6 +96,7 @@
     <Compile Include="Properties\ManufacturerOrderList.Designer.cs">
       <DependentUpon>ManufacturerOrderList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\RsakeyTests.cs" />
     <Compile Include="Properties\SetttingChange.cs">
       <SubType>Form</SubType>
     </Compile>
