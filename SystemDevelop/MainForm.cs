@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Drawing;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
@@ -85,30 +84,10 @@ namespace SystemDevelop
         private void LogoutButtonClick(object sender, EventArgs e)
         {
             logined = false;
-            
-            Control[] all = GetAllControls(this);
-            foreach (Control c in all)
-            {
-                foreach(Control con in c.Controls)
-                {
-                    if (con.GetType().ToString().Contains("TextBox") ||
-                       con.GetType().ToString().Contains("ComboBox"))
-                        con.Text = "";
-                }
-                c.Visible = false;
-            }
-            headerControl.userLabel.Text = "ÉçÉOÉCÉìíÜÅF";
+            warehouseMenuBar.Visible = false;
+            salesMenuBar.Visible = false;
+            headerControl.Visible = false;
             loginControl.Visible = true;
-        }
-
-        public Control[] GetAllControls(Control top)
-        {
-            ArrayList buf = new ArrayList();
-            foreach (Control c in top.Controls)
-            {
-                if(c.GetType().ToString().Contains("UserControl")) buf.Add(c);
-            }
-            return (Control[])buf.ToArray(typeof(Control));
         }
     }
 }
