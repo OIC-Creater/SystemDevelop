@@ -56,6 +56,14 @@ namespace SystemDevelop.Model
                 MessageBox.Show(ex.Message);
                 return false;
             }
+            /*employee.ID = "1";
+            employee.Name = "1";
+            employee.Password = "1";
+            employee.BelongsID = int.Parse("1");
+            employee.PhoneNumber = "1";
+            employee.NowWork = "1";
+            employee.PigeonID = "1";
+            return true;*/
         }
     }
 }

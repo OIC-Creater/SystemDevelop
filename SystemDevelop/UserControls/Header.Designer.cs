@@ -1,4 +1,4 @@
-﻿namespace SystemDevelop
+﻿namespace SystemDevelop.UserControls
 {
     partial class Header
     {
@@ -37,10 +37,10 @@
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.userLabel.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.userLabel.Location = new System.Drawing.Point(3, 26);
+            this.userLabel.Location = new System.Drawing.Point(12, 27);
             this.userLabel.Name = "userLabel";
             this.userLabel.Size = new System.Drawing.Size(95, 19);
-            this.userLabel.TabIndex = 1;
+            this.userLabel.TabIndex = 3;
             this.userLabel.Text = "ログイン中：";
             // 
             // logoutButton
@@ -51,10 +51,10 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Image = global::SystemDevelop.Properties.Resources.touka_logout;
             this.logoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.logoutButton.Location = new System.Drawing.Point(715, -4);
+            this.logoutButton.Location = new System.Drawing.Point(715, -3);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(172, 85);
-            this.logoutButton.TabIndex = 0;
+            this.logoutButton.TabIndex = 2;
             this.logoutButton.Text = "ログアウト";
             this.logoutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logoutButton.UseVisualStyleBackColor = false;

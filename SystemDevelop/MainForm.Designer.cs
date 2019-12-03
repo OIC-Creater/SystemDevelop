@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reciveControl = new SystemDevelop.UserControll.Recive();
-            this.warehouseMenuBar = new SystemDevelop.UserControll.WarehouseMenuBar();
-            this.salesMenuBar = new SystemDevelop.UserControll.SalesMenuBar();
-            this.headerControl = new SystemDevelop.Header();
-            this.loginControl = new SystemDevelop.UserControll.Login();
+            this.reciveControl = new SystemDevelop.UserControls.Recive();
+            this.warehouseMenuBar = new SystemDevelop.UserControls.WarehouseMenuBar();
+            this.salesMenuBar = new SystemDevelop.UserControls.SalesMenuBar();
+            this.loginControl = new SystemDevelop.UserControls.Login();
+            this.headerControl = new SystemDevelop.UserControls.Header();
             this.SuspendLayout();
             // 
             // reciveControl
@@ -62,17 +62,6 @@
             this.salesMenuBar.TabIndex = 13;
             this.salesMenuBar.Visible = false;
             // 
-            // headerControl
-            // 
-            this.headerControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.headerControl.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.headerControl.Location = new System.Drawing.Point(0, 1);
-            this.headerControl.Name = "headerControl";
-            this.headerControl.Size = new System.Drawing.Size(1264, 80);
-            this.headerControl.TabIndex = 11;
-            this.headerControl.Visible = false;
-            // 
             // loginControl
             // 
             this.loginControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -83,15 +72,26 @@
             this.loginControl.Size = new System.Drawing.Size(1264, 786);
             this.loginControl.TabIndex = 12;
             // 
+            // headerControl
+            // 
+            this.headerControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.headerControl.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.headerControl.Location = new System.Drawing.Point(0, -2);
+            this.headerControl.Name = "headerControl";
+            this.headerControl.Size = new System.Drawing.Size(1264, 83);
+            this.headerControl.TabIndex = 16;
+            this.headerControl.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
+            this.Controls.Add(this.headerControl);
             this.Controls.Add(this.reciveControl);
             this.Controls.Add(this.warehouseMenuBar);
             this.Controls.Add(this.salesMenuBar);
-            this.Controls.Add(this.headerControl);
             this.Controls.Add(this.loginControl);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -105,12 +105,11 @@
         }
 
         #endregion
-
-        private Header headerControl;
-        private UserControll.Login loginControl;
-        private UserControll.SalesMenuBar salesMenuBar;
-        private UserControll.WarehouseMenuBar warehouseMenuBar;
-        private UserControll.Recive reciveControl;
+        private UserControls.Login loginControl;
+        private UserControls.SalesMenuBar salesMenuBar;
+        private UserControls.WarehouseMenuBar warehouseMenuBar;
+        private UserControls.Recive reciveControl;
+        private UserControls.Header headerControl;
     }
 }
 

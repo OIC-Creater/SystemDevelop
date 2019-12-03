@@ -1,4 +1,4 @@
-﻿namespace SystemDevelop.UserControll
+﻿namespace SystemDevelop.UserControls
 {
     partial class WarehouseMenuBar
     {

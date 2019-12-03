@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SystemDevelop.UserControll
+namespace SystemDevelop.UserControls
 {
     public partial class SalesMenuBar : UserControl
     {
