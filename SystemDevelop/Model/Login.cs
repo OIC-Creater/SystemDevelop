@@ -26,7 +26,7 @@ namespace SystemDevelop.Model
             //PasswordHash ph = new PasswordHash();
             //string hashedPass = ph.Hash(pass);
             employee = new Employee();
-            string sql = $"SELECT * FROM 社員表 WHERE パスワード = '{pass}' AND 社員ID = '{user}'";
+            /*string sql = $"SELECT * FROM 社員表 WHERE パスワード = '{pass}' AND 社員ID = '{user}'";
 
             OleDbCommand cmd = new OleDbCommand(sql,oleDb);
             OleDbDataReader oledr = null;
@@ -55,11 +55,11 @@ namespace SystemDevelop.Model
             {
                 MessageBox.Show(ex.Message);
                 return false;
-            }
+            }*/
 
-            /*employee.Name = "hoge";
+            employee.Name = "hoge";
             employee.BelongsID = 2;
-            return true;*/
+            return true;
         }
     }
 }
