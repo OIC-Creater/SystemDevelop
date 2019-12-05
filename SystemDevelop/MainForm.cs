@@ -22,8 +22,12 @@ namespace SystemDevelop
             headerControl.logoutButton.Click += LogoutButtonClick;
             salesMenuBar.recive.Click += ReciveButtonClick;
             salesMenuBar.recive.Click += ReciveButtonClick;
+            warehouseMenuBar.orderDetail.Click += OrderButtonClick;
         }
-
+        private void OrderButtonClick(object sender,EventArgs e)
+        {
+            orderControl.Visible = true;
+        }
         private void OnEnter(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

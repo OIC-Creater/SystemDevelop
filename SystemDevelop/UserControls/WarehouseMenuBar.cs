@@ -22,6 +22,7 @@ namespace SystemDevelop.UserControls
             reciveDetail.BackColor = Color.LightBlue;
             orderDetail.BackColor = SystemColors.Control;           
             stock.BackColor = SystemColors.Control;
+            
         }
 
         private void orderDetail_Click(object sender, EventArgs e)
