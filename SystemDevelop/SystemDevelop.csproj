@@ -79,6 +79,7 @@
     <Compile Include="DataModels\Shop.cs" />
     <Compile Include="DataModels\Status.cs" />
     <Compile Include="DataModels\Stock.cs" />
+    <Compile Include="Model\Controller.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
