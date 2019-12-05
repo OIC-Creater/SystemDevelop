@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿
 using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace SystemDevelop.Model
 {
@@ -19,13 +16,32 @@ namespace SystemDevelop.Model
             };
 
             // 新規鍵の生成
-            RSACryptoServiceProvider csp = new RSACryptoServiceProvider(size,parameters);
+            RSACryptoServiceProvider csp = new RSACryptoServiceProvider(size, parameters);
             //公開鍵をXMLで取得
             string publickey = csp.ToXmlString(false);
             //秘密鍵をXMLで取得
             string privateKey = csp.ToXmlString(true);
 
         }
-        
+        private void DeleteKey(string keyContainerName)
+        {
+            //コンテナー名の指定
+            CspParameters parameters = new CspParameters()
+            {
+                KeyContainerName = keyContainerName
+            };
+
+            //キーコンテナーから鍵を削除
+            using (RSACryptoServiceProvider csp = new RSACryptoServiceProvider(parameters))
+            {
+                csp.PersistKeyInCsp = false;
+                csp.Clear();
+
+            }
+
+
+        }
+  
     }
+
 }
