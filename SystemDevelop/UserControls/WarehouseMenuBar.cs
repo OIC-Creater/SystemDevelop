@@ -20,8 +20,7 @@ namespace SystemDevelop.UserControls
         private void reciveDetail_Click(object sender, EventArgs e)
         {
             reciveDetail.BackColor = Color.LightBlue;
-            orderDetail.BackColor = SystemColors.Control;
-            order.BackColor = SystemColors.Control;
+            orderDetail.BackColor = SystemColors.Control;           
             stock.BackColor = SystemColors.Control;
         }
 
@@ -29,13 +28,11 @@ namespace SystemDevelop.UserControls
         {
             orderDetail.BackColor = Color.LightBlue;
             stock.BackColor = SystemColors.Control;
-            order.BackColor = SystemColors.Control;
             reciveDetail.BackColor = SystemColors.Control;
         }
 
         private void order_Click(object sender, EventArgs e)
         {
-            order.BackColor = Color.LightBlue;
             orderDetail.BackColor = SystemColors.Control;
             stock.BackColor = SystemColors.Control;
             reciveDetail.BackColor = SystemColors.Control;
@@ -45,7 +42,6 @@ namespace SystemDevelop.UserControls
         {
             stock.BackColor = Color.LightBlue;
             orderDetail.BackColor = SystemColors.Control;
-            order.BackColor = SystemColors.Control;
             reciveDetail.BackColor = SystemColors.Control;
         }
 
@@ -53,7 +49,6 @@ namespace SystemDevelop.UserControls
         {
             reciveDetail.BackColor = Color.LightBlue;
             orderDetail.BackColor = SystemColors.Control;
-            order.BackColor = SystemColors.Control;
             stock.BackColor = SystemColors.Control;
         }
     }

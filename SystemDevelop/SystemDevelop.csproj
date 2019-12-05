@@ -188,6 +188,24 @@
     <Compile Include="UserControls\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\OrderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrderList.Designer.cs">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Pigeon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pigeon.Designer.cs">
+      <DependentUpon>Pigeon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PlaceAnOrderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PlaceAnOrderList.Designer.cs">
+      <DependentUpon>PlaceAnOrderList.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Recive.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -199,6 +217,12 @@
     </Compile>
     <Compile Include="UserControls\SalesMenuBar.Designer.cs">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StockList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StockList.Designer.cs">
+      <DependentUpon>StockList.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\WarehouseMenuBar.cs">
       <SubType>UserControl</SubType>
@@ -267,11 +291,23 @@
     <EmbeddedResource Include="UserControls\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OrderList.resx">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Pigeon.resx">
+      <DependentUpon>Pigeon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PlaceAnOrderList.resx">
+      <DependentUpon>PlaceAnOrderList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Recive.resx">
       <DependentUpon>Recive.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SalesMenuBar.resx">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StockList.resx">
+      <DependentUpon>StockList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\WarehouseMenuBar.resx">
       <DependentUpon>WarehouseMenuBar.cs</DependentUpon>

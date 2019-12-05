@@ -28,27 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.order = new System.Windows.Forms.Button();
             this.reciveDetail = new System.Windows.Forms.Button();
             this.orderDetail = new System.Windows.Forms.Button();
             this.stock = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // order
-            // 
-            this.order.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.order.BackColor = System.Drawing.SystemColors.Control;
-            this.order.FlatAppearance.BorderSize = 0;
-            this.order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.order.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.order.Location = new System.Drawing.Point(0, 208);
-            this.order.Name = "order";
-            this.order.Size = new System.Drawing.Size(216, 104);
-            this.order.TabIndex = 6;
-            this.order.Text = "発注";
-            this.order.UseVisualStyleBackColor = false;
-            this.order.Click += new System.EventHandler(this.order_Click);
             // 
             // reciveDetail
             // 
@@ -90,7 +73,7 @@
             this.stock.FlatAppearance.BorderSize = 0;
             this.stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stock.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.stock.Location = new System.Drawing.Point(0, 312);
+            this.stock.Location = new System.Drawing.Point(0, 214);
             this.stock.Name = "stock";
             this.stock.Size = new System.Drawing.Size(216, 104);
             this.stock.TabIndex = 7;
@@ -103,7 +86,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.stock);
-            this.Controls.Add(this.order);
             this.Controls.Add(this.reciveDetail);
             this.Controls.Add(this.orderDetail);
             this.Name = "WarehouseMenuBar";
@@ -114,8 +96,6 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.Button order;
         public System.Windows.Forms.Button reciveDetail;
         public System.Windows.Forms.Button orderDetail;
         public System.Windows.Forms.Button stock;
