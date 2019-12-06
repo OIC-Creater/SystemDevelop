@@ -22,7 +22,30 @@ namespace SystemDevelop
             headerControl.logoutButton.Click += LogoutButtonClick;
             salesMenuBar.recive.Click += ReciveButtonClick;
             salesMenuBar.recive.Click += ReciveButtonClick;
-            warehouseMenuBar.orderDetail.Click += OrderButtonClick;
+            salesMenuBar.reciveDetail.Click += ReciveDetail_Click;
+            salesMenuBar.pigeon.Click += Pigeon_Click;
+            warehouseMenuBar.reciveDetail.Click += OrderButtonClick;
+            warehouseMenuBar.orderDetail.Click += OrderAnButtonClick;
+            warehouseMenuBar.stock.Click += StockButtonClick;
+        }
+
+        private void Pigeon_Click(object sender, EventArgs e)
+        {
+            pigeonList.Visible = true;
+        }
+
+        private void ReciveDetail_Click(object sender, EventArgs e)
+        {
+            orderControl.Visible = true;
+        }
+
+        private void StockButtonClick(object sender, EventArgs e)
+        {
+            stockControl.Visible = true;
+        }
+        private void OrderAnButtonClick(object sender,EventArgs e)
+        {
+            placeControl.Visible = true;
         }
         private void OrderButtonClick(object sender,EventArgs e)
         {

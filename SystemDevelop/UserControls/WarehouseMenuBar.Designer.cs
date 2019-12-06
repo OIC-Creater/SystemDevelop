@@ -73,7 +73,7 @@
             this.stock.FlatAppearance.BorderSize = 0;
             this.stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stock.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.stock.Location = new System.Drawing.Point(0, 214);
+            this.stock.Location = new System.Drawing.Point(0, 208);
             this.stock.Name = "stock";
             this.stock.Size = new System.Drawing.Size(216, 104);
             this.stock.TabIndex = 7;

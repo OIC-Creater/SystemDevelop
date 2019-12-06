@@ -29,16 +29,19 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.updata = new System.Windows.Forms.Button();
             this.pigeon_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pigeon_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.public_key_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pigeon_status_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updata = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -49,17 +52,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(1033, 626);
+            this.dataGridView1.Size = new System.Drawing.Size(1033, 680);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // updata
-            // 
-            this.updata.Location = new System.Drawing.Point(886, 632);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(147, 69);
-            this.updata.TabIndex = 1;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
             // 
             // pigeon_id
             // 
@@ -81,6 +75,16 @@
             this.pigeon_status_id.HeaderText = "ステータスID";
             this.pigeon_status_id.Name = "pigeon_status_id";
             // 
+            // updata
+            // 
+            this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.updata.Location = new System.Drawing.Point(831, 686);
+            this.updata.Name = "updata";
+            this.updata.Size = new System.Drawing.Size(199, 100);
+            this.updata.TabIndex = 1;
+            this.updata.Text = "更新";
+            this.updata.UseVisualStyleBackColor = true;
+            // 
             // Pigeon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -88,7 +92,7 @@
             this.Controls.Add(this.updata);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Pigeon";
-            this.Size = new System.Drawing.Size(1033, 701);
+            this.Size = new System.Drawing.Size(1033, 789);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -101,6 +105,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pigeon_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn public_key_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn pigeon_status_id;
-        private System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button updata;
     }
 }
