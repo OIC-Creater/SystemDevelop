@@ -1,15 +1,16 @@
-﻿using ObjectDatabase;
+﻿using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Pigeon : DataModel
+    class Pigeon : IDatabese
     {
-        [SerializeProperty("ハトID", IsKey = true, RelationKey = true)]
         public string PigeonID { get; set; }
+        public string PigeonName { get; set; }
+        public string PublicKey { get; set; }
+        public string StatusID { get; set; }
 
-        [SerializeProperty("ハト名")] public string PigeonName { get; set; }
-
-        [SerializeProperty("公開鍵")] public string PublicKey { get; set; }
-        [SerializeProperty("ステータスID")] public string StatusID { get; set; }
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }

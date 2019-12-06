@@ -1,15 +1,16 @@
-﻿using ObjectDatabase;
+﻿using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class SalesOffice :DataModel
+    class SalesOffice : IDatabese
     {
-        [SerializeProperty("営業所ID", IsKey = true, RelationKey = true)]
         public string SalesOfficeID { get; set; }
+        public string SalesOfficeName { get; set; }
+        public int PhoneNumber { get; set; }
+        public int Access { get; set; }
 
-        [SerializeProperty("営業所名")] public string SalesOfficeName { get; set; }
-
-        [SerializeProperty("電話番号")] public int PhoneNumber { get; set; }
-        [SerializeProperty("住所")] public int Access { get; set; }
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }
