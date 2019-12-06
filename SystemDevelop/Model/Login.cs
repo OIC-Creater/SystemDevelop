@@ -1,9 +1,9 @@
 ﻿
 using SystemDevelop.Model.DB;
 using System.Data.OleDb;
-using System.Data;
-using System.Windows.Forms;
 using System;
+using System.Windows.Forms;
+using SystemDevelop.DataModels;
 
 namespace SystemDevelop.Model
 {
@@ -11,23 +11,22 @@ namespace SystemDevelop.Model
     {
         private DbCreate dbCreate = new DbCreate();
         private OleDbConnection oleDb;
-        private HomeScreen homeScreen;
-        private LoginScreen loginScreen;
-        public Login(HomeScreen homeScreen,LoginScreen loginScreen)
+        private MainForm loginScreen;
+        public Login(MainForm loginScreen)
         {
             this.loginScreen = loginScreen;
-            this.homeScreen = homeScreen;
             if (dbCreate.ConnectDb(out OleDbConnection oleDb))
             {
                 this.oleDb = oleDb;
             }
         }
-        public void AuthUser(string user, string pass)
+
+        public bool AuthUser(string user, string pass, out Employee employee)
         {
-            PasswordHash ph = new PasswordHash();
-            string hashedPass = ph.Hash(pass);
-            
-            string sql = $"SELECT * FROM ログイン認証 WHERE pass = '{hashedPass}' AND id = '{user}'";
+            //PasswordHash ph = new PasswordHash();
+            //string hashedPass = ph.Hash(pass);
+            employee = new Employee();
+            /*string sql = $"SELECT * FROM 社員表 WHERE パスワード = '{pass}' AND 社員ID = '{user}'";
 
             OleDbCommand cmd = new OleDbCommand(sql,oleDb);
             OleDbDataReader oledr = null;
@@ -36,18 +35,31 @@ namespace SystemDevelop.Model
                 oledr = cmd.ExecuteReader();
                 if (oledr.HasRows)
                 {
-                    homeScreen.Show();
-                    loginScreen.Hide();
+                    oledr.Read();
+                    employee.ID = oledr[0].ToString();
+                    employee.Name = oledr[1].ToString();
+                    employee.Password = oledr[2].ToString();
+                    employee.BelongsID = int.Parse(oledr[3].ToString());
+                    employee.PhoneNumber = oledr[4].ToString();
+                    employee.NowWork = oledr[5].ToString();
+                    employee.PigeonID  = oledr[6].ToString();
+                    return true;
                 }
                 else
                 {
                     MessageBox.Show("IDまたはパスワードが間違っています");
+                    return false;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+                return false;
+            }*/
+
+            employee.Name = "hoge";
+            employee.BelongsID = 2;
+            return true;
         }
     }
 }
