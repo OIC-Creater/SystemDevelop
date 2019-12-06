@@ -7,19 +7,21 @@ using NUnit.Framework;
 
 namespace SystemDevelop.Model
 {
-    class GenetationKey
+    public class GenerationKey
     {
 
-        private void CreateKey()
+        public (string publicKey,string privateKey) CreateKey()
         {
             //新規鍵の設定
             int size = 1024;
             //新規鍵の生成
             RSACryptoServiceProvider csp = new RSACryptoServiceProvider(size);
             //公開鍵をXMLで取得
-            string publickey = csp.ToXmlString(false);
+            string publicKey = csp.ToXmlString(false);
             //秘密鍵をXMLで取得
             string privateKey = csp.ToXmlString(true);
+
+            return (publicKey, privateKey);
 
         }
     }

@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace SystemDevelop.Model
 {
-    class Encryption
+    public class Encryption
     {
         public string Encrypt(string publicKey,string data)
         {

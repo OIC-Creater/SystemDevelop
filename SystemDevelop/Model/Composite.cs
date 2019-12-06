@@ -5,9 +5,9 @@ using System.Text;
 
 namespace SystemDevelop.Model
 {
-    class Composite
+    public class Composite
     {
-        private string Decrypt(string privateKey,string data)
+        public string Decrypt(string privateKey,string data)
         {
             //RSA暗号化サービスのインスタンスを準備
             RSACryptoServiceProvider csp = new RSACryptoServiceProvider();

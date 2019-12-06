@@ -61,7 +61,7 @@
   <ItemGroup>
     <Compile Include="Model\Composite.cs" />
     <Compile Include="Model\Encryption.cs" />
-    <Compile Include="Model\GenetationKey.cs" />
+    <Compile Include="Model\GenerationKey.cs" />
     <Compile Include="Model\KeyContainer.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="LoginScreen.cs">
