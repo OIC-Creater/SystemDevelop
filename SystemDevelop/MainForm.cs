@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Drawing;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
 using SystemDevelop.Model;
@@ -19,35 +17,24 @@ namespace SystemDevelop
             InitializeComponent();
             login = new Login(this);
             loginControl.loginButton.Click += LoginButtonClick;
+            loginControl.idTextBox.KeyDown += OnEnter;
+            loginControl.passTextBox.KeyDown += OnEnter;
             headerControl.logoutButton.Click += LogoutButtonClick;
             salesMenuBar.recive.Click += ReciveButtonClick;
-
+            salesMenuBar.recive.Click += ReciveButtonClick;
+            warehouseMenuBar.orderDetail.Click += OrderButtonClick;
         }
-
-        private void LoginScreen_KeyDown(object sender, KeyEventArgs e)
+        private void OrderButtonClick(object sender,EventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
-            {
-                Login();
-            }
+            orderControl.Visible = true;
         }
-
-        private void idTextBox_KeyDown(object sender, KeyEventArgs e)
+        private void OnEnter(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 Login();
             }
         }
-
-        private void passWordTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                Login();
-            }
-        }
-
 
         private void ReciveButtonClick(object sender, EventArgs e)
         {
@@ -86,7 +73,7 @@ namespace SystemDevelop
         {
             logined = false;
 
-            Control[] all = GetAllControls(this);
+            Control[] all = Controller.GetAllControls(this);
             foreach (Control c in all)
             {
                 foreach (Control con in c.Controls)
@@ -99,16 +86,6 @@ namespace SystemDevelop
             }
             headerControl.userLabel.Text = "ログイン中：";
             loginControl.Visible = true;
-        }
-
-        public Control[] GetAllControls(Control top)
-        {
-            ArrayList buf = new ArrayList();
-            foreach (Control c in top.Controls)
-            {
-                if (c.GetType().ToString().Contains("UserControl")) buf.Add(c);
-            }
-            return (Control[])buf.ToArray(typeof(Control));
         }
     }
 }
