@@ -1,6 +1,8 @@
-﻿namespace SystemDevelop.DataModels
+﻿using SystemDevelop.Interface;
+
+namespace SystemDevelop.DataModels
 {
-    public class Employee
+    public class Employee : IDatabese
     {
         public string ID { get; set; } = "";
         public string Name { get; set; } = "";
@@ -10,6 +12,8 @@
         public string NowWork { get; set; } = "";
         public string PigeonID { get; set; } = "";
 
-        //public void update() { };
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }

@@ -1,16 +1,18 @@
-﻿using ObjectDatabase;
+﻿using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Shop : DataModel
+    class Shop : IDatabese
     {
-        [SerializeProperty("ショップID", IsKey = true, RelationKey = true)]
         public string ShopID { get; set; }
 
-        [SerializeProperty("ショップ名")] public string ShopName { get; set; }
+        public string ShopName { get; set; }
 
-        [SerializeProperty("電話番号")]public int PhoneNumber { get; set; }
-        [SerializeProperty("住所")]public int Access { get; set; }
-        [SerializeProperty("FAX番号")]public string FaxNumber { get; set; }
+        public int PhoneNumber { get; set; }
+        public int Access { get; set; }
+        public string FaxNumber { get; set; }
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }

@@ -1,11 +1,14 @@
-﻿using ObjectDatabase;
+﻿using SystemDevelop.Interface;
+
 namespace SystemDevelop.DataModels
 {
-    class Belongs : DataModel
+    class Belongs : IDatabese
     {
-        [SerializeProperty("所属ID", IsKey = true, RelationKey = true)]
         public string BelongsID { get; set; }
+        public string BelongsName { get; set; }
 
-        [SerializeProperty("所属名")] public string BelongsName { get; set; }
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }

@@ -1,12 +1,14 @@
-﻿using ObjectDatabase;
+﻿using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Status : DataModel
+    class Status : IDatabese
     {
-        [SerializeProperty("ステータスID", IsKey = true, RelationKey = true)]
         public string StatusID { get; set; }
+        public string StatusDetail { get; set; }
 
-        [SerializeProperty("ステータス")] public string StatusDetail { get; set; }
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }

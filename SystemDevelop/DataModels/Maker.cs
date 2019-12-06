@@ -1,16 +1,17 @@
-﻿using ObjectDatabase;
+﻿using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Maker : DataModel
+    class Maker : IDatabese
     {
-        [SerializeProperty("メーカーID", IsKey = true, RelationKey = true)]
         public string MakerID { get; set; }
+        public string MakerName { get; set; }
+        public int PhoneNumber { get; set; }
+        public string FaxNumber { get; set; }
+        public int Access { get; set; }
 
-        [SerializeProperty("メーカー名")] public string MakerName { get; set; }
-
-        [SerializeProperty("電話番号")] public int PhoneNumber { get; set; }
-        [SerializeProperty("FAX番号")] public string FaxNumber { get; set; }
-        [SerializeProperty("住所")] public int Access { get; set; }
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }
