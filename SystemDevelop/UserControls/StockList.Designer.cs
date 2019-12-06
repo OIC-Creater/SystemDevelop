@@ -29,35 +29,29 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.updata = new System.Windows.Forms.Button();
             this.stock_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.product_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stock_quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updata = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stock_id,
             this.product_id,
             this.stock_quantity});
-            this.dataGridView1.Location = new System.Drawing.Point(-31, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
             this.dataGridView1.Size = new System.Drawing.Size(1033, 680);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // updata
-            // 
-            this.updata.Location = new System.Drawing.Point(831, 686);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(211, 103);
-            this.updata.TabIndex = 1;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
             // 
             // stock_id
             // 
@@ -73,6 +67,16 @@
             // 
             this.stock_quantity.HeaderText = "在庫数";
             this.stock_quantity.Name = "stock_quantity";
+            // 
+            // updata
+            // 
+            this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.updata.Location = new System.Drawing.Point(831, 686);
+            this.updata.Name = "updata";
+            this.updata.Size = new System.Drawing.Size(211, 103);
+            this.updata.TabIndex = 1;
+            this.updata.Text = "更新";
+            this.updata.UseVisualStyleBackColor = true;
             // 
             // StockList
             // 

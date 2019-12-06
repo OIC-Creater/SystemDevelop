@@ -65,36 +65,43 @@
             // 
             // get_an_order_id
             // 
+            this.get_an_order_id.FillWeight = 99.69697F;
             this.get_an_order_id.HeaderText = "受注ID";
             this.get_an_order_id.Name = "get_an_order_id";
             // 
             // business_office_id
             // 
+            this.business_office_id.FillWeight = 100.4488F;
             this.business_office_id.HeaderText = "営業所ID";
             this.business_office_id.Name = "business_office_id";
             // 
             // sales_office_id
             // 
+            this.sales_office_id.FillWeight = 99.67876F;
             this.sales_office_id.HeaderText = "ショップID";
             this.sales_office_id.Name = "sales_office_id";
             // 
             // date_id
             // 
+            this.date_id.FillWeight = 100.4331F;
             this.date_id.HeaderText = "受注日";
             this.date_id.Name = "date_id";
             // 
             // staff_responsible_id
             // 
+            this.staff_responsible_id.FillWeight = 99.66537F;
             this.staff_responsible_id.HeaderText = "担当者ID";
             this.staff_responsible_id.Name = "staff_responsible_id";
             // 
             // pigeon_id
             // 
+            this.pigeon_id.FillWeight = 100.4215F;
             this.pigeon_id.HeaderText = "ハトID";
             this.pigeon_id.Name = "pigeon_id";
             // 
             // recepit_check_id
             // 
+            this.recepit_check_id.FillWeight = 99.65556F;
             this.recepit_check_id.HeaderText = "受領チェック";
             this.recepit_check_id.Name = "recepit_check_id";
             this.recepit_check_id.Resizable = System.Windows.Forms.DataGridViewTriState.True;
