@@ -58,7 +58,7 @@ namespace SystemDevelop.Model
             }*/
 
             employee.Name = "hoge";
-            employee.BelongsID = 2;
+            employee.BelongsID = 1;
             return true;
         }
     }
