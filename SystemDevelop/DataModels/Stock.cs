@@ -1,16 +1,16 @@
-﻿using ObjectDatabase;
+﻿using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Stock : DataModel
+    class Stock : IDatabese
     {
-        [SerializeProperty("在庫ID", IsKey = true, RelationKey = true)]
         public string StockID { get; set; }
+        public string ProductID { get; set; }
+        public string StockAmount { get; set; }
+        
 
-        [SerializeProperty("商品ID")] public string ProductID { get; set; }
-        [SerializeProperty("在庫数")] public string StockAmount { get; set; }
-
-        [IgnoreProperty, UnionTarget("PrpductID")]
-        public Product TProduct { get; set; }
+        public void Update() { }
+        public void Get() { }
+        public void Add() { }
     }
 }
