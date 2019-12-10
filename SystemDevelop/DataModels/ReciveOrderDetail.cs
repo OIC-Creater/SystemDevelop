@@ -1,10 +1,11 @@
-﻿using SystemDevelop.Interface;
+﻿using System.Data.OleDb;
+using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
     class ReciveOrderDetail : IDatabese
     {
-
+        public OleDbConnection OleDb { get; set; }
         public string ReciveOrderDetailID { get; set; } 
         public string ReciveOrderID { get; set; } 
         public string ProductID { get; set; } 
