@@ -28,82 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.employeeList = new System.Windows.Forms.Button();
+            this.manufacturerList = new System.Windows.Forms.Button();
+            this.shopList = new System.Windows.Forms.Button();
+            this.newProduct = new System.Windows.Forms.Button();
+            this.businessOfficeList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // employeeList
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 104);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "社員一覧";
-            this.button1.UseVisualStyleBackColor = true;
+            this.employeeList.FlatAppearance.BorderSize = 0;
+            this.employeeList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.employeeList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.employeeList.Location = new System.Drawing.Point(0, 0);
+            this.employeeList.Name = "employeeList";
+            this.employeeList.Size = new System.Drawing.Size(216, 104);
+            this.employeeList.TabIndex = 0;
+            this.employeeList.Text = "社員一覧";
+            this.employeeList.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // manufacturerList
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(0, 102);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 104);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "メーカ一覧";
-            this.button2.UseVisualStyleBackColor = true;
+            this.manufacturerList.FlatAppearance.BorderSize = 0;
+            this.manufacturerList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manufacturerList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.manufacturerList.Location = new System.Drawing.Point(0, 102);
+            this.manufacturerList.Name = "manufacturerList";
+            this.manufacturerList.Size = new System.Drawing.Size(216, 104);
+            this.manufacturerList.TabIndex = 1;
+            this.manufacturerList.Text = "メーカ一覧";
+            this.manufacturerList.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // shopList
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(0, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 104);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "ショップ一覧";
-            this.button3.UseVisualStyleBackColor = true;
+            this.shopList.FlatAppearance.BorderSize = 0;
+            this.shopList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shopList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.shopList.Location = new System.Drawing.Point(0, 212);
+            this.shopList.Name = "shopList";
+            this.shopList.Size = new System.Drawing.Size(216, 104);
+            this.shopList.TabIndex = 2;
+            this.shopList.Text = "ショップ一覧";
+            this.shopList.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // newProduct
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(3, 422);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(216, 104);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "新商品登録";
-            this.button4.UseVisualStyleBackColor = true;
+            this.newProduct.FlatAppearance.BorderSize = 0;
+            this.newProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newProduct.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.newProduct.Location = new System.Drawing.Point(0, 420);
+            this.newProduct.Name = "newProduct";
+            this.newProduct.Size = new System.Drawing.Size(216, 104);
+            this.newProduct.TabIndex = 3;
+            this.newProduct.Text = "新商品登録";
+            this.newProduct.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // businessOfficeList
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5.Location = new System.Drawing.Point(3, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(216, 104);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "営業所一覧";
-            this.button5.UseVisualStyleBackColor = true;
+            this.businessOfficeList.FlatAppearance.BorderSize = 0;
+            this.businessOfficeList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.businessOfficeList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.businessOfficeList.Location = new System.Drawing.Point(0, 316);
+            this.businessOfficeList.Name = "businessOfficeList";
+            this.businessOfficeList.Size = new System.Drawing.Size(216, 104);
+            this.businessOfficeList.TabIndex = 4;
+            this.businessOfficeList.Text = "営業所一覧";
+            this.businessOfficeList.UseVisualStyleBackColor = true;
             // 
             // MainOfficeManuBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.businessOfficeList);
+            this.Controls.Add(this.newProduct);
+            this.Controls.Add(this.shopList);
+            this.Controls.Add(this.manufacturerList);
+            this.Controls.Add(this.employeeList);
             this.Name = "MainOfficeManuBar";
             this.Size = new System.Drawing.Size(216, 689);
             this.ResumeLayout(false);
@@ -111,11 +111,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button manufacturerList;
+        private System.Windows.Forms.Button shopList;
+        private System.Windows.Forms.Button newProduct;
+        private System.Windows.Forms.Button businessOfficeList;
+        public System.Windows.Forms.Button employeeList;
     }
 }
