@@ -50,8 +50,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(1033, 680);
+            this.dataGridView1.Size = new System.Drawing.Size(1033, 709);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // stock_id
             // 
@@ -71,9 +72,9 @@
             // updata
             // 
             this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.updata.Location = new System.Drawing.Point(831, 686);
+            this.updata.Location = new System.Drawing.Point(873, 709);
             this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(211, 103);
+            this.updata.Size = new System.Drawing.Size(160, 80);
             this.updata.TabIndex = 1;
             this.updata.Text = "更新";
             this.updata.UseVisualStyleBackColor = true;

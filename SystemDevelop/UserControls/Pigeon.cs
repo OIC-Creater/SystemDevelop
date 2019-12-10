@@ -16,5 +16,10 @@ namespace SystemDevelop.UserControls
         {
             InitializeComponent();
         }
+
+        private void Pigeon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

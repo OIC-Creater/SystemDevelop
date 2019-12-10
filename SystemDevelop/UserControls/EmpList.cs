@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SystemDevelop.UserControls
 {
-    public partial class StockList : UserControl
+    public partial class EmpList : UserControl
     {
-        public StockList()
+        public EmpList()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

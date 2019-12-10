@@ -50,7 +50,7 @@
             this.orderList.Location = new System.Drawing.Point(0, 0);
             this.orderList.Name = "orderList";
             this.orderList.RowTemplate.Height = 21;
-            this.orderList.Size = new System.Drawing.Size(1033, 693);
+            this.orderList.Size = new System.Drawing.Size(1033, 709);
             this.orderList.TabIndex = 0;
             // 
             // place_an_order_id
@@ -71,9 +71,9 @@
             // updata
             // 
             this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.updata.Location = new System.Drawing.Point(827, 696);
+            this.updata.Location = new System.Drawing.Point(873, 709);
             this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(206, 90);
+            this.updata.Size = new System.Drawing.Size(160, 80);
             this.updata.TabIndex = 1;
             this.updata.Text = "更新";
             this.updata.UseVisualStyleBackColor = true;

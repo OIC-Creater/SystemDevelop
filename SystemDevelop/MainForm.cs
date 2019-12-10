@@ -29,9 +29,13 @@ namespace SystemDevelop
             warehouseMenuBar.orderDetail.Click += OrderAnButtonClick;
             warehouseMenuBar.stock.Click += StockButtonClick;
             warehouseMenuBar.notIssued.Click += NotIssued_Click;
+            mainOfficeManuBar.employeeList.Click += EmployeeList_Click;
         }
 
-        
+        private void EmployeeList_Click(object sender, EventArgs e)
+        {
+            empList.Visible = true;
+        }
 
         private void NotIssued_Click(object sender, EventArgs e)
         {
@@ -120,11 +124,19 @@ namespace SystemDevelop
                         salesMenuBar.Visible = true;
                         loginControl.Visible = false;
                         warehouseMenuBar.Visible = false;
+                        mainOfficeManuBar.Visible = false;
                         break;
                     case 2:
                         salesMenuBar.Visible = false;
                         loginControl.Visible = false;
                         warehouseMenuBar.Visible = true;
+                        mainOfficeManuBar.Visible = false;
+                        break;
+                    case 3:
+                        mainOfficeManuBar.Visible = true;
+                        salesMenuBar.Visible = false;
+                        loginControl.Visible = false;
+                        warehouseMenuBar.Visible = false;
                         break;
                 }
             }

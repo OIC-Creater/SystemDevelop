@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.unDispatched = new SystemDevelop.UserControls.PlaceAnOrderList();
             this.notIssue = new SystemDevelop.UserControls.OrderList();
             this.pigeonList = new SystemDevelop.UserControls.Pigeon();
             this.orderList1 = new SystemDevelop.UserControls.OrderList();
@@ -39,8 +40,20 @@
             this.warehouseMenuBar = new SystemDevelop.UserControls.WarehouseMenuBar();
             this.salesMenuBar = new SystemDevelop.UserControls.SalesMenuBar();
             this.loginControl = new SystemDevelop.UserControls.Login();
-            this.unDispatched = new SystemDevelop.UserControls.PlaceAnOrderList();
+            this.mainOfficeManuBar = new SystemDevelop.UserControls.MainOfficeManuBar();
+            this.empList = new SystemDevelop.UserControls.EmpList();
             this.SuspendLayout();
+            // 
+            // unDispatched
+            // 
+            this.unDispatched.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.unDispatched.Location = new System.Drawing.Point(219, 81);
+            this.unDispatched.Name = "unDispatched";
+            this.unDispatched.Size = new System.Drawing.Size(1045, 710);
+            this.unDispatched.TabIndex = 23;
+            this.unDispatched.Visible = false;
             // 
             // notIssue
             // 
@@ -153,22 +166,32 @@
             this.loginControl.Size = new System.Drawing.Size(1264, 786);
             this.loginControl.TabIndex = 12;
             // 
-            // unDispatched
+            // mainOfficeManuBar
             // 
-            this.unDispatched.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.mainOfficeManuBar.Location = new System.Drawing.Point(5, 81);
+            this.mainOfficeManuBar.Name = "mainOfficeManuBar";
+            this.mainOfficeManuBar.Size = new System.Drawing.Size(216, 789);
+            this.mainOfficeManuBar.TabIndex = 24;
+            this.mainOfficeManuBar.Visible = false;
+            // 
+            // empList
+            // 
+            this.empList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.unDispatched.Location = new System.Drawing.Point(219, 81);
-            this.unDispatched.Name = "unDispatched";
-            this.unDispatched.Size = new System.Drawing.Size(1045, 710);
-            this.unDispatched.TabIndex = 23;
-            this.unDispatched.Visible = false;
+            this.empList.Location = new System.Drawing.Point(219, 81);
+            this.empList.Name = "empList";
+            this.empList.Size = new System.Drawing.Size(1045, 710);
+            this.empList.TabIndex = 25;
+            this.empList.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
+            this.Controls.Add(this.empList);
+            this.Controls.Add(this.mainOfficeManuBar);
             this.Controls.Add(this.unDispatched);
             this.Controls.Add(this.notIssue);
             this.Controls.Add(this.pigeonList);
@@ -205,6 +228,8 @@
         private UserControls.Pigeon pigeonList;
         private UserControls.OrderList notIssue;
         private UserControls.PlaceAnOrderList unDispatched;
+        private UserControls.MainOfficeManuBar mainOfficeManuBar;
+        private UserControls.EmpList empList;
     }
 }
 
