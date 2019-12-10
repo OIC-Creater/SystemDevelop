@@ -24,32 +24,73 @@ namespace SystemDevelop
             salesMenuBar.recive.Click += ReciveButtonClick;
             salesMenuBar.reciveDetail.Click += ReciveDetail_Click;
             salesMenuBar.pigeon.Click += Pigeon_Click;
+            salesMenuBar.unDispatched.Click += UnDispatched_Click;
             warehouseMenuBar.reciveDetail.Click += OrderButtonClick;
             warehouseMenuBar.orderDetail.Click += OrderAnButtonClick;
             warehouseMenuBar.stock.Click += StockButtonClick;
+            warehouseMenuBar.notIssued.Click += NotIssued_Click;
         }
 
-        private void Pigeon_Click(object sender, EventArgs e)
+        
+
+        private void NotIssued_Click(object sender, EventArgs e)
         {
-            pigeonList.Visible = true;
+            notIssue.Visible = true;
+            stockControl.Visible = false;
+            placeControl.Visible = false;
+            orderControl.Visible = false;
         }
 
-        private void ReciveDetail_Click(object sender, EventArgs e)
-        {
-            orderControl.Visible = true;
-        }
-
+        
+        
         private void StockButtonClick(object sender, EventArgs e)
         {
             stockControl.Visible = true;
+            pigeonList.Visible = false;
+            notIssue.Visible = false;
+            orderControl.Visible = false;
+        }
+        private void OrderButtonClick(object sender, EventArgs e)
+        {
+            orderControl.Visible = true;
+            notIssue.Visible = false;
+            stockControl.Visible = false;
+            placeControl.Visible = false;
         }
         private void OrderAnButtonClick(object sender,EventArgs e)
         {
             placeControl.Visible = true;
+            orderControl.Visible = false;
+            notIssue.Visible = false;
+            stockControl.Visible = false;
         }
-        private void OrderButtonClick(object sender,EventArgs e)
+        private void ReciveDetail_Click(object sender, EventArgs e)
         {
             orderControl.Visible = true;
+            reciveControl.Visible = false;
+            pigeonList.Visible = false;
+            unDispatched.Visible = false;
+        }
+        private void ReciveButtonClick(object sender, EventArgs e)
+        {
+            reciveControl.Visible = true;
+            orderControl.Visible = false;
+            pigeonList.Visible = false;
+            unDispatched.Visible = false;
+        }
+        private void Pigeon_Click(object sender, EventArgs e)
+        {
+            pigeonList.Visible = true;
+            reciveControl.Visible = false;
+            orderControl.Visible = false;
+            unDispatched.Visible = false;
+        }
+        private void UnDispatched_Click(object sender, EventArgs e)
+        {
+            unDispatched.Visible = true;
+            pigeonList.Visible = false;
+            reciveControl.Visible = false;
+            orderControl.Visible = false;
         }
         private void OnEnter(object sender, KeyEventArgs e)
         {
@@ -59,10 +100,7 @@ namespace SystemDevelop
             }
         }
 
-        private void ReciveButtonClick(object sender, EventArgs e)
-        {
-            reciveControl.Visible = true;
-        }
+        
 
         private void LoginButtonClick(object sender, EventArgs e)
         {
