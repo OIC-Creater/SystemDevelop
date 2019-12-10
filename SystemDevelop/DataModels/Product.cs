@@ -4,20 +4,20 @@ using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Product : IDatabese
+    class Product : DataModel
     {
-        public OleDbConnection OleDb { get; set; }
+        [SerializeProperty("商品ID",RelationKey = true,IsKey = true)]
         public string ProductID { get; set; }
-        public string ProductName { get; set; }
-        public int Cost { get; set; }
-        public int Price { get; set; }
-        public string MakerID { get; set; }
-        public string SettingId { get; set; }
         
+        [SerializeProperty("商品名")] public string ProductName { get; set; }
+        [SerializeProperty("原価")] public int Cost { get; set; }
+        [SerializeProperty("売価")] public int Price { get; set; }
+        [SerializeProperty("メーカーID")] public string MakerID { get; set; }
+        [SerializeProperty("設定ID")] public string SettingId { get; set; }
 
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
-
+        [IgnoreProperty, UnionTarget(nameof(Maker.MakerId))]
+        public Maker Maker { get; set; }
+        /*[IgnoreProperty, UnionTarget(nameof(Setting.SettingId))]
+        public Setting Setting { get; set; }*/
     }
 }

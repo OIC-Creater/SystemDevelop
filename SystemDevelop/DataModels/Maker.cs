@@ -1,13 +1,14 @@
 ﻿using System.Data.OleDb;
 using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Maker : IDatabese
+    class Maker : DataModel
     {
         public OleDbConnection OleDb { get; set; }
-        public string Maker_ID { get; set; }
-        public string Maker_Name { get; set; }
+        public string MakerId { get; set; }
+        public string MakerName { get; set; }
         public string PhoneNumber { get; set; }
         public string FaxNumber { get; set; }
         public string Access { get; set; }

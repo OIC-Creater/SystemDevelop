@@ -1,8 +1,9 @@
 ﻿using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Pigeon : IDatabese
+    class Pigeon : DataModel
     {
         public string Pigeon_ID { get; set; } = "";
         public string PigeonName { get; set; } = "";

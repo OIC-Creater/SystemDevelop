@@ -1,10 +1,10 @@
 ﻿using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Stock : IDatabese
+    class Stock : DataModel
     {
-        public OleDbConnection OleDb { get; set; }
         public string StockID { get; set; }
         public string ProductID { get; set; }
         public int StockAmount { get; set; }

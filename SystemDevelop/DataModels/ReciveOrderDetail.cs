@@ -1,9 +1,10 @@
 ﻿using System.Data.OleDb;
 using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class ReciveOrderDetail : IDatabese
+    class ReciveOrderDetail : DataModel
     {
         public OleDbConnection OleDb { get; set; }
         public string ReciveOrderDetailID { get; set; } 

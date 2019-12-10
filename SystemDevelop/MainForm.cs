@@ -73,10 +73,10 @@ namespace SystemDevelop
         {
             if (login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text, out employee))
             {
-                headerControl.userLabel.Text += $" {employee.Name}";
+                //headerControl.userLabel.Text += $" {employee.Name}";
                 logined = true;
                 headerControl.Visible = true;
-                switch (employee.BelongsID)
+                switch (1)
                 {
                     case 1:
                         salesMenuBar.Visible = true;

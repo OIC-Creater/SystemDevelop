@@ -1,8 +1,9 @@
 ﻿using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    public class Employee : IDatabese
+    public class Employee : DataModel
     {
         public string EmployeeID { get; set; } 
         public string EmployeeName { get; set; } 
