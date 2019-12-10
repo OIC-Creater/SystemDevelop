@@ -195,6 +195,12 @@
     <Compile Include="UserControls\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\MainOfficeManuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainOfficeManuBar.Designer.cs">
+      <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\OrderList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MainOfficeManuBar.resx">
+      <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\OrderList.resx">
       <DependentUpon>OrderList.cs</DependentUpon>

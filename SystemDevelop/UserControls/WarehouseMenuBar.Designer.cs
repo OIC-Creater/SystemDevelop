@@ -31,6 +31,7 @@
             this.reciveDetail = new System.Windows.Forms.Button();
             this.orderDetail = new System.Windows.Forms.Button();
             this.stock = new System.Windows.Forms.Button();
+            this.notIssued = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // reciveDetail
@@ -81,10 +82,26 @@
             this.stock.UseVisualStyleBackColor = false;
             this.stock.Click += new System.EventHandler(this.stock_Click);
             // 
+            // notIssued
+            // 
+            this.notIssued.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.notIssued.FlatAppearance.BorderSize = 0;
+            this.notIssued.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.notIssued.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.notIssued.Location = new System.Drawing.Point(0, 312);
+            this.notIssued.Name = "notIssued";
+            this.notIssued.Size = new System.Drawing.Size(216, 104);
+            this.notIssued.TabIndex = 8;
+            this.notIssued.Text = "未出庫一覧";
+            this.notIssued.UseVisualStyleBackColor = false;
+            this.notIssued.Click += new System.EventHandler(this.notIssued_Click);
+            // 
             // WarehouseMenuBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.notIssued);
             this.Controls.Add(this.stock);
             this.Controls.Add(this.reciveDetail);
             this.Controls.Add(this.orderDetail);
@@ -99,5 +116,6 @@
         public System.Windows.Forms.Button reciveDetail;
         public System.Windows.Forms.Button orderDetail;
         public System.Windows.Forms.Button stock;
+        public System.Windows.Forms.Button notIssued;
     }
 }

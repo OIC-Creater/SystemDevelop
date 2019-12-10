@@ -22,7 +22,8 @@ namespace SystemDevelop.UserControls
             reciveDetail.BackColor = Color.LightBlue;
             orderDetail.BackColor = SystemColors.Control;           
             stock.BackColor = SystemColors.Control;
-            
+            notIssued.BackColor = SystemColors.Control;
+
         }
 
         private void orderDetail_Click(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace SystemDevelop.UserControls
             orderDetail.BackColor = Color.LightBlue;
             stock.BackColor = SystemColors.Control;
             reciveDetail.BackColor = SystemColors.Control;
+            notIssued.BackColor = SystemColors.Control;
         }
 
         private void order_Click(object sender, EventArgs e)
@@ -37,6 +39,7 @@ namespace SystemDevelop.UserControls
             orderDetail.BackColor = SystemColors.Control;
             stock.BackColor = SystemColors.Control;
             reciveDetail.BackColor = SystemColors.Control;
+            notIssued.BackColor = SystemColors.Control;
         }
 
         private void stock_Click(object sender, EventArgs e)
@@ -44,11 +47,29 @@ namespace SystemDevelop.UserControls
             stock.BackColor = Color.LightBlue;
             orderDetail.BackColor = SystemColors.Control;
             reciveDetail.BackColor = SystemColors.Control;
+            notIssued.BackColor = SystemColors.Control;
         }
 
         private void WarehouseMenuBar_Load(object sender, EventArgs e)
         {
             reciveDetail.BackColor = Color.LightBlue;
+            orderDetail.BackColor = SystemColors.Control;
+            stock.BackColor = SystemColors.Control;
+            notIssued.BackColor = SystemColors.Control;
+        }
+
+        private void notIssued_Click(object sender, EventArgs e)
+        {
+            notIssued.BackColor = Color.LightBlue;
+            reciveDetail.BackColor = SystemColors.Control;
+            orderDetail.BackColor = SystemColors.Control;
+            stock.BackColor = SystemColors.Control;
+        }
+
+        private void notIssue_Click(object sender, EventArgs e)
+        {
+            notIssued.BackColor = Color.LightBlue;
+            reciveDetail.BackColor = SystemColors.Control;
             orderDetail.BackColor = SystemColors.Control;
             stock.BackColor = SystemColors.Control;
         }
