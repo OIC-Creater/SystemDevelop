@@ -26,6 +26,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -67,6 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Composite.cs" />
+    <Compile Include="Model\Encryption.cs" />
+    <Compile Include="Model\GenerationKey.cs" />
+    <Compile Include="Model\KeyContainer.cs" />
     <Compile Include="DatabaseInstance.cs" />
     <Compile Include="DataModels\Belongs.cs" />
     <Compile Include="DataModels\Employee.cs" />

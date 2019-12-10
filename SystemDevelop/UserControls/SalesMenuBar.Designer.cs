@@ -96,8 +96,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button pigeon;
         public System.Windows.Forms.Button reciveDetail;
         public System.Windows.Forms.Button recive;
+        public System.Windows.Forms.Button pigeon;
     }
 }

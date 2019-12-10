@@ -28,27 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.orderList = new System.Windows.Forms.DataGridView();
             this.place_an_order_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.place_an_order_responsible_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updata = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderList)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // orderList
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.orderList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.orderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.orderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.place_an_order_id,
             this.place_an_order_responsible_id,
             this.date_id});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(1033, 657);
-            this.dataGridView1.TabIndex = 0;
+            this.orderList.Location = new System.Drawing.Point(0, 0);
+            this.orderList.Name = "orderList";
+            this.orderList.RowTemplate.Height = 21;
+            this.orderList.Size = new System.Drawing.Size(1033, 693);
+            this.orderList.TabIndex = 0;
             // 
             // place_an_order_id
             // 
@@ -67,9 +70,10 @@
             // 
             // updata
             // 
-            this.updata.Location = new System.Drawing.Point(844, 683);
+            this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.updata.Location = new System.Drawing.Point(827, 696);
             this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(189, 103);
+            this.updata.Size = new System.Drawing.Size(206, 90);
             this.updata.TabIndex = 1;
             this.updata.Text = "更新";
             this.updata.UseVisualStyleBackColor = true;
@@ -79,17 +83,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.updata);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.orderList);
             this.Name = "PlaceAnOrderList";
             this.Size = new System.Drawing.Size(1033, 789);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderList)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView orderList;
         private System.Windows.Forms.DataGridViewTextBoxColumn place_an_order_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn place_an_order_responsible_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn date_id;
