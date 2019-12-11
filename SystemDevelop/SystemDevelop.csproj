@@ -189,6 +189,12 @@
     <Compile Include="Properties\UndispatchedList.Designer.cs">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\EmpList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EmpList.Designer.cs">
+      <DependentUpon>EmpList.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Header.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -200,6 +206,18 @@
     </Compile>
     <Compile Include="UserControls\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MainOfficeManuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainOfficeManuBar.Designer.cs">
+      <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManufacturerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManufacturerList.Designer.cs">
+      <DependentUpon>ManufacturerList.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\OrderList.cs">
       <SubType>UserControl</SubType>
@@ -298,11 +316,20 @@
     <EmbeddedResource Include="Properties\UndispatchedList.resx">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EmpList.resx">
+      <DependentUpon>EmpList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Header.resx">
       <DependentUpon>Header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MainOfficeManuBar.resx">
+      <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\manufacturerList.resx">
+      <DependentUpon>ManufacturerList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\OrderList.resx">
       <DependentUpon>OrderList.cs</DependentUpon>

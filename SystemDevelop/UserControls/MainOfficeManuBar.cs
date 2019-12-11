@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SystemDevelop.UserControls
 {
-    public partial class StockList : UserControl
+    public partial class MainOfficeManuBar : UserControl
     {
-        public StockList()
+        public MainOfficeManuBar()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

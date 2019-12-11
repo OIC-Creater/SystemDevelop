@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.unDispatched = new SystemDevelop.UserControls.PlaceAnOrderList();
+            this.notIssue = new SystemDevelop.UserControls.OrderList();
+            this.pigeonList = new SystemDevelop.UserControls.Pigeon();
+            this.orderList1 = new SystemDevelop.UserControls.OrderList();
             this.stockControl = new SystemDevelop.UserControls.StockList();
             this.placeControl = new SystemDevelop.UserControls.PlaceAnOrderList();
             this.orderControl = new SystemDevelop.UserControls.OrderList();
@@ -36,9 +40,50 @@
             this.warehouseMenuBar = new SystemDevelop.UserControls.WarehouseMenuBar();
             this.salesMenuBar = new SystemDevelop.UserControls.SalesMenuBar();
             this.loginControl = new SystemDevelop.UserControls.Login();
-            this.orderList1 = new SystemDevelop.UserControls.OrderList();
-            this.pigeonList = new SystemDevelop.UserControls.Pigeon();
+            this.mainOfficeManuBar = new SystemDevelop.UserControls.MainOfficeManuBar();
+            this.empList = new SystemDevelop.UserControls.EmpList();
             this.SuspendLayout();
+            // 
+            // unDispatched
+            // 
+            this.unDispatched.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.unDispatched.Location = new System.Drawing.Point(219, 81);
+            this.unDispatched.Name = "unDispatched";
+            this.unDispatched.Size = new System.Drawing.Size(1045, 710);
+            this.unDispatched.TabIndex = 23;
+            this.unDispatched.Visible = false;
+            // 
+            // notIssue
+            // 
+            this.notIssue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.notIssue.Location = new System.Drawing.Point(219, 81);
+            this.notIssue.Name = "notIssue";
+            this.notIssue.Size = new System.Drawing.Size(1045, 710);
+            this.notIssue.TabIndex = 22;
+            this.notIssue.Visible = false;
+            // 
+            // pigeonList
+            // 
+            this.pigeonList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pigeonList.Location = new System.Drawing.Point(219, 81);
+            this.pigeonList.Name = "pigeonList";
+            this.pigeonList.Size = new System.Drawing.Size(1045, 710);
+            this.pigeonList.TabIndex = 21;
+            this.pigeonList.Visible = false;
+            // 
+            // orderList1
+            // 
+            this.orderList1.Location = new System.Drawing.Point(219, 81);
+            this.orderList1.Name = "orderList1";
+            this.orderList1.Size = new System.Drawing.Size(1033, 789);
+            this.orderList1.TabIndex = 20;
+            this.orderList1.Visible = false;
             // 
             // stockControl
             // 
@@ -121,30 +166,34 @@
             this.loginControl.Size = new System.Drawing.Size(1264, 786);
             this.loginControl.TabIndex = 12;
             // 
-            // orderList1
+            // mainOfficeManuBar
             // 
-            this.orderList1.Location = new System.Drawing.Point(219, 81);
-            this.orderList1.Name = "orderList1";
-            this.orderList1.Size = new System.Drawing.Size(1033, 789);
-            this.orderList1.TabIndex = 20;
-            this.orderList1.Visible = false;
+            this.mainOfficeManuBar.Location = new System.Drawing.Point(5, 81);
+            this.mainOfficeManuBar.Name = "mainOfficeManuBar";
+            this.mainOfficeManuBar.Size = new System.Drawing.Size(216, 789);
+            this.mainOfficeManuBar.TabIndex = 24;
+            this.mainOfficeManuBar.Visible = false;
             // 
-            // pigeonList
+            // empList
             // 
-            this.pigeonList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.empList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pigeonList.Location = new System.Drawing.Point(219, 81);
-            this.pigeonList.Name = "pigeonList";
-            this.pigeonList.Size = new System.Drawing.Size(1045, 710);
-            this.pigeonList.TabIndex = 21;
-            this.pigeonList.Visible = false;
+            this.empList.Location = new System.Drawing.Point(219, 81);
+            this.empList.Name = "empList";
+            this.empList.Size = new System.Drawing.Size(1045, 710);
+            this.empList.TabIndex = 25;
+            this.empList.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
+            this.Controls.Add(this.empList);
+            this.Controls.Add(this.mainOfficeManuBar);
+            this.Controls.Add(this.unDispatched);
+            this.Controls.Add(this.notIssue);
             this.Controls.Add(this.pigeonList);
             this.Controls.Add(this.orderList1);
             this.Controls.Add(this.stockControl);
@@ -177,6 +226,10 @@
         private UserControls.StockList stockControl;
         private UserControls.OrderList orderList1;
         private UserControls.Pigeon pigeonList;
+        private UserControls.OrderList notIssue;
+        private UserControls.PlaceAnOrderList unDispatched;
+        private UserControls.MainOfficeManuBar mainOfficeManuBar;
+        private UserControls.EmpList empList;
     }
 }
 
