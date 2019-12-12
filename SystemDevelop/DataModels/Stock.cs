@@ -4,9 +4,9 @@ namespace SystemDevelop.DataModels
 {
     class Stock : IDatabese
     {
-        public string StockID { get; set; }
-        public string ProductID { get; set; }
-        public string StockAmount { get; set; }
+        public string StockID { get; set; } = "";
+        public string ProductID { get; set; } = "";
+        public int StockAmount { get; set; } = 0;
         
 
         public void Update() { }

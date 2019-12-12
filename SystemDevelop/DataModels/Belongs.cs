@@ -4,8 +4,8 @@ namespace SystemDevelop.DataModels
 {
     class Belongs : IDatabese
     {
-        public string BelongsID { get; set; }
-        public string BelongsName { get; set; }
+        public string AffiliationID { get; set; } = "";
+        public string AffiliationName { get; set; } = "";
 
         public void Update() { }
         public void Get() { }
