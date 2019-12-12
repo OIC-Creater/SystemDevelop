@@ -30,12 +30,96 @@ namespace SystemDevelop
             warehouseMenuBar.stock.Click += StockButtonClick;
             warehouseMenuBar.notIssued.Click += NotIssued_Click;
             mainOfficeManuBar.employeeList.Click += EmployeeList_Click;
+            mainOfficeManuBar.businessOfficeList.Click += BusinessOfficeList_Click;
+            mainOfficeManuBar.shopList.Click += ShopList_Click;
+            mainOfficeManuBar.manufacturerList.Click += ManufacturerList_Click1;
+            mainOfficeManuBar.newProduct.Click += NewProduct_Click;
+            newProduct.settingButton.Click += SettingButton_Click;
+            settingScreen.SettingClose.Click += SettingClose_Click;
+        }
+
+        private void SettingClose_Click(object sender, EventArgs e)
+        {
+            settingConfi.Visible = true;
+            settingScreen.Visible = false;
+            newProduct.Visible = false;
+            manufactureList.Visible = false;
+            businesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+        }
+
+        private void SettingButton_Click(object sender, EventArgs e)
+        {
+            settingScreen.Visible = true;
+            newProduct.Visible = false;
+            manufactureList.Visible = false;
+            businesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+        }
+
+        private void NewProduct_Click(object sender, EventArgs e)
+        {
+            newProduct.Visible = true;
+            manufactureList.Visible = false;
+            businesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+            settingScreen.Visible = false;
+        }
+
+        private void ManufacturerList_Click1(object sender, EventArgs e)
+        {
+            manufactureList.Visible = true;
+            businesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+            newProduct.Visible = false;
+            settingScreen.Visible = false;
+        }
+
+        private void BusinessOfficeList_Click(object sender, EventArgs e)
+        {
+            businesOfficeList.Visible = true;
+            empList.Visible = false;
+            shopList.Visible = false;
+            manufactureList.Visible = false;
+            newProduct.Visible = false;
+            settingScreen.Visible = false;
+        }
+
+        private void ShopList_Click(object sender, EventArgs e)
+        {
+            shopList.Visible = true;
+            businesOfficeList.Visible = false;
+            empList.Visible = false;
+            manufactureList.Visible = false;
+            newProduct.Visible = false;
+            settingScreen.Visible = false;
+        }
+
+        private void ManufacturerList_Click(object sender, EventArgs e)
+        {
+            businesOfficeList.Visible = true;
+            empList.Visible = false;
+            shopList.Visible = false;
+            manufactureList.Visible = false;
+            newProduct.Visible = false;
+            settingScreen.Visible = false;
         }
 
         private void EmployeeList_Click(object sender, EventArgs e)
         {
             empList.Visible = true;
+            businesOfficeList.Visible = false;
+            shopList.Visible = false;
+            manufactureList.Visible = false;
+            newProduct.Visible = false;
+            settingScreen.Visible = false;
         }
+
+
 
         private void NotIssued_Click(object sender, EventArgs e)
         {
@@ -44,8 +128,6 @@ namespace SystemDevelop
             placeControl.Visible = false;
             orderControl.Visible = false;
         }
-
-        
         
         private void StockButtonClick(object sender, EventArgs e)
         {
@@ -115,10 +197,10 @@ namespace SystemDevelop
         {
             if (login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text, out employee))
             {
-                headerControl.userLabel.Text += $" {employee.Name}";
+                //headerControl.userLabel.Text += $" {employee.Name}";
                 logined = true;
                 headerControl.Visible = true;
-                switch (employee.BelongsID)
+                switch (3)
                 {
                     case 1:
                         salesMenuBar.Visible = true;

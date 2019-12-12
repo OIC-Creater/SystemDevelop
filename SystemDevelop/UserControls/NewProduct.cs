@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemDevelop.UserControls
 {
-    public partial class ManufacturerList : UserControl
+    public partial class NewProduct : UserControl
     {
-        public ManufacturerList()
+        public NewProduct()
         {
             InitializeComponent();
         }
