@@ -50,7 +50,6 @@ namespace SystemDevelop
             SettingTable = new DataTable<Setting>("設定");
             StoringTable = new DataTable<Storing>("入庫");
             
-            
             Database.AddTable(ProductTable);
             Database.AddTable(ShopTable);
             Database.AddTable(StatusTable);
@@ -69,17 +68,22 @@ namespace SystemDevelop
             Database.AddTable(StoringTable);
             
             ProductTable.Union(MakerTable,nameof(Maker.MakerId));
-            //ProductTable.Union(SettingTable,nameof(Setting.SettingId));
-            PigeonTable.Union(StatusTable,nameof(Status.StatusID));
+            ProductTable.Union(SettingTable,nameof(Setting.SettingId));
+            PigeonTable.Union(StatusTable,nameof(Status.StatusId));
             StockTable.Union(ProductTable);
-            ReciveOrderTable.Union(EmployeeTable,nameof(Employee.EmployeeID));
-            ReciveOrderTable.Union(SalesOfficeTable,nameof(SalesOffice.SalesOfficeID));
-            ReciveOrderTable.Union(ShopTable,nameof(Shop.ShopID));
+            ReciveOrderTable.Union(EmployeeTable,nameof(Employee.EmployeeId));
+            ReciveOrderTable.Union(SalesOfficeTable,nameof(SalesOffice.SalesOfficeId));
+            ReciveOrderTable.Union(ShopTable,nameof(Shop.ShopId));
             EmployeeTable.Union(AffiliationTable);
-            ReciveOrderDetailTable.Union(ReciveOrderTable,nameof(ReciveOrder.ReciveOrderID));
-            ReciveOrderDetailTable.Union(ProductTable,nameof(Product.ProductID));
-            IssueTabele.Union(ReciveOrderDetailTable,nameof(ReciveOrderDetail.ReciveOrderDetailID));
-            IssueTabele.Union(EmployeeTable,nameof(Employee.EmployeeID));
+            ReciveOrderDetailTable.Union(ReciveOrderTable,nameof(ReciveOrder.ReciveOrderId));
+            ReciveOrderDetailTable.Union(ProductTable,nameof(Product.ProductId));
+            IssueTabele.Union(ReciveOrderDetailTable,nameof(ReciveOrderDetail.ReciveOrderDetailId));
+            IssueTabele.Union(EmployeeTable,nameof(Employee.EmployeeId));
+            OrderTable.Union(EmployeeTable);
+            OrderDetailTable.Union(OrderTable,nameof(Order.OrderId));
+            OrderDetailTable.Union(ProductTable,nameof(Product.ProductId));
+            StoringTable.Union(OrderDetailTable,nameof(OrderDetail.OrderDetailId));
+            StoringTable.Union(EmployeeTable,nameof(Employee.EmployeeId));
         }
 
         private static void OnLog(ILogMessage msg)

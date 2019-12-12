@@ -4,17 +4,22 @@ using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Maker : DataModel
+    public class Maker : DataModel
     {
-        public OleDbConnection OleDb { get; set; }
-        public string MakerId { get; set; }
-        public string MakerName { get; set; }
-        public string PhoneNumber { get; set; }
+        [SerializePropertyAttribute("FAX番号", IsKey=false, RelationKey=false)]
         public string FaxNumber { get; set; }
+        
+        [SerializePropertyAttribute("メーカーID", IsKey=true, RelationKey=true)]
+        public string MakerId { get; set; }
+        
+        [SerializePropertyAttribute("メーカー名", IsKey=false, RelationKey=false)]
+        public string MakerName { get; set; }
+        
+        [SerializePropertyAttribute("住所", IsKey=false, RelationKey=false)]
         public string Access { get; set; }
+        
+        [SerializePropertyAttribute("電話番号", IsKey=false, RelationKey=false)]
+        public string PhoneNumber { get; set; }
 
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
     }
 }

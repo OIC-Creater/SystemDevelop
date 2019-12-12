@@ -3,13 +3,14 @@ using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Status : DataModel
+    public class Status : DataModel
     {
-        public string StatusID { get; set; } 
+       
+        
+        [ObjectDatabase.SerializePropertyAttribute("ステータス", IsKey=false, RelationKey=false)]
         public string StatusDetail { get; set; }
-
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
+        
+        [ObjectDatabase.SerializePropertyAttribute("ステータスID", IsKey=true, RelationKey=true)]
+        public string StatusId { get; set; } 
     }
 }

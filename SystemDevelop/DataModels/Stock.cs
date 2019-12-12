@@ -3,15 +3,18 @@ using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Stock : DataModel
+    public class Stock : DataModel
     {
-        public string StockID { get; set; }
-        public string ProductID { get; set; }
+        [SerializePropertyAttribute("在庫ID", IsKey=true, RelationKey=true)]
+        public string StockId { get; set; }
+        
+        [SerializePropertyAttribute("在庫数", IsKey=false, RelationKey=false)]
         public int StockAmount { get; set; }
         
-
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
+        [SerializePropertyAttribute("商品ID", IsKey=false, RelationKey=false)]
+        public string ProductId { get; set; }
+        
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Product.ProductId))]
+        public Product Product { get; set; }
     }
 }

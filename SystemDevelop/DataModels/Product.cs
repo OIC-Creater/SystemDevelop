@@ -1,23 +1,30 @@
 ﻿using ObjectDatabase;
-using System.Data.OleDb;
-using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Product : DataModel
+    public class Product : DataModel
     {
-        [SerializeProperty("商品ID",RelationKey = true,IsKey = true)]
-        public string ProductID { get; set; }
+        [SerializePropertyAttribute("メーカーID", IsKey=false, RelationKey=false)]
+        public string MakerId { get; set; }
         
-        [SerializeProperty("商品名")] public string ProductName { get; set; }
-        [SerializeProperty("原価")] public int Cost { get; set; }
-        [SerializeProperty("売価")] public int Price { get; set; }
-        [SerializeProperty("メーカーID")] public string MakerID { get; set; }
-        [SerializeProperty("設定ID")] public string SettingId { get; set; }
+        [SerializePropertyAttribute("原価", IsKey=false, RelationKey=false)]
+        public int Cost { get; set; }
+        
+        [SerializePropertyAttribute("商品ID", IsKey=true, RelationKey=true)]
+        public string ProductId { get; set; }
+        
+        [SerializePropertyAttribute("商品名", IsKey=false, RelationKey=false)]
+        public string ProductName { get; set; }
+        
+        [SerializePropertyAttribute("設定ID", IsKey=false, RelationKey=false)]
+        public string SettingId { get; set; }
+        
+        [SerializePropertyAttribute("売価", IsKey=false, RelationKey=false)]
+        public int Price { get; set; }
 
-        [IgnoreProperty, UnionTarget(nameof(Maker.MakerId))]
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Maker.MakerId))]
         public Maker Maker { get; set; }
-        /*[IgnoreProperty, UnionTarget(nameof(Setting.SettingId))]
-        public Setting Setting { get; set; }*/
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Setting.SettingId))]
+        public Setting Setting { get; set; }
     }
 }

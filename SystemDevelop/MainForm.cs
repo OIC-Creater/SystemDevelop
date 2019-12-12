@@ -15,6 +15,7 @@ namespace SystemDevelop
         public MainForm()
         {
             InitializeComponent();
+            var _ = DatabaseInstance.Database;
             login = new Login(this);
             loginControl.loginButton.Click += LoginButtonClick;
             loginControl.idTextBox.KeyDown += OnEnter;

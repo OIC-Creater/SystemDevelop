@@ -4,20 +4,39 @@ using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class ReciveOrder : DataModel
+    public class ReciveOrder : DataModel
     {
-        public OleDbConnection OleDb { get; set; }
-        public string ReciveOrderID { get; set; }
-        public string BusinessOfficeID { get; set; }
-        public bool ReceiptCheckID { get; set; } 
-        public string ShopID { get; set; }
-        public string DateID { get; set; }
-        public string EmployeeResponsibleID { get; set; }
-        public string PigeonID { get; set; }
-        public string EmployeeID { get; set; }
+        [SerializePropertyAttribute("ショップID", IsKey=false, RelationKey=false)]
+        public string ShopId { get; set; }
+        
+        [SerializePropertyAttribute("ハトID", IsKey=false, RelationKey=false)]
+        public string PigeonId { get; set; }
+        
+        [SerializePropertyAttribute("営業所ID", IsKey=false, RelationKey=false)]
+        public string SalesOfficeId { get; set; }
+        
+        [SerializePropertyAttribute("受注ID", IsKey=true, RelationKey=true)]
+        public string ReciveOrderId { get; set; }
+        
+        [SerializePropertyAttribute("受注担当者ID", IsKey=false, RelationKey=false)]
+        public string EmployeeId { get; set; }
+        
+        [SerializePropertyAttribute("受注日", IsKey=false, RelationKey=false)]
+        public string Date { get; set; }
+        
+        [SerializePropertyAttribute("受領チェック", IsKey=false, RelationKey=false)]
+        public bool ReceiptCheck { get; set; } 
+        
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Shop.ShopId))]
+        public Shop Shop { get; set; }
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Pigeon.PigeonId))]
+        public Pigeon Pigeon { get; set; }
+        [IgnoreProperty, UnionTarget(nameof(DataModels.SalesOffice.SalesOfficeId))]
+        public SalesOffice SalesOffice { get; set; }
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Employee.EmployeeId))]
+        public Employee Employee { get; set; }
 
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
+
+
     }
 }

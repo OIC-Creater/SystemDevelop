@@ -3,11 +3,13 @@ using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Affiliation : DataModel
+    public class Affiliation : DataModel
     {
-        [SerializeProperty("所属ID",RelationKey = true,IsKey = true)]
-        public string AffiliationID { get; set; }
-        [SerializeProperty("所属名")]public string AffiliationName { get; set; }
-
+        [SerializePropertyAttribute("所属ID", IsKey=true, RelationKey=true)]
+        public string AffiliationId{ get; set; }
+        
+        [SerializePropertyAttribute("所属名", IsKey=false, RelationKey=false)]
+        public string AffiliationName
+        { get; set; }
     }
 }
