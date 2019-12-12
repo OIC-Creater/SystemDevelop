@@ -207,6 +207,12 @@
     <Compile Include="UserControls\MainOfficeManuBar.Designer.cs">
       <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ManufacturerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManufacturerList.Designer.cs">
+      <DependentUpon>ManufacturerList.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\OrderList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -315,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\MainOfficeManuBar.resx">
       <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\manufacturerList.resx">
+      <DependentUpon>ManufacturerList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\OrderList.resx">
       <DependentUpon>OrderList.cs</DependentUpon>
