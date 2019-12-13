@@ -1,11 +1,12 @@
-﻿using System.Data.OleDb;
-using SystemDevelop.Interface;
-using ObjectDatabase;
+﻿using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
     public class ReciveOrder : DataModel
     {
+        [SerializePropertyAttribute("受注ID", IsKey = true, RelationKey = true)]
+        public string ReciveOrderId { get; set; }
+
         [SerializePropertyAttribute("ショップID", IsKey=false, RelationKey=false)]
         public string ShopId { get; set; }
         
@@ -14,9 +15,6 @@ namespace SystemDevelop.DataModels
         
         [SerializePropertyAttribute("営業所ID", IsKey=false, RelationKey=false)]
         public string SalesOfficeId { get; set; }
-        
-        [SerializePropertyAttribute("受注ID", IsKey=true, RelationKey=true)]
-        public string ReciveOrderId { get; set; }
         
         [SerializePropertyAttribute("受注担当者ID", IsKey=false, RelationKey=false)]
         public string EmployeeId { get; set; }

@@ -16,11 +16,5 @@ namespace SystemDevelop.UserControls
         {
             InitializeComponent();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewCheckBoxColumn column = new DataGridViewCheckBoxColumn();
-            dataGridView1.Columns.Add(column);
-        }
     }
 }
