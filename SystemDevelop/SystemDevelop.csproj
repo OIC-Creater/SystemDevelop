@@ -75,6 +75,7 @@
     <Compile Include="DataModels\Setting.cs" />
     <Compile Include="DataModels\Storing.cs" />
     <Compile Include="Model\Composite.cs" />
+    <Compile Include="Model\DB\Datasouce.cs" />
     <Compile Include="Model\Encryption.cs" />
     <Compile Include="Model\GenerationKey.cs" />
     <Compile Include="Model\KeyContainer.cs" />

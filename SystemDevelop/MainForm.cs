@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
 using SystemDevelop.Model;
@@ -16,6 +17,7 @@ namespace SystemDevelop
         {
             InitializeComponent();
             var _ = DatabaseInstance.Database;
+            
             login = new Login(this);
             loginControl.loginButton.Click += LoginButtonClick;
             loginControl.idTextBox.KeyDown += OnEnter;
