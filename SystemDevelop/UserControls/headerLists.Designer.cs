@@ -37,18 +37,22 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox1.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(162, 24);
+            this.comboBox1.Location = new System.Drawing.Point(178, 26);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(207, 27);
+            this.comboBox1.Size = new System.Drawing.Size(242, 27);
             this.comboBox1.TabIndex = 3;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(28, 24);
+            this.label1.Location = new System.Drawing.Point(33, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 27);
             this.label1.TabIndex = 4;
@@ -56,9 +60,12 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(388, 24);
+            this.label2.Location = new System.Drawing.Point(441, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(194, 27);
             this.label2.TabIndex = 5;
@@ -66,11 +73,13 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox2.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(588, 24);
+            this.comboBox2.Location = new System.Drawing.Point(641, 26);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(207, 27);
+            this.comboBox2.Size = new System.Drawing.Size(242, 27);
             this.comboBox2.TabIndex = 6;
             // 
             // button1
@@ -80,9 +89,9 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(873, -3);
+            this.button1.Location = new System.Drawing.Point(902, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 85);
+            this.button1.Size = new System.Drawing.Size(111, 27);
             this.button1.TabIndex = 7;
             this.button1.Text = "検索";
             this.button1.UseVisualStyleBackColor = false;

@@ -57,7 +57,7 @@
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(172, 85);
             this.closeButton.TabIndex = 4;
-            this.closeButton.Text = "終了";
+            this.closeButton.Text = "  終了";
             this.closeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.closeButton.UseVisualStyleBackColor = false;
             // 
