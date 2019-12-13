@@ -121,14 +121,20 @@
   <data name="touka_order" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="business_kigyousenshi_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\business_kigyousenshi_all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="touka_maker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\touka_maker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="touka_souko" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_souko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="touka_home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\touka_home1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="touka_shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\touka_shop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="touka_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\touka_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="touka_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\touka_product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="touka_post1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_post1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,6 +145,9 @@
   <data name="touka_maker1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_maker1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="touka_shipping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\touka_shipping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="touka_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,28 +157,22 @@
   <data name="touka_shop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_shop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="touka_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\touka_product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="touka_emp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\touka_emp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="touka_log" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="touka_emp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\touka_emp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="touka_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\touka_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="touka_post" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touka_post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="touka_maker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\touka_maker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="business_kigyousenshi_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_kigyousenshi_all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="touka_shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\touka_shop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="touka_home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\touka_home1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="touka_shipping" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\touka_shipping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="batu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\batu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

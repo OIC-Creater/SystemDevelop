@@ -63,6 +63,16 @@ namespace SystemDevelop.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap batu {
+            get {
+                object obj = ResourceManager.GetObject("batu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap business_kigyousenshi_all {
             get {
                 object obj = ResourceManager.GetObject("business_kigyousenshi_all", resourceCulture);
