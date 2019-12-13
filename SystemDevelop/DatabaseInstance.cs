@@ -32,7 +32,7 @@ namespace SystemDevelop
 
         static DatabaseInstance()
         {
-            Database = new ObjectDatabase.ObjectDatabase("db.accdb", logCallback: OnLog);
+            Database = new ObjectDatabase.ObjectDatabase("../../DB/db.accdb", logCallback: OnLog);
             ProductTable = new DataTable<Product>("商品");
             ShopTable= new DataTable<Shop>("ショップ");
             StatusTable = new DataTable<Status>("ステータス");
@@ -43,10 +43,10 @@ namespace SystemDevelop
             ReciveOrderTable = new DataTable<ReciveOrder>("受注");
             SalesOfficeTable = new DataTable<SalesOffice>("営業所");
             EmployeeTable = new DataTable<Employee>("社員");
-            ReciveOrderDetailTable = new DataTable<ReciveOrderDetail>("受注詳細");
+            ReciveOrderDetailTable = new DataTable<ReciveOrderDetail>("受注明細");
             IssueTabele = new DataTable<Issue>("出庫");
             OrderTable = new DataTable<Order>("発注");
-            OrderDetailTable = new DataTable<OrderDetail>("発注詳細");
+            OrderDetailTable = new DataTable<OrderDetail>("発注明細");
             SettingTable = new DataTable<Setting>("設定");
             StoringTable = new DataTable<Storing>("入庫");
             
