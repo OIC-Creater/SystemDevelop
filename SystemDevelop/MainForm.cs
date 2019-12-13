@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
 using SystemDevelop.Model;
-
+using SystemDevelop.Model.DB;
 
 namespace SystemDevelop
 {
@@ -245,6 +245,8 @@ namespace SystemDevelop
                         mainOfficeManuBar.Visible = false;
                         orderControl.Visible = true;
                         headerLists.Visible = true;
+                        DataSource.SetDataSource<OrderDetail>(orderControl.dataGridView1, DatabaseInstance.OrderDetailTable); 
+                        DataSource.SetDataSource<Pigeon>(pigeonList.dataGridView1, DatabaseInstance.PigeonTable);
                         break;
                     case "A02":
                         salesMenuBar.Visible = false;
