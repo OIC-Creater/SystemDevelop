@@ -7,7 +7,7 @@ namespace SystemDevelop.DataModels
     public class ReciveOrderDetail : DataModel
     {
         [SerializePropertyAttribute("個数", IsKey=false, RelationKey=false)]
-        public int Quantity { get; set; } 
+        public int 個数 { get; set; } 
         
         [SerializePropertyAttribute("受注ID", IsKey=false, RelationKey=false)]
         public string ReciveOrderId { get; set; } 

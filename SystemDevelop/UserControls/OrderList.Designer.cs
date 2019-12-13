@@ -131,8 +131,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn get_an_order_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn business_office_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn sales_office_id;
@@ -141,5 +139,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pigeon_id;
         private System.Windows.Forms.DataGridViewCheckBoxColumn recepit_check_id;
         private System.Windows.Forms.Button updata;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }
