@@ -60,7 +60,6 @@ namespace SystemDevelop
             empList.Visible = false;
             shopList.Visible = false;
         }
-
         private void Yes_Click(object sender, EventArgs e)
         {
             headerLists.Visible = false;
@@ -72,9 +71,7 @@ namespace SystemDevelop
             shopList.Visible = false;
             orderControl.Visible = false;
         }
-
         
-
         private void SettingButton_Click(object sender, EventArgs e)
         {
             headerLists.Visible = false;
@@ -89,7 +86,7 @@ namespace SystemDevelop
 
         private void NewProduct_Click(object sender, EventArgs e)
         {
-            headerLists.Visible = true;
+            headerLists.Visible =false;
             newProduct.Visible = true;
             manufactureList.Visible = false;
             businesOfficeList.Visible = false;
@@ -155,6 +152,7 @@ namespace SystemDevelop
         
         private void StockButtonClick(object sender, EventArgs e)
         {
+            placeControl.Visible = false;
             headerLists.Visible = true;
             stockList.Visible = true;
             warehouseControl.Visible = false;
@@ -163,16 +161,19 @@ namespace SystemDevelop
         }
         private void OrderButtonClick(object sender, EventArgs e)
         {
+            reciveControl.Visible = false;
             headerLists.Visible = true;
             orderControl.Visible = true;
             warehouseControl.Visible = false;
             placeControl.Visible = false;
+            stockList.Visible = false;
         }
         private void OrderAnButtonClick(object sender,EventArgs e)
         {
+            reciveControl.Visible = false;
             headerLists.Visible = true;
             placeControl.Visible = true;
-            
+            stockList.Visible = false;
             orderControl.Visible = false;
             warehouseControl.Visible = false;
         }
@@ -183,6 +184,7 @@ namespace SystemDevelop
             reciveControl.Visible = false;
             pigeonList.Visible = false;
             unDispatched.Visible = false;
+            warehouseControl.Visible = false;
         }
         private void ReciveButtonClick(object sender, EventArgs e)
         {
@@ -191,6 +193,8 @@ namespace SystemDevelop
             orderControl.Visible = false;
             pigeonList.Visible = false;
             unDispatched.Visible = false;
+            stockList.Visible = false;
+            warehouseControl.Visible = false;
         }
         private void Pigeon_Click(object sender, EventArgs e)
         {
@@ -213,7 +217,6 @@ namespace SystemDevelop
             if (e.KeyCode == Keys.Enter)
             {
                 Login();
-                
             }
         }
 
@@ -222,7 +225,6 @@ namespace SystemDevelop
         private void LoginButtonClick(object sender, EventArgs e)
         {
             Login();
-            
         }
         
         private void Login()
@@ -257,6 +259,7 @@ namespace SystemDevelop
                         warehouseMenuBar.Visible = false;
                         orderControl.Visible = false;
                         headerLists.Visible = true;
+                        empList.Visible = true;
                         break;
                 }
             }
