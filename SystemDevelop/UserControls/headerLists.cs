@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemDevelop.UserControls
 {
-    public partial class SettingScreen : UserControl
+    public partial class HeaderLists : UserControl
     {
-        public SettingScreen()
+        public HeaderLists()
         {
             InitializeComponent();
         }

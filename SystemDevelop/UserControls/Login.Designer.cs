@@ -33,14 +33,15 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loginButton
             // 
             this.loginButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.loginButton.Location = new System.Drawing.Point(350, 455);
+            this.loginButton.Location = new System.Drawing.Point(536, 460);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(300, 68);
+            this.loginButton.Size = new System.Drawing.Size(200, 70);
             this.loginButton.TabIndex = 19;
             this.loginButton.Text = "ログイン";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -86,10 +87,21 @@
             this.idLabel.TabIndex = 15;
             this.idLabel.Text = "社員ID";
             // 
+            // closeButton
+            // 
+            this.closeButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.closeButton.Location = new System.Drawing.Point(242, 460);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(200, 70);
+            this.closeButton.TabIndex = 20;
+            this.closeButton.Text = "終了";
+            this.closeButton.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passTextBox);
             this.Controls.Add(this.idTextBox);
@@ -109,5 +121,6 @@
         public System.Windows.Forms.TextBox idTextBox;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label idLabel;
+        public System.Windows.Forms.Button closeButton;
     }
 }

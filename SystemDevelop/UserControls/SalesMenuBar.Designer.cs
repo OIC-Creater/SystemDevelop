@@ -31,7 +31,6 @@
             this.recive = new System.Windows.Forms.Button();
             this.reciveDetail = new System.Windows.Forms.Button();
             this.pigeon = new System.Windows.Forms.Button();
-            this.unDispatched = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // recive
@@ -82,25 +81,10 @@
             this.pigeon.UseVisualStyleBackColor = false;
             this.pigeon.Click += new System.EventHandler(this.pigeon_Click);
             // 
-            // unDispatched
-            // 
-            this.unDispatched.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.unDispatched.FlatAppearance.BorderSize = 0;
-            this.unDispatched.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.unDispatched.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.unDispatched.Location = new System.Drawing.Point(0, 312);
-            this.unDispatched.Name = "unDispatched";
-            this.unDispatched.Size = new System.Drawing.Size(216, 104);
-            this.unDispatched.TabIndex = 4;
-            this.unDispatched.Text = "未発送一覧";
-            this.unDispatched.UseVisualStyleBackColor = true;
-            // 
             // SalesMenuBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.unDispatched);
             this.Controls.Add(this.pigeon);
             this.Controls.Add(this.reciveDetail);
             this.Controls.Add(this.recive);
@@ -115,6 +99,5 @@
         public System.Windows.Forms.Button reciveDetail;
         public System.Windows.Forms.Button recive;
         public System.Windows.Forms.Button pigeon;
-        public System.Windows.Forms.Button unDispatched;
     }
 }
