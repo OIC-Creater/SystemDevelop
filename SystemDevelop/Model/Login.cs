@@ -4,6 +4,7 @@ using System.Data.OleDb;
 using System;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
+using System.Linq;
 
 namespace SystemDevelop.Model
 {
@@ -25,41 +26,17 @@ namespace SystemDevelop.Model
         {
             PasswordHash ph = new PasswordHash();
             string hashedPass = ph.Hash(pass);
-            employee = new Employee();
-            string sql = $"SELECT * FROM 社員 WHERE パスワード = '{pass}' AND 社員ID = '{user}'";
 
-            OleDbCommand cmd = new OleDbCommand(sql,oleDb);
-            OleDbDataReader oledr = null;
-            try
+            var emp = DatabaseInstance.EmployeeTable.Where(e => e.Password == pass && e.EmployeeId == user).FirstOrDefault();
+            if (emp.WorkingFlag)
             {
-                oledr = cmd.ExecuteReader();
-                if (oledr.HasRows)
-                {
-                    oledr.Read();
-                    if (Convert.ToBoolean(oledr["雇用中"].ToString()))
-                    {
-                        employee.EmployeeId = oledr["社員ID"].ToString();
-                        employee.EmployeeName = oledr["社員名"].ToString();
-                        employee.Password = oledr["パスワード"].ToString();
-                        employee.AffiliationId = oledr["所属ID"].ToString();
-                        employee.PhoneNumber = oledr["電話番号"].ToString();
-                        employee.WorkingFlag = Convert.ToBoolean(oledr["雇用中"].ToString());
-                        employee.PigeonId = oledr["ハトID"].ToString();
-                        return true;
-                    }
-
-                    MessageBox.Show("IDまたはパスワードが間違っています");
-                    return false;
-                }
-                else
-                {
-                    MessageBox.Show("IDまたはパスワードが間違っています");
-                    return false;
-                }
+                employee = emp;
+                return true;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("IDまたはパスワードが間違っています");
+                employee = null;
                 return false;
             }
         }
