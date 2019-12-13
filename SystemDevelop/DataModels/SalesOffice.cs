@@ -1,17 +1,24 @@
-﻿using SystemDevelop.Interface;
+﻿using System.Data.OleDb;
+using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class SalesOffice : IDatabese
+    public class SalesOffice : DataModel
     {
-        public string SalesOfficeID { get; set; } 
-        public string SalesOfficeName { get; set; } 
-        public int PhoneNumber { get; set; } 
-        public int Access { get; set; } 
+        [SerializePropertyAttribute("FAX番号", IsKey=false, RelationKey=false)]
         public string FaxNumber { get; set; } 
-
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
+        
+        [SerializePropertyAttribute("営業所ID", IsKey=true, RelationKey=true)]
+        public string SalesOfficeId { get; set; } 
+        
+        [SerializePropertyAttribute("営業所名", IsKey=false, RelationKey=false)]
+        public string SalesOfficeName { get; set; } 
+        
+        [SerializePropertyAttribute("住所", IsKey=false, RelationKey=false)]
+        public int Access { get; set; } 
+        
+        [SerializePropertyAttribute("電話番号", IsKey=false, RelationKey=false)]
+        public int PhoneNumber { get; set; } 
     }
 }

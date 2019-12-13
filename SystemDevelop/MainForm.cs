@@ -15,6 +15,7 @@ namespace SystemDevelop
         public MainForm()
         {
             InitializeComponent();
+            var _ = DatabaseInstance.Database;
             login = new Login(this);
             loginControl.loginButton.Click += LoginButtonClick;
             loginControl.idTextBox.KeyDown += OnEnter;
@@ -210,24 +211,24 @@ namespace SystemDevelop
         {
             if (login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text, out employee))
             {
-                //headerControl.userLabel.Text += $" {employee.Name}";
+                headerControl.userLabel.Text += $" {employee.EmployeeName}";
                 logined = true;
                 headerControl.Visible = true;
-                switch (2)
+                switch (employee.AffiliationId)
                 {
-                    case 1:
+                    case "A01":
                         salesMenuBar.Visible = true;
                         loginControl.Visible = false;
                         warehouseMenuBar.Visible = false;
                         mainOfficeManuBar.Visible = false;
                         break;
-                    case 2:
+                    case "A02":
                         salesMenuBar.Visible = false;
                         loginControl.Visible = false;
                         warehouseMenuBar.Visible = true;
                         mainOfficeManuBar.Visible = false;
                         break;
-                    case 3:
+                    case "A03":
                         mainOfficeManuBar.Visible = true;
                         salesMenuBar.Visible = false;
                         loginControl.Visible = false;

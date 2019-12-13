@@ -1,17 +1,25 @@
-﻿using SystemDevelop.Interface;
+﻿using System.Data.OleDb;
+using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class Maker : IDatabese
+    public class Maker : DataModel
     {
-        public string Maker_ID { get; set; } = "";
-        public string Maker_Name { get; set; } = "";
-        public string PhoneNumber { get; set; } = "";
-        public string FaxNumber { get; set; } = "";
-        public string Access { get; set; } = "";
+        [SerializePropertyAttribute("FAX番号", IsKey=false, RelationKey=false)]
+        public string FaxNumber { get; set; }
+        
+        [SerializePropertyAttribute("メーカーID", IsKey=true, RelationKey=true)]
+        public string MakerId { get; set; }
+        
+        [SerializePropertyAttribute("メーカー名", IsKey=false, RelationKey=false)]
+        public string MakerName { get; set; }
+        
+        [SerializePropertyAttribute("住所", IsKey=false, RelationKey=false)]
+        public string Access { get; set; }
+        
+        [SerializePropertyAttribute("電話番号", IsKey=false, RelationKey=false)]
+        public string PhoneNumber { get; set; }
 
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
     }
 }

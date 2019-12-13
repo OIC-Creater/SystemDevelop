@@ -1,17 +1,26 @@
-﻿using SystemDevelop.Interface;
+﻿using System.Data.OleDb;
+using SystemDevelop.Interface;
+using ObjectDatabase;
 
 namespace SystemDevelop.DataModels
 {
-    class ReciveOrderDetail : IDatabese
+    public class ReciveOrderDetail : DataModel
     {
-
-        public string ReciveOrderDetailID { get; set; } 
-        public string ReciveOrderID { get; set; } 
-        public string ProductID { get; set; } 
+        [SerializePropertyAttribute("個数", IsKey=false, RelationKey=false)]
         public int Quantity { get; set; } 
         
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
+        [SerializePropertyAttribute("受注ID", IsKey=false, RelationKey=false)]
+        public string ReciveOrderId { get; set; } 
+        
+        [SerializePropertyAttribute("受注明細ID", IsKey=true, RelationKey=true)]
+        public string ReciveOrderDetailId { get; set; } 
+        
+        [SerializePropertyAttribute("商品ID", IsKey=false, RelationKey=false)]
+        public string ProductId { get; set; }
+
+        [IgnoreProperty, UnionTarget(nameof(DataModels.ReciveOrder.ReciveOrderId))]
+        public ReciveOrder ReciveOrder { get; set; }
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Product.ProductId))]
+        public Product Product { get; set; }
     }
 }

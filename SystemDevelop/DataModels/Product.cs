@@ -1,21 +1,30 @@
 ﻿using ObjectDatabase;
-using SystemDevelop.Interface;
 
 namespace SystemDevelop.DataModels
 {
-    class Product : IDatabese
+    public class Product : DataModel
     {
-        public string ProductID { get; set; } = "";
-        public string ProductName { get; set; } = "";
-        public int Cost { get; set; } = 0;
-        public int Price { get; set; } = 0;
-        public string MakerID { get; set; } = "";
-        public string SettingId { get; set; } = "";
+        [SerializePropertyAttribute("メーカーID", IsKey=false, RelationKey=false)]
+        public string MakerId { get; set; }
         
+        [SerializePropertyAttribute("原価", IsKey=false, RelationKey=false)]
+        public int Cost { get; set; }
+        
+        [SerializePropertyAttribute("商品ID", IsKey=true, RelationKey=true)]
+        public string ProductId { get; set; }
+        
+        [SerializePropertyAttribute("商品名", IsKey=false, RelationKey=false)]
+        public string ProductName { get; set; }
+        
+        [SerializePropertyAttribute("設定ID", IsKey=false, RelationKey=false)]
+        public string SettingId { get; set; }
+        
+        [SerializePropertyAttribute("売価", IsKey=false, RelationKey=false)]
+        public int Price { get; set; }
 
-        public void Update() { }
-        public void Get() { }
-        public void Add() { }
-
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Maker.MakerId))]
+        public Maker Maker { get; set; }
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Setting.SettingId))]
+        public Setting Setting { get; set; }
     }
 }

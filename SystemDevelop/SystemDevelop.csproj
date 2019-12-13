@@ -47,8 +47,9 @@
     <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="ObjectDatabase, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ObjectDatabase.1.0.7\lib\net461\ObjectDatabase.dll</HintPath>
+    <Reference Include="ObjectDatabase, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\ObjectDatabase.1.2.0\lib\net461\ObjectDatabase.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -68,12 +69,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModels\Issue.cs" />
+    <Compile Include="DataModels\Order.cs" />
+    <Compile Include="DataModels\OrderDetail.cs" />
+    <Compile Include="DataModels\Setting.cs" />
+    <Compile Include="DataModels\Storing.cs" />
     <Compile Include="Model\Composite.cs" />
     <Compile Include="Model\Encryption.cs" />
     <Compile Include="Model\GenerationKey.cs" />
     <Compile Include="Model\KeyContainer.cs" />
     <Compile Include="DatabaseInstance.cs" />
-    <Compile Include="DataModels\Belongs.cs" />
+    <Compile Include="DataModels\Affiliation.cs" />
     <Compile Include="DataModels\Employee.cs" />
     <Compile Include="DataModels\Maker.cs" />
     <Compile Include="DataModels\Pigeon.cs" />
@@ -93,7 +99,6 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\DB\DbClient.cs" />
     <Compile Include="Model\DB\DbCreate.cs" />
     <Compile Include="Model\PasswordHash.cs" />
     <Compile Include="Program.cs" />

@@ -23,10 +23,10 @@ namespace SystemDevelop.Model
 
         public bool AuthUser(string user, string pass, out Employee employee)
         {
-            //PasswordHash ph = new PasswordHash();
-            //string hashedPass = ph.Hash(pass);
+            PasswordHash ph = new PasswordHash();
+            string hashedPass = ph.Hash(pass);
             employee = new Employee();
-            /*string sql = $"SELECT * FROM 社員表 WHERE パスワード = '{pass}' AND 社員ID = '{user}'";
+            string sql = $"SELECT * FROM 社員 WHERE パスワード = '{pass}' AND 社員ID = '{user}'";
 
             OleDbCommand cmd = new OleDbCommand(sql,oleDb);
             OleDbDataReader oledr = null;
@@ -36,14 +36,20 @@ namespace SystemDevelop.Model
                 if (oledr.HasRows)
                 {
                     oledr.Read();
-                    employee.ID = oledr[0].ToString();
-                    employee.Name = oledr[1].ToString();
-                    employee.Password = oledr[2].ToString();
-                    employee.BelongsID = int.Parse(oledr[3].ToString());
-                    employee.PhoneNumber = oledr[4].ToString();
-                    employee.NowWork = oledr[5].ToString();
-                    employee.PigeonID  = oledr[6].ToString();
-                    return true;
+                    if (Convert.ToBoolean(oledr["雇用中"].ToString()))
+                    {
+                        employee.EmployeeId = oledr["社員ID"].ToString();
+                        employee.EmployeeName = oledr["社員名"].ToString();
+                        employee.Password = oledr["パスワード"].ToString();
+                        employee.AffiliationId = oledr["所属ID"].ToString();
+                        employee.PhoneNumber = oledr["電話番号"].ToString();
+                        employee.WorkingFlag = Convert.ToBoolean(oledr["雇用中"].ToString());
+                        employee.PigeonId = oledr["ハトID"].ToString();
+                        return true;
+                    }
+
+                    MessageBox.Show("IDまたはパスワードが間違っています");
+                    return false;
                 }
                 else
                 {
@@ -55,11 +61,7 @@ namespace SystemDevelop.Model
             {
                 MessageBox.Show(ex.Message);
                 return false;
-            }*/
-
-            /*employee.Name = "hoge";
-            employee.BelongsID = 1;*/
-            return true;
+            }
         }
     }
 }
