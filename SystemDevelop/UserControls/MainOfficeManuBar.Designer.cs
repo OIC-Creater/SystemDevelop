@@ -46,6 +46,7 @@
             this.employeeList.TabIndex = 0;
             this.employeeList.Text = "社員一覧";
             this.employeeList.UseVisualStyleBackColor = true;
+            this.employeeList.Click += new System.EventHandler(this.employeeList_Click);
             // 
             // manufacturerList
             // 
@@ -58,6 +59,7 @@
             this.manufacturerList.TabIndex = 1;
             this.manufacturerList.Text = "メーカ一覧";
             this.manufacturerList.UseVisualStyleBackColor = true;
+            this.manufacturerList.Click += new System.EventHandler(this.manufacturerList_Click);
             // 
             // shopList
             // 
@@ -70,6 +72,7 @@
             this.shopList.TabIndex = 2;
             this.shopList.Text = "ショップ一覧";
             this.shopList.UseVisualStyleBackColor = true;
+            this.shopList.Click += new System.EventHandler(this.shopList_Click);
             // 
             // newProduct
             // 
@@ -82,6 +85,7 @@
             this.newProduct.TabIndex = 3;
             this.newProduct.Text = "新商品登録";
             this.newProduct.UseVisualStyleBackColor = true;
+            this.newProduct.Click += new System.EventHandler(this.newProduct_Click);
             // 
             // businessOfficeList
             // 
@@ -94,6 +98,7 @@
             this.businessOfficeList.TabIndex = 4;
             this.businessOfficeList.Text = "営業所一覧";
             this.businessOfficeList.UseVisualStyleBackColor = true;
+            this.businessOfficeList.Click += new System.EventHandler(this.businessOfficeList_Click);
             // 
             // MainOfficeManuBar
             // 
@@ -111,10 +116,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button manufacturerList;
-        private System.Windows.Forms.Button shopList;
-        private System.Windows.Forms.Button newProduct;
-        private System.Windows.Forms.Button businessOfficeList;
         public System.Windows.Forms.Button employeeList;
+        public System.Windows.Forms.Button manufacturerList;
+        public System.Windows.Forms.Button shopList;
+        public System.Windows.Forms.Button newProduct;
+        public System.Windows.Forms.Button businessOfficeList;
     }
 }

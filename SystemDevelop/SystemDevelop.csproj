@@ -207,11 +207,23 @@
     <Compile Include="UserControls\MainOfficeManuBar.Designer.cs">
       <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ManufacturerList.cs">
+    <Compile Include="UserControls\BusinesOfficeList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ManufacturerList.Designer.cs">
-      <DependentUpon>ManufacturerList.cs</DependentUpon>
+    <Compile Include="UserControls\BusinesOfficeList.Designer.cs">
+      <DependentUpon>BusinesOfficeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManufactureList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManufactureList.Designer.cs">
+      <DependentUpon>ManufactureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewProduct.Designer.cs">
+      <DependentUpon>NewProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\OrderList.cs">
       <SubType>UserControl</SubType>
@@ -242,6 +254,24 @@
     </Compile>
     <Compile Include="UserControls\SalesMenuBar.Designer.cs">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SettingConfi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SettingConfi.Designer.cs">
+      <DependentUpon>SettingConfi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SettingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SettingScreen.Designer.cs">
+      <DependentUpon>SettingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopList.Designer.cs">
+      <DependentUpon>ShopList.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\StockList.cs">
       <SubType>UserControl</SubType>
@@ -322,8 +352,14 @@
     <EmbeddedResource Include="UserControls\MainOfficeManuBar.resx">
       <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\manufacturerList.resx">
-      <DependentUpon>ManufacturerList.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\BusinesOfficeList.resx">
+      <DependentUpon>BusinesOfficeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ManufactureList.resx">
+      <DependentUpon>ManufactureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NewProduct.resx">
+      <DependentUpon>NewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\OrderList.resx">
       <DependentUpon>OrderList.cs</DependentUpon>
@@ -339,6 +375,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SalesMenuBar.resx">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SettingConfi.resx">
+      <DependentUpon>SettingConfi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SettingScreen.resx">
+      <DependentUpon>SettingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopList.resx">
+      <DependentUpon>ShopList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\StockList.resx">
       <DependentUpon>StockList.cs</DependentUpon>
