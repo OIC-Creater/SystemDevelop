@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.settingConfi = new SystemDevelop.UserControls.SettingConfi();
+            this.newProduct = new SystemDevelop.UserControls.NewProduct();
+            this.manufactureList = new SystemDevelop.UserControls.ManufactureList();
             this.shopList = new SystemDevelop.UserControls.ShopList();
             this.businesOfficeList = new SystemDevelop.UserControls.BusinesOfficeList();
             this.empList = new SystemDevelop.UserControls.EmpList();
@@ -44,11 +47,40 @@
             this.warehouseMenuBar = new SystemDevelop.UserControls.WarehouseMenuBar();
             this.salesMenuBar = new SystemDevelop.UserControls.SalesMenuBar();
             this.loginControl = new SystemDevelop.UserControls.Login();
-            this.manufactureList = new SystemDevelop.UserControls.ManufactureList();
-            this.newProduct = new SystemDevelop.UserControls.NewProduct();
-            this.settingScreen = new SystemDevelop.UserControls.SettingScreen();
-            this.settingConfi = new SystemDevelop.UserControls.SettingConfi();
             this.SuspendLayout();
+            // 
+            // settingConfi
+            // 
+            this.settingConfi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.settingConfi.Location = new System.Drawing.Point(622, 329);
+            this.settingConfi.Name = "settingConfi";
+            this.settingConfi.Size = new System.Drawing.Size(280, 120);
+            this.settingConfi.TabIndex = 30;
+            this.settingConfi.Visible = false;
+            // 
+            // newProduct
+            // 
+            this.newProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.newProduct.Location = new System.Drawing.Point(219, 81);
+            this.newProduct.Name = "newProduct";
+            this.newProduct.Size = new System.Drawing.Size(1045, 710);
+            this.newProduct.TabIndex = 29;
+            this.newProduct.Visible = false;
+            // 
+            // manufactureList
+            // 
+            this.manufactureList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.manufactureList.Location = new System.Drawing.Point(219, 81);
+            this.manufactureList.Name = "manufactureList";
+            this.manufactureList.Size = new System.Drawing.Size(1045, 710);
+            this.manufactureList.TabIndex = 28;
+            this.manufactureList.Visible = false;
             // 
             // shopList
             // 
@@ -213,55 +245,12 @@
             this.loginControl.Size = new System.Drawing.Size(1264, 786);
             this.loginControl.TabIndex = 12;
             // 
-            // manufactureList
-            // 
-            this.manufactureList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.manufactureList.Location = new System.Drawing.Point(219, 81);
-            this.manufactureList.Name = "manufactureList";
-            this.manufactureList.Size = new System.Drawing.Size(1045, 710);
-            this.manufactureList.TabIndex = 28;
-            this.manufactureList.Visible = false;
-            // 
-            // newProduct
-            // 
-            this.newProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.newProduct.Location = new System.Drawing.Point(219, 81);
-            this.newProduct.Name = "newProduct";
-            this.newProduct.Size = new System.Drawing.Size(1045, 710);
-            this.newProduct.TabIndex = 29;
-            this.newProduct.Visible = false;
-            // 
-            // settingScreen
-            // 
-            this.settingScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingScreen.Location = new System.Drawing.Point(659, 81);
-            this.settingScreen.Name = "settingScreen";
-            this.settingScreen.Size = new System.Drawing.Size(605, 348);
-            this.settingScreen.TabIndex = 30;
-            this.settingScreen.Visible = false;
-            // 
-            // settingConfi
-            // 
-            this.settingConfi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingConfi.Location = new System.Drawing.Point(496, 257);
-            this.settingConfi.Name = "settingConfi";
-            this.settingConfi.Size = new System.Drawing.Size(280, 120);
-            this.settingConfi.TabIndex = 31;
-            this.settingConfi.Visible = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
             this.Controls.Add(this.settingConfi);
-            this.Controls.Add(this.settingScreen);
             this.Controls.Add(this.newProduct);
             this.Controls.Add(this.manufactureList);
             this.Controls.Add(this.shopList);
@@ -310,7 +299,6 @@
         private UserControls.ShopList shopList;
         private UserControls.ManufactureList manufactureList;
         private UserControls.NewProduct newProduct;
-        private UserControls.SettingScreen settingScreen;
         private UserControls.SettingConfi settingConfi;
     }
 }

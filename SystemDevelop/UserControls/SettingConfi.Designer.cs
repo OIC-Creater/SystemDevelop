@@ -41,12 +41,12 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "設定を登録しますか？";
+            this.label1.Text = "商品を登録しますか？";
             // 
             // Yes
             // 
             this.Yes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Yes.Location = new System.Drawing.Point(94, 78);
+            this.Yes.Location = new System.Drawing.Point(92, 76);
             this.Yes.Name = "Yes";
             this.Yes.Size = new System.Drawing.Size(79, 28);
             this.Yes.TabIndex = 1;
@@ -56,7 +56,7 @@
             // No
             // 
             this.No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.No.Location = new System.Drawing.Point(179, 78);
+            this.No.Location = new System.Drawing.Point(177, 76);
             this.No.Name = "No";
             this.No.Size = new System.Drawing.Size(79, 28);
             this.No.TabIndex = 2;
@@ -67,11 +67,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.No);
             this.Controls.Add(this.Yes);
             this.Controls.Add(this.label1);
             this.Name = "SettingConfi";
-            this.Size = new System.Drawing.Size(280, 120);
+            this.Size = new System.Drawing.Size(278, 118);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,7 +81,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Yes;
-        private System.Windows.Forms.Button No;
+        public System.Windows.Forms.Button Yes;
+        public System.Windows.Forms.Button No;
     }
 }

@@ -34,14 +34,15 @@ namespace SystemDevelop
             mainOfficeManuBar.shopList.Click += ShopList_Click;
             mainOfficeManuBar.manufacturerList.Click += ManufacturerList_Click1;
             mainOfficeManuBar.newProduct.Click += NewProduct_Click;
-            newProduct.settingButton.Click += SettingButton_Click;
-            settingScreen.SettingClose.Click += SettingClose_Click;
+            newProduct.productButton.Click += SettingButton_Click;
+            settingConfi.Yes.Click += Yes_Click;
+            settingConfi.No.Click += No_Click;
         }
 
-        private void SettingClose_Click(object sender, EventArgs e)
+        
+        private void No_Click(object sender, EventArgs e)
         {
-            settingConfi.Visible = true;
-            settingScreen.Visible = false;
+            settingConfi.Visible = false;
             newProduct.Visible = false;
             manufactureList.Visible = false;
             businesOfficeList.Visible = false;
@@ -49,9 +50,21 @@ namespace SystemDevelop
             shopList.Visible = false;
         }
 
+        private void Yes_Click(object sender, EventArgs e)
+        {
+            settingConfi.Visible = false;
+            newProduct.Visible = false;
+            manufactureList.Visible = false;
+            businesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+        }
+
+        
+
         private void SettingButton_Click(object sender, EventArgs e)
         {
-            settingScreen.Visible = true;
+            settingConfi.Visible = true;
             newProduct.Visible = false;
             manufactureList.Visible = false;
             businesOfficeList.Visible = false;
@@ -66,7 +79,7 @@ namespace SystemDevelop
             businesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
-            settingScreen.Visible = false;
+           
         }
 
         private void ManufacturerList_Click1(object sender, EventArgs e)
@@ -76,7 +89,7 @@ namespace SystemDevelop
             empList.Visible = false;
             shopList.Visible = false;
             newProduct.Visible = false;
-            settingScreen.Visible = false;
+            
         }
 
         private void BusinessOfficeList_Click(object sender, EventArgs e)
@@ -86,7 +99,7 @@ namespace SystemDevelop
             shopList.Visible = false;
             manufactureList.Visible = false;
             newProduct.Visible = false;
-            settingScreen.Visible = false;
+            
         }
 
         private void ShopList_Click(object sender, EventArgs e)
@@ -96,7 +109,7 @@ namespace SystemDevelop
             empList.Visible = false;
             manufactureList.Visible = false;
             newProduct.Visible = false;
-            settingScreen.Visible = false;
+            
         }
 
         private void ManufacturerList_Click(object sender, EventArgs e)
@@ -106,7 +119,6 @@ namespace SystemDevelop
             shopList.Visible = false;
             manufactureList.Visible = false;
             newProduct.Visible = false;
-            settingScreen.Visible = false;
         }
 
         private void EmployeeList_Click(object sender, EventArgs e)
@@ -116,7 +128,6 @@ namespace SystemDevelop
             shopList.Visible = false;
             manufactureList.Visible = false;
             newProduct.Visible = false;
-            settingScreen.Visible = false;
         }
 
 
@@ -183,6 +194,7 @@ namespace SystemDevelop
             if (e.KeyCode == Keys.Enter)
             {
                 Login();
+                orderControl.Visible = true;
             }
         }
 
@@ -191,6 +203,7 @@ namespace SystemDevelop
         private void LoginButtonClick(object sender, EventArgs e)
         {
             Login();
+            orderControl.Visible = true;
         }
         
         private void Login()
@@ -200,7 +213,7 @@ namespace SystemDevelop
                 //headerControl.userLabel.Text += $" {employee.Name}";
                 logined = true;
                 headerControl.Visible = true;
-                switch (3)
+                switch (2)
                 {
                     case 1:
                         salesMenuBar.Visible = true;
