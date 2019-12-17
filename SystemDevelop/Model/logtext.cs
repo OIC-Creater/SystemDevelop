@@ -16,6 +16,10 @@ namespace SystemDevelop.Model
             sw.WriteLine("SONY");
             sw.WriteLine("DELL");
             sw.Close();
+
+            File.AppendAllText("test.txt", "a");
+
         }
     }
 }
+
