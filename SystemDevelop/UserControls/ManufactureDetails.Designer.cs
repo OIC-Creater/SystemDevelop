@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.address = new System.Windows.Forms.TextBox();
-            this.phone = new System.Windows.Forms.TextBox();
-            this.id = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.TextBox();
+            this.manufAddress = new System.Windows.Forms.TextBox();
+            this.manufPhone = new System.Windows.Forms.TextBox();
+            this.manufID = new System.Windows.Forms.Label();
+            this.manufName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,39 +40,39 @@
             this.updata = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // address
+            // manufAddress
             // 
-            this.address.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.address.Location = new System.Drawing.Point(458, 444);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(340, 31);
-            this.address.TabIndex = 3;
+            this.manufAddress.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.manufAddress.Location = new System.Drawing.Point(458, 444);
+            this.manufAddress.Name = "manufAddress";
+            this.manufAddress.Size = new System.Drawing.Size(340, 31);
+            this.manufAddress.TabIndex = 3;
             // 
-            // phone
+            // manufPhone
             // 
-            this.phone.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.phone.Location = new System.Drawing.Point(458, 330);
-            this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(340, 31);
-            this.phone.TabIndex = 2;
+            this.manufPhone.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.manufPhone.Location = new System.Drawing.Point(458, 330);
+            this.manufPhone.Name = "manufPhone";
+            this.manufPhone.Size = new System.Drawing.Size(340, 31);
+            this.manufPhone.TabIndex = 2;
             // 
-            // id
+            // manufID
             // 
-            this.id.AutoSize = true;
-            this.id.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.id.Location = new System.Drawing.Point(582, 91);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(79, 24);
-            this.id.TabIndex = 33;
-            this.id.Text = "id_label";
+            this.manufID.AutoSize = true;
+            this.manufID.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.manufID.Location = new System.Drawing.Point(582, 91);
+            this.manufID.Name = "manufID";
+            this.manufID.Size = new System.Drawing.Size(79, 24);
+            this.manufID.TabIndex = 33;
+            this.manufID.Text = "id_label";
             // 
-            // name
+            // manufName
             // 
-            this.name.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.name.Location = new System.Drawing.Point(458, 213);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(340, 31);
-            this.name.TabIndex = 1;
+            this.manufName.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.manufName.Location = new System.Drawing.Point(458, 213);
+            this.manufName.Name = "manufName";
+            this.manufName.Size = new System.Drawing.Size(340, 31);
+            this.manufName.TabIndex = 1;
             // 
             // label5
             // 
@@ -138,10 +138,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.updata);
-            this.Controls.Add(this.address);
-            this.Controls.Add(this.phone);
-            this.Controls.Add(this.id);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.manufAddress);
+            this.Controls.Add(this.manufPhone);
+            this.Controls.Add(this.manufID);
+            this.Controls.Add(this.manufName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -154,10 +154,10 @@
         }
 
         #endregion
-        public System.Windows.Forms.TextBox address;
-        public System.Windows.Forms.TextBox phone;
-        public System.Windows.Forms.Label id;
-        public System.Windows.Forms.TextBox name;
+        public System.Windows.Forms.TextBox manufAddress;
+        public System.Windows.Forms.TextBox manufPhone;
+        public System.Windows.Forms.Label manufID;
+        public System.Windows.Forms.TextBox manufName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

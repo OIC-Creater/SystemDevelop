@@ -1,6 +1,6 @@
 ﻿namespace SystemDevelop.UserControls
 {
-    partial class BolDetails
+    partial class reciveDetails
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -34,11 +34,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.TextBox();
-            this.id = new System.Windows.Forms.Label();
-            this.phone = new System.Windows.Forms.TextBox();
-            this.address = new System.Windows.Forms.TextBox();
-            this.fax = new System.Windows.Forms.TextBox();
+            this.salesOfficeName = new System.Windows.Forms.TextBox();
+            this.salesOfficeID = new System.Windows.Forms.Label();
+            this.salesOfficePhone = new System.Windows.Forms.TextBox();
+            this.salesOfficeAddress = new System.Windows.Forms.TextBox();
+            this.salesOfficeFax = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -101,47 +101,47 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "ＦＡＸ番号\t";
             // 
-            // name
+            // salesOfficeName
             // 
-            this.name.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.name.Location = new System.Drawing.Point(453, 157);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(340, 31);
-            this.name.TabIndex = 1;
+            this.salesOfficeName.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.salesOfficeName.Location = new System.Drawing.Point(453, 157);
+            this.salesOfficeName.Name = "salesOfficeName";
+            this.salesOfficeName.Size = new System.Drawing.Size(340, 31);
+            this.salesOfficeName.TabIndex = 1;
             // 
-            // id
+            // salesOfficeID
             // 
-            this.id.AutoSize = true;
-            this.id.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.id.Location = new System.Drawing.Point(555, 86);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(79, 24);
-            this.id.TabIndex = 8;
-            this.id.Text = "id_label";
+            this.salesOfficeID.AutoSize = true;
+            this.salesOfficeID.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.salesOfficeID.Location = new System.Drawing.Point(555, 86);
+            this.salesOfficeID.Name = "salesOfficeID";
+            this.salesOfficeID.Size = new System.Drawing.Size(79, 24);
+            this.salesOfficeID.TabIndex = 8;
+            this.salesOfficeID.Text = "id_label";
             // 
-            // phone
+            // salesOfficePhone
             // 
-            this.phone.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.phone.Location = new System.Drawing.Point(452, 240);
-            this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(340, 31);
-            this.phone.TabIndex = 2;
+            this.salesOfficePhone.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.salesOfficePhone.Location = new System.Drawing.Point(452, 240);
+            this.salesOfficePhone.Name = "salesOfficePhone";
+            this.salesOfficePhone.Size = new System.Drawing.Size(340, 31);
+            this.salesOfficePhone.TabIndex = 2;
             // 
-            // address
+            // salesOfficeAddress
             // 
-            this.address.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.address.Location = new System.Drawing.Point(452, 328);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(340, 31);
-            this.address.TabIndex = 3;
+            this.salesOfficeAddress.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.salesOfficeAddress.Location = new System.Drawing.Point(452, 328);
+            this.salesOfficeAddress.Name = "salesOfficeAddress";
+            this.salesOfficeAddress.Size = new System.Drawing.Size(340, 31);
+            this.salesOfficeAddress.TabIndex = 3;
             // 
-            // fax
+            // salesOfficeFax
             // 
-            this.fax.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.fax.Location = new System.Drawing.Point(452, 420);
-            this.fax.Name = "fax";
-            this.fax.Size = new System.Drawing.Size(340, 31);
-            this.fax.TabIndex = 4;
+            this.salesOfficeFax.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.salesOfficeFax.Location = new System.Drawing.Point(452, 420);
+            this.salesOfficeFax.Name = "salesOfficeFax";
+            this.salesOfficeFax.Size = new System.Drawing.Size(340, 31);
+            this.salesOfficeFax.TabIndex = 4;
             // 
             // button1
             // 
@@ -161,24 +161,24 @@
             this.button2.Text = "キャンセル";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // BolDetails
+            // reciveDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.fax);
-            this.Controls.Add(this.address);
-            this.Controls.Add(this.phone);
-            this.Controls.Add(this.id);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.salesOfficeFax);
+            this.Controls.Add(this.salesOfficeAddress);
+            this.Controls.Add(this.salesOfficePhone);
+            this.Controls.Add(this.salesOfficeID);
+            this.Controls.Add(this.salesOfficeName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "BolDetails";
+            this.Name = "reciveDetails";
             this.Size = new System.Drawing.Size(1033, 706);
             this.Load += new System.EventHandler(this.DetailsBOL_Load);
             this.ResumeLayout(false);
@@ -194,11 +194,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox name;
-        public System.Windows.Forms.Label id;
-        public System.Windows.Forms.TextBox phone;
-        public System.Windows.Forms.TextBox address;
-        public System.Windows.Forms.TextBox fax;
+        public System.Windows.Forms.TextBox salesOfficeName;
+        public System.Windows.Forms.Label salesOfficeID;
+        public System.Windows.Forms.TextBox salesOfficePhone;
+        public System.Windows.Forms.TextBox salesOfficeAddress;
+        public System.Windows.Forms.TextBox salesOfficeFax;
         public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button button2;
     }

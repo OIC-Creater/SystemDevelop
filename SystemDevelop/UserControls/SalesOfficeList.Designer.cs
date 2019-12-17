@@ -1,6 +1,6 @@
 ﻿namespace SystemDevelop.UserControls
 {
-    partial class OrderList
+    partial class SalesOfficeList
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.updata = new System.Windows.Forms.Button();
+            this.salesOfficeDetailButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,31 +41,29 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGridView1.Size = new System.Drawing.Size(1033, 709);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.TabStop = false;
             // 
-            // updata
+            // salesOfficeDetailButton
             // 
-            this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.updata.Location = new System.Drawing.Point(873, 709);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(160, 80);
-            this.updata.TabIndex = 1;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.salesOfficeDetailButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.salesOfficeDetailButton.Location = new System.Drawing.Point(873, 709);
+            this.salesOfficeDetailButton.Name = "salesOfficeDetailButton";
+            this.salesOfficeDetailButton.Size = new System.Drawing.Size(160, 80);
+            this.salesOfficeDetailButton.TabIndex = 2;
+            this.salesOfficeDetailButton.Text = "詳細";
+            this.salesOfficeDetailButton.UseVisualStyleBackColor = true;
             // 
-            // OrderList
+            // SalesOfficeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.salesOfficeDetailButton);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "OrderList";
+            this.Name = "SalesOfficeList";
             this.Size = new System.Drawing.Size(1033, 789);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -73,7 +71,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button updata;
-        public System.Windows.Forms.DataGridView dataGridView1;
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Button salesOfficeDetailButton;
     }
 }

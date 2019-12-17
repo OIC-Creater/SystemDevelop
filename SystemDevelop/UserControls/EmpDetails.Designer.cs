@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.phone = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.affiliation = new System.Windows.Forms.TextBox();
-            this.id = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.TextBox();
+            this.empPhone = new System.Windows.Forms.TextBox();
+            this.empPassword = new System.Windows.Forms.TextBox();
+            this.empAffiliation = new System.Windows.Forms.TextBox();
+            this.empID = new System.Windows.Forms.Label();
+            this.empName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,52 +41,52 @@
             this.pigeonName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.hiring = new System.Windows.Forms.ComboBox();
+            this.empHiring = new System.Windows.Forms.ComboBox();
             this.cancel = new System.Windows.Forms.Button();
             this.updata = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // phone
+            // empPhone
             // 
-            this.phone.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.phone.Location = new System.Drawing.Point(464, 348);
-            this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(340, 31);
-            this.phone.TabIndex = 4;
+            this.empPhone.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empPhone.Location = new System.Drawing.Point(464, 348);
+            this.empPhone.Name = "empPhone";
+            this.empPhone.Size = new System.Drawing.Size(340, 31);
+            this.empPhone.TabIndex = 4;
             // 
-            // password
+            // empPassword
             // 
-            this.password.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.password.Location = new System.Drawing.Point(465, 277);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(340, 31);
-            this.password.TabIndex = 3;
+            this.empPassword.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empPassword.Location = new System.Drawing.Point(465, 277);
+            this.empPassword.Name = "empPassword";
+            this.empPassword.Size = new System.Drawing.Size(340, 31);
+            this.empPassword.TabIndex = 3;
             // 
-            // affiliation
+            // empAffiliation
             // 
-            this.affiliation.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.affiliation.Location = new System.Drawing.Point(464, 207);
-            this.affiliation.Name = "affiliation";
-            this.affiliation.Size = new System.Drawing.Size(340, 31);
-            this.affiliation.TabIndex = 2;
+            this.empAffiliation.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empAffiliation.Location = new System.Drawing.Point(464, 207);
+            this.empAffiliation.Name = "empAffiliation";
+            this.empAffiliation.Size = new System.Drawing.Size(340, 31);
+            this.empAffiliation.TabIndex = 2;
             // 
-            // id
+            // empID
             // 
-            this.id.AutoSize = true;
-            this.id.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.id.Location = new System.Drawing.Point(588, 71);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(79, 24);
-            this.id.TabIndex = 18;
-            this.id.Text = "id_label";
+            this.empID.AutoSize = true;
+            this.empID.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empID.Location = new System.Drawing.Point(588, 71);
+            this.empID.Name = "empID";
+            this.empID.Size = new System.Drawing.Size(79, 24);
+            this.empID.TabIndex = 18;
+            this.empID.Text = "id_label";
             // 
-            // name
+            // empName
             // 
-            this.name.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.name.Location = new System.Drawing.Point(465, 138);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(340, 31);
-            this.name.TabIndex = 1;
+            this.empName.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empName.Location = new System.Drawing.Point(465, 138);
+            this.empName.Name = "empName";
+            this.empName.Size = new System.Drawing.Size(340, 31);
+            this.empName.TabIndex = 1;
             // 
             // label6
             // 
@@ -166,17 +166,17 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "雇用中\t";
             // 
-            // hiring
+            // empHiring
             // 
-            this.hiring.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.hiring.FormattingEnabled = true;
-            this.hiring.Items.AddRange(new object[] {
+            this.empHiring.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empHiring.FormattingEnabled = true;
+            this.empHiring.Items.AddRange(new object[] {
             "雇用",
             "離職済"});
-            this.hiring.Location = new System.Drawing.Point(463, 491);
-            this.hiring.Name = "hiring";
-            this.hiring.Size = new System.Drawing.Size(340, 32);
-            this.hiring.TabIndex = 6;
+            this.empHiring.Location = new System.Drawing.Point(463, 491);
+            this.empHiring.Name = "empHiring";
+            this.empHiring.Size = new System.Drawing.Size(340, 32);
+            this.empHiring.TabIndex = 6;
             // 
             // cancel
             // 
@@ -202,15 +202,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.updata);
-            this.Controls.Add(this.hiring);
+            this.Controls.Add(this.empHiring);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pigeonName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.phone);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.affiliation);
-            this.Controls.Add(this.id);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.empPhone);
+            this.Controls.Add(this.empPassword);
+            this.Controls.Add(this.empAffiliation);
+            this.Controls.Add(this.empID);
+            this.Controls.Add(this.empName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -231,13 +231,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox phone;
-        public System.Windows.Forms.TextBox password;
-        public System.Windows.Forms.TextBox affiliation;
-        public System.Windows.Forms.Label id;
-        public System.Windows.Forms.TextBox name;
+        public System.Windows.Forms.TextBox empPhone;
+        public System.Windows.Forms.TextBox empPassword;
+        public System.Windows.Forms.TextBox empAffiliation;
+        public System.Windows.Forms.Label empID;
+        public System.Windows.Forms.TextBox empName;
         public System.Windows.Forms.TextBox pigeonName;
-        public System.Windows.Forms.ComboBox hiring;
+        public System.Windows.Forms.ComboBox empHiring;
         public System.Windows.Forms.Button cancel;
         public System.Windows.Forms.Button updata;
     }

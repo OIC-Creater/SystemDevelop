@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.updata = new System.Windows.Forms.Button();
+            this.stockDetailButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,21 +48,21 @@
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // updata
+            // stockDetailButton
             // 
-            this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.updata.Location = new System.Drawing.Point(873, 709);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(160, 80);
-            this.updata.TabIndex = 1;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.stockDetailButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.stockDetailButton.Location = new System.Drawing.Point(873, 709);
+            this.stockDetailButton.Name = "stockDetailButton";
+            this.stockDetailButton.Size = new System.Drawing.Size(160, 80);
+            this.stockDetailButton.TabIndex = 1;
+            this.stockDetailButton.Text = "詳細";
+            this.stockDetailButton.UseVisualStyleBackColor = true;
             // 
             // StockList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.stockDetailButton);
             this.Controls.Add(this.dataGridView1);
             this.Name = "StockList";
             this.Size = new System.Drawing.Size(1033, 789);
@@ -74,6 +74,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button updata;
+        private System.Windows.Forms.Button stockDetailButton;
     }
 }
