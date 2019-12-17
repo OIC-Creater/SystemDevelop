@@ -32,21 +32,21 @@
             this.headerLists = new SystemDevelop.UserControls.HeaderLists();
             this.headerControl = new SystemDevelop.UserControls.Header();
             this.settingConfi = new SystemDevelop.UserControls.SettingConfi();
-            this.reciveControl = new SystemDevelop.UserControls.Recive();
+            this.reciveControl = new SystemDevelop.UserControls.ReciveAdd();
             this.newProduct = new SystemDevelop.UserControls.NewProduct();
             this.warehouseMenuBar = new SystemDevelop.UserControls.WarehouseMenuBar();
             this.loginControl = new SystemDevelop.UserControls.Login();
             this.salesMenuBar = new SystemDevelop.UserControls.SalesMenuBar();
             this.manufactureList = new SystemDevelop.UserControls.ManufactureList();
             this.shopList = new SystemDevelop.UserControls.ShopList();
-            this.businesOfficeList = new SystemDevelop.UserControls.BusinesOfficeList();
+            this.businesOfficeList = new SystemDevelop.UserControls.SalesOfficeList();
             this.empList = new SystemDevelop.UserControls.EmpList();
             this.unDispatched = new SystemDevelop.UserControls.PlaceAnOrderList();
             this.pigeonList = new SystemDevelop.UserControls.PigeonList();
             this.stockList = new SystemDevelop.UserControls.StockList();
             this.warehouseControl = new SystemDevelop.UserControls.StockList();
             this.placeControl = new SystemDevelop.UserControls.PlaceAnOrderList();
-            this.orderControl = new SystemDevelop.UserControls.OrderList();
+            this.orderControl = new SystemDevelop.UserControls.ReciveList();
             this.SuspendLayout();
             // 
             // mainOfficeManuBar
@@ -286,15 +286,15 @@
         private UserControls.Login loginControl;
         private UserControls.SalesMenuBar salesMenuBar;
         private UserControls.WarehouseMenuBar warehouseMenuBar;
-        private UserControls.Recive reciveControl;
-        private UserControls.OrderList orderControl;
+        private UserControls.ReciveAdd reciveControl;
+        private UserControls.ReciveList orderControl;
         private UserControls.PlaceAnOrderList placeControl;
         private UserControls.StockList warehouseControl;
         private UserControls.PigeonList pigeonList;
         private UserControls.PlaceAnOrderList unDispatched;
         private UserControls.MainOfficeManuBar mainOfficeManuBar;
         private UserControls.EmpList empList;
-        public UserControls.BusinesOfficeList businesOfficeList;
+        public UserControls.SalesOfficeList businesOfficeList;
         private UserControls.ShopList shopList;
         private UserControls.ManufactureList manufactureList;
         private UserControls.NewProduct newProduct;

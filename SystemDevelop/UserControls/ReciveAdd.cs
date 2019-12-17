@@ -2,9 +2,9 @@
 
 namespace SystemDevelop.UserControls
 {
-    public partial class Recive : UserControl
+    public partial class ReciveAdd : UserControl
     {
-        public Recive()
+        public ReciveAdd()
         {
             InitializeComponent();
         }

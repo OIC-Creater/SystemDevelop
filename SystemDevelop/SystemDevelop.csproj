@@ -10,12 +10,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>SystemDevelop</RootNamespace>
     <AssemblyName>SystemDevelop</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -187,11 +188,11 @@
     <Compile Include="Properties\UndispatchedList.Designer.cs">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\BolDetails.cs">
+    <Compile Include="UserControls\SalesOfficeDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\BolDetails.Designer.cs">
-      <DependentUpon>BolDetails.cs</DependentUpon>
+    <Compile Include="UserControls\SalesOfficeDetails.Designer.cs">
+      <DependentUpon>SalesOfficeDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\EmpDetails.cs">
       <SubType>UserControl</SubType>
@@ -229,11 +230,11 @@
     <Compile Include="UserControls\MainOfficeManuBar.Designer.cs">
       <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\BusinesOfficeList.cs">
+    <Compile Include="UserControls\SalesOfficeList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\BusinesOfficeList.Designer.cs">
-      <DependentUpon>BusinesOfficeList.cs</DependentUpon>
+    <Compile Include="UserControls\SalesOfficeList.Designer.cs">
+      <DependentUpon>SalesOfficeList.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ManufactureDetails.cs">
       <SubType>UserControl</SubType>
@@ -253,17 +254,17 @@
     <Compile Include="UserControls\NewProduct.Designer.cs">
       <DependentUpon>NewProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\OrderList.cs">
+    <Compile Include="UserControls\ReciveList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\OrderList.Designer.cs">
-      <DependentUpon>OrderList.cs</DependentUpon>
+    <Compile Include="UserControls\ReciveList.Designer.cs">
+      <DependentUpon>ReciveList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\OrderListDetails.cs">
+    <Compile Include="UserControls\ReciveListDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\OrderListDetails.Designer.cs">
-      <DependentUpon>OrderListDetails.cs</DependentUpon>
+    <Compile Include="UserControls\ReciveListDetails.Designer.cs">
+      <DependentUpon>ReciveListDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\PaolDetails.cs">
       <SubType>UserControl</SubType>
@@ -289,11 +290,11 @@
     <Compile Include="UserControls\PlaceAnOrderList.Designer.cs">
       <DependentUpon>PlaceAnOrderList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Recive.cs">
+    <Compile Include="UserControls\ReciveAdd.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Recive.Designer.cs">
-      <DependentUpon>Recive.cs</DependentUpon>
+    <Compile Include="UserControls\ReciveAdd.Designer.cs">
+      <DependentUpon>ReciveAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SalesMenuBar.cs">
       <SubType>UserControl</SubType>
@@ -380,8 +381,8 @@
     <EmbeddedResource Include="Properties\UndispatchedList.resx">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\BolDetails.resx">
-      <DependentUpon>BolDetails.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\SalesOfficeDetails.resx">
+      <DependentUpon>SalesOfficeDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\EmpDetails.resx">
       <DependentUpon>EmpDetails.cs</DependentUpon>
@@ -401,8 +402,8 @@
     <EmbeddedResource Include="UserControls\MainOfficeManuBar.resx">
       <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\BusinesOfficeList.resx">
-      <DependentUpon>BusinesOfficeList.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\SalesOfficeList.resx">
+      <DependentUpon>SalesOfficeList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ManufactureDetails.resx">
       <DependentUpon>ManufactureDetails.cs</DependentUpon>
@@ -413,11 +414,11 @@
     <EmbeddedResource Include="UserControls\NewProduct.resx">
       <DependentUpon>NewProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\OrderList.resx">
-      <DependentUpon>OrderList.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ReciveList.resx">
+      <DependentUpon>ReciveList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\OrderListDetails.resx">
-      <DependentUpon>OrderListDetails.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ReciveListDetails.resx">
+      <DependentUpon>ReciveListDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PaolDetails.resx">
       <DependentUpon>PaolDetails.cs</DependentUpon>
@@ -431,8 +432,8 @@
     <EmbeddedResource Include="UserControls\PlaceAnOrderList.resx">
       <DependentUpon>PlaceAnOrderList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Recive.resx">
-      <DependentUpon>Recive.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ReciveAdd.resx">
+      <DependentUpon>ReciveAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SalesMenuBar.resx">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>

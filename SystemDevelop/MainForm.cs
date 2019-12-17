@@ -39,7 +39,7 @@ namespace SystemDevelop
             settingConfi.Yes.Click += Yes_Click;
             settingConfi.No.Click += No_Click;
             loginControl.closeButton.Click += CloseButton_Click;
-            businesOfficeList.BOLupdata.Click += BOLupdata_Click;
+            businesOfficeList.salesOfficeDetailButton.Click += BOLupdata_Click;
         }
 
         private void BOLupdata_Click(object sender, EventArgs e)

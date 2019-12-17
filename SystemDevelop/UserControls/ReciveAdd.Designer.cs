@@ -1,6 +1,6 @@
 ﻿namespace SystemDevelop.UserControls
 {
-    partial class Recive
+    partial class ReciveAdd
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
