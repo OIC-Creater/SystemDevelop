@@ -53,7 +53,7 @@
             this.productComboBox.Location = new System.Drawing.Point(397, 116);
             this.productComboBox.Name = "productComboBox";
             this.productComboBox.Size = new System.Drawing.Size(393, 41);
-            this.productComboBox.TabIndex = 11;
+            this.productComboBox.TabIndex = 1;
             // 
             // productLabel
             // 
@@ -92,10 +92,10 @@
             // 
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox3.Location = new System.Drawing.Point(397, 245);
+            this.textBox3.Location = new System.Drawing.Point(397, 248);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(223, 39);
-            this.textBox3.TabIndex = 28;
+            this.textBox3.TabIndex = 2;
             // 
             // label10
             // 
@@ -115,7 +115,7 @@
             this.textBox4.Location = new System.Drawing.Point(397, 368);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(223, 39);
-            this.textBox4.TabIndex = 30;
+            this.textBox4.TabIndex = 3;
             // 
             // label11
             // 
@@ -134,7 +134,7 @@
             this.productButton.Location = new System.Drawing.Point(864, 613);
             this.productButton.Name = "productButton";
             this.productButton.Size = new System.Drawing.Size(160, 80);
-            this.productButton.TabIndex = 32;
+            this.productButton.TabIndex = 6;
             this.productButton.Text = "商品登録";
             this.productButton.UseVisualStyleBackColor = true;
             // 
@@ -156,7 +156,7 @@
             this.textBox1.Location = new System.Drawing.Point(397, 587);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(223, 39);
-            this.textBox1.TabIndex = 78;
+            this.textBox1.TabIndex = 5;
             // 
             // label2
             // 
@@ -176,7 +176,7 @@
             this.textBox2.Location = new System.Drawing.Point(397, 475);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(223, 39);
-            this.textBox2.TabIndex = 76;
+            this.textBox2.TabIndex = 4;
             // 
             // label3
             // 

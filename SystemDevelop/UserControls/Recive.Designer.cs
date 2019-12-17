@@ -104,7 +104,7 @@
             this.addButton.Location = new System.Drawing.Point(733, 650);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(104, 43);
-            this.addButton.TabIndex = 7;
+            this.addButton.TabIndex = 5;
             this.addButton.Text = "登録";
             this.addButton.UseVisualStyleBackColor = true;
             // 
@@ -113,10 +113,11 @@
             this.shopComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.shopComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.shopComboBox.FormattingEnabled = true;
+            this.shopComboBox.ItemHeight = 33;
             this.shopComboBox.Location = new System.Drawing.Point(385, 91);
             this.shopComboBox.Name = "shopComboBox";
             this.shopComboBox.Size = new System.Drawing.Size(398, 41);
-            this.shopComboBox.TabIndex = 8;
+            this.shopComboBox.TabIndex = 1;
             // 
             // productComboBox
             // 
@@ -126,7 +127,7 @@
             this.productComboBox.Location = new System.Drawing.Point(385, 241);
             this.productComboBox.Name = "productComboBox";
             this.productComboBox.Size = new System.Drawing.Size(398, 41);
-            this.productComboBox.TabIndex = 9;
+            this.productComboBox.TabIndex = 2;
             // 
             // pigeonComboBox
             // 
@@ -136,7 +137,7 @@
             this.pigeonComboBox.Location = new System.Drawing.Point(385, 511);
             this.pigeonComboBox.Name = "pigeonComboBox";
             this.pigeonComboBox.Size = new System.Drawing.Size(398, 41);
-            this.pigeonComboBox.TabIndex = 10;
+            this.pigeonComboBox.TabIndex = 4;
             // 
             // amountTextBox
             // 
@@ -145,7 +146,7 @@
             this.amountTextBox.Location = new System.Drawing.Point(385, 381);
             this.amountTextBox.Name = "amountTextBox";
             this.amountTextBox.Size = new System.Drawing.Size(398, 39);
-            this.amountTextBox.TabIndex = 11;
+            this.amountTextBox.TabIndex = 3;
             // 
             // piecesLabel
             // 

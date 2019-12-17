@@ -221,7 +221,6 @@ namespace SystemDevelop
                 Login();
             }
         }
-
         
 
         private void LoginButtonClick(object sender, EventArgs e)
@@ -286,6 +285,11 @@ namespace SystemDevelop
             }
             headerControl.userLabel.Text = "ログイン中：";
             loginControl.Visible = true;
+        }
+
+        private void mainOfficeManuBar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

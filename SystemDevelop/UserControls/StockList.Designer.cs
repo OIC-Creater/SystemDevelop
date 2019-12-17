@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.stock_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.product_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stock_quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updata = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -43,31 +40,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.stock_id,
-            this.product_id,
-            this.stock_quantity});
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 21;
             this.dataGridView1.Size = new System.Drawing.Size(1033, 709);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabStop = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // stock_id
-            // 
-            this.stock_id.HeaderText = "倉庫ID";
-            this.stock_id.Name = "stock_id";
-            // 
-            // product_id
-            // 
-            this.product_id.HeaderText = "商品ID";
-            this.product_id.Name = "product_id";
-            // 
-            // stock_quantity
-            // 
-            this.stock_quantity.HeaderText = "在庫数";
-            this.stock_quantity.Name = "stock_quantity";
             // 
             // updata
             // 
@@ -95,9 +74,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn product_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stock_quantity;
         private System.Windows.Forms.Button updata;
     }
 }

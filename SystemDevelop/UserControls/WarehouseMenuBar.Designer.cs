@@ -44,7 +44,7 @@
             this.reciveDetail.Location = new System.Drawing.Point(0, 0);
             this.reciveDetail.Name = "reciveDetail";
             this.reciveDetail.Size = new System.Drawing.Size(216, 104);
-            this.reciveDetail.TabIndex = 4;
+            this.reciveDetail.TabIndex = 1;
             this.reciveDetail.Text = "受注一覧";
             this.reciveDetail.UseVisualStyleBackColor = false;
             this.reciveDetail.Click += new System.EventHandler(this.reciveDetail_Click);
@@ -60,7 +60,7 @@
             this.orderDetail.Location = new System.Drawing.Point(0, 104);
             this.orderDetail.Name = "orderDetail";
             this.orderDetail.Size = new System.Drawing.Size(216, 104);
-            this.orderDetail.TabIndex = 5;
+            this.orderDetail.TabIndex = 2;
             this.orderDetail.Text = "発注一覧";
             this.orderDetail.UseVisualStyleBackColor = false;
             this.orderDetail.Click += new System.EventHandler(this.orderDetail_Click);
@@ -76,7 +76,7 @@
             this.stock.Location = new System.Drawing.Point(0, 208);
             this.stock.Name = "stock";
             this.stock.Size = new System.Drawing.Size(216, 104);
-            this.stock.TabIndex = 7;
+            this.stock.TabIndex = 3;
             this.stock.Text = "在庫一覧";
             this.stock.UseVisualStyleBackColor = false;
             this.stock.Click += new System.EventHandler(this.stock_Click);
