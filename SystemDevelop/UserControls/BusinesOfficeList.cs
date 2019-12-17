@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace SystemDevelop.UserControls
 {
     public partial class BusinesOfficeList : UserControl
@@ -15,6 +17,12 @@ namespace SystemDevelop.UserControls
         public BusinesOfficeList()
         {
             InitializeComponent();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

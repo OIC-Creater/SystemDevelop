@@ -40,6 +40,9 @@ namespace SystemDevelop
             settingConfi.Yes.Click += Yes_Click;
             settingConfi.No.Click += No_Click;
             loginControl.closeButton.Click += CloseButton_Click;
+
+            Logtext logtext = new Logtext();
+            logtext.OutPut();
         }
 
         private void CloseButton_Click1(object sender, EventArgs e)
