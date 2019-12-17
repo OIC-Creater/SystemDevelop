@@ -40,6 +40,12 @@ namespace SystemDevelop
             settingConfi.Yes.Click += Yes_Click;
             settingConfi.No.Click += No_Click;
             loginControl.closeButton.Click += CloseButton_Click;
+            businesOfficeList.BOLupdata.Click += BOLupdata_Click;
+        }
+
+        private void BOLupdata_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void CloseButton_Click1(object sender, EventArgs e)

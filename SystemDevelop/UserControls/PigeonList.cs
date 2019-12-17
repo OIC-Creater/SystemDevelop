@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemDevelop.UserControls
 {
-    public partial class Pigeon : UserControl
+    public partial class PigeonList : UserControl
     {
-        public Pigeon()
+        public PigeonList()
         {
             InitializeComponent();
         }
