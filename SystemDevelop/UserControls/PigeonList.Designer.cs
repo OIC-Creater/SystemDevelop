@@ -1,6 +1,6 @@
 ﻿namespace SystemDevelop.UserControls
 {
-    partial class Pigeon
+    partial class PigeonList
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
