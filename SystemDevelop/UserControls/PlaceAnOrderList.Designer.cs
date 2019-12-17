@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.orderList = new System.Windows.Forms.DataGridView();
-            this.place_an_order_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.place_an_order_responsible_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updata = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.orderList)).BeginInit();
             this.SuspendLayout();
@@ -43,30 +40,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.orderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.orderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.orderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.place_an_order_id,
-            this.place_an_order_responsible_id,
-            this.date_id});
             this.orderList.Location = new System.Drawing.Point(0, 0);
             this.orderList.Name = "orderList";
             this.orderList.RowTemplate.Height = 21;
             this.orderList.Size = new System.Drawing.Size(1033, 709);
             this.orderList.TabIndex = 0;
-            // 
-            // place_an_order_id
-            // 
-            this.place_an_order_id.HeaderText = "発注ID";
-            this.place_an_order_id.Name = "place_an_order_id";
-            // 
-            // place_an_order_responsible_id
-            // 
-            this.place_an_order_responsible_id.HeaderText = "発注担当者ID";
-            this.place_an_order_responsible_id.Name = "place_an_order_responsible_id";
-            // 
-            // date_id
-            // 
-            this.date_id.HeaderText = "発注日付";
-            this.date_id.Name = "date_id";
+            this.orderList.TabStop = false;
             // 
             // updata
             // 
@@ -94,9 +73,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView orderList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn place_an_order_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn place_an_order_responsible_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date_id;
         private System.Windows.Forms.Button updata;
     }
 }

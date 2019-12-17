@@ -56,7 +56,7 @@
             this.closeButton.Location = new System.Drawing.Point(715, -3);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(172, 85);
-            this.closeButton.TabIndex = 4;
+            this.closeButton.TabIndex = 2;
             this.closeButton.Text = "  終了";
             this.closeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.closeButton.UseVisualStyleBackColor = false;
@@ -73,7 +73,7 @@
             this.logoutButton.Location = new System.Drawing.Point(537, -3);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(172, 85);
-            this.logoutButton.TabIndex = 2;
+            this.logoutButton.TabIndex = 1;
             this.logoutButton.Text = "ログアウト";
             this.logoutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logoutButton.UseVisualStyleBackColor = false;

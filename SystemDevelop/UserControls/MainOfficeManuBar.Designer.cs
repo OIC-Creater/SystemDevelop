@@ -37,6 +37,8 @@
             // 
             // employeeList
             // 
+            this.employeeList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.employeeList.FlatAppearance.BorderSize = 0;
             this.employeeList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.employeeList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -50,10 +52,12 @@
             // 
             // manufacturerList
             // 
+            this.manufacturerList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.manufacturerList.FlatAppearance.BorderSize = 0;
             this.manufacturerList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.manufacturerList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.manufacturerList.Location = new System.Drawing.Point(0, 102);
+            this.manufacturerList.Location = new System.Drawing.Point(0, 104);
             this.manufacturerList.Name = "manufacturerList";
             this.manufacturerList.Size = new System.Drawing.Size(216, 104);
             this.manufacturerList.TabIndex = 1;
@@ -63,10 +67,12 @@
             // 
             // shopList
             // 
+            this.shopList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.shopList.FlatAppearance.BorderSize = 0;
             this.shopList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shopList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.shopList.Location = new System.Drawing.Point(0, 212);
+            this.shopList.Location = new System.Drawing.Point(0, 208);
             this.shopList.Name = "shopList";
             this.shopList.Size = new System.Drawing.Size(216, 104);
             this.shopList.TabIndex = 2;
@@ -76,26 +82,30 @@
             // 
             // newProduct
             // 
+            this.newProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.newProduct.FlatAppearance.BorderSize = 0;
             this.newProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newProduct.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.newProduct.Location = new System.Drawing.Point(0, 420);
+            this.newProduct.Location = new System.Drawing.Point(0, 413);
             this.newProduct.Name = "newProduct";
             this.newProduct.Size = new System.Drawing.Size(216, 104);
-            this.newProduct.TabIndex = 3;
+            this.newProduct.TabIndex = 4;
             this.newProduct.Text = "新商品登録";
             this.newProduct.UseVisualStyleBackColor = true;
             this.newProduct.Click += new System.EventHandler(this.newProduct_Click);
             // 
             // businessOfficeList
             // 
+            this.businessOfficeList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.businessOfficeList.FlatAppearance.BorderSize = 0;
             this.businessOfficeList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.businessOfficeList.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.businessOfficeList.Location = new System.Drawing.Point(0, 316);
+            this.businessOfficeList.Location = new System.Drawing.Point(0, 309);
             this.businessOfficeList.Name = "businessOfficeList";
             this.businessOfficeList.Size = new System.Drawing.Size(216, 104);
-            this.businessOfficeList.TabIndex = 4;
+            this.businessOfficeList.TabIndex = 3;
             this.businessOfficeList.Text = "営業所一覧";
             this.businessOfficeList.UseVisualStyleBackColor = true;
             this.businessOfficeList.Click += new System.EventHandler(this.businessOfficeList_Click);

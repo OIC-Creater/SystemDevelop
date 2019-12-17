@@ -44,7 +44,7 @@
             this.comboBox1.Location = new System.Drawing.Point(178, 26);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(242, 27);
-            this.comboBox1.TabIndex = 3;
+            this.comboBox1.TabIndex = 4;
             // 
             // label1
             // 
@@ -80,7 +80,7 @@
             this.comboBox2.Location = new System.Drawing.Point(641, 26);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(242, 27);
-            this.comboBox2.TabIndex = 6;
+            this.comboBox2.TabIndex = 5;
             // 
             // button1
             // 
@@ -92,7 +92,7 @@
             this.button1.Location = new System.Drawing.Point(902, 26);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 27);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 6;
             this.button1.Text = "検索";
             this.button1.UseVisualStyleBackColor = false;
             // 
