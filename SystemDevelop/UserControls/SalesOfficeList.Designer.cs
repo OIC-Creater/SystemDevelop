@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.salesOfficeGridView = new System.Windows.Forms.DataGridView();
             this.salesOfficeDetailButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesOfficeGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // salesOfficeGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.salesOfficeGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(1033, 709);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.TabStop = false;
+            this.salesOfficeGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.salesOfficeGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.salesOfficeGridView.Location = new System.Drawing.Point(0, 0);
+            this.salesOfficeGridView.Name = "salesOfficeGridView";
+            this.salesOfficeGridView.RowTemplate.Height = 21;
+            this.salesOfficeGridView.Size = new System.Drawing.Size(1033, 709);
+            this.salesOfficeGridView.TabIndex = 0;
+            this.salesOfficeGridView.TabStop = false;
             // 
             // salesOfficeDetailButton
             // 
@@ -62,17 +62,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.salesOfficeDetailButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.salesOfficeGridView);
             this.Name = "SalesOfficeList";
             this.Size = new System.Drawing.Size(1033, 789);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesOfficeGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView salesOfficeGridView;
         public System.Windows.Forms.Button salesOfficeDetailButton;
     }
 }
