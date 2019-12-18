@@ -57,13 +57,13 @@
             this.orderDetailsButton.Text = "詳細";
             this.orderDetailsButton.UseVisualStyleBackColor = true;
             // 
-            // Order
+            // OrderList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.orderDetailsButton);
             this.Controls.Add(this.orderGridView);
-            this.Name = "Order";
+            this.Name = "OrderList";
             this.Size = new System.Drawing.Size(1033, 789);
             ((System.ComponentModel.ISupportInitialize)(this.orderGridView)).EndInit();
             this.ResumeLayout(false);
@@ -73,6 +73,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView orderGridView;
-        private System.Windows.Forms.Button orderDetailsButton;
+        public System.Windows.Forms.Button orderDetailsButton;
     }
 }

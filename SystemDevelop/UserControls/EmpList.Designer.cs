@@ -52,9 +52,10 @@
             this.empDetailButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.empDetailButton.Location = new System.Drawing.Point(873, 709);
             this.empDetailButton.Name = "empDetailButton";
+            this.empDetailButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.empDetailButton.Size = new System.Drawing.Size(160, 80);
             this.empDetailButton.TabIndex = 2;
-            this.empDetailButton.Text = "更新";
+            this.empDetailButton.Text = "詳細";
             this.empDetailButton.UseVisualStyleBackColor = true;
             // 
             // EmpList
@@ -73,6 +74,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView empGridView;
-        private System.Windows.Forms.Button empDetailButton;
+        public System.Windows.Forms.Button empDetailButton;
     }
 }

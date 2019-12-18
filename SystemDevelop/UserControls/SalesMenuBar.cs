@@ -19,30 +19,30 @@ namespace SystemDevelop.UserControls
 
         private void reciveDetail_Click(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = Color.LightBlue;
-            recive.BackColor = SystemColors.Control;
-            pigeon.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = Color.LightBlue;
+            reciveAddButton.BackColor = SystemColors.Control;
+            pigeonButton.BackColor = SystemColors.Control;
         }
 
         private void recive_Click(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = SystemColors.Control;
-            recive.BackColor = Color.LightBlue;
-            pigeon.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = SystemColors.Control;
+            reciveAddButton.BackColor = Color.LightBlue;
+            pigeonButton.BackColor = SystemColors.Control;
         }
 
         private void pigeon_Click(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = SystemColors.Control;
-            recive.BackColor = SystemColors.Control;
-            pigeon.BackColor = Color.LightBlue;
+            reciveListButton.BackColor = SystemColors.Control;
+            reciveAddButton.BackColor = SystemColors.Control;
+            pigeonButton.BackColor = Color.LightBlue;
         }
 
         private void MenuBar_Load(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = Color.LightBlue;
-            recive.BackColor = SystemColors.Control;
-            pigeon.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = Color.LightBlue;
+            reciveAddButton.BackColor = SystemColors.Control;
+            pigeonButton.BackColor = SystemColors.Control;
         }
     }
 }
