@@ -19,52 +19,52 @@ namespace SystemDevelop.UserControls
         
         private void reciveDetail_Click(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = Color.LightBlue;
-            orderDetail.BackColor = SystemColors.Control;           
-            stock.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = Color.LightBlue;
+            orderListButton.BackColor = SystemColors.Control;           
+            stockListButton.BackColor = SystemColors.Control;
 
         }
 
         private void orderDetail_Click(object sender, EventArgs e)
         {
-            orderDetail.BackColor = Color.LightBlue;
-            stock.BackColor = SystemColors.Control;
-            reciveDetail.BackColor = SystemColors.Control;
+            orderListButton.BackColor = Color.LightBlue;
+            stockListButton.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = SystemColors.Control;
         }
 
         private void order_Click(object sender, EventArgs e)
         {
-            orderDetail.BackColor = SystemColors.Control;
-            stock.BackColor = SystemColors.Control;
-            reciveDetail.BackColor = SystemColors.Control;
+            orderListButton.BackColor = SystemColors.Control;
+            stockListButton.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = SystemColors.Control;
         }
 
         private void stock_Click(object sender, EventArgs e)
         {
-            stock.BackColor = Color.LightBlue;
-            orderDetail.BackColor = SystemColors.Control;
-            reciveDetail.BackColor = SystemColors.Control;
+            stockListButton.BackColor = Color.LightBlue;
+            orderListButton.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = SystemColors.Control;
         }
 
         private void WarehouseMenuBar_Load(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = Color.LightBlue;
-            orderDetail.BackColor = SystemColors.Control;
-            stock.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = Color.LightBlue;
+            orderListButton.BackColor = SystemColors.Control;
+            stockListButton.BackColor = SystemColors.Control;
         }
 
         private void notIssued_Click(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = SystemColors.Control;
-            orderDetail.BackColor = SystemColors.Control;
-            stock.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = SystemColors.Control;
+            orderListButton.BackColor = SystemColors.Control;
+            stockListButton.BackColor = SystemColors.Control;
         }
 
         private void notIssue_Click(object sender, EventArgs e)
         {
-            reciveDetail.BackColor = SystemColors.Control;
-            orderDetail.BackColor = SystemColors.Control;
-            stock.BackColor = SystemColors.Control;
+            reciveListButton.BackColor = SystemColors.Control;
+            orderListButton.BackColor = SystemColors.Control;
+            stockListButton.BackColor = SystemColors.Control;
         }
     }
 }

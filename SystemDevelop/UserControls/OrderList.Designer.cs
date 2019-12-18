@@ -28,51 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.updata = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.orderGridView = new System.Windows.Forms.DataGridView();
+            this.orderDetailsButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.orderGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // orderGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.orderGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView1.Size = new System.Drawing.Size(1033, 709);
-            this.dataGridView1.TabIndex = 0;
+            this.orderGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.orderGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.orderGridView.Location = new System.Drawing.Point(0, 0);
+            this.orderGridView.Name = "orderGridView";
+            this.orderGridView.RowTemplate.Height = 21;
+            this.orderGridView.Size = new System.Drawing.Size(1033, 709);
+            this.orderGridView.TabIndex = 0;
+            this.orderGridView.TabStop = false;
             // 
-            // updata
+            // orderDetailsButton
             // 
-            this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.updata.Location = new System.Drawing.Point(873, 709);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(160, 80);
-            this.updata.TabIndex = 1;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.orderDetailsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderDetailsButton.Location = new System.Drawing.Point(873, 709);
+            this.orderDetailsButton.Name = "orderDetailsButton";
+            this.orderDetailsButton.Size = new System.Drawing.Size(160, 80);
+            this.orderDetailsButton.TabIndex = 1;
+            this.orderDetailsButton.Text = "詳細";
+            this.orderDetailsButton.UseVisualStyleBackColor = true;
             // 
             // OrderList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.updata);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.orderDetailsButton);
+            this.Controls.Add(this.orderGridView);
             this.Name = "OrderList";
             this.Size = new System.Drawing.Size(1033, 789);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button updata;
-        public System.Windows.Forms.DataGridView dataGridView1;
+
+        private System.Windows.Forms.DataGridView orderGridView;
+        public System.Windows.Forms.Button orderDetailsButton;
     }
 }

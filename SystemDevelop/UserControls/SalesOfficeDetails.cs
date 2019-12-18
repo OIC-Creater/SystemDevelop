@@ -8,19 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
 namespace SystemDevelop.UserControls
 {
-    public partial class BusinesOfficeList : UserControl
+    public partial class reciveDetails : UserControl
     {
-        public BusinesOfficeList()
+        public reciveDetails()
         {
             InitializeComponent();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DetailsBOL_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

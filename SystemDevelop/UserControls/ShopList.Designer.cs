@@ -28,91 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sales_office_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sales_office_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sales_office_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sales_office_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sales_office_fax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.shopGridView = new System.Windows.Forms.DataGridView();
+            this.shopDetailButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.shopGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // shopGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shopGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sales_office_id,
-            this.sales_office_name,
-            this.sales_office_phone,
-            this.sales_office_address,
-            this.sales_office_fax});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.Size = new System.Drawing.Size(1033, 709);
-            this.dataGridView1.TabIndex = 0;
+            this.shopGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.shopGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.shopGridView.Location = new System.Drawing.Point(0, 0);
+            this.shopGridView.Name = "shopGridView";
+            this.shopGridView.RowTemplate.Height = 21;
+            this.shopGridView.Size = new System.Drawing.Size(1033, 709);
+            this.shopGridView.TabIndex = 0;
+            this.shopGridView.TabStop = false;
             // 
-            // sales_office_id
+            // shopDetailButton
             // 
-            this.sales_office_id.HeaderText = "ショップID";
-            this.sales_office_id.Name = "sales_office_id";
-            // 
-            // sales_office_name
-            // 
-            this.sales_office_name.HeaderText = "ショップ名";
-            this.sales_office_name.Name = "sales_office_name";
-            // 
-            // sales_office_phone
-            // 
-            this.sales_office_phone.HeaderText = "電話番号\t";
-            this.sales_office_phone.Name = "sales_office_phone";
-            // 
-            // sales_office_address
-            // 
-            this.sales_office_address.HeaderText = "住所";
-            this.sales_office_address.Name = "sales_office_address";
-            // 
-            // sales_office_fax
-            // 
-            this.sales_office_fax.HeaderText = "ＦＡＸ番号";
-            this.sales_office_fax.Name = "sales_office_fax";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(873, 709);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 80);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "更新";
-            this.button1.UseVisualStyleBackColor = true;
+            this.shopDetailButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.shopDetailButton.Location = new System.Drawing.Point(873, 709);
+            this.shopDetailButton.Name = "shopDetailButton";
+            this.shopDetailButton.Size = new System.Drawing.Size(160, 80);
+            this.shopDetailButton.TabIndex = 1;
+            this.shopDetailButton.Text = "詳細";
+            this.shopDetailButton.UseVisualStyleBackColor = true;
             // 
             // ShopList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.shopDetailButton);
+            this.Controls.Add(this.shopGridView);
             this.Name = "ShopList";
             this.Size = new System.Drawing.Size(1033, 789);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shopGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sales_office_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sales_office_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sales_office_phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sales_office_address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sales_office_fax;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView shopGridView;
+        public System.Windows.Forms.Button shopDetailButton;
     }
 }
