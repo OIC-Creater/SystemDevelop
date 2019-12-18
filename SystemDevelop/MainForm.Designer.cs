@@ -41,11 +41,11 @@
             this.shopList = new SystemDevelop.UserControls.ShopList();
             this.businesOfficeList = new SystemDevelop.UserControls.SalesOfficeList();
             this.empList = new SystemDevelop.UserControls.EmpList();
-            this.unDispatched = new SystemDevelop.UserControls.PlaceAnOrderList();
+            this.unDispatched = new SystemDevelop.UserControls.OrderList();
             this.pigeonList = new SystemDevelop.UserControls.PigeonList();
             this.stockList = new SystemDevelop.UserControls.StockList();
             this.warehouseControl = new SystemDevelop.UserControls.StockList();
-            this.placeControl = new SystemDevelop.UserControls.PlaceAnOrderList();
+            this.placeControl = new SystemDevelop.UserControls.OrderList();
             this.orderControl = new SystemDevelop.UserControls.ReciveList();
             this.SuspendLayout();
             // 
@@ -288,10 +288,10 @@
         private UserControls.WarehouseMenuBar warehouseMenuBar;
         private UserControls.ReciveAdd reciveControl;
         private UserControls.ReciveList orderControl;
-        private UserControls.PlaceAnOrderList placeControl;
+        private UserControls.OrderList placeControl;
         private UserControls.StockList warehouseControl;
         private UserControls.PigeonList pigeonList;
-        private UserControls.PlaceAnOrderList unDispatched;
+        private UserControls.OrderList unDispatched;
         private UserControls.MainOfficeManuBar mainOfficeManuBar;
         private UserControls.EmpList empList;
         public UserControls.SalesOfficeList businesOfficeList;

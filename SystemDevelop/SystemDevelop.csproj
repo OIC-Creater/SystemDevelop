@@ -266,11 +266,11 @@
     <Compile Include="UserControls\ReciveListDetails.Designer.cs">
       <DependentUpon>ReciveListDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\PaolDetails.cs">
+    <Compile Include="UserControls\OrderDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\PaolDetails.Designer.cs">
-      <DependentUpon>PaolDetails.cs</DependentUpon>
+    <Compile Include="UserControls\OrderDetails.Designer.cs">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\PigeonDetails.cs">
       <SubType>UserControl</SubType>
@@ -284,11 +284,11 @@
     <Compile Include="UserControls\PigeonList.Designer.cs">
       <DependentUpon>PigeonList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\PlaceAnOrderList.cs">
+    <Compile Include="UserControls\OrderList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\PlaceAnOrderList.Designer.cs">
-      <DependentUpon>PlaceAnOrderList.cs</DependentUpon>
+    <Compile Include="UserControls\OrderList.Designer.cs">
+      <DependentUpon>OrderList.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ReciveAdd.cs">
       <SubType>UserControl</SubType>
@@ -308,11 +308,23 @@
     <Compile Include="UserControls\SettingConfi.Designer.cs">
       <DependentUpon>SettingConfi.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ShopDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopDetails.Designer.cs">
+      <DependentUpon>ShopDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ShopList.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ShopList.Designer.cs">
       <DependentUpon>ShopList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StockDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StockDetails.Designer.cs">
+      <DependentUpon>StockDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\StockList.cs">
       <SubType>UserControl</SubType>
@@ -420,8 +432,8 @@
     <EmbeddedResource Include="UserControls\ReciveListDetails.resx">
       <DependentUpon>ReciveListDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\PaolDetails.resx">
-      <DependentUpon>PaolDetails.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\OrderDetails.resx">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PigeonDetails.resx">
       <DependentUpon>PigeonDetails.cs</DependentUpon>
@@ -429,8 +441,8 @@
     <EmbeddedResource Include="UserControls\PigeonList.resx">
       <DependentUpon>PigeonList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\PlaceAnOrderList.resx">
-      <DependentUpon>PlaceAnOrderList.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\OrderList.resx">
+      <DependentUpon>OrderList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ReciveAdd.resx">
       <DependentUpon>ReciveAdd.cs</DependentUpon>
@@ -441,8 +453,14 @@
     <EmbeddedResource Include="UserControls\SettingConfi.resx">
       <DependentUpon>SettingConfi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopDetails.resx">
+      <DependentUpon>ShopDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ShopList.resx">
       <DependentUpon>ShopList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StockDetails.resx">
+      <DependentUpon>StockDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\StockList.resx">
       <DependentUpon>StockList.cs</DependentUpon>
