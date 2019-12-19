@@ -36,8 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cancel = new System.Windows.Forms.Button();
-            this.updata = new System.Windows.Forms.Button();
+            this.manufCancel = new System.Windows.Forms.Button();
+            this.manufUpdata = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // manufAddress
@@ -114,30 +114,30 @@
             this.label2.TabIndex = 25;
             this.label2.Text = "メーカID\t";
             // 
-            // cancel
+            // manufCancel
             // 
-            this.cancel.Location = new System.Drawing.Point(296, 550);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(170, 60);
-            this.cancel.TabIndex = 5;
-            this.cancel.Text = "キャンセル";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.manufCancel.Location = new System.Drawing.Point(296, 550);
+            this.manufCancel.Name = "manufCancel";
+            this.manufCancel.Size = new System.Drawing.Size(170, 60);
+            this.manufCancel.TabIndex = 5;
+            this.manufCancel.Text = "キャンセル";
+            this.manufCancel.UseVisualStyleBackColor = true;
             // 
-            // updata
+            // manufUpdata
             // 
-            this.updata.Location = new System.Drawing.Point(533, 550);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(170, 60);
-            this.updata.TabIndex = 4;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.manufUpdata.Location = new System.Drawing.Point(533, 550);
+            this.manufUpdata.Name = "manufUpdata";
+            this.manufUpdata.Size = new System.Drawing.Size(170, 60);
+            this.manufUpdata.TabIndex = 4;
+            this.manufUpdata.Text = "更新";
+            this.manufUpdata.UseVisualStyleBackColor = true;
             // 
             // ManufactureDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.manufCancel);
+            this.Controls.Add(this.manufUpdata);
             this.Controls.Add(this.manufAddress);
             this.Controls.Add(this.manufPhone);
             this.Controls.Add(this.manufID);
@@ -162,7 +162,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Button cancel;
-        public System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button manufCancel;
+        public System.Windows.Forms.Button manufUpdata;
     }
 }

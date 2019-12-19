@@ -41,18 +41,46 @@ namespace SystemDevelop
             loginControl.closeButton.Click += CloseButton_Click;
             empList.empDetailButton.Click += EmpDetailButton_Click;
             empDetails.empCancel.Click += EmpCancel_Click;
-            
+            manufactureList.manufDetailButton.Click += ManufDetailButton_Click;
+            manufactureDetails.manufCancel.Click += ManufCancel_Click;
+        }
+
+        private void ManufCancel_Click(object sender, EventArgs e)
+        {
+            manufactureDetails.Visible = false;
+            manufactureList.Visible = true;
+            headerLists.Visible = true;
+        }
+
+        private void ManufDetailButton_Click(object sender, EventArgs e)
+        {
+            manufactureDetails.Visible = true;
+            headerLists.Visible = false;
+            settingConfi.Visible = false;
+            newProduct.Visible = false;
+            manufactureList.Visible = false;
+            salesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
         }
 
         private void EmpCancel_Click(object sender, EventArgs e)
         {
             empDetails.Visible = false;
+            empList.Visible = true;
+            headerLists.Visible = true;
         }
 
         private void EmpDetailButton_Click(object sender, EventArgs e)
         {
             empDetails.Visible = true;
             headerLists.Visible = false;
+            settingConfi.Visible = false;
+            newProduct.Visible = false;
+            manufactureList.Visible = false;
+            salesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
         }
 
         private void CloseButton_Click1(object sender, EventArgs e)
@@ -97,6 +125,7 @@ namespace SystemDevelop
             empList.Visible = false;
             shopList.Visible = false;
             orderControl.Visible = false;
+            empDetails.Visible = false;
         }
 
         private void NewProduct_Click(object sender, EventArgs e)
@@ -108,6 +137,8 @@ namespace SystemDevelop
             empList.Visible = false;
             shopList.Visible = false;
             orderControl.Visible = false;
+            empDetails.Visible = false;
+            manufactureDetails.Visible = false;
         }
 
         private void ManufacturerList_Click1(object sender, EventArgs e)
@@ -119,6 +150,8 @@ namespace SystemDevelop
             shopList.Visible = false;
             newProduct.Visible = false;
             orderControl.Visible = false;
+            empDetails.Visible = false;
+            manufactureDetails.Visible = false;
         }
 
         private void salesOfficeList_Click(object sender, EventArgs e)
@@ -130,6 +163,8 @@ namespace SystemDevelop
             manufactureList.Visible = false;
             newProduct.Visible = false;
             orderControl.Visible = false;
+            empDetails.Visible = false;
+            manufactureDetails.Visible = false;
         }
 
         private void ShopList_Click(object sender, EventArgs e)
@@ -141,6 +176,8 @@ namespace SystemDevelop
             manufactureList.Visible = false;
             newProduct.Visible = false;
             orderControl.Visible = false;
+            empDetails.Visible = false;
+            manufactureDetails.Visible = false;
         }
 
         private void ManufacturerList_Click(object sender, EventArgs e)
@@ -152,6 +189,8 @@ namespace SystemDevelop
             manufactureList.Visible = false;
             newProduct.Visible = false;
             orderControl.Visible = false;
+            empDetails.Visible = false;
+            manufactureDetails.Visible = false;
         }
 
         private void EmployeeList_Click(object sender, EventArgs e)
@@ -163,6 +202,8 @@ namespace SystemDevelop
             manufactureList.Visible = false;
             newProduct.Visible = false;
             orderControl.Visible = false;
+            empDetails.Visible = false;
+            manufactureDetails.Visible = false;
         }
         
         private void StockButtonClick(object sender, EventArgs e)
