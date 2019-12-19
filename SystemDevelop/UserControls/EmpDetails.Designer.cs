@@ -31,7 +31,7 @@
             this.empPhone = new System.Windows.Forms.TextBox();
             this.empPassword = new System.Windows.Forms.TextBox();
             this.empAffiliation = new System.Windows.Forms.TextBox();
-            this.empID = new System.Windows.Forms.Label();
+            this.empId = new System.Windows.Forms.Label();
             this.empName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -76,17 +76,17 @@
             this.empAffiliation.Size = new System.Drawing.Size(340, 39);
             this.empAffiliation.TabIndex = 2;
             // 
-            // empID
+            // empId
             // 
-            this.empID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.empId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.empID.AutoSize = true;
-            this.empID.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.empID.Location = new System.Drawing.Point(589, 71);
-            this.empID.Name = "empID";
-            this.empID.Size = new System.Drawing.Size(109, 33);
-            this.empID.TabIndex = 18;
-            this.empID.Text = "id_label";
+            this.empId.AutoSize = true;
+            this.empId.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empId.Location = new System.Drawing.Point(589, 71);
+            this.empId.Name = "empId";
+            this.empId.Size = new System.Drawing.Size(109, 33);
+            this.empId.TabIndex = 18;
+            this.empId.Text = "id_label";
             // 
             // empName
             // 
@@ -225,7 +225,7 @@
             this.Controls.Add(this.empPhone);
             this.Controls.Add(this.empPassword);
             this.Controls.Add(this.empAffiliation);
-            this.Controls.Add(this.empID);
+            this.Controls.Add(this.empId);
             this.Controls.Add(this.empName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -250,7 +250,7 @@
         public System.Windows.Forms.TextBox empPhone;
         public System.Windows.Forms.TextBox empPassword;
         public System.Windows.Forms.TextBox empAffiliation;
-        public System.Windows.Forms.Label empID;
+        public System.Windows.Forms.Label empId;
         public System.Windows.Forms.TextBox empName;
         public System.Windows.Forms.TextBox pigeonName;
         public System.Windows.Forms.ComboBox empHiring;

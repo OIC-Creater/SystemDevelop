@@ -80,7 +80,7 @@ namespace SystemDevelop
             manufactureList.Visible = false;
             salesOfficeList.Visible = false;
             empList.Visible = false;
-            shopList.Visible = false;
+            empDetails.SetDetail(empList.GetRowData());
         }
 
         private void CloseButton_Click1(object sender, EventArgs e)
@@ -317,6 +317,10 @@ namespace SystemDevelop
                         orderControl.Visible = false;
                         headerLists.Visible = true;
                         empList.Visible = true;
+                        DataSource.SetDataSource<Employee>(empList.empGridView, DatabaseInstance.EmployeeTable);
+                        DataSource.SetDataSource<Maker>(manufactureList.manufGridView, DatabaseInstance.MakerTable);
+                        DataSource.SetDataSource<Shop>(shopList.shopGridView, DatabaseInstance.ShopTable);
+                        DataSource.SetDataSource<SalesOffice>(salesOfficeList.salesOfficeGridView, DatabaseInstance.SalesOfficeTable);
                         break;
                 }
             }

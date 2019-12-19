@@ -71,8 +71,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView salesOfficeGridView;
         public System.Windows.Forms.Button salesOfficeDetailButton;
+        public System.Windows.Forms.DataGridView salesOfficeGridView;
     }
 }
