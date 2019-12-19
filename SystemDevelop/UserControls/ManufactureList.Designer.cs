@@ -71,8 +71,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView manufGridView;
         public System.Windows.Forms.Button manufDetailButton;
+        public System.Windows.Forms.DataGridView manufGridView;
     }
 }
