@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace SystemDevelop.UserControls
 {
     public partial class OrderDetails : UserControl
@@ -15,6 +17,12 @@ namespace SystemDevelop.UserControls
         public OrderDetails()
         {
             InitializeComponent();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
