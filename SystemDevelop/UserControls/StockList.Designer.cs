@@ -30,6 +30,7 @@
         {
             this.stockGridView = new System.Windows.Forms.DataGridView();
             this.stockDetailButton = new System.Windows.Forms.Button();
+            this.stockListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.stockGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,10 +59,21 @@
             this.stockDetailButton.Text = "詳細";
             this.stockDetailButton.UseVisualStyleBackColor = true;
             // 
+            // stockListAddButton
+            // 
+            this.stockListAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.stockListAddButton.Location = new System.Drawing.Point(707, 709);
+            this.stockListAddButton.Name = "stockListAddButton";
+            this.stockListAddButton.Size = new System.Drawing.Size(160, 80);
+            this.stockListAddButton.TabIndex = 2;
+            this.stockListAddButton.Text = "在庫登録";
+            this.stockListAddButton.UseVisualStyleBackColor = true;
+            // 
             // StockList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.stockListAddButton);
             this.Controls.Add(this.stockDetailButton);
             this.Controls.Add(this.stockGridView);
             this.Name = "StockList";
@@ -75,5 +87,6 @@
 
         private System.Windows.Forms.DataGridView stockGridView;
         public System.Windows.Forms.Button stockDetailButton;
+        public System.Windows.Forms.Button stockListAddButton;
     }
 }

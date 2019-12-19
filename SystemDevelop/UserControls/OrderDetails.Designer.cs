@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancel = new System.Windows.Forms.Button();
-            this.updata = new System.Windows.Forms.Button();
+            this.prderCancelButton = new System.Windows.Forms.Button();
+            this.orderUpdataButton = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,23 +38,23 @@
             this.paolName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cancel
+            // prderCancelButton
             // 
-            this.cancel.Location = new System.Drawing.Point(278, 584);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(170, 60);
-            this.cancel.TabIndex = 2;
-            this.cancel.Text = "キャンセル";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.prderCancelButton.Location = new System.Drawing.Point(278, 584);
+            this.prderCancelButton.Name = "prderCancelButton";
+            this.prderCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.prderCancelButton.TabIndex = 2;
+            this.prderCancelButton.Text = "キャンセル";
+            this.prderCancelButton.UseVisualStyleBackColor = true;
             // 
-            // updata
+            // orderUpdataButton
             // 
-            this.updata.Location = new System.Drawing.Point(515, 584);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(170, 60);
-            this.updata.TabIndex = 1;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.orderUpdataButton.Location = new System.Drawing.Point(515, 584);
+            this.orderUpdataButton.Name = "orderUpdataButton";
+            this.orderUpdataButton.Size = new System.Drawing.Size(170, 60);
+            this.orderUpdataButton.TabIndex = 1;
+            this.orderUpdataButton.Text = "更新";
+            this.orderUpdataButton.UseVisualStyleBackColor = true;
             // 
             // id
             // 
@@ -122,8 +122,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.paolName);
             this.Controls.Add(this.paolDate);
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.prderCancelButton);
+            this.Controls.Add(this.orderUpdataButton);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -140,8 +140,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label paolName;
-        public System.Windows.Forms.Button cancel;
-        public System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button prderCancelButton;
+        public System.Windows.Forms.Button orderUpdataButton;
         public System.Windows.Forms.Label id;
         public System.Windows.Forms.Label paolDate;
     }

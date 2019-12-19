@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancel = new System.Windows.Forms.Button();
-            this.updata = new System.Windows.Forms.Button();
+            this.reciveCancelButton = new System.Windows.Forms.Button();
+            this.reciveUpdataButton = new System.Windows.Forms.Button();
             this.count = new System.Windows.Forms.TextBox();
             this.reciveDetailsID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,23 +42,23 @@
             this.productID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cancel
+            // reciveCancelButton
             // 
-            this.cancel.Location = new System.Drawing.Point(251, 565);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(170, 60);
-            this.cancel.TabIndex = 4;
-            this.cancel.Text = "キャンセル";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.reciveCancelButton.Location = new System.Drawing.Point(251, 565);
+            this.reciveCancelButton.Name = "reciveCancelButton";
+            this.reciveCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.reciveCancelButton.TabIndex = 4;
+            this.reciveCancelButton.Text = "キャンセル";
+            this.reciveCancelButton.UseVisualStyleBackColor = true;
             // 
-            // updata
+            // reciveUpdataButton
             // 
-            this.updata.Location = new System.Drawing.Point(488, 565);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(170, 60);
-            this.updata.TabIndex = 3;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.reciveUpdataButton.Location = new System.Drawing.Point(488, 565);
+            this.reciveUpdataButton.Name = "reciveUpdataButton";
+            this.reciveUpdataButton.Size = new System.Drawing.Size(170, 60);
+            this.reciveUpdataButton.TabIndex = 3;
+            this.reciveUpdataButton.Text = "更新";
+            this.reciveUpdataButton.UseVisualStyleBackColor = true;
             // 
             // count
             // 
@@ -164,8 +164,8 @@
             this.Controls.Add(this.reciveID);
             this.Controls.Add(this.productName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.reciveCancelButton);
+            this.Controls.Add(this.reciveUpdataButton);
             this.Controls.Add(this.count);
             this.Controls.Add(this.reciveDetailsID);
             this.Controls.Add(this.label5);
@@ -181,8 +181,8 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancel;
-        public System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button reciveCancelButton;
+        public System.Windows.Forms.Button reciveUpdataButton;
         public System.Windows.Forms.TextBox count;
         public System.Windows.Forms.Label reciveDetailsID;
         private System.Windows.Forms.Label label5;

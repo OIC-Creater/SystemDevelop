@@ -30,6 +30,7 @@
         {
             this.reciveGridView = new System.Windows.Forms.DataGridView();
             this.reciveDetailButton = new System.Windows.Forms.Button();
+            this.reciveListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.reciveGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,10 +60,21 @@
             this.reciveDetailButton.Text = "詳細";
             this.reciveDetailButton.UseVisualStyleBackColor = true;
             // 
+            // reciveListAddButton
+            // 
+            this.reciveListAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.reciveListAddButton.Location = new System.Drawing.Point(707, 709);
+            this.reciveListAddButton.Name = "reciveListAddButton";
+            this.reciveListAddButton.Size = new System.Drawing.Size(160, 80);
+            this.reciveListAddButton.TabIndex = 3;
+            this.reciveListAddButton.Text = "受注登録";
+            this.reciveListAddButton.UseVisualStyleBackColor = true;
+            // 
             // ReciveList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.reciveListAddButton);
             this.Controls.Add(this.reciveDetailButton);
             this.Controls.Add(this.reciveGridView);
             this.Name = "ReciveList";
@@ -75,5 +87,6 @@
         #endregion
         public System.Windows.Forms.DataGridView reciveGridView;
         public System.Windows.Forms.Button reciveDetailButton;
+        public System.Windows.Forms.Button reciveListAddButton;
     }
 }

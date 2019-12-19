@@ -30,6 +30,7 @@
         {
             this.empGridView = new System.Windows.Forms.DataGridView();
             this.empDetailButton = new System.Windows.Forms.Button();
+            this.empListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.empGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,10 +59,21 @@
             this.empDetailButton.Text = "詳細";
             this.empDetailButton.UseVisualStyleBackColor = true;
             // 
+            // empListAddButton
+            // 
+            this.empListAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.empListAddButton.Location = new System.Drawing.Point(707, 709);
+            this.empListAddButton.Name = "empListAddButton";
+            this.empListAddButton.Size = new System.Drawing.Size(160, 80);
+            this.empListAddButton.TabIndex = 3;
+            this.empListAddButton.Text = "社員登録";
+            this.empListAddButton.UseVisualStyleBackColor = true;
+            // 
             // EmpList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.empListAddButton);
             this.Controls.Add(this.empDetailButton);
             this.Controls.Add(this.empGridView);
             this.Name = "EmpList";
@@ -75,5 +87,6 @@
 
         private System.Windows.Forms.DataGridView empGridView;
         public System.Windows.Forms.Button empDetailButton;
+        public System.Windows.Forms.Button empListAddButton;
     }
 }

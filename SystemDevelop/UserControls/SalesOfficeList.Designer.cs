@@ -30,6 +30,7 @@
         {
             this.salesOfficeGridView = new System.Windows.Forms.DataGridView();
             this.salesOfficeDetailButton = new System.Windows.Forms.Button();
+            this.salesListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.salesOfficeGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,10 +58,21 @@
             this.salesOfficeDetailButton.Text = "詳細";
             this.salesOfficeDetailButton.UseVisualStyleBackColor = true;
             // 
+            // salesListAddButton
+            // 
+            this.salesListAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.salesListAddButton.Location = new System.Drawing.Point(707, 709);
+            this.salesListAddButton.Name = "salesListAddButton";
+            this.salesListAddButton.Size = new System.Drawing.Size(160, 80);
+            this.salesListAddButton.TabIndex = 3;
+            this.salesListAddButton.Text = "営業所登録";
+            this.salesListAddButton.UseVisualStyleBackColor = true;
+            // 
             // SalesOfficeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.salesListAddButton);
             this.Controls.Add(this.salesOfficeDetailButton);
             this.Controls.Add(this.salesOfficeGridView);
             this.Name = "SalesOfficeList";
@@ -74,5 +86,6 @@
 
         private System.Windows.Forms.DataGridView salesOfficeGridView;
         public System.Windows.Forms.Button salesOfficeDetailButton;
+        public System.Windows.Forms.Button salesListAddButton;
     }
 }

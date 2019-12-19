@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancel = new System.Windows.Forms.Button();
-            this.updata = new System.Windows.Forms.Button();
+            this.stockCancelButton = new System.Windows.Forms.Button();
+            this.stockUpdataButton = new System.Windows.Forms.Button();
             this.stockCount = new System.Windows.Forms.TextBox();
             this.stockID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,23 +38,23 @@
             this.productID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cancel
+            // stockCancelButton
             // 
-            this.cancel.Location = new System.Drawing.Point(323, 580);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(170, 60);
-            this.cancel.TabIndex = 3;
-            this.cancel.Text = "キャンセル";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.stockCancelButton.Location = new System.Drawing.Point(323, 580);
+            this.stockCancelButton.Name = "stockCancelButton";
+            this.stockCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.stockCancelButton.TabIndex = 3;
+            this.stockCancelButton.Text = "キャンセル";
+            this.stockCancelButton.UseVisualStyleBackColor = true;
             // 
-            // updata
+            // stockUpdataButton
             // 
-            this.updata.Location = new System.Drawing.Point(560, 580);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(170, 60);
-            this.updata.TabIndex = 2;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.stockUpdataButton.Location = new System.Drawing.Point(560, 580);
+            this.stockUpdataButton.Name = "stockUpdataButton";
+            this.stockUpdataButton.Size = new System.Drawing.Size(170, 60);
+            this.stockUpdataButton.TabIndex = 2;
+            this.stockUpdataButton.Text = "更新";
+            this.stockUpdataButton.UseVisualStyleBackColor = true;
             // 
             // stockCount
             // 
@@ -119,8 +119,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.productID);
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.stockCancelButton);
+            this.Controls.Add(this.stockUpdataButton);
             this.Controls.Add(this.stockCount);
             this.Controls.Add(this.stockID);
             this.Controls.Add(this.label4);
@@ -135,8 +135,8 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancel;
-        public System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button stockCancelButton;
+        public System.Windows.Forms.Button stockUpdataButton;
         public System.Windows.Forms.TextBox stockCount;
         public System.Windows.Forms.Label stockID;
         private System.Windows.Forms.Label label4;
