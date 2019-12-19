@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.salesOfficeDetails = new SystemDevelop.UserControls.SalesOfficeDetails();
             this.headerLists = new SystemDevelop.UserControls.HeaderLists();
             this.headerControl = new SystemDevelop.UserControls.Header();
             this.mainOfficeManuBar = new SystemDevelop.UserControls.MainOfficeManuBar();
@@ -52,8 +53,19 @@
             this.empList = new SystemDevelop.UserControls.EmpList();
             this.unDispatched = new SystemDevelop.UserControls.OrderList();
             this.pigeonList = new SystemDevelop.UserControls.PigeonList();
-            this.salesOfficeDetails = new SystemDevelop.UserControls.SalesOfficeDetails();
+            this.productDetails = new SystemDevelop.UserControls.ProductDetails();
             this.SuspendLayout();
+            // 
+            // salesOfficeDetails
+            // 
+            this.salesOfficeDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.salesOfficeDetails.Location = new System.Drawing.Point(219, 158);
+            this.salesOfficeDetails.Name = "salesOfficeDetails";
+            this.salesOfficeDetails.Size = new System.Drawing.Size(1045, 629);
+            this.salesOfficeDetails.TabIndex = 17;
+            this.salesOfficeDetails.Visible = false;
             // 
             // headerLists
             // 
@@ -310,22 +322,23 @@
             this.pigeonList.TabIndex = 3;
             this.pigeonList.Visible = false;
             // 
-            // salesOfficeDetails
+            // productDetails
             // 
-            this.salesOfficeDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.productDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.salesOfficeDetails.Location = new System.Drawing.Point(219, 158);
-            this.salesOfficeDetails.Name = "salesOfficeDetails";
-            this.salesOfficeDetails.Size = new System.Drawing.Size(1045, 629);
-            this.salesOfficeDetails.TabIndex = 17;
-            this.salesOfficeDetails.Visible = false;
+            this.productDetails.Location = new System.Drawing.Point(219, 158);
+            this.productDetails.Name = "productDetails";
+            this.productDetails.Size = new System.Drawing.Size(1045, 629);
+            this.productDetails.TabIndex = 18;
+            this.productDetails.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
+            this.Controls.Add(this.productDetails);
             this.Controls.Add(this.salesOfficeDetails);
             this.Controls.Add(this.headerLists);
             this.Controls.Add(this.headerControl);
@@ -388,6 +401,7 @@
         public UserControls.ShopDetails shopDetails;
         private UserControls.ProductList productList;
         private UserControls.SalesOfficeDetails salesOfficeDetails;
+        private UserControls.ProductDetails productDetails;
     }
 }
 

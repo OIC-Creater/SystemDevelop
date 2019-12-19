@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.empCancelButton = new System.Windows.Forms.Button();
-            this.empUpdataButton = new System.Windows.Forms.Button();
+            this.productCancelButton = new System.Windows.Forms.Button();
+            this.productUpdataButton = new System.Windows.Forms.Button();
             this.empHiring = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.empPhone = new System.Windows.Forms.TextBox();
@@ -44,25 +44,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // empCancelButton
+            // productCancelButton
             // 
-            this.empCancelButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.empCancelButton.Location = new System.Drawing.Point(291, 554);
-            this.empCancelButton.Name = "empCancelButton";
-            this.empCancelButton.Size = new System.Drawing.Size(170, 60);
-            this.empCancelButton.TabIndex = 30;
-            this.empCancelButton.Text = "キャンセル";
-            this.empCancelButton.UseVisualStyleBackColor = true;
+            this.productCancelButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.productCancelButton.Location = new System.Drawing.Point(291, 554);
+            this.productCancelButton.Name = "productCancelButton";
+            this.productCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.productCancelButton.TabIndex = 30;
+            this.productCancelButton.Text = "キャンセル";
+            this.productCancelButton.UseVisualStyleBackColor = true;
             // 
-            // empUpdataButton
+            // productUpdataButton
             // 
-            this.empUpdataButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.empUpdataButton.Location = new System.Drawing.Point(528, 554);
-            this.empUpdataButton.Name = "empUpdataButton";
-            this.empUpdataButton.Size = new System.Drawing.Size(170, 60);
-            this.empUpdataButton.TabIndex = 29;
-            this.empUpdataButton.Text = "更新";
-            this.empUpdataButton.UseVisualStyleBackColor = true;
+            this.productUpdataButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.productUpdataButton.Location = new System.Drawing.Point(528, 554);
+            this.productUpdataButton.Name = "productUpdataButton";
+            this.productUpdataButton.Size = new System.Drawing.Size(170, 60);
+            this.productUpdataButton.TabIndex = 29;
+            this.productUpdataButton.Text = "更新";
+            this.productUpdataButton.UseVisualStyleBackColor = true;
             // 
             // empHiring
             // 
@@ -73,7 +73,7 @@
             this.empHiring.Items.AddRange(new object[] {
             "雇用",
             "離職済"});
-            this.empHiring.Location = new System.Drawing.Point(477, 461);
+            this.empHiring.Location = new System.Drawing.Point(477, 476);
             this.empHiring.Name = "empHiring";
             this.empHiring.Size = new System.Drawing.Size(340, 41);
             this.empHiring.TabIndex = 28;
@@ -82,18 +82,18 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(115, 464);
+            this.label7.Location = new System.Drawing.Point(115, 479);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 33);
+            this.label7.Size = new System.Drawing.Size(141, 33);
             this.label7.TabIndex = 38;
-            this.label7.Text = "雇用中\t";
+            this.label7.Text = "取扱い中\t";
             // 
             // empPhone
             // 
             this.empPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.empPhone.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.empPhone.Location = new System.Drawing.Point(477, 369);
+            this.empPhone.Location = new System.Drawing.Point(477, 392);
             this.empPhone.Name = "empPhone";
             this.empPhone.Size = new System.Drawing.Size(340, 39);
             this.empPhone.TabIndex = 26;
@@ -103,7 +103,7 @@
             this.empPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.empPassword.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.empPassword.Location = new System.Drawing.Point(479, 280);
+            this.empPassword.Location = new System.Drawing.Point(479, 306);
             this.empPassword.Name = "empPassword";
             this.empPassword.Size = new System.Drawing.Size(340, 39);
             this.empPassword.TabIndex = 25;
@@ -113,7 +113,7 @@
             this.empAffiliation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.empAffiliation.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.empAffiliation.Location = new System.Drawing.Point(479, 196);
+            this.empAffiliation.Location = new System.Drawing.Point(477, 215);
             this.empAffiliation.Name = "empAffiliation";
             this.empAffiliation.Size = new System.Drawing.Size(340, 39);
             this.empAffiliation.TabIndex = 24;
@@ -135,7 +135,7 @@
             this.empName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.empName.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.empName.Location = new System.Drawing.Point(479, 105);
+            this.empName.Location = new System.Drawing.Point(477, 122);
             this.empName.Name = "empName";
             this.empName.Size = new System.Drawing.Size(340, 39);
             this.empName.TabIndex = 23;
@@ -144,7 +144,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(112, 372);
+            this.label6.Location = new System.Drawing.Point(112, 395);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 33);
             this.label6.TabIndex = 35;
@@ -154,7 +154,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(114, 283);
+            this.label5.Location = new System.Drawing.Point(114, 309);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 33);
             this.label5.TabIndex = 34;
@@ -164,7 +164,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(115, 202);
+            this.label4.Location = new System.Drawing.Point(113, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 33);
             this.label4.TabIndex = 33;
@@ -174,7 +174,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(114, 111);
+            this.label3.Location = new System.Drawing.Point(112, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 33);
             this.label3.TabIndex = 32;
@@ -194,8 +194,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.empCancelButton);
-            this.Controls.Add(this.empUpdataButton);
+            this.Controls.Add(this.productCancelButton);
+            this.Controls.Add(this.productUpdataButton);
             this.Controls.Add(this.empHiring);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.empPhone);
@@ -217,8 +217,8 @@
 
         #endregion
 
-        public System.Windows.Forms.Button empCancelButton;
-        public System.Windows.Forms.Button empUpdataButton;
+        public System.Windows.Forms.Button productCancelButton;
+        public System.Windows.Forms.Button productUpdataButton;
         public System.Windows.Forms.ComboBox empHiring;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox empPhone;

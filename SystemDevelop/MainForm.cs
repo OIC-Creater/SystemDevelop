@@ -34,7 +34,6 @@ namespace SystemDevelop
             mainOfficeManuBar.businessOfficeListButton.Click += salesOfficeList_Click;
             mainOfficeManuBar.shopListButton.Click += ShopList_Click;
             mainOfficeManuBar.manufacturerListButton.Click += ManufacturerList_Click1;
-            mainOfficeManuBar.newProductButton.Click += NewProduct_Click;
             mainOfficeManuBar.productListButton.Click += ProductListButton_Click;
             newProduct.productButton.Click += SettingButton_Click;
             settingConfi.Yes.Click += Yes_Click;
@@ -47,12 +46,49 @@ namespace SystemDevelop
             shopList.shopDetailButton.Click += ShopDetailButton_Click;
             shopDetails.shopCancelButton.Click += ShopCancelButton_Click;
             salesOfficeList.salesOfficeDetailButton.Click += SalesOfficeDetailButton_Click;
+            salesOfficeDetails.salesOfficeCancelButton.Click += SalesOfficeCancelButton_Click;
+            productList.productDetailButton.Click += ProductDetailButton_Click;
+            productDetails.productCancelButton.Click += ProductCancelButton_Click;
+        }
+
+        
+
+        private void ProductCancelButton_Click(object sender, EventArgs e)
+        {
+            productDetails.Visible = false;
+            headerLists.Visible = false;
+        }
+
+        private void ProductDetailButton_Click(object sender, EventArgs e)
+        {
+            productDetails.Visible = true;
+            headerLists.Visible = false;
+            settingConfi.Visible = false;
+            newProduct.Visible = false;
+            manufactureList.Visible = false;
+            salesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+            productList.Visible = false;
+        }
+        private void SalesOfficeCancelButton_Click(object sender, EventArgs e)
+        {
+            salesOfficeDetails.Visible = false;
+            headerLists.Visible = false;
         }
 
         private void SalesOfficeDetailButton_Click(object sender, EventArgs e)
         {
             salesOfficeDetails.Visible = true;
             headerLists.Visible = false;
+            settingConfi.Visible = false;
+            newProduct.Visible = false;
+            manufactureList.Visible = false;
+            salesOfficeList.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+            productDetails.Visible = false;
+            productList.Visible = false;
         }
 
         private void ShopCancelButton_Click(object sender, EventArgs e)
@@ -71,6 +107,8 @@ namespace SystemDevelop
             salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
+            productDetails.Visible = false;
+            productList.Visible = false;
         }
 
         private void ManufCancel_Click(object sender, EventArgs e)
@@ -90,7 +128,9 @@ namespace SystemDevelop
             salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
-            
+            productDetails.Visible = false;
+            productList.Visible = false;
+
         }
 
         private void EmpCancel_Click(object sender, EventArgs e)
@@ -109,6 +149,8 @@ namespace SystemDevelop
             manufactureList.Visible = false;
             salesOfficeList.Visible = false;
             empList.Visible = false;
+            productDetails.Visible = false;
+            productList.Visible = false;
             empDetails.SetDetail(empList.GetRowData());
         }
 
@@ -170,6 +212,7 @@ namespace SystemDevelop
             empDetails.Visible = false;
             manufactureDetails.Visible = false;
             shopDetails.Visible = false;
+            productDetails.Visible = false;
         }
 
         private void NewProduct_Click(object sender, EventArgs e)
@@ -184,6 +227,8 @@ namespace SystemDevelop
             empDetails.Visible = false;
             manufactureDetails.Visible = false;
             shopDetails.Visible = false;
+            productList.Visible = false;
+            productDetails.Visible = false;
             productList.Visible = false;
         }
 
@@ -200,6 +245,8 @@ namespace SystemDevelop
             manufactureDetails.Visible = false;
             shopDetails.Visible = false;
             productList.Visible = false;
+            productDetails.Visible = false;
+            productList.Visible = false;
         }
 
         private void salesOfficeList_Click(object sender, EventArgs e)
@@ -214,6 +261,8 @@ namespace SystemDevelop
             empDetails.Visible = false;
             manufactureDetails.Visible = false;
             shopDetails.Visible = false;
+            productList.Visible = false;
+            productDetails.Visible = false;
             productList.Visible = false;
         }
 
@@ -230,6 +279,8 @@ namespace SystemDevelop
             manufactureDetails.Visible = false;
             shopDetails.Visible = false;
             productList.Visible = false;
+            productDetails.Visible = false;
+            productList.Visible = false;
         }
 
         private void ManufacturerList_Click(object sender, EventArgs e)
@@ -245,6 +296,8 @@ namespace SystemDevelop
             manufactureDetails.Visible = false;
             shopDetails.Visible = false;
             productList.Visible = false;
+            productDetails.Visible = false;
+            productList.Visible = false;
         }
 
         private void EmployeeList_Click(object sender, EventArgs e)
@@ -259,6 +312,8 @@ namespace SystemDevelop
             empDetails.Visible = false;
             manufactureDetails.Visible = false;
             shopDetails.Visible = false;
+            productList.Visible = false;
+            productDetails.Visible = false;
             productList.Visible = false;
         }
         

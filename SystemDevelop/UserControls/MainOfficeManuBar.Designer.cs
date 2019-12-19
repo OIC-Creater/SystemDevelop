@@ -31,7 +31,6 @@
             this.employeeListButton = new System.Windows.Forms.Button();
             this.manufacturerListButton = new System.Windows.Forms.Button();
             this.shopListButton = new System.Windows.Forms.Button();
-            this.newProductButton = new System.Windows.Forms.Button();
             this.businessOfficeListButton = new System.Windows.Forms.Button();
             this.productListButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -81,21 +80,6 @@
             this.shopListButton.UseVisualStyleBackColor = true;
             this.shopListButton.Click += new System.EventHandler(this.shopList_Click);
             // 
-            // newProductButton
-            // 
-            this.newProductButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.newProductButton.FlatAppearance.BorderSize = 0;
-            this.newProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newProductButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.newProductButton.Location = new System.Drawing.Point(0, 413);
-            this.newProductButton.Name = "newProductButton";
-            this.newProductButton.Size = new System.Drawing.Size(216, 104);
-            this.newProductButton.TabIndex = 4;
-            this.newProductButton.Text = "新商品登録";
-            this.newProductButton.UseVisualStyleBackColor = true;
-            this.newProductButton.Click += new System.EventHandler(this.newProduct_Click);
-            // 
             // businessOfficeListButton
             // 
             this.businessOfficeListButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -118,12 +102,13 @@
             this.productListButton.FlatAppearance.BorderSize = 0;
             this.productListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.productListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.productListButton.Location = new System.Drawing.Point(0, 517);
+            this.productListButton.Location = new System.Drawing.Point(0, 413);
             this.productListButton.Name = "productListButton";
             this.productListButton.Size = new System.Drawing.Size(216, 104);
             this.productListButton.TabIndex = 5;
             this.productListButton.Text = "商品一覧";
             this.productListButton.UseVisualStyleBackColor = true;
+            this.productListButton.Click += new System.EventHandler(this.productListButton_Click);
             // 
             // MainOfficeManuBar
             // 
@@ -131,7 +116,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.productListButton);
             this.Controls.Add(this.businessOfficeListButton);
-            this.Controls.Add(this.newProductButton);
             this.Controls.Add(this.shopListButton);
             this.Controls.Add(this.manufacturerListButton);
             this.Controls.Add(this.employeeListButton);
@@ -145,7 +129,6 @@
         public System.Windows.Forms.Button employeeListButton;
         public System.Windows.Forms.Button manufacturerListButton;
         public System.Windows.Forms.Button shopListButton;
-        public System.Windows.Forms.Button newProductButton;
         public System.Windows.Forms.Button businessOfficeListButton;
         public System.Windows.Forms.Button productListButton;
     }
