@@ -28,66 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reciveDetail = new System.Windows.Forms.Button();
-            this.orderDetail = new System.Windows.Forms.Button();
-            this.stock = new System.Windows.Forms.Button();
+            this.reciveListButton = new System.Windows.Forms.Button();
+            this.orderListButton = new System.Windows.Forms.Button();
+            this.stockListButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // reciveDetail
+            // reciveListButton
             // 
-            this.reciveDetail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.reciveListButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.reciveDetail.BackColor = System.Drawing.SystemColors.Control;
-            this.reciveDetail.FlatAppearance.BorderSize = 0;
-            this.reciveDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reciveDetail.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.reciveDetail.Location = new System.Drawing.Point(0, 0);
-            this.reciveDetail.Name = "reciveDetail";
-            this.reciveDetail.Size = new System.Drawing.Size(216, 104);
-            this.reciveDetail.TabIndex = 1;
-            this.reciveDetail.Text = "受注一覧";
-            this.reciveDetail.UseVisualStyleBackColor = false;
-            this.reciveDetail.Click += new System.EventHandler(this.reciveDetail_Click);
+            this.reciveListButton.BackColor = System.Drawing.SystemColors.Control;
+            this.reciveListButton.FlatAppearance.BorderSize = 0;
+            this.reciveListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reciveListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.reciveListButton.Location = new System.Drawing.Point(0, 0);
+            this.reciveListButton.Name = "reciveListButton";
+            this.reciveListButton.Size = new System.Drawing.Size(216, 104);
+            this.reciveListButton.TabIndex = 1;
+            this.reciveListButton.Text = "受注一覧";
+            this.reciveListButton.UseVisualStyleBackColor = false;
+            this.reciveListButton.Click += new System.EventHandler(this.reciveDetail_Click);
             // 
-            // orderDetail
+            // orderListButton
             // 
-            this.orderDetail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.orderListButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.orderDetail.BackColor = System.Drawing.SystemColors.Control;
-            this.orderDetail.FlatAppearance.BorderSize = 0;
-            this.orderDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.orderDetail.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.orderDetail.Location = new System.Drawing.Point(0, 104);
-            this.orderDetail.Name = "orderDetail";
-            this.orderDetail.Size = new System.Drawing.Size(216, 104);
-            this.orderDetail.TabIndex = 2;
-            this.orderDetail.Text = "発注一覧";
-            this.orderDetail.UseVisualStyleBackColor = false;
-            this.orderDetail.Click += new System.EventHandler(this.orderDetail_Click);
+            this.orderListButton.BackColor = System.Drawing.SystemColors.Control;
+            this.orderListButton.FlatAppearance.BorderSize = 0;
+            this.orderListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.orderListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.orderListButton.Location = new System.Drawing.Point(0, 104);
+            this.orderListButton.Name = "orderListButton";
+            this.orderListButton.Size = new System.Drawing.Size(216, 104);
+            this.orderListButton.TabIndex = 2;
+            this.orderListButton.Text = "発注一覧";
+            this.orderListButton.UseVisualStyleBackColor = false;
+            this.orderListButton.Click += new System.EventHandler(this.orderDetail_Click);
             // 
-            // stock
+            // stockListButton
             // 
-            this.stock.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.stockListButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.stock.BackColor = System.Drawing.SystemColors.Control;
-            this.stock.FlatAppearance.BorderSize = 0;
-            this.stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stock.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.stock.Location = new System.Drawing.Point(0, 208);
-            this.stock.Name = "stock";
-            this.stock.Size = new System.Drawing.Size(216, 104);
-            this.stock.TabIndex = 3;
-            this.stock.Text = "在庫一覧";
-            this.stock.UseVisualStyleBackColor = false;
-            this.stock.Click += new System.EventHandler(this.stock_Click);
+            this.stockListButton.BackColor = System.Drawing.SystemColors.Control;
+            this.stockListButton.FlatAppearance.BorderSize = 0;
+            this.stockListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stockListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.stockListButton.Location = new System.Drawing.Point(0, 208);
+            this.stockListButton.Name = "stockListButton";
+            this.stockListButton.Size = new System.Drawing.Size(216, 104);
+            this.stockListButton.TabIndex = 3;
+            this.stockListButton.Text = "在庫一覧";
+            this.stockListButton.UseVisualStyleBackColor = false;
+            this.stockListButton.Click += new System.EventHandler(this.stock_Click);
             // 
             // WarehouseMenuBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.stock);
-            this.Controls.Add(this.reciveDetail);
-            this.Controls.Add(this.orderDetail);
+            this.Controls.Add(this.stockListButton);
+            this.Controls.Add(this.reciveListButton);
+            this.Controls.Add(this.orderListButton);
             this.Name = "WarehouseMenuBar";
             this.Size = new System.Drawing.Size(216, 689);
             this.Load += new System.EventHandler(this.WarehouseMenuBar_Load);
@@ -96,8 +96,8 @@
         }
 
         #endregion
-        public System.Windows.Forms.Button reciveDetail;
-        public System.Windows.Forms.Button orderDetail;
-        public System.Windows.Forms.Button stock;
+        public System.Windows.Forms.Button reciveListButton;
+        public System.Windows.Forms.Button orderListButton;
+        public System.Windows.Forms.Button stockListButton;
     }
 }

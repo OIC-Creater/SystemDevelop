@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.manufGridView = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.manufDetailButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.manufGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,21 +47,21 @@
             this.manufGridView.TabIndex = 0;
             this.manufGridView.TabStop = false;
             // 
-            // button1
+            // manufDetailButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(873, 709);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 80);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "更新";
-            this.button1.UseVisualStyleBackColor = true;
+            this.manufDetailButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.manufDetailButton.Location = new System.Drawing.Point(873, 709);
+            this.manufDetailButton.Name = "manufDetailButton";
+            this.manufDetailButton.Size = new System.Drawing.Size(160, 80);
+            this.manufDetailButton.TabIndex = 5;
+            this.manufDetailButton.Text = "詳細";
+            this.manufDetailButton.UseVisualStyleBackColor = true;
             // 
             // ManufactureList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.manufDetailButton);
             this.Controls.Add(this.manufGridView);
             this.Name = "ManufactureList";
             this.Size = new System.Drawing.Size(1033, 789);
@@ -73,6 +73,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView manufGridView;
-        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button manufDetailButton;
     }
 }

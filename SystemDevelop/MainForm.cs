@@ -23,28 +23,36 @@ namespace SystemDevelop
             loginControl.passTextBox.KeyDown += OnEnter;
             headerControl.logoutButton.Click += LogoutButtonClick;
             headerControl.closeButton.Click += CloseButton_Click1;
-            salesMenuBar.recive.Click += ReciveButtonClick;
-            salesMenuBar.recive.Click += ReciveButtonClick;
-            salesMenuBar.reciveDetail.Click += ReciveDetail_Click;
-            salesMenuBar.pigeon.Click += Pigeon_Click;
-            warehouseMenuBar.reciveDetail.Click += OrderButtonClick;
-            warehouseMenuBar.orderDetail.Click += OrderAnButtonClick;
-            warehouseMenuBar.stock.Click += StockButtonClick;
-            mainOfficeManuBar.employeeList.Click += EmployeeList_Click;
-            mainOfficeManuBar.businessOfficeList.Click += BusinessOfficeList_Click;
-            mainOfficeManuBar.shopList.Click += ShopList_Click;
-            mainOfficeManuBar.manufacturerList.Click += ManufacturerList_Click1;
-            mainOfficeManuBar.newProduct.Click += NewProduct_Click;
+            salesMenuBar.reciveAddButton.Click += ReciveButtonClick;
+            salesMenuBar.reciveAddButton.Click += ReciveButtonClick;
+            salesMenuBar.reciveListButton.Click += ReciveDetail_Click;
+            salesMenuBar.pigeonButton.Click += Pigeon_Click;
+            warehouseMenuBar.reciveListButton.Click += OrderButtonClick;
+            warehouseMenuBar.orderListButton.Click += OrderAnButtonClick;
+            warehouseMenuBar.stockListButton.Click += StockButtonClick;
+            mainOfficeManuBar.employeeListButton.Click += EmployeeList_Click;
+            mainOfficeManuBar.businessOfficeListButton.Click += salesOfficeList_Click;
+            mainOfficeManuBar.shopListButton.Click += ShopList_Click;
+            mainOfficeManuBar.manufacturerListButton.Click += ManufacturerList_Click1;
+            mainOfficeManuBar.newProductButton.Click += NewProduct_Click;
             newProduct.productButton.Click += SettingButton_Click;
             settingConfi.Yes.Click += Yes_Click;
             settingConfi.No.Click += No_Click;
             loginControl.closeButton.Click += CloseButton_Click;
-            businesOfficeList.salesOfficeDetailButton.Click += BOLupdata_Click;
+            empList.empDetailButton.Click += EmpDetailButton_Click;
+            empDetails.empCancel.Click += EmpCancel_Click;
+            
         }
 
-        private void BOLupdata_Click(object sender, EventArgs e)
+        private void EmpCancel_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            empDetails.Visible = false;
+        }
+
+        private void EmpDetailButton_Click(object sender, EventArgs e)
+        {
+            empDetails.Visible = true;
+            headerLists.Visible = false;
         }
 
         private void CloseButton_Click1(object sender, EventArgs e)
@@ -63,7 +71,7 @@ namespace SystemDevelop
             settingConfi.Visible = false;
             newProduct.Visible = false;
             manufactureList.Visible = false;
-            businesOfficeList.Visible = false;
+            salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
         }
@@ -73,7 +81,7 @@ namespace SystemDevelop
             settingConfi.Visible = false;
             newProduct.Visible = false;
             manufactureList.Visible = false;
-            businesOfficeList.Visible = false;
+            salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
             orderControl.Visible = false;
@@ -85,7 +93,7 @@ namespace SystemDevelop
             settingConfi.Visible = true;
             newProduct.Visible = false;
             manufactureList.Visible = false;
-            businesOfficeList.Visible = false;
+            salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
             orderControl.Visible = false;
@@ -96,7 +104,7 @@ namespace SystemDevelop
             headerLists.Visible =false;
             newProduct.Visible = true;
             manufactureList.Visible = false;
-            businesOfficeList.Visible = false;
+            salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
             orderControl.Visible = false;
@@ -106,17 +114,17 @@ namespace SystemDevelop
         {
             headerLists.Visible = true;
             manufactureList.Visible = true;
-            businesOfficeList.Visible = false;
+            salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
             newProduct.Visible = false;
             orderControl.Visible = false;
         }
 
-        private void BusinessOfficeList_Click(object sender, EventArgs e)
+        private void salesOfficeList_Click(object sender, EventArgs e)
         {
             headerLists.Visible = true;
-            businesOfficeList.Visible = true;
+            salesOfficeList.Visible = true;
             empList.Visible = false;
             shopList.Visible = false;
             manufactureList.Visible = false;
@@ -128,7 +136,7 @@ namespace SystemDevelop
         {
             headerLists.Visible = true;
             shopList.Visible = true;
-            businesOfficeList.Visible = false;
+            salesOfficeList.Visible = false;
             empList.Visible = false;
             manufactureList.Visible = false;
             newProduct.Visible = false;
@@ -138,7 +146,7 @@ namespace SystemDevelop
         private void ManufacturerList_Click(object sender, EventArgs e)
         {
             headerLists.Visible = true;
-            businesOfficeList.Visible = true;
+            salesOfficeList.Visible = true;
             empList.Visible = false;
             shopList.Visible = false;
             manufactureList.Visible = false;
@@ -150,7 +158,7 @@ namespace SystemDevelop
         {
             headerLists.Visible = true;
             empList.Visible = true;
-            businesOfficeList.Visible = false;
+            salesOfficeList.Visible = false;
             shopList.Visible = false;
             manufactureList.Visible = false;
             newProduct.Visible = false;

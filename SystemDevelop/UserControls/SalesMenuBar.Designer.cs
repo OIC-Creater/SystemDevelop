@@ -28,66 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.recive = new System.Windows.Forms.Button();
-            this.reciveDetail = new System.Windows.Forms.Button();
-            this.pigeon = new System.Windows.Forms.Button();
+            this.reciveAddButton = new System.Windows.Forms.Button();
+            this.reciveListButton = new System.Windows.Forms.Button();
+            this.pigeonButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // recive
+            // reciveAddButton
             // 
-            this.recive.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.reciveAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.recive.BackColor = System.Drawing.SystemColors.Control;
-            this.recive.FlatAppearance.BorderSize = 0;
-            this.recive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.recive.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.recive.Location = new System.Drawing.Point(0, 104);
-            this.recive.Name = "recive";
-            this.recive.Size = new System.Drawing.Size(216, 104);
-            this.recive.TabIndex = 2;
-            this.recive.Text = "受注登録";
-            this.recive.UseVisualStyleBackColor = false;
-            this.recive.Click += new System.EventHandler(this.recive_Click);
+            this.reciveAddButton.BackColor = System.Drawing.SystemColors.Control;
+            this.reciveAddButton.FlatAppearance.BorderSize = 0;
+            this.reciveAddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reciveAddButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.reciveAddButton.Location = new System.Drawing.Point(0, 104);
+            this.reciveAddButton.Name = "reciveAddButton";
+            this.reciveAddButton.Size = new System.Drawing.Size(216, 104);
+            this.reciveAddButton.TabIndex = 2;
+            this.reciveAddButton.Text = "受注登録";
+            this.reciveAddButton.UseVisualStyleBackColor = false;
+            this.reciveAddButton.Click += new System.EventHandler(this.recive_Click);
             // 
-            // reciveDetail
+            // reciveListButton
             // 
-            this.reciveDetail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.reciveListButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.reciveDetail.BackColor = System.Drawing.SystemColors.Control;
-            this.reciveDetail.FlatAppearance.BorderSize = 0;
-            this.reciveDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reciveDetail.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.reciveDetail.Location = new System.Drawing.Point(0, 0);
-            this.reciveDetail.Name = "reciveDetail";
-            this.reciveDetail.Size = new System.Drawing.Size(216, 104);
-            this.reciveDetail.TabIndex = 1;
-            this.reciveDetail.Text = "受注一覧";
-            this.reciveDetail.UseVisualStyleBackColor = false;
-            this.reciveDetail.Click += new System.EventHandler(this.reciveDetail_Click);
+            this.reciveListButton.BackColor = System.Drawing.SystemColors.Control;
+            this.reciveListButton.FlatAppearance.BorderSize = 0;
+            this.reciveListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reciveListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.reciveListButton.Location = new System.Drawing.Point(0, 0);
+            this.reciveListButton.Name = "reciveListButton";
+            this.reciveListButton.Size = new System.Drawing.Size(216, 104);
+            this.reciveListButton.TabIndex = 1;
+            this.reciveListButton.Text = "受注一覧";
+            this.reciveListButton.UseVisualStyleBackColor = false;
+            this.reciveListButton.Click += new System.EventHandler(this.reciveDetail_Click);
             // 
-            // pigeon
+            // pigeonButton
             // 
-            this.pigeon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pigeonButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pigeon.BackColor = System.Drawing.SystemColors.Control;
-            this.pigeon.FlatAppearance.BorderSize = 0;
-            this.pigeon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pigeon.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.pigeon.Location = new System.Drawing.Point(0, 208);
-            this.pigeon.Name = "pigeon";
-            this.pigeon.Size = new System.Drawing.Size(216, 104);
-            this.pigeon.TabIndex = 3;
-            this.pigeon.Text = "ハト管理";
-            this.pigeon.UseVisualStyleBackColor = false;
-            this.pigeon.Click += new System.EventHandler(this.pigeon_Click);
+            this.pigeonButton.BackColor = System.Drawing.SystemColors.Control;
+            this.pigeonButton.FlatAppearance.BorderSize = 0;
+            this.pigeonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pigeonButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.pigeonButton.Location = new System.Drawing.Point(0, 208);
+            this.pigeonButton.Name = "pigeonButton";
+            this.pigeonButton.Size = new System.Drawing.Size(216, 104);
+            this.pigeonButton.TabIndex = 3;
+            this.pigeonButton.Text = "ハト管理";
+            this.pigeonButton.UseVisualStyleBackColor = false;
+            this.pigeonButton.Click += new System.EventHandler(this.pigeon_Click);
             // 
             // SalesMenuBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pigeon);
-            this.Controls.Add(this.reciveDetail);
-            this.Controls.Add(this.recive);
+            this.Controls.Add(this.pigeonButton);
+            this.Controls.Add(this.reciveListButton);
+            this.Controls.Add(this.reciveAddButton);
             this.Name = "SalesMenuBar";
             this.Size = new System.Drawing.Size(216, 689);
             this.Load += new System.EventHandler(this.MenuBar_Load);
@@ -96,8 +96,8 @@
         }
 
         #endregion
-        public System.Windows.Forms.Button reciveDetail;
-        public System.Windows.Forms.Button recive;
-        public System.Windows.Forms.Button pigeon;
+        public System.Windows.Forms.Button reciveListButton;
+        public System.Windows.Forms.Button reciveAddButton;
+        public System.Windows.Forms.Button pigeonButton;
     }
 }
