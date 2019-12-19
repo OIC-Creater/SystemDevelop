@@ -36,14 +36,20 @@
             // 
             // empGridView
             // 
+            this.empGridView.AllowUserToAddRows = false;
             this.empGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.empGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.empGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.empGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.empGridView.Location = new System.Drawing.Point(0, 0);
+            this.empGridView.MultiSelect = false;
             this.empGridView.Name = "empGridView";
-            this.empGridView.RowTemplate.Height = 21;
+            this.empGridView.ReadOnly = true;
+            this.empGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.empGridView.RowTemplate.Height = 50;
+            this.empGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.empGridView.Size = new System.Drawing.Size(1033, 709);
             this.empGridView.TabIndex = 0;
             this.empGridView.TabStop = false;
@@ -84,9 +90,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView empGridView;
         public System.Windows.Forms.Button empDetailButton;
+
         public System.Windows.Forms.Button empListAddButton;
+
+        public System.Windows.Forms.DataGridView empGridView;
+
     }
 }
