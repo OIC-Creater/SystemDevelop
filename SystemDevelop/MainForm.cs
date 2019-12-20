@@ -8,16 +8,13 @@ namespace SystemDevelop
 {
     public partial class MainForm : Form
     {
-        private Login login;
         private bool logined = false;
         private Employee employee;
 
         public MainForm()
         {
             InitializeComponent();
-            var _ = DatabaseInstance.Database;
             
-            login = new Login();
             loginControl.loginButton.Click += LoginButtonClick;
             loginControl.idTextBox.KeyDown += OnEnter;
             loginControl.passTextBox.KeyDown += OnEnter;
@@ -27,7 +24,7 @@ namespace SystemDevelop
             salesMenuBar.reciveAddButton.Click += ReciveButtonClick;
             salesMenuBar.reciveListButton.Click += ReciveDetail_Click;
             salesMenuBar.pigeonButton.Click += Pigeon_Click;
-            warehouseMenuBar.reciveListButton.Click += OrderButtonClick;
+            warehouseMenuBar.reciveListButton.Click += ReciveListButtonClick;
             warehouseMenuBar.orderListButton.Click += OrderAnButtonClick;
             warehouseMenuBar.stockListButton.Click += StockButtonClick;
             mainOfficeManuBar.employeeListButton.Click += EmployeeList_Click;
@@ -40,6 +37,7 @@ namespace SystemDevelop
             settingConfi.No.Click += No_Click;
             loginControl.closeButton.Click += CloseButton_Click;
             empList.empDetailButton.Click += EmpDetailButton_Click;
+            empList.empListAddButton.Click += EmpListAddButton_Click;
             empDetails.empCancelButton.Click += EmpCancel_Click;
             manufactureList.manufDetailButton.Click += ManufDetailButton_Click;
             manufactureDetails.manufCancelButton.Click += ManufCancel_Click;
@@ -53,6 +51,49 @@ namespace SystemDevelop
             reciveListDetails.reciveCancelButton.Click += ReciveCancelButton_Click;
             pigeonList.pigeonDetailButton.Click += PigeonDetailButton_Click;
             pigeonDetails.pigeonCancelButton.Click += PigeonCancelButton_Click;
+            orderControl.orderDetailsButton.Click += OrderDetailsButton_Click;
+            orderDetail.orderCancelButton.Click += OrderCancelButton_Click;
+            stockList.stockDetailButton.Click += StockDetailButton_Click;
+            empAddControl.empAddButton.Click += EmpAddButton_Click;
+        }
+
+        private void EmpAddButton_Click(object sender, EventArgs e)
+        {
+            empAddControl.Visible = false;
+            empList.Visible = true;
+            headerLists.Visible = true;
+        }
+
+        private void EmpListAddButton_Click(object sender, EventArgs e)
+        {
+            empAddControl.Visible = true;
+            empList.Visible = false;
+            headerLists.Visible = false;
+        }
+
+        private void StockDetailButton_Click(object sender, EventArgs e)
+        {
+            stockDetail.Visible = true;
+            headerLists.Visible = false;
+            stockList.Visible = false;
+            reciveControl.Visible = false;
+            orderControl.Visible = false;
+        }
+
+        private void OrderCancelButton_Click(object sender, EventArgs e)
+        {
+            orderDetail.Visible = false;
+            headerLists.Visible = false;
+        }
+
+        private void OrderDetailsButton_Click(object sender, EventArgs e)
+        {
+            orderDetail.Visible = true;
+            orderControl.Visible = false;
+            headerLists.Visible = false;
+            reciveControl.Visible = false;
+            stockList.Visible = false;
+
         }
 
         private void PigeonCancelButton_Click(object sender, EventArgs e)
@@ -365,15 +406,19 @@ namespace SystemDevelop
             warehouseControl.Visible = false;
             pigeonList.Visible = false;
             reciveControl.Visible = false;
+            orderDetail.Visible = false;
+            reciveListDetails.Visible = false;
         }
-        private void OrderButtonClick(object sender, EventArgs e)
+        private void ReciveListButtonClick(object sender, EventArgs e)
         {
-            reciveAddControl.Visible = false;
             headerLists.Visible = true;
             reciveControl.Visible = true;
+            reciveAddControl.Visible = false;
             warehouseControl.Visible = false;
             orderControl.Visible = false;
             stockList.Visible = false;
+            orderDetail.Visible = false;
+            reciveListDetails.Visible = false;
         }
         private void OrderAnButtonClick(object sender,EventArgs e)
         {
@@ -383,6 +428,9 @@ namespace SystemDevelop
             stockList.Visible = false;
             reciveControl.Visible = false;
             warehouseControl.Visible = false;
+            orderDetail.Visible = false;
+            reciveListDetails.Visible = false;
+            stockDetail.Visible = false;
         }
         private void ReciveDetail_Click(object sender, EventArgs e)
         {
@@ -435,6 +483,7 @@ namespace SystemDevelop
         
         private void Login()
         {
+            Login login = new Login();
             if (login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text, out employee))
             {
                 headerControl.userLabel.Text += $" {employee.EmployeeName}";

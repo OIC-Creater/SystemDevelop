@@ -14,6 +14,8 @@ namespace SystemDevelop
         [STAThread]
         static void Main()
         {
+            var _ = DatabaseInstance.Database;
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
+using SystemDevelop.Model.DB;
 
 namespace SystemDevelop.UserControls
 {
@@ -23,15 +24,16 @@ namespace SystemDevelop.UserControls
             Employee employee = new Employee();
             DataGridViewRow selectedData = empGridView.CurrentRow;
             Console.WriteLine(selectedData);
-            employee.EmployeeId = selectedData.Cells[0].Value.ToString();
-            employee.Password = selectedData.Cells[1].Value.ToString();
-            employee.EmployeeName = selectedData.Cells[2].Value.ToString();
-            employee.EmployeeKatakana = selectedData.Cells[3].Value.ToString();
-            employee.AffiliationId = selectedData.Cells[4].Value.ToString();
-            employee.PhoneNumber = selectedData.Cells[5].Value.ToString();
-            employee.PigeonId = selectedData.Cells[6].Value.ToString();
-            employee.WorkingFlag = Convert.ToBoolean(selectedData.Cells[7].Value);
-            return employee;
+            return DatabaseInstance.EmployeeTable.Where(e => e.EmployeeId == selectedData.Cells[0].Value.ToString()).First();
+        }
+
+        private void empGridView_VisibleChanged(object sender, EventArgs e)
+        {
+            if (!DesignMode)
+            {
+                DataSource.SetDataSource<Employee>(empGridView, DatabaseInstance.EmployeeTable);
+            }
+            
         }
     }
 }

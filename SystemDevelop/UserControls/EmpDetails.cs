@@ -13,6 +13,7 @@ namespace SystemDevelop.UserControls
 {
     public partial class EmpDetails : UserControl
     {
+        private Employee emp;
         public EmpDetails()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace SystemDevelop.UserControls
 
         public void SetDetail(Employee employee)
         {
+            emp = employee;
             empId.Text = employee.EmployeeId;
             empName.Text = employee.EmployeeName;
             empAffiliation.Text = employee.AffiliationId;
@@ -27,6 +29,18 @@ namespace SystemDevelop.UserControls
             empPhone.Text = employee.PhoneNumber;
             pigeonName.Text = employee.PigeonId;
             empHiring.Text = employee.WorkingFlag.ToString();
+        }
+
+        private void empUpdataButton_Click(object sender, EventArgs e)
+        {
+            emp.EmployeeId = empId.Text;
+            emp.EmployeeName = empName.Text;
+            emp.AffiliationId = empAffiliation.Text;
+            emp.Password = empPassword.Text;
+            emp.PhoneNumber = empPhone.Text;
+            emp.PigeonId = pigeonName.Text;
+            emp.WorkingFlag = Convert.ToBoolean(empHiring.Text);
+            DatabaseInstance.EmployeeTable.Sync();
         }
     }
 }

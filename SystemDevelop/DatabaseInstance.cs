@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using LogAdapter;
 using NLog;
 using ObjectDatabase;
@@ -88,7 +89,7 @@ namespace SystemDevelop
 
         private static void OnLog(ILogMessage msg)
         {
-            _logger.Info(msg.Data);
+            Console.WriteLine(msg.Data);
         }
     }
 }
