@@ -25,7 +25,7 @@ namespace SystemDevelop.UserControls
             manufacturerListButton.BackColor = SystemColors.Control;
             shopListButton.BackColor = SystemColors.Control;
             businessOfficeListButton.BackColor = SystemColors.Control;
-            newProductButton.BackColor = SystemColors.Control;
+            productListButton.BackColor = SystemColors.Control;
         }
 
         private void manufacturerList_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace SystemDevelop.UserControls
             manufacturerListButton.BackColor = Color.LightBlue;
             shopListButton.BackColor = SystemColors.Control;
             businessOfficeListButton.BackColor = SystemColors.Control;
-            newProductButton.BackColor = SystemColors.Control;
+            productListButton.BackColor = SystemColors.Control;
         }
 
         private void shopList_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace SystemDevelop.UserControls
             manufacturerListButton.BackColor = SystemColors.Control;
             shopListButton.BackColor = Color.LightBlue;
             businessOfficeListButton.BackColor = SystemColors.Control;
-            newProductButton.BackColor = SystemColors.Control;
+            productListButton.BackColor = SystemColors.Control;
         }
         private void businessOfficeList_Click(object sender, EventArgs e)
         {
@@ -51,16 +51,15 @@ namespace SystemDevelop.UserControls
             manufacturerListButton.BackColor = SystemColors.Control;
             shopListButton.BackColor = SystemColors.Control;
             businessOfficeListButton.BackColor = Color.LightBlue;
-            newProductButton.BackColor = SystemColors.Control;
+            productListButton.BackColor = SystemColors.Control;
         }
-
-        private void newProduct_Click(object sender, EventArgs e)
+        private void productListButton_Click(object sender, EventArgs e)
         {
+            productListButton.BackColor = Color.LightBlue;
             employeeListButton.BackColor = SystemColors.Control;
             manufacturerListButton.BackColor = SystemColors.Control;
-            shopListButton.BackColor = SystemColors.Control;
             businessOfficeListButton.BackColor = SystemColors.Control;
-            newProductButton.BackColor = Color.LightBlue;
+            shopListButton.BackColor = SystemColors.Control;
         }
     }
 }
