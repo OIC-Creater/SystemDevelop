@@ -16,7 +16,12 @@ namespace SystemDevelop
         {
             InitializeComponent();
             var _ = DatabaseInstance.Database;
+
+            //テキストファイル作成
+            Logtext log = new Logtext();
+            log.OutPut("");
             
+
             login = new Login();
             loginControl.loginButton.Click += LoginButtonClick;
             loginControl.idTextBox.KeyDown += OnEnter;
@@ -43,6 +48,7 @@ namespace SystemDevelop
             empDetails.empCancel.Click += EmpCancel_Click;
             manufactureList.manufDetailButton.Click += ManufDetailButton_Click;
             manufactureDetails.manufCancel.Click += ManufCancel_Click;
+
         }
 
         private void ManufCancel_Click(object sender, EventArgs e)
@@ -204,6 +210,7 @@ namespace SystemDevelop
             orderControl.Visible = false;
             empDetails.Visible = false;
             manufactureDetails.Visible = false;
+            
         }
         
         private void StockButtonClick(object sender, EventArgs e)
@@ -273,13 +280,18 @@ namespace SystemDevelop
             if (e.KeyCode == Keys.Enter)
             {
                 Login();
+                Logtext log = new Logtext();
+                log.OutPut("Login");
             }
         }
-        
+      
 
         private void LoginButtonClick(object sender, EventArgs e)
         {
-            Login();
+            Login(); 
+            //logテキスト
+            Logtext log = new Logtext();
+            log.OutPut("ログイン");
         }
         
         private void Login()

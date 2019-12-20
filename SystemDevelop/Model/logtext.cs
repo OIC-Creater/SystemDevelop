@@ -9,15 +9,12 @@ namespace SystemDevelop.Model
 {
     class Logtext
     {
-        public void OutPut()
+        public void OutPut(string log)
         {
-            StreamWriter sw = File.CreateText("test.txt");
-            sw.WriteLine("NEC");
-            sw.WriteLine("SONY");
-            sw.WriteLine("DELL");
-            sw.Close();
+            string appendText = DateTime.Now.ToString("yyyy/MM/dd HH:mm") + " INFO: "  + log + Environment.NewLine;
+            File.AppendAllText("test.txt", appendText);
 
-            File.AppendAllText("test.txt", "a");
+          
 
         }
     }
