@@ -30,6 +30,7 @@
         {
             this.manufGridView = new System.Windows.Forms.DataGridView();
             this.manufDetailButton = new System.Windows.Forms.Button();
+            this.manufListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.manufGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,10 +58,21 @@
             this.manufDetailButton.Text = "詳細";
             this.manufDetailButton.UseVisualStyleBackColor = true;
             // 
+            // manufListAddButton
+            // 
+            this.manufListAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.manufListAddButton.Location = new System.Drawing.Point(707, 709);
+            this.manufListAddButton.Name = "manufListAddButton";
+            this.manufListAddButton.Size = new System.Drawing.Size(160, 80);
+            this.manufListAddButton.TabIndex = 6;
+            this.manufListAddButton.Text = "メーカ登録";
+            this.manufListAddButton.UseVisualStyleBackColor = true;
+            // 
             // ManufactureList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.manufListAddButton);
             this.Controls.Add(this.manufDetailButton);
             this.Controls.Add(this.manufGridView);
             this.Name = "ManufactureList";
@@ -72,6 +84,10 @@
 
         #endregion
         public System.Windows.Forms.Button manufDetailButton;
+
+        public System.Windows.Forms.Button manufListAddButton;
+
         public System.Windows.Forms.DataGridView manufGridView;
+
     }
 }

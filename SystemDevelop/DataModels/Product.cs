@@ -21,8 +21,11 @@ namespace SystemDevelop.DataModels
 
         [SerializePropertyAttribute("設定ID", IsKey=false, RelationKey=false)]
         public string SettingId { get; set; }
-        
-        
+
+        [SerializePropertyAttribute("取扱中", IsKey = false, RelationKey = false)]
+        public string Trading { get; set; }
+
+
         [IgnoreProperty, UnionTarget(nameof(DataModels.Maker.MakerId))]
         public Maker Maker { get; set; }
         [IgnoreProperty, UnionTarget(nameof(DataModels.Setting.SettingId))]

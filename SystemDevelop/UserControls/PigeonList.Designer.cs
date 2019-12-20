@@ -30,6 +30,7 @@
         {
             this.pigeonGridView = new System.Windows.Forms.DataGridView();
             this.updata = new System.Windows.Forms.Button();
+            this.pigeonListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pigeonGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,10 +59,21 @@
             this.updata.Text = "更新";
             this.updata.UseVisualStyleBackColor = true;
             // 
+            // pigeonListAddButton
+            // 
+            this.pigeonListAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pigeonListAddButton.Location = new System.Drawing.Point(707, 709);
+            this.pigeonListAddButton.Name = "pigeonListAddButton";
+            this.pigeonListAddButton.Size = new System.Drawing.Size(160, 80);
+            this.pigeonListAddButton.TabIndex = 2;
+            this.pigeonListAddButton.Text = "ハト登録";
+            this.pigeonListAddButton.UseVisualStyleBackColor = true;
+            // 
             // PigeonList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pigeonListAddButton);
             this.Controls.Add(this.updata);
             this.Controls.Add(this.pigeonGridView);
             this.Name = "PigeonList";
@@ -75,5 +87,6 @@
         #endregion
         public System.Windows.Forms.Button updata;
         public System.Windows.Forms.DataGridView pigeonGridView;
+        public System.Windows.Forms.Button pigeonListAddButton;
     }
 }

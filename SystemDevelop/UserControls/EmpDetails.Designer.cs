@@ -42,8 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.empHiring = new System.Windows.Forms.ComboBox();
-            this.empCancel = new System.Windows.Forms.Button();
-            this.empUpdata = new System.Windows.Forms.Button();
+            this.empCancelButton = new System.Windows.Forms.Button();
+            this.empUpdataButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // empPhone
@@ -80,6 +80,7 @@
             // 
             this.empId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+
             this.empId.AutoSize = true;
             this.empId.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.empId.Location = new System.Drawing.Point(589, 71);
@@ -192,32 +193,32 @@
             this.empHiring.Size = new System.Drawing.Size(340, 41);
             this.empHiring.TabIndex = 6;
             // 
-            // empCancel
+            // empCancelButton
             // 
-            this.empCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.empCancel.Location = new System.Drawing.Point(278, 584);
-            this.empCancel.Name = "empCancel";
-            this.empCancel.Size = new System.Drawing.Size(170, 60);
-            this.empCancel.TabIndex = 8;
-            this.empCancel.Text = "キャンセル";
-            this.empCancel.UseVisualStyleBackColor = true;
+            this.empCancelButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.empCancelButton.Location = new System.Drawing.Point(278, 584);
+            this.empCancelButton.Name = "empCancelButton";
+            this.empCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.empCancelButton.TabIndex = 8;
+            this.empCancelButton.Text = "キャンセル";
+            this.empCancelButton.UseVisualStyleBackColor = true;
             // 
-            // empUpdata
+            // empUpdataButton
             // 
-            this.empUpdata.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.empUpdata.Location = new System.Drawing.Point(515, 584);
-            this.empUpdata.Name = "empUpdata";
-            this.empUpdata.Size = new System.Drawing.Size(170, 60);
-            this.empUpdata.TabIndex = 7;
-            this.empUpdata.Text = "更新";
-            this.empUpdata.UseVisualStyleBackColor = true;
+            this.empUpdataButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.empUpdataButton.Location = new System.Drawing.Point(515, 584);
+            this.empUpdataButton.Name = "empUpdataButton";
+            this.empUpdataButton.Size = new System.Drawing.Size(170, 60);
+            this.empUpdataButton.TabIndex = 7;
+            this.empUpdataButton.Text = "更新";
+            this.empUpdataButton.UseVisualStyleBackColor = true;
             // 
             // EmpDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.empCancel);
-            this.Controls.Add(this.empUpdata);
+            this.Controls.Add(this.empCancelButton);
+            this.Controls.Add(this.empUpdataButton);
             this.Controls.Add(this.empHiring);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pigeonName);
@@ -254,7 +255,7 @@
         public System.Windows.Forms.TextBox empName;
         public System.Windows.Forms.TextBox pigeonName;
         public System.Windows.Forms.ComboBox empHiring;
-        public System.Windows.Forms.Button empCancel;
-        public System.Windows.Forms.Button empUpdata;
+        public System.Windows.Forms.Button empCancelButton;
+        public System.Windows.Forms.Button empUpdataButton;
     }
 }

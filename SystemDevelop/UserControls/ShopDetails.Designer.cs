@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancel = new System.Windows.Forms.Button();
-            this.updata = new System.Windows.Forms.Button();
+            this.shopCancelButton = new System.Windows.Forms.Button();
+            this.shopUpdataButton = new System.Windows.Forms.Button();
             this.shopFax = new System.Windows.Forms.TextBox();
             this.shopAddress = new System.Windows.Forms.TextBox();
             this.shopPhone = new System.Windows.Forms.TextBox();
@@ -42,23 +42,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cancel
+            // shopCancelButton
             // 
-            this.cancel.Location = new System.Drawing.Point(314, 580);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(170, 60);
-            this.cancel.TabIndex = 6;
-            this.cancel.Text = "キャンセル";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.shopCancelButton.Location = new System.Drawing.Point(314, 580);
+            this.shopCancelButton.Name = "shopCancelButton";
+            this.shopCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.shopCancelButton.TabIndex = 6;
+            this.shopCancelButton.Text = "キャンセル";
+            this.shopCancelButton.UseVisualStyleBackColor = true;
             // 
-            // updata
+            // shopUpdataButton
             // 
-            this.updata.Location = new System.Drawing.Point(551, 580);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(170, 60);
-            this.updata.TabIndex = 5;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.shopUpdataButton.Location = new System.Drawing.Point(551, 580);
+            this.shopUpdataButton.Name = "shopUpdataButton";
+            this.shopUpdataButton.Size = new System.Drawing.Size(170, 60);
+            this.shopUpdataButton.TabIndex = 5;
+            this.shopUpdataButton.Text = "更新";
+            this.shopUpdataButton.UseVisualStyleBackColor = true;
             // 
             // shopFax
             // 
@@ -156,8 +156,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.shopCancelButton);
+            this.Controls.Add(this.shopUpdataButton);
             this.Controls.Add(this.shopFax);
             this.Controls.Add(this.shopAddress);
             this.Controls.Add(this.shopPhone);
@@ -177,8 +177,8 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancel;
-        public System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button shopCancelButton;
+        public System.Windows.Forms.Button shopUpdataButton;
         public System.Windows.Forms.TextBox shopFax;
         public System.Windows.Forms.TextBox shopAddress;
         public System.Windows.Forms.TextBox shopPhone;

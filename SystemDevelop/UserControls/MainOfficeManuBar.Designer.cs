@@ -33,6 +33,7 @@
             this.shopListButton = new System.Windows.Forms.Button();
             this.newProductButton = new System.Windows.Forms.Button();
             this.businessOfficeListButton = new System.Windows.Forms.Button();
+            this.productListButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // employeeListButton
@@ -110,10 +111,25 @@
             this.businessOfficeListButton.UseVisualStyleBackColor = true;
             this.businessOfficeListButton.Click += new System.EventHandler(this.businessOfficeList_Click);
             // 
+            // productListButton
+            // 
+            this.productListButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.productListButton.FlatAppearance.BorderSize = 0;
+            this.productListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.productListButton.Location = new System.Drawing.Point(0, 517);
+            this.productListButton.Name = "productListButton";
+            this.productListButton.Size = new System.Drawing.Size(216, 104);
+            this.productListButton.TabIndex = 5;
+            this.productListButton.Text = "商品一覧";
+            this.productListButton.UseVisualStyleBackColor = true;
+            // 
             // MainOfficeManuBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.productListButton);
             this.Controls.Add(this.businessOfficeListButton);
             this.Controls.Add(this.newProductButton);
             this.Controls.Add(this.shopListButton);
@@ -131,5 +147,6 @@
         public System.Windows.Forms.Button shopListButton;
         public System.Windows.Forms.Button newProductButton;
         public System.Windows.Forms.Button businessOfficeListButton;
+        public System.Windows.Forms.Button productListButton;
     }
 }
