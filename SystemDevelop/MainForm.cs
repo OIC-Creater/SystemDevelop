@@ -57,6 +57,14 @@ namespace SystemDevelop
             orderControl.orderDetailsButton.Click += OrderDetailsButton_Click;
             orderDetail.orderCancelButton.Click += OrderCancelButton_Click;
             stockList.stockDetailButton.Click += StockDetailButton_Click;
+            empAddControl.empAddButton.Click += EmpAddButton_Click;
+        }
+
+        private void EmpAddButton_Click(object sender, EventArgs e)
+        {
+            empAddControl.Visible = false;
+            empList.Visible = true;
+            headerLists.Visible = true;
         }
 
         private void EmpListAddButton_Click(object sender, EventArgs e)
