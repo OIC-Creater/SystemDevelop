@@ -80,10 +80,9 @@
             // 
             this.empId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-
             this.empId.AutoSize = true;
             this.empId.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.empId.Location = new System.Drawing.Point(589, 71);
+            this.empId.Location = new System.Drawing.Point(460, 71);
             this.empId.Name = "empId";
             this.empId.Size = new System.Drawing.Size(109, 33);
             this.empId.TabIndex = 18;
@@ -212,6 +211,7 @@
             this.empUpdataButton.TabIndex = 7;
             this.empUpdataButton.Text = "更新";
             this.empUpdataButton.UseVisualStyleBackColor = true;
+            this.empUpdataButton.Click += new System.EventHandler(this.empUpdataButton_Click);
             // 
             // EmpDetails
             // 
