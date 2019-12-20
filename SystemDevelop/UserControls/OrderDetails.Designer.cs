@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.prderCancelButton = new System.Windows.Forms.Button();
+            this.orderCancelButton = new System.Windows.Forms.Button();
             this.orderUpdataButton = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,14 +38,14 @@
             this.paolName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // prderCancelButton
+            // orderCancelButton
             // 
-            this.prderCancelButton.Location = new System.Drawing.Point(278, 584);
-            this.prderCancelButton.Name = "prderCancelButton";
-            this.prderCancelButton.Size = new System.Drawing.Size(170, 60);
-            this.prderCancelButton.TabIndex = 2;
-            this.prderCancelButton.Text = "キャンセル";
-            this.prderCancelButton.UseVisualStyleBackColor = true;
+            this.orderCancelButton.Location = new System.Drawing.Point(278, 584);
+            this.orderCancelButton.Name = "orderCancelButton";
+            this.orderCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.orderCancelButton.TabIndex = 2;
+            this.orderCancelButton.Text = "キャンセル";
+            this.orderCancelButton.UseVisualStyleBackColor = true;
             // 
             // orderUpdataButton
             // 
@@ -122,7 +122,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.paolName);
             this.Controls.Add(this.paolDate);
-            this.Controls.Add(this.prderCancelButton);
+            this.Controls.Add(this.orderCancelButton);
             this.Controls.Add(this.orderUpdataButton);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label4);
@@ -140,7 +140,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label paolName;
-        public System.Windows.Forms.Button prderCancelButton;
+        public System.Windows.Forms.Button orderCancelButton;
         public System.Windows.Forms.Button orderUpdataButton;
         public System.Windows.Forms.Label id;
         public System.Windows.Forms.Label paolDate;
