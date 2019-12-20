@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pigeonGridView = new System.Windows.Forms.DataGridView();
-            this.updata = new System.Windows.Forms.Button();
+            this.pigeonDetailButton = new System.Windows.Forms.Button();
             this.pigeonListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pigeonGridView)).BeginInit();
             this.SuspendLayout();
@@ -49,15 +49,15 @@
             this.pigeonGridView.TabIndex = 0;
             this.pigeonGridView.TabStop = false;
             // 
-            // updata
+            // pigeonDetailButton
             // 
-            this.updata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.updata.Location = new System.Drawing.Point(873, 709);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(160, 80);
-            this.updata.TabIndex = 1;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.pigeonDetailButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pigeonDetailButton.Location = new System.Drawing.Point(873, 709);
+            this.pigeonDetailButton.Name = "pigeonDetailButton";
+            this.pigeonDetailButton.Size = new System.Drawing.Size(160, 80);
+            this.pigeonDetailButton.TabIndex = 1;
+            this.pigeonDetailButton.Text = "詳細";
+            this.pigeonDetailButton.UseVisualStyleBackColor = true;
             // 
             // pigeonListAddButton
             // 
@@ -74,7 +74,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pigeonListAddButton);
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.pigeonDetailButton);
             this.Controls.Add(this.pigeonGridView);
             this.Name = "PigeonList";
             this.Size = new System.Drawing.Size(1033, 789);
@@ -85,7 +85,7 @@
         }
 
         #endregion
-        public System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button pigeonDetailButton;
         public System.Windows.Forms.DataGridView pigeonGridView;
         public System.Windows.Forms.Button pigeonListAddButton;
     }

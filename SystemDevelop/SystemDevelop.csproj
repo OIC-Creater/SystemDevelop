@@ -192,6 +192,12 @@
     <Compile Include="Properties\UndispatchedList.Designer.cs">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\EmpAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EmpAddControl.Designer.cs">
+      <DependentUpon>EmpAddControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProductDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -408,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\UndispatchedList.resx">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EmpAddControl.resx">
+      <DependentUpon>EmpAddControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProductDetails.resx">
       <DependentUpon>ProductDetails.cs</DependentUpon>
