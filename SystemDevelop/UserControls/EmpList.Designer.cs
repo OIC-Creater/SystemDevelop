@@ -53,6 +53,7 @@
             this.empGridView.Size = new System.Drawing.Size(1033, 709);
             this.empGridView.TabIndex = 0;
             this.empGridView.TabStop = false;
+            this.empGridView.VisibleChanged += new System.EventHandler(this.empGridView_VisibleChanged);
             // 
             // empDetailButton
             // 

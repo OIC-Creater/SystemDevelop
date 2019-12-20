@@ -8,16 +8,13 @@ namespace SystemDevelop
 {
     public partial class MainForm : Form
     {
-        private Login login;
         private bool logined = false;
         private Employee employee;
 
         public MainForm()
         {
             InitializeComponent();
-            var _ = DatabaseInstance.Database;
             
-            login = new Login();
             loginControl.loginButton.Click += LoginButtonClick;
             loginControl.idTextBox.KeyDown += OnEnter;
             loginControl.passTextBox.KeyDown += OnEnter;
@@ -486,6 +483,7 @@ namespace SystemDevelop
         
         private void Login()
         {
+            Login login = new Login();
             if (login.AuthUser(loginControl.idTextBox.Text, loginControl.passTextBox.Text, out employee))
             {
                 headerControl.userLabel.Text += $" {employee.EmployeeName}";

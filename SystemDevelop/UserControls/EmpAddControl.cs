@@ -20,7 +20,7 @@ namespace SystemDevelop.UserControls
 
         private void EmpAddControl_Load(object sender, EventArgs e)
         {
-            empId.Text = $"E{(DatabaseInstance.EmployeeTable.Count + 1).ToString("00000000")}";
+            empId.Text = $"E{(DatabaseInstance.EmployeeTable.Count + 1).ToString("00000")}";
             affiliationAddComboBox.Items.Add("倉庫");
             affiliationAddComboBox.Items.Add("営業所");
             affiliationAddComboBox.Items.Add("本社");
@@ -31,6 +31,16 @@ namespace SystemDevelop.UserControls
         {
             try
             {
+                var pigeon = new Pigeon
+                {
+                    PigeonId = $"H{(DatabaseInstance.PigeonTable.Count + 1).ToString("00000")}",
+                    PigeonName = psswordAddTextBox.Text,
+                    PublicKey = "ほげ",
+                    StatusId = "d"
+                };
+                DatabaseInstance.PigeonTable.Insert(pigeon);
+                DatabaseInstance.PigeonTable.Sync();
+
                 var emp = new Employee
                 {
                     EmployeeId = empId.Text,
@@ -39,7 +49,7 @@ namespace SystemDevelop.UserControls
                     EmployeeKatakana = empKanaTextBox.Text,
                     AffiliationId = affiliationId.Text,
                     PhoneNumber = empPhoneTextBox.Text,
-                    PigeonId = $"E{(DatabaseInstance.PigeonTable.Count + 1).ToString("00000000")}",
+                    PigeonId = pigeon.PigeonId,
                     WorkingFlag = true
                 };
                 DatabaseInstance.EmployeeTable.Insert(emp);
