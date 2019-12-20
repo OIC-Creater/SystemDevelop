@@ -95,9 +95,7 @@
             // 
             // settingConfi
             // 
-            this.settingConfi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.settingConfi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.settingConfi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.settingConfi.Location = new System.Drawing.Point(622, 329);
             this.settingConfi.Name = "settingConfi";
@@ -278,7 +276,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
-            this.Controls.Add(this.manufactureDetails);
             this.Controls.Add(this.headerLists);
             this.Controls.Add(this.headerControl);
             this.Controls.Add(this.mainOfficeManuBar);
@@ -299,6 +296,7 @@
             this.Controls.Add(this.stockList);
             this.Controls.Add(this.warehouseControl);
             this.Controls.Add(this.placeControl);
+            this.Controls.Add(this.manufactureDetails);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
