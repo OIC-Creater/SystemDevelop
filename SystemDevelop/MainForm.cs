@@ -247,6 +247,7 @@ namespace SystemDevelop
             salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
+            newProduct.Visible = true;
         }
         private void Yes_Click(object sender, EventArgs e)
         {
@@ -257,7 +258,8 @@ namespace SystemDevelop
             salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
-            reciveControl.Visible = false;
+            orderControl.Visible = false;
+            newProduct.Visible = true;
         }
         
         private void SettingButton_Click(object sender, EventArgs e)

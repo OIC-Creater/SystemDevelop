@@ -107,9 +107,7 @@
             // 
             // settingConfi
             // 
-            this.settingConfi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.settingConfi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.settingConfi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.settingConfi.Location = new System.Drawing.Point(622, 329);
             this.settingConfi.Name = "settingConfi";
