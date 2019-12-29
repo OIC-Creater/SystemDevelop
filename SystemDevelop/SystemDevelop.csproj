@@ -51,9 +51,8 @@
     <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="ObjectDatabase, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\ObjectDatabase.1.2.0\lib\net461\ObjectDatabase.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ObjectDatabase, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectDatabase.1.2.2\lib\net461\ObjectDatabase.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -103,6 +102,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\LoginControl.cs" />
     <Compile Include="Model\logtext.cs" />
     <Compile Include="Model\PasswordHash.cs" />
     <Compile Include="Program.cs" />
@@ -191,6 +191,24 @@
     </Compile>
     <Compile Include="Properties\UndispatchedList.Designer.cs">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EmpAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EmpAddControl.Designer.cs">
+      <DependentUpon>EmpAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductDetails.Designer.cs">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SalesOfficeDetails.cs">
       <SubType>UserControl</SubType>
@@ -396,6 +414,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\UndispatchedList.resx">
       <DependentUpon>UndispatchedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EmpAddControl.resx">
+      <DependentUpon>EmpAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductDetails.resx">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SalesOfficeDetails.resx">
       <DependentUpon>SalesOfficeDetails.cs</DependentUpon>

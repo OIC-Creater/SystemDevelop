@@ -33,10 +33,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.status = new System.Windows.Forms.ComboBox();
-            this.cancel = new System.Windows.Forms.Button();
-            this.updata = new System.Windows.Forms.Button();
+            this.pigeonCancelButton = new System.Windows.Forms.Button();
+            this.pigeonUpdataButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pigeonID
@@ -87,14 +86,6 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "ハトID";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(-15, -15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 27;
-            // 
             // status
             // 
             this.status.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -104,32 +95,31 @@
             this.status.Size = new System.Drawing.Size(340, 32);
             this.status.TabIndex = 2;
             // 
-            // cancel
+            // pigeonCancelButton
             // 
-            this.cancel.Location = new System.Drawing.Point(312, 581);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(170, 60);
-            this.cancel.TabIndex = 4;
-            this.cancel.Text = "キャンセル";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.pigeonCancelButton.Location = new System.Drawing.Point(312, 581);
+            this.pigeonCancelButton.Name = "pigeonCancelButton";
+            this.pigeonCancelButton.Size = new System.Drawing.Size(170, 60);
+            this.pigeonCancelButton.TabIndex = 4;
+            this.pigeonCancelButton.Text = "キャンセル";
+            this.pigeonCancelButton.UseVisualStyleBackColor = true;
             // 
-            // updata
+            // pigeonUpdataButton
             // 
-            this.updata.Location = new System.Drawing.Point(549, 581);
-            this.updata.Name = "updata";
-            this.updata.Size = new System.Drawing.Size(170, 60);
-            this.updata.TabIndex = 3;
-            this.updata.Text = "更新";
-            this.updata.UseVisualStyleBackColor = true;
+            this.pigeonUpdataButton.Location = new System.Drawing.Point(549, 581);
+            this.pigeonUpdataButton.Name = "pigeonUpdataButton";
+            this.pigeonUpdataButton.Size = new System.Drawing.Size(170, 60);
+            this.pigeonUpdataButton.TabIndex = 3;
+            this.pigeonUpdataButton.Text = "更新";
+            this.pigeonUpdataButton.UseVisualStyleBackColor = true;
             // 
             // PigeonDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.updata);
+            this.Controls.Add(this.pigeonCancelButton);
+            this.Controls.Add(this.pigeonUpdataButton);
             this.Controls.Add(this.status);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pigeonID);
             this.Controls.Add(this.name);
             this.Controls.Add(this.label4);
@@ -149,9 +139,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox status;
-        public System.Windows.Forms.Button cancel;
-        public System.Windows.Forms.Button updata;
+        public System.Windows.Forms.Button pigeonCancelButton;
+        public System.Windows.Forms.Button pigeonUpdataButton;
     }
 }

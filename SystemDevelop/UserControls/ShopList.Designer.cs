@@ -30,6 +30,7 @@
         {
             this.shopGridView = new System.Windows.Forms.DataGridView();
             this.shopDetailButton = new System.Windows.Forms.Button();
+            this.shopListAddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.shopGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,10 +58,21 @@
             this.shopDetailButton.Text = "詳細";
             this.shopDetailButton.UseVisualStyleBackColor = true;
             // 
+            // shopListAddButton
+            // 
+            this.shopListAddButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.shopListAddButton.Location = new System.Drawing.Point(707, 709);
+            this.shopListAddButton.Name = "shopListAddButton";
+            this.shopListAddButton.Size = new System.Drawing.Size(160, 80);
+            this.shopListAddButton.TabIndex = 3;
+            this.shopListAddButton.Text = "ショップ登録";
+            this.shopListAddButton.UseVisualStyleBackColor = true;
+            // 
             // ShopList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.shopListAddButton);
             this.Controls.Add(this.shopDetailButton);
             this.Controls.Add(this.shopGridView);
             this.Name = "ShopList";
@@ -72,6 +84,10 @@
 
         #endregion
         public System.Windows.Forms.Button shopDetailButton;
+
+        public System.Windows.Forms.Button shopListAddButton;
+
         public System.Windows.Forms.DataGridView shopGridView;
+
     }
 }
