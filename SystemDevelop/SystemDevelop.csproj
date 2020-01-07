@@ -198,6 +198,30 @@
     <Compile Include="UserControls\EmpAddControl.Designer.cs">
       <DependentUpon>EmpAddControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ManufactureAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManufactureAddControl.Designer.cs">
+      <DependentUpon>ManufactureAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OrderAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrderAddControl.Designer.cs">
+      <DependentUpon>OrderAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PigeonAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PigeonAddControl.Designer.cs">
+      <DependentUpon>PigeonAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductAddControl.Designer.cs">
+      <DependentUpon>ProductAddControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProductDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -209,6 +233,12 @@
     </Compile>
     <Compile Include="UserControls\ProductList.Designer.cs">
       <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeAddControl.Designer.cs">
+      <DependentUpon>SalesOfficeAddControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SalesOfficeDetails.cs">
       <SubType>UserControl</SubType>
@@ -330,6 +360,12 @@
     <Compile Include="UserControls\SettingConfi.Designer.cs">
       <DependentUpon>SettingConfi.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ShopAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopAddControl.Designer.cs">
+      <DependentUpon>ShopAddControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ShopDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -341,6 +377,12 @@
     </Compile>
     <Compile Include="UserControls\ShopList.Designer.cs">
       <DependentUpon>ShopList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StockAddContorol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StockAddContorol.Designer.cs">
+      <DependentUpon>StockAddContorol.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\StockDetails.cs">
       <SubType>UserControl</SubType>
@@ -418,11 +460,26 @@
     <EmbeddedResource Include="UserControls\EmpAddControl.resx">
       <DependentUpon>EmpAddControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ManufactureAddControl.resx">
+      <DependentUpon>ManufactureAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OrderAddControl.resx">
+      <DependentUpon>OrderAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PigeonAddControl.resx">
+      <DependentUpon>PigeonAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductAddControl.resx">
+      <DependentUpon>ProductAddControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProductDetails.resx">
       <DependentUpon>ProductDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProductList.resx">
       <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SalesOfficeAddControl.resx">
+      <DependentUpon>SalesOfficeAddControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SalesOfficeDetails.resx">
       <DependentUpon>SalesOfficeDetails.cs</DependentUpon>
@@ -484,11 +541,17 @@
     <EmbeddedResource Include="UserControls\SettingConfi.resx">
       <DependentUpon>SettingConfi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopAddControl.resx">
+      <DependentUpon>ShopAddControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ShopDetails.resx">
       <DependentUpon>ShopDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ShopList.resx">
       <DependentUpon>ShopList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StockAddContorol.resx">
+      <DependentUpon>StockAddContorol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\StockDetails.resx">
       <DependentUpon>StockDetails.cs</DependentUpon>

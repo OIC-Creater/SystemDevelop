@@ -39,11 +39,15 @@ namespace SystemDevelop
             empList.empDetailButton.Click += EmpDetailButton_Click;
             empList.empListAddButton.Click += EmpListAddButton_Click;
             empDetails.empCancelButton.Click += EmpCancel_Click;
+            empAddControl.empAddButton.Click += EmpAddButton_Click;
             manufactureList.manufDetailButton.Click += ManufDetailButton_Click;
             manufactureDetails.manufCancelButton.Click += ManufCancel_Click;
+            manufactureList.manufListAddButton.Click += ManufListAddButton_Click;
             shopList.shopDetailButton.Click += ShopDetailButton_Click;
             shopDetails.shopCancelButton.Click += ShopCancelButton_Click;
+            shopList.shopListAddButton.Click += ShopListAddButton_Click;
             salesOfficeList.salesOfficeDetailButton.Click += SalesOfficeDetailButton_Click;
+            salesOfficeList.salesListAddButton.Click += SalesListAddButton_Click;
             salesOfficeDetails.salesOfficeCancelButton.Click += SalesOfficeCancelButton_Click;
             productList.productDetailButton.Click += ProductDetailButton_Click;
             productDetails.productCancelButton.Click += ProductCancelButton_Click;
@@ -54,9 +58,53 @@ namespace SystemDevelop
             orderControl.orderDetailsButton.Click += OrderDetailsButton_Click;
             orderDetail.orderCancelButton.Click += OrderCancelButton_Click;
             stockList.stockDetailButton.Click += StockDetailButton_Click;
-            empAddControl.empAddButton.Click += EmpAddButton_Click;
+            
+            pigeonList.pigeonListAddButton.Click += PigeonListAddButton_Click;
+            
         }
 
+        private void SalesListAddButton_Click(object sender, EventArgs e)
+        {
+            salesOfficeAddControl.Visible = true;
+            headerLists.Visible = false;
+            manufactureDetails.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+            salesOfficeList.Visible = false;
+            productList.Visible = false;
+        }
+
+        private void ShopListAddButton_Click(object sender, EventArgs e)
+        {
+            shopAddControl.Visible = true;
+            headerLists.Visible = false;
+            manufactureDetails.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+            salesOfficeList.Visible = false;
+            productList.Visible = false;
+        }
+
+        private void ManufListAddButton_Click(object sender, EventArgs e)
+        {
+            manufactureList.Visible = false;
+            manufactureAddControl.Visible = true;
+            headerLists.Visible = false;
+            manufactureDetails.Visible = false;
+            empList.Visible = false;
+            shopList.Visible = false;
+            salesOfficeList.Visible = false;
+            productList.Visible = false;
+        }
+
+        private void PigeonListAddButton_Click(object sender, EventArgs e)
+        {
+            pigeonAddControl.Visible = true;
+            pigeonList.Visible = false;
+            headerLists.Visible = false;
+            reciveControl.Visible = false;
+            reciveAddControl.Visible = false;
+        }
         private void EmpAddButton_Click(object sender, EventArgs e)
         {
             empAddControl.Visible = false;
@@ -93,7 +141,6 @@ namespace SystemDevelop
             headerLists.Visible = false;
             reciveControl.Visible = false;
             stockList.Visible = false;
-
         }
 
         private void PigeonCancelButton_Click(object sender, EventArgs e)
@@ -120,7 +167,11 @@ namespace SystemDevelop
             reciveListDetails.Visible = true;
             reciveControl.Visible = false;
             headerLists.Visible = false;
-            
+            reciveControl.Visible = false;
+            reciveAddControl.Visible = false;
+            pigeonList.Visible = false;
+            unDispatched.Visible = false;
+            warehouseControl.Visible = false;
         }
 
         private void ProductCancelButton_Click(object sender, EventArgs e)
@@ -194,6 +245,7 @@ namespace SystemDevelop
         private void ManufDetailButton_Click(object sender, EventArgs e)
         {
             manufactureDetails.Visible = true;
+            manufactureAddControl.Visible = false;
             headerLists.Visible = false;
             settingConfi.Visible = false;
             newProduct.Visible = false;
@@ -225,6 +277,8 @@ namespace SystemDevelop
             productDetails.Visible = false;
             productList.Visible = false;
             reciveListDetails.Visible = false;
+            manufactureAddControl.Visible = false;
+            shopAddControl.Visible = false;
             empDetails.SetDetail(empList.GetRowData());
         }
 
@@ -290,6 +344,9 @@ namespace SystemDevelop
             shopDetails.Visible = false;
             productDetails.Visible = false;
             reciveListDetails.Visible = false;
+            manufactureAddControl.Visible = false;
+            shopAddControl.Visible = false;
+            salesOfficeAddControl.Visible = false;
         }
 
         private void NewProduct_Click(object sender, EventArgs e)
@@ -308,6 +365,7 @@ namespace SystemDevelop
             productDetails.Visible = false;
             productList.Visible = false;
             reciveListDetails.Visible = false;
+
         }
 
         private void ManufacturerList_Click1(object sender, EventArgs e)
@@ -326,6 +384,9 @@ namespace SystemDevelop
             productDetails.Visible = false;
             productList.Visible = false;
             reciveListDetails.Visible = false;
+            manufactureAddControl.Visible = false;
+            shopAddControl.Visible = false;
+            salesOfficeAddControl.Visible = false;
         }
 
         private void salesOfficeList_Click(object sender, EventArgs e)
@@ -344,6 +405,9 @@ namespace SystemDevelop
             productDetails.Visible = false;
             productList.Visible = false;
             reciveListDetails.Visible = false;
+            manufactureAddControl.Visible = false;
+            shopAddControl.Visible = false;
+            salesOfficeAddControl.Visible = false;
         }
 
         private void ShopList_Click(object sender, EventArgs e)
@@ -362,6 +426,9 @@ namespace SystemDevelop
             productDetails.Visible = false;
             productList.Visible = false;
             reciveListDetails.Visible = false;
+            manufactureAddControl.Visible = false;
+            shopAddControl.Visible = false;
+            salesOfficeAddControl.Visible = false;
         }
 
         private void ManufacturerList_Click(object sender, EventArgs e)
@@ -380,6 +447,9 @@ namespace SystemDevelop
             productDetails.Visible = false;
             productList.Visible = false;
             reciveListDetails.Visible = false;
+            manufactureAddControl.Visible = false;
+            shopAddControl.Visible = false;
+            salesOfficeAddControl.Visible = false;
         }
 
         private void EmployeeList_Click(object sender, EventArgs e)
@@ -398,6 +468,9 @@ namespace SystemDevelop
             productDetails.Visible = false;
             productList.Visible = false;
             reciveListDetails.Visible = false;
+            manufactureAddControl.Visible = false;
+            shopAddControl.Visible = false;
+            salesOfficeAddControl.Visible = false;
         }
         
         private void StockButtonClick(object sender, EventArgs e)
@@ -442,6 +515,8 @@ namespace SystemDevelop
             pigeonList.Visible = false;
             unDispatched.Visible = false;
             warehouseControl.Visible = false;
+            reciveListDetails.Visible = false;
+            pigeonDetails.Visible = false;
         }
         private void ReciveButtonClick(object sender, EventArgs e)
         {
@@ -452,6 +527,8 @@ namespace SystemDevelop
             unDispatched.Visible = false;
             stockList.Visible = false;
             warehouseControl.Visible = false;
+            reciveListDetails.Visible = false;
+            pigeonDetails.Visible = false;
         }
         private void Pigeon_Click(object sender, EventArgs e)
         {
@@ -460,6 +537,8 @@ namespace SystemDevelop
             reciveAddControl.Visible = false;
             reciveControl.Visible = false;
             unDispatched.Visible = false;
+            reciveListDetails.Visible = false;
+            pigeonDetails.Visible = false;
         }
         private void UnDispatched_Click(object sender, EventArgs e)
         {

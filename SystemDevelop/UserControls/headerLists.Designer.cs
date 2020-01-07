@@ -77,7 +77,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox2.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(641, 26);
+            this.comboBox2.Location = new System.Drawing.Point(641, 24);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(242, 27);
             this.comboBox2.TabIndex = 5;
