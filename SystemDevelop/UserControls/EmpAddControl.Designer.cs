@@ -34,18 +34,18 @@
             this.amountLabel = new System.Windows.Forms.Label();
             this.productLabel = new System.Windows.Forms.Label();
             this.shopLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.empPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.affiliationAddComboBox = new System.Windows.Forms.ComboBox();
-            this.pigeonAddTextBox = new System.Windows.Forms.TextBox();
-            this.psswordAddTextBox = new System.Windows.Forms.TextBox();
             this.empNameTextBox = new System.Windows.Forms.TextBox();
             this.empId = new System.Windows.Forms.Label();
-            this.affiliationId = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.affiliationAddComboBox = new System.Windows.Forms.ComboBox();
+            this.affiliationId = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.empPhoneTextBox = new System.Windows.Forms.TextBox();
+            this.psswordAddTextBox = new System.Windows.Forms.TextBox();
+            this.pigeonAddTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // empKanaTextBox
@@ -114,48 +114,6 @@
             this.shopLabel.TabIndex = 13;
             this.shopLabel.Text = "社員ID";
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(146, 417);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 33);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "パスワード";
-            // 
-            // empPhoneTextBox
-            // 
-            this.empPhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.empPhoneTextBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.empPhoneTextBox.Location = new System.Drawing.Point(371, 471);
-            this.empPhoneTextBox.Name = "empPhoneTextBox";
-            this.empPhoneTextBox.Size = new System.Drawing.Size(398, 39);
-            this.empPhoneTextBox.TabIndex = 26;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(146, 539);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 33);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "ハト名";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(146, 474);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 33);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "電話番号";
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -166,36 +124,6 @@
             this.label2.Size = new System.Drawing.Size(114, 33);
             this.label2.TabIndex = 31;
             this.label2.Text = "所属名";
-            // 
-            // affiliationAddComboBox
-            // 
-            this.affiliationAddComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.affiliationAddComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.affiliationAddComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.affiliationAddComboBox.FormattingEnabled = true;
-            this.affiliationAddComboBox.Location = new System.Drawing.Point(371, 347);
-            this.affiliationAddComboBox.Name = "affiliationAddComboBox";
-            this.affiliationAddComboBox.Size = new System.Drawing.Size(398, 41);
-            this.affiliationAddComboBox.TabIndex = 30;
-            this.affiliationAddComboBox.TextChanged += new System.EventHandler(this.affiliationAddComboBox_TextChanged);
-            // 
-            // pigeonAddTextBox
-            // 
-            this.pigeonAddTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pigeonAddTextBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.pigeonAddTextBox.Location = new System.Drawing.Point(371, 536);
-            this.pigeonAddTextBox.Name = "pigeonAddTextBox";
-            this.pigeonAddTextBox.Size = new System.Drawing.Size(398, 39);
-            this.pigeonAddTextBox.TabIndex = 32;
-            // 
-            // psswordAddTextBox
-            // 
-            this.psswordAddTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.psswordAddTextBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.psswordAddTextBox.Location = new System.Drawing.Point(371, 414);
-            this.psswordAddTextBox.Name = "psswordAddTextBox";
-            this.psswordAddTextBox.Size = new System.Drawing.Size(398, 39);
-            this.psswordAddTextBox.TabIndex = 33;
             // 
             // empNameTextBox
             // 
@@ -217,17 +145,6 @@
             this.empId.TabIndex = 35;
             this.empId.Text = "id_label";
             // 
-            // affiliationId
-            // 
-            this.affiliationId.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.affiliationId.AutoSize = true;
-            this.affiliationId.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.affiliationId.Location = new System.Drawing.Point(365, 284);
-            this.affiliationId.Name = "affiliationId";
-            this.affiliationId.Size = new System.Drawing.Size(348, 33);
-            this.affiliationId.TabIndex = 36;
-            this.affiliationId.Text = "所属名を選択してください";
-            // 
             // cancelButton
             // 
             this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -239,6 +156,89 @@
             this.cancelButton.TabIndex = 37;
             this.cancelButton.Text = "キャンセル";
             this.cancelButton.UseVisualStyleBackColor = true;
+            // 
+            // affiliationAddComboBox
+            // 
+            this.affiliationAddComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.affiliationAddComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.affiliationAddComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.affiliationAddComboBox.FormattingEnabled = true;
+            this.affiliationAddComboBox.Location = new System.Drawing.Point(371, 347);
+            this.affiliationAddComboBox.Name = "affiliationAddComboBox";
+            this.affiliationAddComboBox.Size = new System.Drawing.Size(398, 41);
+            this.affiliationAddComboBox.TabIndex = 30;
+            this.affiliationAddComboBox.TextChanged += new System.EventHandler(this.affiliationAddComboBox_TextChanged);
+            // 
+            // affiliationId
+            // 
+            this.affiliationId.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.affiliationId.AutoSize = true;
+            this.affiliationId.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.affiliationId.Location = new System.Drawing.Point(365, 284);
+            this.affiliationId.Name = "affiliationId";
+            this.affiliationId.Size = new System.Drawing.Size(348, 33);
+            this.affiliationId.TabIndex = 36;
+            this.affiliationId.Text = "所属名を選択してください";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.Location = new System.Drawing.Point(146, 420);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 33);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "パスワード";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label4.Location = new System.Drawing.Point(146, 480);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 33);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "電話番号";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(146, 542);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 33);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "ハト名";
+            // 
+            // empPhoneTextBox
+            // 
+            this.empPhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.empPhoneTextBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empPhoneTextBox.Location = new System.Drawing.Point(371, 477);
+            this.empPhoneTextBox.Name = "empPhoneTextBox";
+            this.empPhoneTextBox.Size = new System.Drawing.Size(398, 39);
+            this.empPhoneTextBox.TabIndex = 26;
+            // 
+            // psswordAddTextBox
+            // 
+            this.psswordAddTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.psswordAddTextBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.psswordAddTextBox.Location = new System.Drawing.Point(371, 417);
+            this.psswordAddTextBox.Name = "psswordAddTextBox";
+            this.psswordAddTextBox.Size = new System.Drawing.Size(398, 39);
+            this.psswordAddTextBox.TabIndex = 33;
+            // 
+            // pigeonAddTextBox
+            // 
+            this.pigeonAddTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pigeonAddTextBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.pigeonAddTextBox.Location = new System.Drawing.Point(371, 539);
+            this.pigeonAddTextBox.Name = "pigeonAddTextBox";
+            this.pigeonAddTextBox.Size = new System.Drawing.Size(398, 39);
+            this.pigeonAddTextBox.TabIndex = 32;
             // 
             // EmpAddControl
             // 
@@ -276,18 +276,18 @@
         private System.Windows.Forms.Label amountLabel;
         private System.Windows.Forms.Label productLabel;
         private System.Windows.Forms.Label shopLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox empPhoneTextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox affiliationAddComboBox;
-        private System.Windows.Forms.TextBox pigeonAddTextBox;
-        private System.Windows.Forms.TextBox psswordAddTextBox;
         private System.Windows.Forms.TextBox empNameTextBox;
         private System.Windows.Forms.Label empId;
-        private System.Windows.Forms.Label affiliationId;
         public System.Windows.Forms.Button empAddButton;
         public System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.ComboBox affiliationAddComboBox;
+        private System.Windows.Forms.Label affiliationId;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox empPhoneTextBox;
+        private System.Windows.Forms.TextBox psswordAddTextBox;
+        private System.Windows.Forms.TextBox pigeonAddTextBox;
     }
 }
