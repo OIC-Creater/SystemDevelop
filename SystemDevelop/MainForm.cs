@@ -56,13 +56,21 @@ namespace SystemDevelop
             reciveListDetails.reciveCancelButton.Click += ReciveCancelButton_Click;
             pigeonList.pigeonDetailButton.Click += PigeonDetailButton_Click;
             pigeonDetails.pigeonCancelButton.Click += PigeonCancelButton_Click;
+            pigeonList.pigeonListAddButton.Click += PigeonListAddButton_Click;
+            pigeonAddControl.cancelButton.Click += CancelButton_Click;
             orderControl.orderDetailsButton.Click += OrderDetailsButton_Click;
             orderDetail.orderCancelButton.Click += OrderCancelButton_Click;
             orderControl.orderListAddButton.Click += OrderListAddButton_Click;
             stockList.stockDetailButton.Click += StockDetailButton_Click;
             stockList.stockListAddButton.Click += StockListAddButton_Click;
-            pigeonList.pigeonListAddButton.Click += PigeonListAddButton_Click;
             
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            pigeonAddControl.Visible = false;
+            pigeonList.Visible = true;
+            headerLists.Visible = true;
         }
 
         private void StockListAddButton_Click(object sender, EventArgs e)
@@ -176,6 +184,7 @@ namespace SystemDevelop
         {
             pigeonDetails.Visible = false;
             headerLists.Visible = false;
+            pigeonList.Visible = true;
         }
 
         private void PigeonDetailButton_Click(object sender, EventArgs e)
@@ -189,6 +198,8 @@ namespace SystemDevelop
         {
             reciveListDetails.Visible = false;
             headerLists.Visible = false;
+            reciveControl.Visible = true;
+            headerLists.Visible = true;
         }
 
         private void ReciveDetailButton_Click(object sender, EventArgs e)
