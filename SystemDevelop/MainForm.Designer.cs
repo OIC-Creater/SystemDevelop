@@ -63,6 +63,7 @@
             this.manufactureAddControl = new SystemDevelop.UserControls.ManufactureAddControl();
             this.shopAddControl = new SystemDevelop.UserControls.ShopAddControl();
             this.salesOfficeAddControl = new SystemDevelop.UserControls.SalesOfficeAddControl();
+            this.productAddControl = new SystemDevelop.UserControls.ProductAddControl();
             this.SuspendLayout();
             // 
             // empAddControl
@@ -439,11 +440,23 @@
             this.salesOfficeAddControl.TabIndex = 26;
             this.salesOfficeAddControl.Visible = false;
             // 
+            // productAddControl
+            // 
+            this.productAddControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.productAddControl.Location = new System.Drawing.Point(219, 81);
+            this.productAddControl.Name = "productAddControl";
+            this.productAddControl.Size = new System.Drawing.Size(1033, 789);
+            this.productAddControl.TabIndex = 27;
+            this.productAddControl.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
+            this.Controls.Add(this.productAddControl);
             this.Controls.Add(this.salesOfficeAddControl);
             this.Controls.Add(this.shopAddControl);
             this.Controls.Add(this.manufactureAddControl);
@@ -526,6 +539,7 @@
         public UserControls.ManufactureAddControl manufactureAddControl;
         public UserControls.ShopAddControl shopAddControl;
         public UserControls.SalesOfficeAddControl salesOfficeAddControl;
+        public UserControls.ProductAddControl productAddControl;
     }
 }
 
