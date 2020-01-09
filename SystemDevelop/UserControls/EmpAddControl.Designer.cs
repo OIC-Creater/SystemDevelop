@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.empNameTextBox = new System.Windows.Forms.TextBox();
             this.empId = new System.Windows.Forms.Label();
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.empCancelButton = new System.Windows.Forms.Button();
             this.affiliationAddComboBox = new System.Windows.Forms.ComboBox();
             this.affiliationId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -145,17 +145,17 @@
             this.empId.TabIndex = 35;
             this.empId.Text = "id_label";
             // 
-            // cancelButton
+            // empCancelButton
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cancelButton.AutoSize = true;
-            this.cancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cancelButton.Location = new System.Drawing.Point(541, 649);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(153, 43);
-            this.cancelButton.TabIndex = 37;
-            this.cancelButton.Text = "キャンセル";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.empCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.empCancelButton.AutoSize = true;
+            this.empCancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.empCancelButton.Location = new System.Drawing.Point(541, 649);
+            this.empCancelButton.Name = "empCancelButton";
+            this.empCancelButton.Size = new System.Drawing.Size(153, 43);
+            this.empCancelButton.TabIndex = 37;
+            this.empCancelButton.Text = "キャンセル";
+            this.empCancelButton.UseVisualStyleBackColor = true;
             // 
             // affiliationAddComboBox
             // 
@@ -244,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.empCancelButton);
             this.Controls.Add(this.affiliationId);
             this.Controls.Add(this.empId);
             this.Controls.Add(this.empNameTextBox);
@@ -280,7 +280,7 @@
         private System.Windows.Forms.TextBox empNameTextBox;
         private System.Windows.Forms.Label empId;
         public System.Windows.Forms.Button empAddButton;
-        public System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.Button empCancelButton;
         private System.Windows.Forms.ComboBox affiliationAddComboBox;
         private System.Windows.Forms.Label affiliationId;
         private System.Windows.Forms.Label label1;

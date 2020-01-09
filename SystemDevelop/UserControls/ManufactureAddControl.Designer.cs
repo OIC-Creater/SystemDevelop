@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.manufactureCancelButton = new System.Windows.Forms.Button();
             this.manufacturerAddID = new System.Windows.Forms.Label();
             this.manufacturerNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,17 +42,17 @@
             this.manufactureAddressTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // cancelButton
+            // manufactureCancelButton
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cancelButton.AutoSize = true;
-            this.cancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cancelButton.Location = new System.Drawing.Point(573, 651);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(153, 43);
-            this.cancelButton.TabIndex = 55;
-            this.cancelButton.Text = "キャンセル";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.manufactureCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.manufactureCancelButton.AutoSize = true;
+            this.manufactureCancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.manufactureCancelButton.Location = new System.Drawing.Point(573, 651);
+            this.manufactureCancelButton.Name = "manufactureCancelButton";
+            this.manufactureCancelButton.Size = new System.Drawing.Size(153, 43);
+            this.manufactureCancelButton.TabIndex = 55;
+            this.manufactureCancelButton.Text = "キャンセル";
+            this.manufactureCancelButton.UseVisualStyleBackColor = true;
             // 
             // manufacturerAddID
             // 
@@ -174,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.manufacturerFaxTextBox);
             this.Controls.Add(this.manufactureAddressTextBox);
-            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.manufactureCancelButton);
             this.Controls.Add(this.manufacturerAddID);
             this.Controls.Add(this.manufacturerNameTextBox);
             this.Controls.Add(this.label2);
@@ -193,7 +193,7 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.Button manufactureCancelButton;
         private System.Windows.Forms.Label manufacturerAddID;
         private System.Windows.Forms.TextBox manufacturerNameTextBox;
         private System.Windows.Forms.Label label2;

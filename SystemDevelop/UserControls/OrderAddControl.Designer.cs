@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.orderCancelButton = new System.Windows.Forms.Button();
             this.orderID = new System.Windows.Forms.Label();
             this.orderDate = new System.Windows.Forms.TextBox();
             this.orderAddButton = new System.Windows.Forms.Button();
@@ -38,17 +38,17 @@
             this.empResponsibleID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cancelButton
+            // orderCancelButton
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cancelButton.AutoSize = true;
-            this.cancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cancelButton.Location = new System.Drawing.Point(573, 651);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(153, 43);
-            this.cancelButton.TabIndex = 55;
-            this.cancelButton.Text = "キャンセル";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.orderCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.orderCancelButton.AutoSize = true;
+            this.orderCancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.orderCancelButton.Location = new System.Drawing.Point(573, 651);
+            this.orderCancelButton.Name = "orderCancelButton";
+            this.orderCancelButton.Size = new System.Drawing.Size(153, 43);
+            this.orderCancelButton.TabIndex = 55;
+            this.orderCancelButton.Text = "キャンセル";
+            this.orderCancelButton.UseVisualStyleBackColor = true;
             // 
             // orderID
             // 
@@ -131,7 +131,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.empResponsibleID);
-            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.orderCancelButton);
             this.Controls.Add(this.orderID);
             this.Controls.Add(this.orderDate);
             this.Controls.Add(this.orderAddButton);
@@ -147,7 +147,7 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.Button orderCancelButton;
         private System.Windows.Forms.Label orderID;
         private System.Windows.Forms.TextBox orderDate;
         public System.Windows.Forms.Button orderAddButton;

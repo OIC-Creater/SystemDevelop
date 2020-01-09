@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.shopCancelButton = new System.Windows.Forms.Button();
             this.shopID = new System.Windows.Forms.Label();
             this.shopNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,17 +42,17 @@
             this.shopFaxTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // cancelButton
+            // shopCancelButton
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cancelButton.AutoSize = true;
-            this.cancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cancelButton.Location = new System.Drawing.Point(573, 651);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(153, 43);
-            this.cancelButton.TabIndex = 55;
-            this.cancelButton.Text = "キャンセル";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.shopCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.shopCancelButton.AutoSize = true;
+            this.shopCancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.shopCancelButton.Location = new System.Drawing.Point(573, 651);
+            this.shopCancelButton.Name = "shopCancelButton";
+            this.shopCancelButton.Size = new System.Drawing.Size(153, 43);
+            this.shopCancelButton.TabIndex = 55;
+            this.shopCancelButton.Text = "キャンセル";
+            this.shopCancelButton.UseVisualStyleBackColor = true;
             // 
             // shopID
             // 
@@ -174,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.shopAddressTextBox);
             this.Controls.Add(this.shopFaxTextBox);
-            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.shopCancelButton);
             this.Controls.Add(this.shopID);
             this.Controls.Add(this.shopNameTextBox);
             this.Controls.Add(this.label2);
@@ -193,7 +193,7 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.Button shopCancelButton;
         private System.Windows.Forms.Label shopID;
         private System.Windows.Forms.TextBox shopNameTextBox;
         private System.Windows.Forms.Label label2;

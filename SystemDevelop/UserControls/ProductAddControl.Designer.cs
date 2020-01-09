@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.productCancelButton = new System.Windows.Forms.Button();
             this.productID = new System.Windows.Forms.Label();
             this.productNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,17 +46,17 @@
             this.settingID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cancelButton
+            // productCancelButton
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cancelButton.AutoSize = true;
-            this.cancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cancelButton.Location = new System.Drawing.Point(573, 651);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(153, 43);
-            this.cancelButton.TabIndex = 55;
-            this.cancelButton.Text = "キャンセル";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.productCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.productCancelButton.AutoSize = true;
+            this.productCancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.productCancelButton.Location = new System.Drawing.Point(573, 651);
+            this.productCancelButton.Name = "productCancelButton";
+            this.productCancelButton.Size = new System.Drawing.Size(153, 43);
+            this.productCancelButton.TabIndex = 55;
+            this.productCancelButton.Text = "キャンセル";
+            this.productCancelButton.UseVisualStyleBackColor = true;
             // 
             // productID
             // 
@@ -223,7 +223,7 @@
             this.Controls.Add(this.settingID);
             this.Controls.Add(this.manufactureID);
             this.Controls.Add(this.sellingPriceTextBox);
-            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.productCancelButton);
             this.Controls.Add(this.productID);
             this.Controls.Add(this.productNameTextBox);
             this.Controls.Add(this.label2);
@@ -246,7 +246,7 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.Button productCancelButton;
         private System.Windows.Forms.Label productID;
         private System.Windows.Forms.TextBox productNameTextBox;
         private System.Windows.Forms.Label label2;
