@@ -342,11 +342,11 @@
     <Compile Include="UserControls\OrderList.Designer.cs">
       <DependentUpon>OrderList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ReciveAdd.cs">
+    <Compile Include="UserControls\ReciveAddControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ReciveAdd.Designer.cs">
-      <DependentUpon>ReciveAdd.cs</DependentUpon>
+    <Compile Include="UserControls\ReciveAddControl.Designer.cs">
+      <DependentUpon>ReciveAddControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SalesMenuBar.cs">
       <SubType>UserControl</SubType>
@@ -532,8 +532,8 @@
     <EmbeddedResource Include="UserControls\OrderList.resx">
       <DependentUpon>OrderList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ReciveAdd.resx">
-      <DependentUpon>ReciveAdd.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ReciveAddControl.resx">
+      <DependentUpon>ReciveAddControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SalesMenuBar.resx">
       <DependentUpon>SalesMenuBar.cs</DependentUpon>
