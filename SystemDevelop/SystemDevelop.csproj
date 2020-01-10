@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5244645-D197-40E4-9A6D-B20D2D3032F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SystemDevelop</RootNamespace>
+    <AssemblyName>SystemDevelop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LogAdapter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogAdapterNet.1.1.0\lib\netstandard2.0\LogAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.6.8\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectDatabase, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectDatabase.1.2.2\lib\net461\ObjectDatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataModels\Issue.cs" />
+    <Compile Include="DataModels\Order.cs" />
+    <Compile Include="DataModels\OrderDetail.cs" />
+    <Compile Include="DataModels\Setting.cs" />
+    <Compile Include="DataModels\Storing.cs" />
+    <Compile Include="Model\Composite.cs" />
+    <Compile Include="Model\DB\Datasouce.cs" />
+    <Compile Include="Model\Encryption.cs" />
+    <Compile Include="Model\GenerationKey.cs" />
+    <Compile Include="Model\KeyContainer.cs" />
+    <Compile Include="DatabaseInstance.cs" />
+    <Compile Include="DataModels\Affiliation.cs" />
+    <Compile Include="DataModels\Employee.cs" />
+    <Compile Include="DataModels\Maker.cs" />
+    <Compile Include="DataModels\Pigeon.cs" />
+    <Compile Include="DataModels\Product.cs" />
+    <Compile Include="DataModels\ReciveOrder.cs" />
+    <Compile Include="DataModels\ReciveOrderDetail.cs" />
+    <Compile Include="DataModels\SalesOffice.cs" />
+    <Compile Include="DataModels\Shop.cs" />
+    <Compile Include="DataModels\Status.cs" />
+    <Compile Include="DataModels\Stock.cs" />
+    <Compile Include="Model\Controller.cs" />
+    <Compile Include="Model\Login.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LoginControl.cs" />
+    <Compile Include="Model\logtext.cs" />
+    <Compile Include="Model\PasswordHash.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AwardInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AwardInput.Designer.cs">
+      <DependentUpon>AwardInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\EmployeesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\EmployeesAdd.Designer.cs">
+      <DependentUpon>EmployeesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\EnployeesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\EnployeesList.Designer.cs">
+      <DependentUpon>EnployeesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ManufacturerOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ManufacturerOrderList.Designer.cs">
+      <DependentUpon>ManufacturerOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\SetttingChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\.Designer.cs">
+      <DependentUpon>SetttingChange.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MakerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MakerList.Designer.cs">
+      <DependentUpon>MakerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\MakerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MakerAdd.Designer.cs">
+      <DependentUpon>MakerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ProductAdd.Designer.cs">
+      <DependentUpon>ProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ShopAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ShopAdd.Designer.cs">
+      <DependentUpon>ShopAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ShopList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ShopList.Designer.cs">
+      <DependentUpon>ShopList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\StockAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\StockAdd.Designer.cs">
+      <DependentUpon>StockAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\StockList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\StockList.Designer.cs">
+      <DependentUpon>StockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\UndispatchedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\UndispatchedList.Designer.cs">
+      <DependentUpon>UndispatchedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EmpAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EmpAddControl.Designer.cs">
+      <DependentUpon>EmpAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManufactureAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManufactureAddControl.Designer.cs">
+      <DependentUpon>ManufactureAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OrderAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrderAddControl.Designer.cs">
+      <DependentUpon>OrderAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PigeonAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PigeonAddControl.Designer.cs">
+      <DependentUpon>PigeonAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductAddControl.Designer.cs">
+      <DependentUpon>ProductAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductDetails.Designer.cs">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeAddControl.Designer.cs">
+      <DependentUpon>SalesOfficeAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeDetails.Designer.cs">
+      <DependentUpon>SalesOfficeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EmpDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EmpDetails.Designer.cs">
+      <DependentUpon>EmpDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EmpList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EmpList.Designer.cs">
+      <DependentUpon>EmpList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HeaderLists.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HeaderLists.Designer.cs">
+      <DependentUpon>HeaderLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MainOfficeManuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainOfficeManuBar.Designer.cs">
+      <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SalesOfficeList.Designer.cs">
+      <DependentUpon>SalesOfficeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManufactureDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManufactureDetails.Designer.cs">
+      <DependentUpon>ManufactureDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManufactureList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManufactureList.Designer.cs">
+      <DependentUpon>ManufactureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewProduct.Designer.cs">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReciveList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReciveList.Designer.cs">
+      <DependentUpon>ReciveList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReciveListDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReciveListDetails.Designer.cs">
+      <DependentUpon>ReciveListDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OrderDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrderDetails.Designer.cs">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PigeonDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PigeonDetails.Designer.cs">
+      <DependentUpon>PigeonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PigeonList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PigeonList.Designer.cs">
+      <DependentUpon>PigeonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OrderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrderList.Designer.cs">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReciveAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReciveAddControl.Designer.cs">
+      <DependentUpon>ReciveAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SalesMenuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SalesMenuBar.Designer.cs">
+      <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SettingConfi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SettingConfi.Designer.cs">
+      <DependentUpon>SettingConfi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopAddControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopAddControl.Designer.cs">
+      <DependentUpon>ShopAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopDetails.Designer.cs">
+      <DependentUpon>ShopDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopList.Designer.cs">
+      <DependentUpon>ShopList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StockAddContorol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StockAddContorol.Designer.cs">
+      <DependentUpon>StockAddContorol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StockDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StockDetails.Designer.cs">
+      <DependentUpon>StockDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StockList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StockList.Designer.cs">
+      <DependentUpon>StockList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WarehouseMenuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WarehouseMenuBar.Designer.cs">
+      <DependentUpon>WarehouseMenuBar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\AwardInput.resx">
+      <DependentUpon>AwardInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\EmployeesAdd.resx">
+      <DependentUpon>EmployeesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\EnployeesList.resx">
+      <DependentUpon>EnployeesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ManufacturerOrderList.resx">
+      <DependentUpon>ManufacturerOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\SetttingChange.resx">
+      <DependentUpon>SetttingChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ProductAdd.resx">
+      <DependentUpon>ProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Properties\MakerList.resx">
+      <DependentUpon>MakerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MakerAdd.resx">
+      <DependentUpon>MakerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ShopAdd.resx">
+      <DependentUpon>ShopAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ShopList.resx">
+      <DependentUpon>ShopList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\StockAdd.resx">
+      <DependentUpon>StockAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\StockList.resx">
+      <DependentUpon>StockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\UndispatchedList.resx">
+      <DependentUpon>UndispatchedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EmpAddControl.resx">
+      <DependentUpon>EmpAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ManufactureAddControl.resx">
+      <DependentUpon>ManufactureAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OrderAddControl.resx">
+      <DependentUpon>OrderAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PigeonAddControl.resx">
+      <DependentUpon>PigeonAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductAddControl.resx">
+      <DependentUpon>ProductAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductDetails.resx">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SalesOfficeAddControl.resx">
+      <DependentUpon>SalesOfficeAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SalesOfficeDetails.resx">
+      <DependentUpon>SalesOfficeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EmpDetails.resx">
+      <DependentUpon>EmpDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EmpList.resx">
+      <DependentUpon>EmpList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\headerLists.resx">
+      <DependentUpon>HeaderLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MainOfficeManuBar.resx">
+      <DependentUpon>MainOfficeManuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SalesOfficeList.resx">
+      <DependentUpon>SalesOfficeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ManufactureDetails.resx">
+      <DependentUpon>ManufactureDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ManufactureList.resx">
+      <DependentUpon>ManufactureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NewProduct.resx">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ReciveList.resx">
+      <DependentUpon>ReciveList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ReciveListDetails.resx">
+      <DependentUpon>ReciveListDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OrderDetails.resx">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PigeonDetails.resx">
+      <DependentUpon>PigeonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PigeonList.resx">
+      <DependentUpon>PigeonList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OrderList.resx">
+      <DependentUpon>OrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ReciveAddControl.resx">
+      <DependentUpon>ReciveAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SalesMenuBar.resx">
+      <DependentUpon>SalesMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SettingConfi.resx">
+      <DependentUpon>SettingConfi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopAddControl.resx">
+      <DependentUpon>ShopAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopDetails.resx">
+      <DependentUpon>ShopDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopList.resx">
+      <DependentUpon>ShopList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StockAddContorol.resx">
+      <DependentUpon>StockAddContorol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StockDetails.resx">
+      <DependentUpon>StockDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\StockList.resx">
+      <DependentUpon>StockList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WarehouseMenuBar.resx">
+      <DependentUpon>WarehouseMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_post1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_maker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_shop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_souko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_shop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_maker1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_kigyousenshi_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touka_shipping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batu.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.12.0\build\NUnit.props'))" />
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.15.1\build\net35\NUnit3TestAdapter.props'))" />
+  </Target>
+</Project>
