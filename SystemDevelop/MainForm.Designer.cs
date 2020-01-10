@@ -86,7 +86,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pigeonDetails.Location = new System.Drawing.Point(219, 81);
             this.pigeonDetails.Name = "pigeonDetails";
-            this.pigeonDetails.Size = new System.Drawing.Size(1033, 706);
+            this.pigeonDetails.Size = new System.Drawing.Size(1045, 706);
             this.pigeonDetails.TabIndex = 20;
             this.pigeonDetails.Visible = false;
             // 
@@ -140,7 +140,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reciveAddControl.Location = new System.Drawing.Point(219, 81);
             this.reciveAddControl.Name = "reciveAddControl";
-            this.reciveAddControl.Size = new System.Drawing.Size(1033, 706);
+            this.reciveAddControl.Size = new System.Drawing.Size(1045, 706);
             this.reciveAddControl.TabIndex = 3;
             this.reciveAddControl.Visible = false;
             // 
@@ -162,7 +162,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.manufactureList.Location = new System.Drawing.Point(219, 158);
             this.manufactureList.Name = "manufactureList";
-            this.manufactureList.Size = new System.Drawing.Size(1045, 627);
+            this.manufactureList.Size = new System.Drawing.Size(1045, 633);
             this.manufactureList.TabIndex = 3;
             this.manufactureList.Visible = false;
             // 
@@ -237,9 +237,9 @@
             this.salesOfficeDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.salesOfficeDetails.Location = new System.Drawing.Point(219, 158);
+            this.salesOfficeDetails.Location = new System.Drawing.Point(219, 81);
             this.salesOfficeDetails.Name = "salesOfficeDetails";
-            this.salesOfficeDetails.Size = new System.Drawing.Size(1045, 629);
+            this.salesOfficeDetails.Size = new System.Drawing.Size(1045, 706);
             this.salesOfficeDetails.TabIndex = 17;
             this.salesOfficeDetails.Visible = false;
             // 
@@ -405,7 +405,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pigeonAddControl.Location = new System.Drawing.Point(219, 81);
             this.pigeonAddControl.Name = "pigeonAddControl";
-            this.pigeonAddControl.Size = new System.Drawing.Size(1045, 789);
+            this.pigeonAddControl.Size = new System.Drawing.Size(1045, 706);
             this.pigeonAddControl.TabIndex = 23;
             this.pigeonAddControl.Visible = false;
             // 
@@ -416,7 +416,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.manufactureAddControl.Location = new System.Drawing.Point(219, 81);
             this.manufactureAddControl.Name = "manufactureAddControl";
-            this.manufactureAddControl.Size = new System.Drawing.Size(1033, 789);
+            this.manufactureAddControl.Size = new System.Drawing.Size(1045, 706);
             this.manufactureAddControl.TabIndex = 24;
             this.manufactureAddControl.Visible = false;
             // 
@@ -427,7 +427,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.shopAddControl.Location = new System.Drawing.Point(219, 81);
             this.shopAddControl.Name = "shopAddControl";
-            this.shopAddControl.Size = new System.Drawing.Size(1033, 789);
+            this.shopAddControl.Size = new System.Drawing.Size(1045, 706);
             this.shopAddControl.TabIndex = 25;
             this.shopAddControl.Visible = false;
             // 
@@ -438,7 +438,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.salesOfficeAddControl.Location = new System.Drawing.Point(219, 81);
             this.salesOfficeAddControl.Name = "salesOfficeAddControl";
-            this.salesOfficeAddControl.Size = new System.Drawing.Size(1033, 789);
+            this.salesOfficeAddControl.Size = new System.Drawing.Size(1045, 706);
             this.salesOfficeAddControl.TabIndex = 26;
             this.salesOfficeAddControl.Visible = false;
             // 
@@ -449,7 +449,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.productAddControl.Location = new System.Drawing.Point(219, 81);
             this.productAddControl.Name = "productAddControl";
-            this.productAddControl.Size = new System.Drawing.Size(1033, 789);
+            this.productAddControl.Size = new System.Drawing.Size(1045, 706);
             this.productAddControl.TabIndex = 27;
             this.productAddControl.Visible = false;
             // 
@@ -460,7 +460,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.orderAddControl.Location = new System.Drawing.Point(219, 81);
             this.orderAddControl.Name = "orderAddControl";
-            this.orderAddControl.Size = new System.Drawing.Size(1033, 789);
+            this.orderAddControl.Size = new System.Drawing.Size(1045, 706);
             this.orderAddControl.TabIndex = 28;
             this.orderAddControl.Visible = false;
             // 
@@ -471,7 +471,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.stockAddControl.Location = new System.Drawing.Point(219, 81);
             this.stockAddControl.Name = "stockAddControl";
-            this.stockAddControl.Size = new System.Drawing.Size(1033, 789);
+            this.stockAddControl.Size = new System.Drawing.Size(1045, 706);
             this.stockAddControl.TabIndex = 29;
             this.stockAddControl.Visible = false;
             // 
@@ -480,31 +480,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
-            this.Controls.Add(this.stockAddControl);
             this.Controls.Add(this.headerLists);
             this.Controls.Add(this.headerControl);
             this.Controls.Add(this.warehouseMenuBar);
-            this.Controls.Add(this.orderControl);
-            this.Controls.Add(this.shopDetails);
-            this.Controls.Add(this.orderDetails);
-            this.Controls.Add(this.manufactureDetails);
-            this.Controls.Add(this.productList);
-            this.Controls.Add(this.empDetails);
-            this.Controls.Add(this.orderDetail);
-            this.Controls.Add(this.pigeonAddControl);
-            this.Controls.Add(this.empAddControl);
-            this.Controls.Add(this.pigeonDetails);
-            this.Controls.Add(this.loginControl);
             this.Controls.Add(this.salesMenuBar);
             this.Controls.Add(this.mainOfficeManuBar);
-            this.Controls.Add(this.orderAddControl);
-            this.Controls.Add(this.productAddControl);
-            this.Controls.Add(this.salesOfficeAddControl);
-            this.Controls.Add(this.shopAddControl);
-            this.Controls.Add(this.manufactureAddControl);
-            this.Controls.Add(this.reciveControl);
-            this.Controls.Add(this.reciveAddControl);
-            this.Controls.Add(this.newProduct);
             this.Controls.Add(this.manufactureList);
             this.Controls.Add(this.stockDetail);
             this.Controls.Add(this.shopList);
@@ -518,6 +498,26 @@
             this.Controls.Add(this.stockList);
             this.Controls.Add(this.reciveListDetails);
             this.Controls.Add(this.warehouseControl);
+            this.Controls.Add(this.loginControl);
+            this.Controls.Add(this.stockAddControl);
+            this.Controls.Add(this.orderControl);
+            this.Controls.Add(this.shopDetails);
+            this.Controls.Add(this.orderDetails);
+            this.Controls.Add(this.manufactureDetails);
+            this.Controls.Add(this.productList);
+            this.Controls.Add(this.empDetails);
+            this.Controls.Add(this.orderDetail);
+            this.Controls.Add(this.pigeonAddControl);
+            this.Controls.Add(this.empAddControl);
+            this.Controls.Add(this.pigeonDetails);
+            this.Controls.Add(this.orderAddControl);
+            this.Controls.Add(this.productAddControl);
+            this.Controls.Add(this.salesOfficeAddControl);
+            this.Controls.Add(this.shopAddControl);
+            this.Controls.Add(this.manufactureAddControl);
+            this.Controls.Add(this.reciveControl);
+            this.Controls.Add(this.reciveAddControl);
+            this.Controls.Add(this.newProduct);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.salesCancelButton = new System.Windows.Forms.Button();
             this.salesOfficeID = new System.Windows.Forms.Label();
             this.salesOfficeNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,17 +42,17 @@
             this.salesOfficeFaxTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // cancelButton
+            // salesCancelButton
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cancelButton.AutoSize = true;
-            this.cancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cancelButton.Location = new System.Drawing.Point(573, 651);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(153, 43);
-            this.cancelButton.TabIndex = 55;
-            this.cancelButton.Text = "キャンセル";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.salesCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.salesCancelButton.AutoSize = true;
+            this.salesCancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.salesCancelButton.Location = new System.Drawing.Point(573, 651);
+            this.salesCancelButton.Name = "salesCancelButton";
+            this.salesCancelButton.Size = new System.Drawing.Size(153, 43);
+            this.salesCancelButton.TabIndex = 55;
+            this.salesCancelButton.Text = "キャンセル";
+            this.salesCancelButton.UseVisualStyleBackColor = true;
             // 
             // salesOfficeID
             // 
@@ -174,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.salesOfficeAddressTextBox);
             this.Controls.Add(this.salesOfficeFaxTextBox);
-            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.salesCancelButton);
             this.Controls.Add(this.salesOfficeID);
             this.Controls.Add(this.salesOfficeNameTextBox);
             this.Controls.Add(this.label2);
@@ -193,7 +193,7 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.Button salesCancelButton;
         private System.Windows.Forms.Label salesOfficeID;
         private System.Windows.Forms.TextBox salesOfficeNameTextBox;
         private System.Windows.Forms.Label label2;

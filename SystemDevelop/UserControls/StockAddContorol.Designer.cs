@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cancelButton = new System.Windows.Forms.Button();
+            this.stockCancelButton = new System.Windows.Forms.Button();
             this.empId = new System.Windows.Forms.Label();
             this.stockTextBox = new System.Windows.Forms.TextBox();
             this.stockAddButton = new System.Windows.Forms.Button();
@@ -39,17 +39,17 @@
             this.productID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cancelButton
+            // stockCancelButton
             // 
-            this.cancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cancelButton.AutoSize = true;
-            this.cancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cancelButton.Location = new System.Drawing.Point(573, 651);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(153, 43);
-            this.cancelButton.TabIndex = 55;
-            this.cancelButton.Text = "キャンセル";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.stockCancelButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.stockCancelButton.AutoSize = true;
+            this.stockCancelButton.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.stockCancelButton.Location = new System.Drawing.Point(573, 651);
+            this.stockCancelButton.Name = "stockCancelButton";
+            this.stockCancelButton.Size = new System.Drawing.Size(153, 43);
+            this.stockCancelButton.TabIndex = 55;
+            this.stockCancelButton.Text = "キャンセル";
+            this.stockCancelButton.UseVisualStyleBackColor = true;
             // 
             // empId
             // 
@@ -143,7 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.productID);
             this.Controls.Add(this.stockID);
-            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.stockCancelButton);
             this.Controls.Add(this.empId);
             this.Controls.Add(this.stockTextBox);
             this.Controls.Add(this.stockAddButton);
@@ -159,7 +159,7 @@
 
         #endregion
 
-        public System.Windows.Forms.Button cancelButton;
+        public System.Windows.Forms.Button stockCancelButton;
         private System.Windows.Forms.Label empId;
         private System.Windows.Forms.TextBox stockTextBox;
         public System.Windows.Forms.Button stockAddButton;
