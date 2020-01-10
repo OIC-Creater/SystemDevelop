@@ -42,7 +42,7 @@
             this.employeeListButton.FlatAppearance.BorderSize = 0;
             this.employeeListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.employeeListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.employeeListButton.Location = new System.Drawing.Point(0, 0);
+            this.employeeListButton.Location = new System.Drawing.Point(0, 416);
             this.employeeListButton.Name = "employeeListButton";
             this.employeeListButton.Size = new System.Drawing.Size(216, 104);
             this.employeeListButton.TabIndex = 0;
@@ -87,7 +87,7 @@
             this.businessOfficeListButton.FlatAppearance.BorderSize = 0;
             this.businessOfficeListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.businessOfficeListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.businessOfficeListButton.Location = new System.Drawing.Point(0, 309);
+            this.businessOfficeListButton.Location = new System.Drawing.Point(0, 312);
             this.businessOfficeListButton.Name = "businessOfficeListButton";
             this.businessOfficeListButton.Size = new System.Drawing.Size(216, 104);
             this.businessOfficeListButton.TabIndex = 3;
@@ -102,7 +102,7 @@
             this.productListButton.FlatAppearance.BorderSize = 0;
             this.productListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.productListButton.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.productListButton.Location = new System.Drawing.Point(0, 413);
+            this.productListButton.Location = new System.Drawing.Point(0, 0);
             this.productListButton.Name = "productListButton";
             this.productListButton.Size = new System.Drawing.Size(216, 104);
             this.productListButton.TabIndex = 5;
