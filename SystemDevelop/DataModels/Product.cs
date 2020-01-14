@@ -23,7 +23,7 @@ namespace SystemDevelop.DataModels
         public string SettingId { get; set; }
 
         [SerializePropertyAttribute("取扱中", IsKey = false, RelationKey = false)]
-        public string Trading { get; set; }
+        public bool Trading { get; set; }
 
 
         [IgnoreProperty, UnionTarget(nameof(DataModels.Maker.MakerId))]

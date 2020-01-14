@@ -83,9 +83,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView productGridView;
         public System.Windows.Forms.Button productListAddButton;
         public System.Windows.Forms.Button productDetailButton;
+        public System.Windows.Forms.DataGridView productGridView;
     }
 }

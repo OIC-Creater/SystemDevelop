@@ -718,6 +718,10 @@ namespace SystemDevelop
                         mainOfficeManuBar.Visible = false;
                         reciveControl.Visible = true;
                         headerLists.Visible = true;
+                        DataSource.SetDataSource<Employee>(empList.empGridView, DatabaseInstance.EmployeeTable);
+                        DataSource.SetDataSource<Maker>(manufactureList.manufGridView, DatabaseInstance.MakerTable);
+                        DataSource.SetDataSource<Shop>(shopList.shopGridView, DatabaseInstance.ShopTable);
+                        DataSource.SetDataSource<SalesOffice>(salesOfficeList.salesOfficeGridView, DatabaseInstance.SalesOfficeTable);
                         break;
                     case "A03":
                         mainOfficeManuBar.Visible = true;
@@ -727,6 +731,7 @@ namespace SystemDevelop
                         reciveControl.Visible = false;
                         headerLists.Visible = true;
                         empList.Visible = true;
+                        DataSource.SetDataSource<Product>(productList.productGridView, DatabaseInstance.ProductTable);
                         DataSource.SetDataSource<Employee>(empList.empGridView, DatabaseInstance.EmployeeTable);
                         DataSource.SetDataSource<Maker>(manufactureList.manufGridView, DatabaseInstance.MakerTable);
                         DataSource.SetDataSource<Shop>(shopList.shopGridView, DatabaseInstance.ShopTable);
