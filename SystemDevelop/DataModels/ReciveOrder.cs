@@ -1,4 +1,5 @@
 ﻿using ObjectDatabase;
+using System.Runtime.Serialization;
 
 namespace SystemDevelop.DataModels
 {
@@ -25,13 +26,13 @@ namespace SystemDevelop.DataModels
         [SerializePropertyAttribute("受領チェック", IsKey=false, RelationKey=false)]
         public bool ReceiptCheck { get; set; } 
         
-        [IgnoreProperty, UnionTarget(nameof(DataModels.Shop.ShopId))]
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Shop.ShopId)),IgnoreDataMember]
         public Shop Shop { get; set; }
-        [IgnoreProperty, UnionTarget(nameof(DataModels.Pigeon.PigeonId))]
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Pigeon.PigeonId)), IgnoreDataMember]
         public Pigeon Pigeon { get; set; }
-        [IgnoreProperty, UnionTarget(nameof(DataModels.SalesOffice.SalesOfficeId))]
+        [IgnoreProperty, UnionTarget(nameof(DataModels.SalesOffice.SalesOfficeId)), IgnoreDataMember]
         public SalesOffice SalesOffice { get; set; }
-        [IgnoreProperty, UnionTarget(nameof(DataModels.Employee.EmployeeId))]
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Employee.EmployeeId)), IgnoreDataMember]
         public Employee Employee { get; set; }
 
 
