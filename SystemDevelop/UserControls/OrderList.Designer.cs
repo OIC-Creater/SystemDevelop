@@ -83,9 +83,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView orderGridView;
         public System.Windows.Forms.Button orderDetailsButton;
         public System.Windows.Forms.Button orderListAddButton;
+        public System.Windows.Forms.DataGridView orderGridView;
     }
 }

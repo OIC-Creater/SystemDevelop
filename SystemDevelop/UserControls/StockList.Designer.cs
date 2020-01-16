@@ -84,9 +84,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView stockGridView;
         public System.Windows.Forms.Button stockDetailButton;
         public System.Windows.Forms.Button stockListAddButton;
+        public System.Windows.Forms.DataGridView stockGridView;
     }
 }
