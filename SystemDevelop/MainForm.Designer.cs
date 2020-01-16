@@ -40,7 +40,6 @@
             this.shopList = new SystemDevelop.UserControls.ShopList();
             this.salesOfficeList = new SystemDevelop.UserControls.SalesOfficeList();
             this.empList = new SystemDevelop.UserControls.EmpList();
-            this.orderList = new SystemDevelop.UserControls.OrderList();
             this.pigeonList = new SystemDevelop.UserControls.PigeonList();
             this.productDetails = new SystemDevelop.UserControls.ProductDetails();
             this.salesOfficeDetails = new SystemDevelop.UserControls.SalesOfficeDetails();
@@ -66,6 +65,8 @@
             this.productAddControl = new SystemDevelop.UserControls.ProductAddControl();
             this.orderAddControl = new SystemDevelop.UserControls.OrderAddControl();
             this.stockAddControl = new SystemDevelop.UserControls.StockAddContorol();
+            this.orderList = new SystemDevelop.UserControls.OrderList();
+            this.orderList2 = new SystemDevelop.UserControls.OrderList2();
             this.SuspendLayout();
             // 
             // empAddControl
@@ -198,17 +199,6 @@
             this.empList.Size = new System.Drawing.Size(1045, 633);
             this.empList.TabIndex = 3;
             this.empList.Visible = false;
-            // 
-            // orderList
-            // 
-            this.orderList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.orderList.Location = new System.Drawing.Point(219, 158);
-            this.orderList.Name = "orderList";
-            this.orderList.Size = new System.Drawing.Size(1045, 633);
-            this.orderList.TabIndex = 3;
-            this.orderList.Visible = false;
             // 
             // pigeonList
             // 
@@ -475,23 +465,40 @@
             this.stockAddControl.TabIndex = 29;
             this.stockAddControl.Visible = false;
             // 
+            // orderList
+            // 
+            this.orderList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderList.Location = new System.Drawing.Point(219, 158);
+            this.orderList.Name = "orderList";
+            this.orderList.Size = new System.Drawing.Size(1045, 633);
+            this.orderList.TabIndex = 30;
+            this.orderList.Visible = false;
+            // 
+            // orderList2
+            // 
+            this.orderList2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderList2.Location = new System.Drawing.Point(219, 158);
+            this.orderList2.Name = "orderList2";
+            this.orderList2.Size = new System.Drawing.Size(1045, 633);
+            this.orderList2.TabIndex = 31;
+            this.orderList2.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 788);
+            this.Controls.Add(this.orderList2);
+            this.Controls.Add(this.orderList);
             this.Controls.Add(this.headerLists);
             this.Controls.Add(this.headerControl);
             this.Controls.Add(this.warehouseMenuBar);
             this.Controls.Add(this.salesMenuBar);
             this.Controls.Add(this.mainOfficeManuBar);
-            this.Controls.Add(this.manufactureList);
-            this.Controls.Add(this.stockDetail);
-            this.Controls.Add(this.shopList);
-            this.Controls.Add(this.salesOfficeList);
-            this.Controls.Add(this.empList);
-            this.Controls.Add(this.settingConfi);
-            this.Controls.Add(this.orderList);
             this.Controls.Add(this.pigeonList);
             this.Controls.Add(this.productDetails);
             this.Controls.Add(this.salesOfficeDetails);
@@ -518,6 +525,12 @@
             this.Controls.Add(this.reciveControl);
             this.Controls.Add(this.reciveAddControl);
             this.Controls.Add(this.newProduct);
+            this.Controls.Add(this.manufactureList);
+            this.Controls.Add(this.stockDetail);
+            this.Controls.Add(this.shopList);
+            this.Controls.Add(this.salesOfficeList);
+            this.Controls.Add(this.empList);
+            this.Controls.Add(this.settingConfi);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
@@ -567,7 +580,8 @@
         public UserControls.ProductAddControl productAddControl;
         public UserControls.OrderAddControl orderAddControl;
         public UserControls.StockAddContorol stockAddControl;
-        public UserControls.OrderList orderList;
+        private UserControls.OrderList orderList;
+        private UserControls.OrderList2 orderList2;
     }
 }
 

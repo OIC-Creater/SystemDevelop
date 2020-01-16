@@ -49,7 +49,7 @@
       <HintPath>..\packages\LogAdapterNet.1.1.0\lib\netstandard2.0\LogAdapter.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.4.6.8\lib\net45\NLog.dll</HintPath>
@@ -215,6 +215,12 @@
     </Compile>
     <Compile Include="UserControls\OrderAddControl.Designer.cs">
       <DependentUpon>OrderAddControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OrderList2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrderList2.Designer.cs">
+      <DependentUpon>OrderList2.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\PigeonAddControl.cs">
       <SubType>UserControl</SubType>
@@ -471,6 +477,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\OrderAddControl.resx">
       <DependentUpon>OrderAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OrderList2.resx">
+      <DependentUpon>OrderList2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PigeonAddControl.resx">
       <DependentUpon>PigeonAddControl.cs</DependentUpon>
