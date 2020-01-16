@@ -64,9 +64,9 @@ namespace SystemDevelop
             pigeonDetails.pigeonCancelButton.Click += PigeonCancelButton_Click;
             pigeonList.pigeonListAddButton.Click += PigeonListAddButton_Click;
             pigeonAddControl.cancelButton.Click += CancelButton_Click;
-            orderControl.orderDetailsButton.Click += OrderDetailsButton_Click;
+            orderList2.orderDetailsButton.Click += OrderDetailsButton_Click;
             orderDetail.orderCancelButton.Click += OrderCancelButton_Click;
-            orderControl.orderListAddButton.Click += OrderListAddButton_Click;
+            orderList2.orderListAddButton.Click += OrderListAddButton_Click;
             orderAddControl.orderCancelButton.Click += OrderCancelButton_Click1;
             stockList.stockDetailButton.Click += StockDetailButton_Click;
             stockList.stockListAddButton.Click += StockListAddButton_Click;
@@ -91,7 +91,7 @@ namespace SystemDevelop
         private void OrderCancelButton_Click1(object sender, EventArgs e)
         {
             orderAddControl.Visible = false;
-            orderControl.Visible = true;
+            orderList2.Visible = true;
             headerLists.Visible = true;
         }
 
@@ -149,7 +149,7 @@ namespace SystemDevelop
             orderAddControl.Visible = true;
             headerLists.Visible = false;
             reciveControl.Visible = false;
-            orderControl.Visible = false;
+            orderList2.Visible = false;
             stockList.Visible = false;
         }
 
@@ -226,20 +226,20 @@ namespace SystemDevelop
             headerLists.Visible = false;
             stockList.Visible = false;
             reciveControl.Visible = false;
-            orderControl.Visible = false;
+            orderList2.Visible = false;
         }
 
         private void OrderCancelButton_Click(object sender, EventArgs e)
         {
             orderDetail.Visible = false;
             headerLists.Visible = true;
-            orderControl.Visible = true;
+            orderList2.Visible = true;
         }
 
         private void OrderDetailsButton_Click(object sender, EventArgs e)
         {
             orderDetail.Visible = true;
-            orderControl.Visible = false;
+            orderList2.Visible = false;
             headerLists.Visible = false;
             reciveControl.Visible = false;
             stockList.Visible = false;
@@ -419,7 +419,7 @@ namespace SystemDevelop
             salesOfficeList.Visible = false;
             empList.Visible = false;
             shopList.Visible = false;
-            orderControl.Visible = false;
+            orderList2.Visible = false;
             newProduct.Visible = true;
         }
         
@@ -594,7 +594,7 @@ namespace SystemDevelop
         
         private void StockButtonClick(object sender, EventArgs e)
         {
-            orderControl.Visible = false;
+            orderList2.Visible = false;
             headerLists.Visible = true;
             stockList.Visible = true;
             warehouseControl.Visible = false;
@@ -612,7 +612,7 @@ namespace SystemDevelop
             reciveControl.Visible = true;
             reciveAddControl.Visible = false;
             warehouseControl.Visible = false;
-            orderControl.Visible = false;
+            orderList2.Visible = false;
             stockList.Visible = false;
             orderDetail.Visible = false;
             reciveListDetails.Visible = false;
@@ -623,7 +623,7 @@ namespace SystemDevelop
         {
             reciveAddControl.Visible = false;
             headerLists.Visible = true;
-            orderControl.Visible = true;
+            orderList2.Visible = true;
             stockList.Visible = false;
             reciveControl.Visible = false;
             warehouseControl.Visible = false;
@@ -639,7 +639,7 @@ namespace SystemDevelop
             reciveControl.Visible = true;
             reciveAddControl.Visible = false;
             pigeonList.Visible = false;
-            orderList.Visible = false;
+            orderList2.Visible = false;
             warehouseControl.Visible = false;
             reciveListDetails.Visible = false;
             pigeonDetails.Visible = false;
@@ -651,7 +651,7 @@ namespace SystemDevelop
             reciveAddControl.Visible = true;
             reciveControl.Visible = false;
             pigeonList.Visible = false;
-            orderList.Visible = false;
+            orderList2.Visible = false;
             stockList.Visible = false;
             warehouseControl.Visible = false;
             reciveListDetails.Visible = false;
@@ -663,7 +663,7 @@ namespace SystemDevelop
             pigeonList.Visible = true;
             reciveAddControl.Visible = false;
             reciveControl.Visible = false;
-            orderList.Visible = false;
+            orderList2.Visible = false;
             reciveListDetails.Visible = false;
             pigeonDetails.Visible = false;
             pigeonAddControl.Visible = false;
@@ -671,7 +671,7 @@ namespace SystemDevelop
         private void UnDispatched_Click(object sender, EventArgs e)
         {
             headerLists.Visible = true;
-            orderList.Visible = true;
+            orderList2.Visible = true;
             pigeonList.Visible = false;
             reciveAddControl.Visible = false;
             reciveControl.Visible = false;
@@ -710,8 +710,8 @@ namespace SystemDevelop
                         headerLists.Visible = true;
                         DataSource.SetDataSource<ReciveOrderDetail>(reciveControl.reciveGridView, DatabaseInstance.ReciveOrderDetailTable);
                         DataSource.SetDataSource<Stock>(stockList.stockGridView, DatabaseInstance.StockTable);
-                        DataSource.SetDataSource<Stock>(orderList.orderGridView, DatabaseInstance.StockTable);
-                        DataSource.SetDataSource<Order>(orderList.orderGridView, DatabaseInstance.OrderTable);
+                        DataSource.SetDataSource<Stock>(orderList2.orderGridView, DatabaseInstance.StockTable);
+                        DataSource.SetDataSource<Order>(orderList2.orderGridView, DatabaseInstance.OrderTable);
                         break;
                     case "A02":
                         salesMenuBar.Visible = true;
