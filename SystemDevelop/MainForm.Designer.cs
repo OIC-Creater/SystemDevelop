@@ -566,8 +566,8 @@
         public UserControls.SalesOfficeAddControl salesOfficeAddControl;
         public UserControls.ProductAddControl productAddControl;
         public UserControls.OrderAddControl orderAddControl;
-        public UserControls.OrderList orderList;
         public UserControls.StockAddContorol stockAddControl;
+        public UserControls.OrderList orderList;
     }
 }
 

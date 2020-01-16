@@ -702,26 +702,26 @@ namespace SystemDevelop
                 switch (employee.AffiliationId)
                 {
                     case "A01":
-                        salesMenuBar.Visible = true;
-                        loginControl.Visible = false;
-                        warehouseMenuBar.Visible = false;
-                        mainOfficeManuBar.Visible = false;
-                        reciveControl.Visible = true;
-                        headerLists.Visible = true;
-                        DataSource.SetDataSource<OrderDetail>(reciveControl.reciveGridView, DatabaseInstance.OrderDetailTable); 
-                        DataSource.SetDataSource<Pigeon>(pigeonList.pigeonGridView, DatabaseInstance.PigeonTable);
-                        break;
-                    case "A02":
                         salesMenuBar.Visible = false;
                         loginControl.Visible = false;
                         warehouseMenuBar.Visible = true;
                         mainOfficeManuBar.Visible = false;
                         reciveControl.Visible = true;
                         headerLists.Visible = true;
-                        DataSource.SetDataSource<Employee>(empList.empGridView, DatabaseInstance.EmployeeTable);
-                        DataSource.SetDataSource<Maker>(manufactureList.manufGridView, DatabaseInstance.MakerTable);
-                        DataSource.SetDataSource<Shop>(shopList.shopGridView, DatabaseInstance.ShopTable);
-                        DataSource.SetDataSource<SalesOffice>(salesOfficeList.salesOfficeGridView, DatabaseInstance.SalesOfficeTable);
+                        DataSource.SetDataSource<ReciveOrderDetail>(reciveControl.reciveGridView, DatabaseInstance.ReciveOrderDetailTable);
+                        DataSource.SetDataSource<Stock>(stockList.stockGridView, DatabaseInstance.StockTable);
+                        DataSource.SetDataSource<Stock>(orderList.orderGridView, DatabaseInstance.StockTable);
+                        DataSource.SetDataSource<Order>(orderList.orderGridView, DatabaseInstance.OrderTable);
+                        break;
+                    case "A02":
+                        salesMenuBar.Visible = true;
+                        loginControl.Visible = false;
+                        warehouseMenuBar.Visible = false;
+                        mainOfficeManuBar.Visible = false;
+                        reciveControl.Visible = true;
+                        headerLists.Visible = true;
+                        DataSource.SetDataSource<ReciveOrderDetail>(reciveControl.reciveGridView, DatabaseInstance.ReciveOrderDetailTable);
+                        DataSource.SetDataSource<Pigeon>(pigeonList.pigeonGridView, DatabaseInstance.PigeonTable);
                         break;
                     case "A03":
                         mainOfficeManuBar.Visible = true;
