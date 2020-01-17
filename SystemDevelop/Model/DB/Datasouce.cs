@@ -20,8 +20,8 @@ namespace SystemDevelop.Model.DB
         {
             BindingList<T> dataSouce
                 = new BindingList<T>(table.ToArray());
-            
             return dataSouce;
         }
+
     }
 }

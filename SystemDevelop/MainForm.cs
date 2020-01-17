@@ -15,7 +15,7 @@ namespace SystemDevelop
         public MainForm()
         {
             InitializeComponent();
-            
+
             loginControl.loginButton.Click += LoginButtonClick;
             loginControl.idTextBox.KeyDown += OnEnter;
             loginControl.passTextBox.KeyDown += OnEnter;
@@ -60,6 +60,7 @@ namespace SystemDevelop
             productAddControl.productCancelButton.Click += ProductCancelButton_Click1;
             reciveControl.reciveDetailButton.Click += ReciveDetailButton_Click;
             reciveListDetails.reciveCancelButton.Click += ReciveCancelButton_Click;
+            reciveAddControl.addButton.Click += addButton_Click;
             pigeonList.pigeonDetailButton.Click += PigeonDetailButton_Click;
             pigeonDetails.pigeonCancelButton.Click += PigeonCancelButton_Click;
             pigeonList.pigeonListAddButton.Click += PigeonListAddButton_Click;
@@ -72,6 +73,11 @@ namespace SystemDevelop
             stockList.stockListAddButton.Click += StockListAddButton_Click;
             stockDetail.stockCancelButton.Click += StockCancelButton_Click;
             stockAddControl.stockCancelButton.Click += StockCancelButton_Click1;
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+             DataSource.SetDataSource<ReciveOrderDetail>(reciveControl.reciveGridView, DatabaseInstance.ReciveOrderDetailTable);
         }
 
         private void StockCancelButton_Click1(object sender, EventArgs e)
@@ -710,7 +716,6 @@ namespace SystemDevelop
                         headerLists.Visible = true;
                         DataSource.SetDataSource<ReciveOrderDetail>(reciveControl.reciveGridView, DatabaseInstance.ReciveOrderDetailTable);
                         DataSource.SetDataSource<Stock>(stockList.stockGridView, DatabaseInstance.StockTable);
-                        DataSource.SetDataSource<Stock>(orderList2.orderGridView, DatabaseInstance.StockTable);
                         DataSource.SetDataSource<Order>(orderList2.orderGridView, DatabaseInstance.OrderTable);
                         break;
                     case "A02":
