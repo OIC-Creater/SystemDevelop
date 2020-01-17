@@ -107,6 +107,7 @@
             this.addButton.TabIndex = 5;
             this.addButton.Text = "登録";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // shopComboBox
             // 
@@ -159,7 +160,7 @@
             this.piecesLabel.TabIndex = 12;
             this.piecesLabel.Text = "個";
             // 
-            // Recive
+            // ReciveAddControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -174,7 +175,7 @@
             this.Controls.Add(this.productLabel);
             this.Controls.Add(this.honorificLabel);
             this.Controls.Add(this.shopLabel);
-            this.Name = "Recive";
+            this.Name = "ReciveAddControl";
             this.Size = new System.Drawing.Size(1033, 789);
             this.ResumeLayout(false);
             this.PerformLayout();

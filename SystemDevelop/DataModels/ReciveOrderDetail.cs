@@ -1,4 +1,5 @@
 ﻿using ObjectDatabase;
+using System.Runtime.Serialization;
 
 namespace SystemDevelop.DataModels
 {
@@ -14,12 +15,12 @@ namespace SystemDevelop.DataModels
         public string ProductId { get; set; }
 
         [SerializePropertyAttribute("個数", IsKey=false, RelationKey=false)]
-        public int 個数 { get; set; } 
+        public int Quantity { get; set; } 
         
 
-        [IgnoreProperty, UnionTarget(nameof(DataModels.ReciveOrder.ReciveOrderId))]
+        [IgnoreProperty, UnionTarget(nameof(DataModels.ReciveOrder.ReciveOrderId)),IgnoreDataMember]
         public ReciveOrder ReciveOrder { get; set; }
-        [IgnoreProperty, UnionTarget(nameof(DataModels.Product.ProductId))]
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Product.ProductId)),IgnoreDataMember]
         public Product Product { get; set; }
     }
 }

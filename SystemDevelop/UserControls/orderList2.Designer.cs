@@ -1,6 +1,6 @@
 ﻿namespace SystemDevelop.UserControls
 {
-    partial class OrderList
+    partial class OrderList2
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.orderGridView = new System.Windows.Forms.DataGridView();
-            this.orderDetailsButton = new System.Windows.Forms.Button();
             this.orderListAddButton = new System.Windows.Forms.Button();
+            this.orderDetailsButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.orderGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,17 +46,6 @@
             this.orderGridView.RowTemplate.Height = 21;
             this.orderGridView.Size = new System.Drawing.Size(1033, 709);
             this.orderGridView.TabIndex = 0;
-            this.orderGridView.TabStop = false;
-            // 
-            // orderDetailsButton
-            // 
-            this.orderDetailsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.orderDetailsButton.Location = new System.Drawing.Point(873, 709);
-            this.orderDetailsButton.Name = "orderDetailsButton";
-            this.orderDetailsButton.Size = new System.Drawing.Size(160, 80);
-            this.orderDetailsButton.TabIndex = 1;
-            this.orderDetailsButton.Text = "詳細";
-            this.orderDetailsButton.UseVisualStyleBackColor = true;
             // 
             // orderListAddButton
             // 
@@ -64,18 +53,28 @@
             this.orderListAddButton.Location = new System.Drawing.Point(707, 709);
             this.orderListAddButton.Name = "orderListAddButton";
             this.orderListAddButton.Size = new System.Drawing.Size(160, 80);
-            this.orderListAddButton.TabIndex = 2;
+            this.orderListAddButton.TabIndex = 4;
             this.orderListAddButton.Text = "発注登録";
             this.orderListAddButton.UseVisualStyleBackColor = true;
             // 
-            // OrderList
+            // orderDetailsButton
+            // 
+            this.orderDetailsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderDetailsButton.Location = new System.Drawing.Point(873, 709);
+            this.orderDetailsButton.Name = "orderDetailsButton";
+            this.orderDetailsButton.Size = new System.Drawing.Size(160, 80);
+            this.orderDetailsButton.TabIndex = 3;
+            this.orderDetailsButton.Text = "詳細";
+            this.orderDetailsButton.UseVisualStyleBackColor = true;
+            // 
+            // OrderList2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.orderListAddButton);
             this.Controls.Add(this.orderDetailsButton);
             this.Controls.Add(this.orderGridView);
-            this.Name = "OrderList";
+            this.Name = "OrderList2";
             this.Size = new System.Drawing.Size(1033, 789);
             ((System.ComponentModel.ISupportInitialize)(this.orderGridView)).EndInit();
             this.ResumeLayout(false);
@@ -83,8 +82,8 @@
         }
 
         #endregion
-        public System.Windows.Forms.Button orderDetailsButton;
         public System.Windows.Forms.Button orderListAddButton;
+        public System.Windows.Forms.Button orderDetailsButton;
         public System.Windows.Forms.DataGridView orderGridView;
     }
 }
