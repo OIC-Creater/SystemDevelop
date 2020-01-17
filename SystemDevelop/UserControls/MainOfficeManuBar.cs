@@ -61,5 +61,14 @@ namespace SystemDevelop.UserControls
             businessOfficeListButton.BackColor = SystemColors.Control;
             shopListButton.BackColor = SystemColors.Control;
         }
+
+        private void MainOfficeManuBar_Load(object sender, EventArgs e)
+        {
+            productListButton.BackColor = Color.LightBlue;
+            employeeListButton.BackColor = SystemColors.Control;
+            manufacturerListButton.BackColor = SystemColors.Control;
+            businessOfficeListButton.BackColor = SystemColors.Control;
+            shopListButton.BackColor = SystemColors.Control;
+        }
     }
 }

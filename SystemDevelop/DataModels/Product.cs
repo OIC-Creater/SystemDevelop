@@ -25,10 +25,15 @@ namespace SystemDevelop.DataModels
         [SerializePropertyAttribute("取扱中", IsKey = false, RelationKey = false)]
         public bool Trading { get; set; }
 
+        [SerializePropertyAttribute("在庫ID", IsKey = false, RelationKey = false)]
+        public string StockId { get; set; }
+
 
         [IgnoreProperty, UnionTarget(nameof(DataModels.Maker.MakerId))]
         public Maker Maker { get; set; }
         [IgnoreProperty, UnionTarget(nameof(DataModels.Setting.SettingId))]
         public Setting Setting { get; set; }
+        [IgnoreProperty, UnionTarget(nameof(DataModels.Stock.StockId))]
+        public Setting Stock { get; set; }
     }
 }
