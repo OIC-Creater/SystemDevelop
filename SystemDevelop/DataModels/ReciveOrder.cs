@@ -1,4 +1,5 @@
 ﻿using ObjectDatabase;
+using System;
 using System.Runtime.Serialization;
 
 namespace SystemDevelop.DataModels
@@ -21,7 +22,7 @@ namespace SystemDevelop.DataModels
         public string EmployeeId { get; set; }
         
         [SerializePropertyAttribute("受注日", IsKey=false, RelationKey=false)]
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         
         [SerializePropertyAttribute("受領チェック", IsKey=false, RelationKey=false)]
         public bool ReceiptCheck { get; set; } 

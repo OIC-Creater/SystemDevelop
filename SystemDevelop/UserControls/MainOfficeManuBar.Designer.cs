@@ -121,6 +121,7 @@
             this.Controls.Add(this.employeeListButton);
             this.Name = "MainOfficeManuBar";
             this.Size = new System.Drawing.Size(216, 689);
+            this.Load += new System.EventHandler(this.MainOfficeManuBar_Load);
             this.ResumeLayout(false);
 
         }

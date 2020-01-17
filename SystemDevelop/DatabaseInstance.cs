@@ -70,8 +70,8 @@ namespace SystemDevelop
             
             ProductTable.Union(MakerTable,nameof(Maker.MakerId));
             ProductTable.Union(SettingTable,nameof(Setting.SettingId));
+            ProductTable.Union(StockTable, nameof(Stock.StockId));
             PigeonTable.Union(StatusTable,nameof(Status.StatusId));
-            StockTable.Union(ProductTable);
             ReciveOrderTable.Union(EmployeeTable,nameof(Employee.EmployeeId));
             ReciveOrderTable.Union(SalesOfficeTable,nameof(SalesOffice.SalesOfficeId));
             ReciveOrderTable.Union(ShopTable,nameof(Shop.ShopId));
@@ -85,6 +85,27 @@ namespace SystemDevelop
             OrderDetailTable.Union(ProductTable,nameof(Product.ProductId));
             StoringTable.Union(OrderDetailTable,nameof(OrderDetail.OrderDetailId));
             StoringTable.Union(EmployeeTable,nameof(Employee.EmployeeId));
+        }
+
+        public static void UpdateUnion()
+        {
+            ProductTable.Union(MakerTable, nameof(Maker.MakerId));
+            ProductTable.Union(SettingTable, nameof(Setting.SettingId));
+            ProductTable.Union(StockTable, nameof(Stock.StockId));
+            PigeonTable.Union(StatusTable, nameof(Status.StatusId));
+            ReciveOrderTable.Union(EmployeeTable, nameof(Employee.EmployeeId));
+            ReciveOrderTable.Union(SalesOfficeTable, nameof(SalesOffice.SalesOfficeId));
+            ReciveOrderTable.Union(ShopTable, nameof(Shop.ShopId));
+            EmployeeTable.Union(AffiliationTable);
+            ReciveOrderDetailTable.Union(ReciveOrderTable, nameof(ReciveOrder.ReciveOrderId));
+            ReciveOrderDetailTable.Union(ProductTable, nameof(Product.ProductId));
+            IssueTabele.Union(ReciveOrderDetailTable, nameof(ReciveOrderDetail.ReciveOrderDetailId));
+            IssueTabele.Union(EmployeeTable, nameof(Employee.EmployeeId));
+            OrderTable.Union(EmployeeTable);
+            OrderDetailTable.Union(OrderTable, nameof(Order.OrderId));
+            OrderDetailTable.Union(ProductTable, nameof(Product.ProductId));
+            StoringTable.Union(OrderDetailTable, nameof(OrderDetail.OrderDetailId));
+            StoringTable.Union(EmployeeTable, nameof(Employee.EmployeeId));
         }
 
         private static void OnLog(ILogMessage msg)
