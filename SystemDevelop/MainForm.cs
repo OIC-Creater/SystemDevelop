@@ -730,7 +730,7 @@ namespace SystemDevelop
                         warehouseMenuBar.Visible = false;
                         reciveControl.Visible = false;
                         headerLists.Visible = true;
-                        empList.Visible = true;
+                        productList.Visible = true;
                         DataSource.SetDataSource<Product>(productList.productGridView, DatabaseInstance.ProductTable);
                         DataSource.SetDataSource<Employee>(empList.empGridView, DatabaseInstance.EmployeeTable);
                         DataSource.SetDataSource<Maker>(manufactureList.manufGridView, DatabaseInstance.MakerTable);
