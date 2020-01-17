@@ -51,7 +51,7 @@ namespace SystemDevelop.UserControls
                 var stockId = DatabaseInstance.ProductTable.Where(p => p.ProductId == "PD00001").First().StockId;
                 DatabaseInstance.StockTable.Where(s => s.StockId == stockId).FirstOrDefault().StockAmount = 
                     DatabaseInstance.StockTable.Where(s => s.StockId == stockId).FirstOrDefault().StockAmount - int.Parse(amountTextBox.Text);
-                DatabaseInstance.ReciveOrderDetailTable.Sync();
+                DatabaseInstance.StockTable.Sync();
                 DatabaseInstance.UpdateUnion();
             }
             catch
