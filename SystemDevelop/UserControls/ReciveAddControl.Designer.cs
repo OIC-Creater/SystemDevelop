@@ -112,8 +112,12 @@
             // shopComboBox
             // 
             this.shopComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.shopComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.shopComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.shopComboBox.DropDownHeight = 500;
             this.shopComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.shopComboBox.FormattingEnabled = true;
+            this.shopComboBox.IntegralHeight = false;
             this.shopComboBox.ItemHeight = 33;
             this.shopComboBox.Location = new System.Drawing.Point(385, 91);
             this.shopComboBox.Name = "shopComboBox";
@@ -123,8 +127,12 @@
             // productComboBox
             // 
             this.productComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.productComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.productComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.productComboBox.DropDownHeight = 500;
             this.productComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.productComboBox.FormattingEnabled = true;
+            this.productComboBox.IntegralHeight = false;
             this.productComboBox.Location = new System.Drawing.Point(385, 241);
             this.productComboBox.Name = "productComboBox";
             this.productComboBox.Size = new System.Drawing.Size(398, 41);
@@ -133,12 +141,17 @@
             // pigeonComboBox
             // 
             this.pigeonComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pigeonComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.pigeonComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pigeonComboBox.DropDownHeight = 500;
             this.pigeonComboBox.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.pigeonComboBox.FormattingEnabled = true;
+            this.pigeonComboBox.IntegralHeight = false;
             this.pigeonComboBox.Location = new System.Drawing.Point(385, 511);
             this.pigeonComboBox.Name = "pigeonComboBox";
-            this.pigeonComboBox.Size = new System.Drawing.Size(398, 41);
+            this.pigeonComboBox.Size = new System.Drawing.Size(397, 41);
             this.pigeonComboBox.TabIndex = 4;
+            this.pigeonComboBox.VisibleChanged += new System.EventHandler(this.PigeonComboBox_VisibleChanged);
             // 
             // amountTextBox
             // 
@@ -177,6 +190,7 @@
             this.Controls.Add(this.shopLabel);
             this.Name = "ReciveAddControl";
             this.Size = new System.Drawing.Size(1033, 789);
+            this.Load += new System.EventHandler(this.ReciveAddControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,11 +203,11 @@
         private System.Windows.Forms.Label productLabel;
         private System.Windows.Forms.Label amountLabel;
         private System.Windows.Forms.Label pigeonLabel;
-        private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.ComboBox shopComboBox;
         private System.Windows.Forms.ComboBox productComboBox;
         private System.Windows.Forms.ComboBox pigeonComboBox;
         private System.Windows.Forms.TextBox amountTextBox;
         private System.Windows.Forms.Label piecesLabel;
+        public System.Windows.Forms.Button addButton;
     }
 }

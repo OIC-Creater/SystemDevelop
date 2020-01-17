@@ -33,7 +33,9 @@ namespace SystemDevelop.UserControls
                     Date = datatime,
                     ReceiptCheck = false
                 };
+                MessageBox.Show(DatabaseInstance.ReciveOrderTable.ToArray().Length.ToString());
                 DatabaseInstance.ReciveOrderTable.Insert(reciveOrder);
+                MessageBox.Show(DatabaseInstance.ReciveOrderTable.ToArray().Length.ToString());
                 DatabaseInstance.ReciveOrderTable.Sync();
                 
                 reciveOrderDetail = new ReciveOrderDetail
@@ -53,6 +55,8 @@ namespace SystemDevelop.UserControls
                     DatabaseInstance.StockTable.Where(s => s.StockId == stockId).FirstOrDefault().StockAmount - int.Parse(amountTextBox.Text);
                 DatabaseInstance.StockTable.Sync();
                 DatabaseInstance.UpdateUnion();
+
+
             }
             catch
             {
@@ -91,6 +95,19 @@ namespace SystemDevelop.UserControls
             sw.Close();
             File.AppendAllText("受注.json", "a");
 
+        }
+
+        private void ReciveAddControl_Load(object sender, EventArgs e)
+        {
+            pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonId).ToArray());
+            shopComboBox.Items.AddRange(DatabaseInstance.ShopTable.ToArray().Select(el => el.ShopName).ToArray());
+            productComboBox.Items.AddRange(DatabaseInstance.ProductTable.ToArray().Select(el => el.ProductName).ToArray());
+        }
+
+        private void PigeonComboBox_VisibleChanged(object sender, EventArgs e)
+        {
+            pigeonComboBox.Items.Clear();
+            pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonId).ToArray());
         }
     }
 }
