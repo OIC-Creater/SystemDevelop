@@ -149,7 +149,7 @@
             this.pigeonComboBox.IntegralHeight = false;
             this.pigeonComboBox.Location = new System.Drawing.Point(385, 511);
             this.pigeonComboBox.Name = "pigeonComboBox";
-            this.pigeonComboBox.Size = new System.Drawing.Size(397, 41);
+            this.pigeonComboBox.Size = new System.Drawing.Size(398, 41);
             this.pigeonComboBox.TabIndex = 4;
             // 
             // amountTextBox
@@ -202,11 +202,11 @@
         private System.Windows.Forms.Label productLabel;
         private System.Windows.Forms.Label amountLabel;
         private System.Windows.Forms.Label pigeonLabel;
-        private System.Windows.Forms.ComboBox shopComboBox;
-        private System.Windows.Forms.ComboBox productComboBox;
         private System.Windows.Forms.TextBox amountTextBox;
         private System.Windows.Forms.Label piecesLabel;
         public System.Windows.Forms.Button addButton;
         public System.Windows.Forms.ComboBox pigeonComboBox;
+        public System.Windows.Forms.ComboBox shopComboBox;
+        public System.Windows.Forms.ComboBox productComboBox;
     }
 }
