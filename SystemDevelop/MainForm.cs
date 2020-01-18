@@ -4,6 +4,7 @@ using System.Management;
 using SystemDevelop.DataModels;
 using SystemDevelop.Model;
 using SystemDevelop.Model.DB;
+using System.Linq;
 
 namespace SystemDevelop
 {
@@ -59,6 +60,7 @@ namespace SystemDevelop
             productDetails.productCancelButton.Click += ProductCancelButton_Click;
             productAddControl.productCancelButton.Click += ProductCancelButton_Click1;
             reciveControl.reciveDetailButton.Click += ReciveDetailButton_Click;
+            reciveAddControl.VisibleChanged += ReciveAddControl_VisibleChanged;
             reciveListDetails.reciveCancelButton.Click += ReciveCancelButton_Click;
             reciveAddControl.addButton.Click += addButton_Click;
             pigeonList.pigeonDetailButton.Click += PigeonDetailButton_Click;
@@ -73,6 +75,12 @@ namespace SystemDevelop
             stockList.stockListAddButton.Click += StockListAddButton_Click;
             stockDetail.stockCancelButton.Click += StockCancelButton_Click;
             stockAddControl.stockCancelButton.Click += StockCancelButton_Click1;
+        }
+
+        private void ReciveAddControl_VisibleChanged(object sender, EventArgs e)
+        {
+            reciveAddControl.pigeonComboBox.Items.Clear();
+            reciveAddControl.pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonId).ToArray());
         }
 
         private void addButton_Click(object sender, EventArgs e)
