@@ -103,11 +103,5 @@ namespace SystemDevelop.UserControls
             shopComboBox.Items.AddRange(DatabaseInstance.ShopTable.ToArray().Select(el => el.ShopName).ToArray());
             productComboBox.Items.AddRange(DatabaseInstance.ProductTable.ToArray().Select(el => el.ProductName).ToArray());
         }
-
-        private void PigeonComboBox_VisibleChanged(object sender, EventArgs e)
-        {
-            pigeonComboBox.Items.Clear();
-            pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonId).ToArray());
-        }
     }
 }

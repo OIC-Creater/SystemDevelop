@@ -151,7 +151,6 @@
             this.pigeonComboBox.Name = "pigeonComboBox";
             this.pigeonComboBox.Size = new System.Drawing.Size(397, 41);
             this.pigeonComboBox.TabIndex = 4;
-            this.pigeonComboBox.VisibleChanged += new System.EventHandler(this.PigeonComboBox_VisibleChanged);
             // 
             // amountTextBox
             // 
@@ -205,9 +204,9 @@
         private System.Windows.Forms.Label pigeonLabel;
         private System.Windows.Forms.ComboBox shopComboBox;
         private System.Windows.Forms.ComboBox productComboBox;
-        private System.Windows.Forms.ComboBox pigeonComboBox;
         private System.Windows.Forms.TextBox amountTextBox;
         private System.Windows.Forms.Label piecesLabel;
         public System.Windows.Forms.Button addButton;
+        public System.Windows.Forms.ComboBox pigeonComboBox;
     }
 }
