@@ -80,7 +80,11 @@ namespace SystemDevelop
         private void ReciveAddControl_VisibleChanged(object sender, EventArgs e)
         {
             reciveAddControl.pigeonComboBox.Items.Clear();
-            reciveAddControl.pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonId).ToArray());
+            reciveAddControl.pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonName).ToArray());
+            reciveAddControl.shopComboBox.Items.Clear();
+            reciveAddControl.shopComboBox.Items.AddRange(DatabaseInstance.ShopTable.ToArray().Select(el => el.ShopName).ToArray());
+            reciveAddControl.productComboBox.Items.Clear();
+            reciveAddControl.productComboBox.Items.AddRange(DatabaseInstance.ProductTable.ToArray().Select(el => el.ProductName).ToArray());
         }
 
         private void addButton_Click(object sender, EventArgs e)
