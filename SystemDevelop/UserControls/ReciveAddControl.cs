@@ -5,6 +5,7 @@ using System.Runtime.Serialization.Json;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
 using System.Linq;
+using SystemDevelop.Model;
 
 namespace SystemDevelop.UserControls
 {
@@ -20,15 +21,16 @@ namespace SystemDevelop.UserControls
         private void addButton_Click(object sender, EventArgs e)
         {
             DateTime datatime = DateTime.Now;
-            String reciveOrderId = $"G{(DatabaseInstance.ReciveOrderTable.Count + 1).ToString("00000")}";
-            String productId = DatabaseInstance.ProductTable.Where(s => s.ProductName == productComboBox.Text).FirstOrDefault().ProductId;
+            string reciveOrderId = $"G{(DatabaseInstance.ReciveOrderTable.Count + 1).ToString("00000")}";
+            string productId = DatabaseInstance.ProductTable.Where(s => s.ProductName == productComboBox.Text).FirstOrDefault().ProductId;
+            var pigeon = DatabaseInstance.PigeonTable.Where(s => s.PigeonName == pigeonComboBox.Text).FirstOrDefault();
             try
             {
                 reciveOrder = new ReciveOrder
                 {
                     ReciveOrderId = reciveOrderId,
                     ShopId = DatabaseInstance.ShopTable.Where(s => s.ShopName == shopComboBox.Text).FirstOrDefault().ShopId,
-                    PigeonId = DatabaseInstance.PigeonTable.Where(s => s.PigeonName == pigeonComboBox.Text).FirstOrDefault().PigeonId,
+                    PigeonId = pigeon.PigeonId,
                     SalesOfficeId = "B001",
                     EmployeeId = "E00001",
                     Date = datatime,
@@ -91,11 +93,12 @@ namespace SystemDevelop.UserControls
                 json += sr.ReadToEnd();
             }
             json += "}";
+            
             dynamic parsedJson = JsonConvert.DeserializeObject(json);
             sw.Write(JsonConvert.SerializeObject(parsedJson, Formatting.Indented));
             sw.Close();
-            File.AppendAllText("受注.json", "a");
-
+            Utility.EncryptFile("受注.json",pigeon.PigeonId);
+            Utility.DecryptFile("受注.enc", pigeon.PigeonId);
         }
 
         private void ReciveAddControl_Load(object sender, EventArgs e)
