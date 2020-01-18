@@ -1,0 +1,17 @@
+{
+  "ReciveOrder": {
+    "Date": "2020-01-19T07:28:45.028+09:00",
+    "EmployeeId": "E00001",
+    "PigeonId": "H00021",
+    "ReceiptCheck": false,
+    "ReciveOrderId": "G00034",
+    "SalesOfficeId": "B001",
+    "ShopId": "S0006"
+  },
+  "ReciveOrderDetail": {
+    "ProductId": "PD00003",
+    "Quantity": 1,
+    "ReciveOrderDetailId": "GD00034",
+    "ReciveOrderId": "G00034"
+  }
+}
