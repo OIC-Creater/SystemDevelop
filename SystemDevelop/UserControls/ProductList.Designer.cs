@@ -40,10 +40,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.productGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.productGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.productGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productGridView.Location = new System.Drawing.Point(0, 0);
+            this.productGridView.MultiSelect = false;
             this.productGridView.Name = "productGridView";
+            this.productGridView.ReadOnly = true;
+            this.productGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.productGridView.RowTemplate.Height = 21;
+            this.productGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.productGridView.Size = new System.Drawing.Size(1033, 709);
             this.productGridView.TabIndex = 1;
             this.productGridView.TabStop = false;

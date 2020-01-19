@@ -36,14 +36,20 @@
             // 
             // manufGridView
             // 
+            this.manufGridView.AllowUserToAddRows = false;
             this.manufGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.manufGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.manufGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.manufGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.manufGridView.Location = new System.Drawing.Point(0, 0);
+            this.manufGridView.MultiSelect = false;
             this.manufGridView.Name = "manufGridView";
+            this.manufGridView.ReadOnly = true;
+            this.manufGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.manufGridView.RowTemplate.Height = 21;
+            this.manufGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.manufGridView.Size = new System.Drawing.Size(1033, 709);
             this.manufGridView.TabIndex = 0;
             this.manufGridView.TabStop = false;
