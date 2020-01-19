@@ -36,14 +36,20 @@
             // 
             // stockGridView
             // 
+            this.stockGridView.AllowUserToAddRows = false;
             this.stockGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.stockGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.stockGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.stockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.stockGridView.Location = new System.Drawing.Point(0, 0);
+            this.stockGridView.MultiSelect = false;
             this.stockGridView.Name = "stockGridView";
+            this.stockGridView.ReadOnly = true;
+            this.stockGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.stockGridView.RowTemplate.Height = 21;
+            this.stockGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.stockGridView.Size = new System.Drawing.Size(1033, 709);
             this.stockGridView.TabIndex = 0;
             this.stockGridView.TabStop = false;

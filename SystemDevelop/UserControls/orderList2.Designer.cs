@@ -36,16 +36,23 @@
             // 
             // orderGridView
             // 
+            this.orderGridView.AllowUserToAddRows = false;
             this.orderGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.orderGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.orderGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.orderGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderGridView.Location = new System.Drawing.Point(0, 0);
+            this.orderGridView.MultiSelect = false;
             this.orderGridView.Name = "orderGridView";
+            this.orderGridView.ReadOnly = true;
+            this.orderGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.orderGridView.RowTemplate.Height = 21;
+            this.orderGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.orderGridView.Size = new System.Drawing.Size(1033, 709);
             this.orderGridView.TabIndex = 0;
+            this.orderGridView.TabStop = false;
             // 
             // orderListAddButton
             // 

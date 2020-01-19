@@ -36,14 +36,20 @@
             // 
             // shopGridView
             // 
+            this.shopGridView.AllowUserToAddRows = false;
             this.shopGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.shopGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.shopGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.shopGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.shopGridView.Location = new System.Drawing.Point(0, 0);
+            this.shopGridView.MultiSelect = false;
             this.shopGridView.Name = "shopGridView";
+            this.shopGridView.ReadOnly = true;
+            this.shopGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.shopGridView.RowTemplate.Height = 21;
+            this.shopGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.shopGridView.Size = new System.Drawing.Size(1033, 709);
             this.shopGridView.TabIndex = 0;
             this.shopGridView.TabStop = false;
