@@ -36,9 +36,7 @@ namespace SystemDevelop.UserControls
                     Date = datatime,
                     ReceiptCheck = false
                 };
-                MessageBox.Show(DatabaseInstance.ReciveOrderTable.ToArray().Length.ToString());
                 DatabaseInstance.ReciveOrderTable.Insert(reciveOrder);
-                MessageBox.Show(DatabaseInstance.ReciveOrderTable.ToArray().Length.ToString());
                 DatabaseInstance.ReciveOrderTable.Sync();
                 
                 reciveOrderDetail = new ReciveOrderDetail

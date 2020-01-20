@@ -70,11 +70,19 @@ namespace SystemDevelop
             orderList2.orderDetailsButton.Click += OrderDetailsButton_Click;
             orderDetail.orderCancelButton.Click += OrderCancelButton_Click;
             orderList2.orderListAddButton.Click += OrderListAddButton_Click;
+            orderAddControl.VisibleChanged += OrderAddControl_VisibleChanged;
             orderAddControl.orderCancelButton.Click += OrderCancelButton_Click1;
             stockList.stockDetailButton.Click += StockDetailButton_Click;
             stockList.stockListAddButton.Click += StockListAddButton_Click;
             stockDetail.stockCancelButton.Click += StockCancelButton_Click;
             stockAddControl.stockCancelButton.Click += StockCancelButton_Click1;
+        }
+
+        private void OrderAddControl_VisibleChanged(object sender, EventArgs e)
+        {
+            orderAddControl.orderId.Text = $"PO{(DatabaseInstance.OrderTable.Count + 1).ToString("00000")}";
+            orderAddControl.productComboBox.Items.Clear();
+            orderAddControl.productComboBox.Items.AddRange(DatabaseInstance.ProductTable.ToArray().Select(el => el.ProductName).ToArray());
         }
 
         private void ReciveAddControl_VisibleChanged(object sender, EventArgs e)
