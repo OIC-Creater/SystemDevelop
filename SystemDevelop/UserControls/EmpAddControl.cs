@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
+using SystemDevelop.Model;
 
 namespace SystemDevelop.UserControls
 {
@@ -31,15 +32,20 @@ namespace SystemDevelop.UserControls
         {
             try
             {
+                var pigeonId = $"H{(DatabaseInstance.PigeonTable.Count + 1).ToString("00000")}";
+                var keys = Utility.CreateKeysOfRSA(pigeonId);
+
                 var pigeon = new Pigeon
                 {
-                    PigeonId = $"H{(DatabaseInstance.PigeonTable.Count + 1).ToString("00000")}",
+                    PigeonId = pigeonId,
                     PigeonName = psswordAddTextBox.Text,
-                    PublicKey = "ほげ",
+                    PublicKey = keys.Key,
                     StatusId = "d"
                 };
                 DatabaseInstance.PigeonTable.Insert(pigeon);
                 DatabaseInstance.PigeonTable.Sync();
+
+                
 
                 var emp = new Employee
                 {

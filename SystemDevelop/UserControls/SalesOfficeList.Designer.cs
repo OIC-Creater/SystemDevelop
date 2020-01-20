@@ -36,14 +36,20 @@
             // 
             // salesOfficeGridView
             // 
+            this.salesOfficeGridView.AllowUserToAddRows = false;
             this.salesOfficeGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.salesOfficeGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.salesOfficeGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.salesOfficeGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.salesOfficeGridView.Location = new System.Drawing.Point(0, 0);
+            this.salesOfficeGridView.MultiSelect = false;
             this.salesOfficeGridView.Name = "salesOfficeGridView";
+            this.salesOfficeGridView.ReadOnly = true;
+            this.salesOfficeGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.salesOfficeGridView.RowTemplate.Height = 21;
+            this.salesOfficeGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.salesOfficeGridView.Size = new System.Drawing.Size(1033, 709);
             this.salesOfficeGridView.TabIndex = 0;
             this.salesOfficeGridView.TabStop = false;

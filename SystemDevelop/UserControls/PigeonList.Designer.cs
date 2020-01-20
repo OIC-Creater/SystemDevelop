@@ -36,15 +36,20 @@
             // 
             // pigeonGridView
             // 
+            this.pigeonGridView.AllowUserToAddRows = false;
             this.pigeonGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pigeonGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.pigeonGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.pigeonGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pigeonGridView.Location = new System.Drawing.Point(0, 0);
             this.pigeonGridView.MultiSelect = false;
             this.pigeonGridView.Name = "pigeonGridView";
+            this.pigeonGridView.ReadOnly = true;
+            this.pigeonGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.pigeonGridView.RowTemplate.Height = 21;
+            this.pigeonGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.pigeonGridView.Size = new System.Drawing.Size(1033, 709);
             this.pigeonGridView.TabIndex = 0;
             this.pigeonGridView.TabStop = false;

@@ -5,6 +5,7 @@ using System.Runtime.Serialization.Json;
 using System.Windows.Forms;
 using SystemDevelop.DataModels;
 using System.Linq;
+using SystemDevelop.Model;
 
 namespace SystemDevelop.UserControls
 {
@@ -20,14 +21,16 @@ namespace SystemDevelop.UserControls
         private void addButton_Click(object sender, EventArgs e)
         {
             DateTime datatime = DateTime.Now;
-            String reciveOrderId = $"G{(DatabaseInstance.ReciveOrderTable.Count + 1).ToString("00000")}";
+            string reciveOrderId = $"G{(DatabaseInstance.ReciveOrderTable.Count + 1).ToString("00000")}";
+            string productId = DatabaseInstance.ProductTable.Where(s => s.ProductName == productComboBox.Text).FirstOrDefault().ProductId;
+            var pigeon = DatabaseInstance.PigeonTable.Where(s => s.PigeonName == pigeonComboBox.Text).FirstOrDefault();
             try
             {
                 reciveOrder = new ReciveOrder
                 {
                     ReciveOrderId = reciveOrderId,
-                    ShopId = shopComboBox.Text,
-                    PigeonId = pigeonComboBox.Text,
+                    ShopId = DatabaseInstance.ShopTable.Where(s => s.ShopName == shopComboBox.Text).FirstOrDefault().ShopId,
+                    PigeonId = pigeon.PigeonId,
                     SalesOfficeId = "B001",
                     EmployeeId = "E00001",
                     Date = datatime,
@@ -42,7 +45,7 @@ namespace SystemDevelop.UserControls
                 {
                     ReciveOrderDetailId = $"GD{(DatabaseInstance.ReciveOrderDetailTable.Count + 1).ToString("00000")}",
                     ReciveOrderId = reciveOrderId,
-                    ProductId = "PD00001",
+                    ProductId = productId,
                     Quantity = int.Parse(amountTextBox.Text)
 
                 };
@@ -50,7 +53,7 @@ namespace SystemDevelop.UserControls
                 DatabaseInstance.ReciveOrderDetailTable.Sync();
 
 
-                var stockId = DatabaseInstance.ProductTable.Where(p => p.ProductId == "PD00001").First().StockId;
+                var stockId = DatabaseInstance.ProductTable.Where(p => p.ProductId == productId).First().StockId;
                 DatabaseInstance.StockTable.Where(s => s.StockId == stockId).FirstOrDefault().StockAmount = 
                     DatabaseInstance.StockTable.Where(s => s.StockId == stockId).FirstOrDefault().StockAmount - int.Parse(amountTextBox.Text);
                 DatabaseInstance.StockTable.Sync();
@@ -90,16 +93,17 @@ namespace SystemDevelop.UserControls
                 json += sr.ReadToEnd();
             }
             json += "}";
+            
             dynamic parsedJson = JsonConvert.DeserializeObject(json);
             sw.Write(JsonConvert.SerializeObject(parsedJson, Formatting.Indented));
             sw.Close();
-            File.AppendAllText("受注.json", "a");
-
+            Utility.EncryptFile("受注.json",pigeon.PigeonId);
+            Utility.DecryptFile("受注.enc", pigeon.PigeonId);
         }
 
         private void ReciveAddControl_Load(object sender, EventArgs e)
         {
-            pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonId).ToArray());
+            pigeonComboBox.Items.AddRange(DatabaseInstance.PigeonTable.ToArray().Select(el => el.PigeonName).ToArray());
             shopComboBox.Items.AddRange(DatabaseInstance.ShopTable.ToArray().Select(el => el.ShopName).ToArray());
             productComboBox.Items.AddRange(DatabaseInstance.ProductTable.ToArray().Select(el => el.ProductName).ToArray());
         }

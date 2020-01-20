@@ -35,16 +35,20 @@
             // 
             // reciveGridView
             // 
+            this.reciveGridView.AllowUserToAddRows = false;
             this.reciveGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reciveGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.reciveGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.reciveGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.reciveGridView.Location = new System.Drawing.Point(0, 0);
             this.reciveGridView.MultiSelect = false;
             this.reciveGridView.Name = "reciveGridView";
+            this.reciveGridView.ReadOnly = true;
+            this.reciveGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.reciveGridView.RowTemplate.Height = 21;
-            this.reciveGridView.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.reciveGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.reciveGridView.Size = new System.Drawing.Size(1033, 709);
             this.reciveGridView.TabIndex = 0;
             this.reciveGridView.TabStop = false;
